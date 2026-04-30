@@ -1,0 +1,6 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+255,1,tree_classifier,pa_classifier,stay,False,high_uncertainty,0.1796875,0.002,"Stay because utility uncertainty is too high: current_std=0.1562, candidate_std=0.0234, threshold=0.0020."
+383,2,tree_classifier,pa_classifier,stay,False,high_uncertainty,0.24609375,0.002,"Stay because utility uncertainty is too high: current_std=0.1094, candidate_std=0.0039, threshold=0.0020."
+511,3,tree_classifier,pa_classifier,stay,False,high_uncertainty,0.09375,0.002,"Stay because utility uncertainty is too high: current_std=0.0195, candidate_std=0.0195, threshold=0.0020."
+639,4,tree_classifier,pa_classifier,stay,False,high_uncertainty,0.09765625,0.002,"Stay because utility uncertainty is too high: current_std=0.0508, candidate_std=0.0078, threshold=0.0020."
+767,5,tree_classifier,pa_classifier,stay,False,high_uncertainty,0.109375,0.002,"Stay because utility uncertainty is too high: current_std=0.0664, candidate_std=0.0352, threshold=0.0020."

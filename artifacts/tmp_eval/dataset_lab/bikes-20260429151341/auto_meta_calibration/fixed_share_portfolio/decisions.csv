@@ -1,0 +1,628 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+63,0,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.011067982193160603,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2127 - 0.2016 = 0.0111 >= 0.0100.
+127,1,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+191,2,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.31238533756353637,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4592 - 0.1468 = 0.3124 >= 0.0100.
+255,3,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+319,4,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+383,5,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.022787983870222794,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2261 - 0.2033 = 0.0228 >= 0.0100.
+447,6,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.22435441454561578,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3852 - 0.1608 = 0.2244 >= 0.0100.
+511,7,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+575,8,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.12216888791920173,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2468 - 0.1247 = 0.1222 >= 0.0100.
+639,9,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.0018918775566922619,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0019, threshold=0.0100."
+703,10,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.006754050098072867,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0068, threshold=0.0100."
+767,11,lin_lr_0_002,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.021334036110301074,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2312 - 0.2098 = 0.0213 >= 0.0100.
+831,12,lin_lr_0_0005,lin_lr_0_0005,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+895,13,lin_lr_0_0005,lin_lr_0_0005,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+959,14,lin_lr_0_0005,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.0007564258965257475,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0008, threshold=0.0100."
+1023,15,lin_lr_0_0005,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.03898702123252484,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2502 - 0.2112 = 0.0390 >= 0.0100.
+1087,16,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.0008384602692442233,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0008, threshold=0.0100."
+1151,17,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1215,18,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.03836636810034286,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2373 - 0.1990 = 0.0384 >= 0.0100.
+1279,19,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.018392883281586614,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2328 - 0.2144 = 0.0184 >= 0.0100.
+1343,20,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1407,21,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.003388406700631036,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0034, threshold=0.0100."
+1471,22,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.02619737596833785,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2319 - 0.2057 = 0.0262 >= 0.0100.
+1535,23,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.1087003561072754,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2272 - 0.1185 = 0.1087 >= 0.0100.
+1599,24,lin_lr_0_002,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.043813804689461555,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2422 - 0.1983 = 0.0438 >= 0.0100.
+1663,25,lin_lr_0_0005,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.00875717668141024,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0088, threshold=0.0100."
+1727,26,lin_lr_0_0005,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.040636737182420835,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2494 - 0.2088 = 0.0406 >= 0.0100.
+1791,27,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1855,28,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1919,29,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1983,30,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2047,31,lin_lr_0_002,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.01067088144889869,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2428 - 0.2322 = 0.0107 >= 0.0100.
+2111,32,lin_lr_0_001,lin_lr_0_001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2175,33,lin_lr_0_001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.013189619039210843,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2759 - 0.2627 = 0.0132 >= 0.0100.
+2239,34,lin_lr_0_002,lin_lr_0_0005,stay,False,fixed_share_margin_too_small,0.002776160200327421,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0028, threshold=0.0100."
+2303,35,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2367,36,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2431,37,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2495,38,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.2115618804440993,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3739 - 0.1623 = 0.2116 >= 0.0100.
+2559,39,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2623,40,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2687,41,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2751,42,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2815,43,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2879,44,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2943,45,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3007,46,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3071,47,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3135,48,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3199,49,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3263,50,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3327,51,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.05710738010478794,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2342 - 0.1771 = 0.0571 >= 0.0100.
+3391,52,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3455,53,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3519,54,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.10508725206196592,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3058 - 0.2007 = 0.1051 >= 0.0100.
+3583,55,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3647,56,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3711,57,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.03374002802337003,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2321 - 0.1984 = 0.0337 >= 0.0100.
+3775,58,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.04367513722845781,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2624 - 0.2187 = 0.0437 >= 0.0100.
+3839,59,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3903,60,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3967,61,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.007596955907839736,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0076, threshold=0.0100."
+4031,62,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.007008609463785842,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0070, threshold=0.0100."
+4095,63,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4159,64,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.0007582650711482064,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0008, threshold=0.0100."
+4223,65,lin_lr_0_002,tree_regressor,stay,False,fixed_share_margin_too_small,0.007361249612356013,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0074, threshold=0.0100."
+4287,66,lin_lr_0_002,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.00705497013658174,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0071, threshold=0.0100."
+4351,67,lin_lr_0_002,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.006765992587218994,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0068, threshold=0.0100."
+4415,68,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4479,69,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.028480578086590658,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2294 - 0.2009 = 0.0285 >= 0.0100.
+4543,70,tree_regressor,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.038078192266631145,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2086 - 0.1705 = 0.0381 >= 0.0100.
+4607,71,lin_lr_0_0005,tree_regressor,stay,False,fixed_share_margin_too_small,0.008177559392245626,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0082, threshold=0.0100."
+4671,72,lin_lr_0_0005,lin_lr_0_0005,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4735,73,lin_lr_0_0005,tree_regressor,switch,True,fixed_share_weight_advantage,0.02386499952425475,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2192 - 0.1953 = 0.0239 >= 0.0100.
+4799,74,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4863,75,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4927,76,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.048222996159721976,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2110 - 0.1627 = 0.0482 >= 0.0100.
+4991,77,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.15779200703055804,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3258 - 0.1680 = 0.1578 >= 0.0100.
+5055,78,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5119,79,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5183,80,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.10259712317471036,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2229 - 0.1203 = 0.1026 >= 0.0100.
+5247,81,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.024558222659645246,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2207 - 0.1962 = 0.0246 >= 0.0100.
+5311,82,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.09768892112261546,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2267 - 0.1290 = 0.0977 >= 0.0100.
+5375,83,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5439,84,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.010689418827882713,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2089 - 0.1982 = 0.0107 >= 0.0100.
+5503,85,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5567,86,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5631,87,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5695,88,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5759,89,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5823,90,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5887,91,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5951,92,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6015,93,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6079,94,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6143,95,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6207,96,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6271,97,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6335,98,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6399,99,tree_regressor,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.1442779621346124,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2322 - 0.0879 = 0.1443 >= 0.0100.
+6463,100,lin_lr_0_0005,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.08069328354851432,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2950 - 0.2143 = 0.0807 >= 0.0100.
+6527,101,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6591,102,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6655,103,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.09853481734889924,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2975 - 0.1989 = 0.0985 >= 0.0100.
+6719,104,lin_lr_0_0001,lin_lr_0_0005,stay,False,fixed_share_margin_too_small,0.003954756637535639,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0040, threshold=0.0100."
+6783,105,lin_lr_0_0001,lin_lr_0_0005,stay,False,fixed_share_margin_too_small,0.004907953141013388,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0049, threshold=0.0100."
+6847,106,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.013320819324093625,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2417 - 0.2284 = 0.0133 >= 0.0100.
+6911,107,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6975,108,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.034970210105747496,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2193 - 0.1843 = 0.0350 >= 0.0100.
+7039,109,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7103,110,lin_lr_0_0001,lin_lr_0_002,stay,False,fixed_share_margin_too_small,0.002494271569073836,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0025, threshold=0.0100."
+7167,111,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7231,112,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7295,113,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7359,114,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7423,115,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.03260191109751798,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2359 - 0.2033 = 0.0326 >= 0.0100.
+7487,116,tree_regressor,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.00635244224834694,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0064, threshold=0.0100."
+7551,117,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.06304172164915509,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2190 - 0.1560 = 0.0630 >= 0.0100.
+7615,118,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.0007910055953462836,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0008, threshold=0.0100."
+7679,119,lin_lr_0_002,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.009766088011141427,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0098, threshold=0.0100."
+7743,120,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.010061061898187756,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2398 - 0.2298 = 0.0101 >= 0.0100.
+7807,121,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7871,122,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7935,123,lin_lr_0_0001,lin_lr_0_0005,stay,False,fixed_share_margin_too_small,0.008461865145332176,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0085, threshold=0.0100."
+7999,124,lin_lr_0_0001,lin_lr_0_0005,stay,False,fixed_share_margin_too_small,0.001255028185840834,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0013, threshold=0.0100."
+8063,125,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.021186999822101787,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2496 - 0.2284 = 0.0212 >= 0.0100.
+8127,126,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.030052614773695224,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2716 - 0.2415 = 0.0301 >= 0.0100.
+8191,127,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8255,128,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8319,129,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8383,130,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8447,131,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8511,132,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8575,133,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.019195993705167946,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2349 - 0.2157 = 0.0192 >= 0.0100.
+8639,134,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8703,135,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8767,136,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8831,137,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8895,138,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8959,139,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.23921791706343218,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2852 - 0.0460 = 0.2392 >= 0.0100.
+9023,140,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9087,141,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9151,142,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9215,143,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9279,144,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9343,145,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.01579013061607626,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2100 - 0.1942 = 0.0158 >= 0.0100.
+9407,146,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.02710557761720142,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2254 - 0.1982 = 0.0271 >= 0.0100.
+9471,147,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.0944151964989261,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2865 - 0.1920 = 0.0944 >= 0.0100.
+9535,148,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9599,149,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9663,150,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9727,151,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9791,152,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.25648806437276644,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3093 - 0.0528 = 0.2565 >= 0.0100.
+9855,153,lin_lr_0_002,tree_regressor,stay,False,fixed_share_margin_too_small,0.008333158174424371,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0083, threshold=0.0100."
+9919,154,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9983,155,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.017951067282773597,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2124 - 0.1944 = 0.0180 >= 0.0100.
+10047,156,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.14649982638702108,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2539 - 0.1074 = 0.1465 >= 0.0100.
+10111,157,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10175,158,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.24090566437118047,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3915 - 0.1506 = 0.2409 >= 0.0100.
+10239,159,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10303,160,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10367,161,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10431,162,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10495,163,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10559,164,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10623,165,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10687,166,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10751,167,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10815,168,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.16155604821032343,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2424 - 0.0808 = 0.1616 >= 0.0100.
+10879,169,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.1677660610149564,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3641 - 0.1963 = 0.1678 >= 0.0100.
+10943,170,tree_regressor,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.02619671435977869,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2095 - 0.1833 = 0.0262 >= 0.0100.
+11007,171,lin_lr_0_0005,tree_regressor,switch,True,fixed_share_weight_advantage,0.09543323946339136,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2746 - 0.1791 = 0.0954 >= 0.0100.
+11071,172,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11135,173,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11199,174,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11263,175,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11327,176,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11391,177,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11455,178,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11519,179,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11583,180,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11647,181,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11711,182,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.09798877546187698,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2265 - 0.1286 = 0.0980 >= 0.0100.
+11775,183,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11839,184,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11903,185,lin_lr_0_002,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.00701868397502281,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0070, threshold=0.0100."
+11967,186,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12031,187,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.019729937389170088,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2096 - 0.1899 = 0.0197 >= 0.0100.
+12095,188,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12159,189,lin_lr_0_0001,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.035874496237857545,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2363 - 0.2005 = 0.0359 >= 0.0100.
+12223,190,lin_lr_0_001,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.018065858519684508,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2315 - 0.2135 = 0.0181 >= 0.0100.
+12287,191,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12351,192,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12415,193,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12479,194,lin_lr_0_0001,lin_lr_0_0005,stay,False,fixed_share_margin_too_small,0.0025432911791086754,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0025, threshold=0.0100."
+12543,195,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.014214167229704228,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2280 - 0.2138 = 0.0142 >= 0.0100.
+12607,196,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12671,197,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.05791435144123755,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2252 - 0.1672 = 0.0579 >= 0.0100.
+12735,198,lin_lr_0_0001,lin_lr_0_0005,stay,False,fixed_share_margin_too_small,0.006096540768952802,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0061, threshold=0.0100."
+12799,199,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.4207094816346332,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5230 - 0.1023 = 0.4207 >= 0.0100.
+12863,200,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12927,201,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12991,202,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13055,203,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13119,204,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13183,205,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.07749014625545572,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2274 - 0.1499 = 0.0775 >= 0.0100.
+13247,206,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.04694230823325751,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2495 - 0.2026 = 0.0469 >= 0.0100.
+13311,207,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13375,208,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.014882978786928375,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2281 - 0.2132 = 0.0149 >= 0.0100.
+13439,209,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.06590283075506054,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2555 - 0.1896 = 0.0659 >= 0.0100.
+13503,210,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13567,211,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13631,212,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13695,213,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13759,214,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13823,215,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13887,216,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13951,217,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.16971069209299966,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3234 - 0.1537 = 0.1697 >= 0.0100.
+14015,218,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14079,219,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14143,220,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14207,221,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14271,222,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14335,223,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14399,224,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.08684157861338582,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2794 - 0.1925 = 0.0868 >= 0.0100.
+14463,225,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14527,226,tree_regressor,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.0639214712120939,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2161 - 0.1522 = 0.0639 >= 0.0100.
+14591,227,lin_lr_0_001,tree_regressor,switch,True,fixed_share_weight_advantage,0.028003900534896542,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2210 - 0.1930 = 0.0280 >= 0.0100.
+14655,228,tree_regressor,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.07230704626823592,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2270 - 0.1547 = 0.0723 >= 0.0100.
+14719,229,lin_lr_0_0005,tree_regressor,switch,True,fixed_share_weight_advantage,0.5912861421078561,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.6711 - 0.0798 = 0.5913 >= 0.0100.
+14783,230,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14847,231,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14911,232,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14975,233,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15039,234,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15103,235,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15167,236,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15231,237,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15295,238,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15359,239,tree_regressor,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.12586608048294465,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2450 - 0.1192 = 0.1259 >= 0.0100.
+15423,240,lin_lr_0_0005,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.0023769025567464686,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0024, threshold=0.0100."
+15487,241,lin_lr_0_0005,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.0051833566125209785,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0052, threshold=0.0100."
+15551,242,lin_lr_0_0005,tree_regressor,switch,True,fixed_share_weight_advantage,0.5829055607968903,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.6655 - 0.0826 = 0.5829 >= 0.0100.
+15615,243,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15679,244,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15743,245,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15807,246,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.05874737613735981,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2209 - 0.1621 = 0.0587 >= 0.0100.
+15871,247,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.11305776778924198,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2995 - 0.1864 = 0.1131 >= 0.0100.
+15935,248,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.04097180331193628,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2295 - 0.1885 = 0.0410 >= 0.0100.
+15999,249,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.17874005149296981,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2707 - 0.0920 = 0.1787 >= 0.0100.
+16063,250,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16127,251,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16191,252,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16255,253,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16319,254,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16383,255,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.027642314265901607,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2215 - 0.1939 = 0.0276 >= 0.0100.
+16447,256,lin_lr_0_002,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.02491298718812221,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2199 - 0.1950 = 0.0249 >= 0.0100.
+16511,257,lin_lr_0_001,tree_regressor,switch,True,fixed_share_weight_advantage,0.017763143705294027,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2143 - 0.1965 = 0.0178 >= 0.0100.
+16575,258,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.034385497942320514,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2164 - 0.1820 = 0.0344 >= 0.0100.
+16639,259,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16703,260,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.13160209181924334,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3019 - 0.1703 = 0.1316 >= 0.0100.
+16767,261,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.01645112280330041,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2049 - 0.1885 = 0.0165 >= 0.0100.
+16831,262,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.015667112486491858,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2109 - 0.1952 = 0.0157 >= 0.0100.
+16895,263,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.04141237351467866,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2393 - 0.1978 = 0.0414 >= 0.0100.
+16959,264,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17023,265,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.128907457194523,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2637 - 0.1348 = 0.1289 >= 0.0100.
+17087,266,lin_lr_0_002,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.005143872231241797,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0051, threshold=0.0100."
+17151,267,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.023572385880212265,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2124 - 0.1889 = 0.0236 >= 0.0100.
+17215,268,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17279,269,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.0945094472637581,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2680 - 0.1735 = 0.0945 >= 0.0100.
+17343,270,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17407,271,lin_lr_0_002,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.00018524969385494416,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0002, threshold=0.0100."
+17471,272,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17535,273,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17599,274,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.10243066863291553,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2693 - 0.1669 = 0.1024 >= 0.0100.
+17663,275,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.689985591661785,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.7500 - 0.0600 = 0.6900 >= 0.0100.
+17727,276,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17791,277,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17855,278,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17919,279,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17983,280,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18047,281,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18111,282,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18175,283,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18239,284,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18303,285,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18367,286,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.2122742405069462,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2611 - 0.0488 = 0.2123 >= 0.0100.
+18431,287,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.21853702407448183,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3661 - 0.1475 = 0.2185 >= 0.0100.
+18495,288,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18559,289,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.42118297035751034,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5438 - 0.1226 = 0.4212 >= 0.0100.
+18623,290,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18687,291,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18751,292,tree_regressor,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.11656252220465169,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2288 - 0.1122 = 0.1166 >= 0.0100.
+18815,293,lin_lr_0_001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.013616214241540053,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2380 - 0.2244 = 0.0136 >= 0.0100.
+18879,294,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18943,295,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.1838091644783179,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3633 - 0.1795 = 0.1838 >= 0.0100.
+19007,296,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.08491289586538203,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2467 - 0.1618 = 0.0849 >= 0.0100.
+19071,297,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.03867702972163273,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2239 - 0.1852 = 0.0387 >= 0.0100.
+19135,298,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.2516346209431764,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3162 - 0.0645 = 0.2516 >= 0.0100.
+19199,299,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19263,300,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19327,301,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19391,302,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.0046925939521790805,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0047, threshold=0.0100."
+19455,303,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.07226705115685039,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2433 - 0.1710 = 0.0723 >= 0.0100.
+19519,304,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19583,305,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.047611438932966876,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2400 - 0.1924 = 0.0476 >= 0.0100.
+19647,306,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19711,307,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19775,308,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19839,309,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19903,310,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19967,311,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20031,312,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20095,313,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20159,314,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20223,315,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.10845211115267323,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2561 - 0.1477 = 0.1085 >= 0.0100.
+20287,316,lin_lr_0_002,tree_regressor,stay,False,fixed_share_margin_too_small,0.006075974450846566,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0061, threshold=0.0100."
+20351,317,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.09485851197261216,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2799 - 0.1851 = 0.0949 >= 0.0100.
+20415,318,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20479,319,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.07868203372363625,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2514 - 0.1727 = 0.0787 >= 0.0100.
+20543,320,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20607,321,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20671,322,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20735,323,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20799,324,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20863,325,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20927,326,lin_lr_0_002,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.015358494754125623,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2131 - 0.1977 = 0.0154 >= 0.0100.
+20991,327,lin_lr_0_001,tree_regressor,switch,True,fixed_share_weight_advantage,0.6627232137359855,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.7301 - 0.0674 = 0.6627 >= 0.0100.
+21055,328,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21119,329,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21183,330,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21247,331,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21311,332,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21375,333,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.0789988858834825,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2244 - 0.1454 = 0.0790 >= 0.0100.
+21439,334,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21503,335,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21567,336,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.020153757938988714,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2389 - 0.2188 = 0.0202 >= 0.0100.
+21631,337,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.2289267111213366,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3912 - 0.1623 = 0.2289 >= 0.0100.
+21695,338,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21759,339,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21823,340,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21887,341,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21951,342,tree_regressor,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.08124579582936839,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2279 - 0.1466 = 0.0812 >= 0.0100.
+22015,343,lin_lr_0_001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.020799582444470915,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2616 - 0.2408 = 0.0208 >= 0.0100.
+22079,344,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22143,345,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.2293892165139803,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4217 - 0.1923 = 0.2294 >= 0.0100.
+22207,346,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22271,347,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22335,348,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22399,349,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22463,350,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22527,351,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22591,352,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.06880219219630798,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2464 - 0.1776 = 0.0688 >= 0.0100.
+22655,353,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22719,354,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.20136211639723908,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3757 - 0.1743 = 0.2014 >= 0.0100.
+22783,355,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22847,356,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22911,357,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22975,358,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23039,359,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23103,360,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23167,361,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23231,362,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23295,363,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23359,364,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23423,365,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.052007083870691584,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2154 - 0.1634 = 0.0520 >= 0.0100.
+23487,366,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23551,367,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23615,368,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23679,369,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23743,370,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23807,371,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.05341910066782768,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2458 - 0.1924 = 0.0534 >= 0.0100.
+23871,372,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.018169888466546796,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2287 - 0.2105 = 0.0182 >= 0.0100.
+23935,373,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.03782397949556701,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2339 - 0.1961 = 0.0378 >= 0.0100.
+23999,374,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24063,375,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24127,376,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.16524531384064484,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2861 - 0.1208 = 0.1652 >= 0.0100.
+24191,377,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.01606713366414389,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2139 - 0.1978 = 0.0161 >= 0.0100.
+24255,378,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.011229431810437784,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2061 - 0.1949 = 0.0112 >= 0.0100.
+24319,379,lin_lr_0_0001,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.010561028377130272,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2030 - 0.1924 = 0.0106 >= 0.0100.
+24383,380,lin_lr_0_001,tree_regressor,switch,True,fixed_share_weight_advantage,0.0593641748556166,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2498 - 0.1904 = 0.0594 >= 0.0100.
+24447,381,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24511,382,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24575,383,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24639,384,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.09923628570317189,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2691 - 0.1699 = 0.0992 >= 0.0100.
+24703,385,lin_lr_0_002,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.0012992092565731472,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0013, threshold=0.0100."
+24767,386,lin_lr_0_002,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.007620250620080038,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0076, threshold=0.0100."
+24831,387,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.19460008135463602,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3594 - 0.1648 = 0.1946 >= 0.0100.
+24895,388,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.05730585029830329,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2298 - 0.1725 = 0.0573 >= 0.0100.
+24959,389,lin_lr_0_0001,lin_lr_0_002,stay,False,fixed_share_margin_too_small,0.005902445536687784,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0059, threshold=0.0100."
+25023,390,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25087,391,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.6009778575491636,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.6779 - 0.0770 = 0.6010 >= 0.0100.
+25151,392,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25215,393,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25279,394,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25343,395,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.04687226671899397,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2208 - 0.1739 = 0.0469 >= 0.0100.
+25407,396,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.11670999066101378,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2871 - 0.1703 = 0.1167 >= 0.0100.
+25471,397,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.2107314092669327,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2870 - 0.0762 = 0.2107 >= 0.0100.
+25535,398,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25599,399,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25663,400,lin_lr_0_0001,lin_lr_0_002,stay,False,fixed_share_margin_too_small,0.008753349629351925,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0088, threshold=0.0100."
+25727,401,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.08973226035288823,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2718 - 0.1821 = 0.0897 >= 0.0100.
+25791,402,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25855,403,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25919,404,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25983,405,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.012369835227365955,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2373 - 0.2249 = 0.0124 >= 0.0100.
+26047,406,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.014100074755383302,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2497 - 0.2356 = 0.0141 >= 0.0100.
+26111,407,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.057434080228159545,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2792 - 0.2218 = 0.0574 >= 0.0100.
+26175,408,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.02333003062784489,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2317 - 0.2084 = 0.0233 >= 0.0100.
+26239,409,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26303,410,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.0731618860280841,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2611 - 0.1879 = 0.0732 >= 0.0100.
+26367,411,tree_regressor,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.07458300935711093,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2168 - 0.1422 = 0.0746 >= 0.0100.
+26431,412,lin_lr_0_0005,tree_regressor,switch,True,fixed_share_weight_advantage,0.052738337960891335,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2437 - 0.1910 = 0.0527 >= 0.0100.
+26495,413,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26559,414,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26623,415,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26687,416,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26751,417,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26815,418,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26879,419,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26943,420,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27007,421,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27071,422,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27135,423,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27199,424,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.028705503477462452,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2208 - 0.1921 = 0.0287 >= 0.0100.
+27263,425,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27327,426,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27391,427,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.4829474253188157,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5745 - 0.0915 = 0.4829 >= 0.0100.
+27455,428,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27519,429,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.08963670255973485,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2853 - 0.1957 = 0.0896 >= 0.0100.
+27583,430,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27647,431,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.06788618613111719,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2844 - 0.2166 = 0.0679 >= 0.0100.
+27711,432,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.023071446315498206,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2622 - 0.2391 = 0.0231 >= 0.0100.
+27775,433,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.022710097755726244,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2194 - 0.1966 = 0.0227 >= 0.0100.
+27839,434,tree_regressor,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.01689881736725443,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2118 - 0.1949 = 0.0169 >= 0.0100.
+27903,435,lin_lr_0_0005,tree_regressor,switch,True,fixed_share_weight_advantage,0.17290257686708696,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3495 - 0.1766 = 0.1729 >= 0.0100.
+27967,436,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28031,437,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28095,438,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28159,439,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28223,440,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28287,441,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28351,442,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.09201308476530942,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2264 - 0.1344 = 0.0920 >= 0.0100.
+28415,443,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28479,444,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.07907970409094855,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3048 - 0.2257 = 0.0791 >= 0.0100.
+28543,445,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28607,446,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28671,447,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28735,448,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28799,449,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28863,450,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28927,451,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.07781549187025688,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2221 - 0.1443 = 0.0778 >= 0.0100.
+28991,452,lin_lr_0_002,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.008975524093699644,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0090, threshold=0.0100."
+29055,453,lin_lr_0_002,lin_lr_0_0005,switch,True,fixed_share_weight_advantage,0.09509347591195533,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2805 - 0.1854 = 0.0951 >= 0.0100.
+29119,454,lin_lr_0_0005,lin_lr_0_0005,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29183,455,lin_lr_0_0005,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.008131592750541428,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0081, threshold=0.0100."
+29247,456,lin_lr_0_0005,lin_lr_0_001,stay,False,fixed_share_margin_too_small,0.0024623814465667138,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0025, threshold=0.0100."
+29311,457,lin_lr_0_0005,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.07470902164379728,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2601 - 0.1854 = 0.0747 >= 0.0100.
+29375,458,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.040671016805756216,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2693 - 0.2286 = 0.0407 >= 0.0100.
+29439,459,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29503,460,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29567,461,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29631,462,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.15281654249234106,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3221 - 0.1693 = 0.1528 >= 0.0100.
+29695,463,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29759,464,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29823,465,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29887,466,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29951,467,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30015,468,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30079,469,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30143,470,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30207,471,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30271,472,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.1702292039297274,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2443 - 0.0741 = 0.1702 >= 0.0100.
+30335,473,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30399,474,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.2546072997481913,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4167 - 0.1621 = 0.2546 >= 0.0100.
+30463,475,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.027081227697649007,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2135 - 0.1864 = 0.0271 >= 0.0100.
+30527,476,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.035956804483910976,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2415 - 0.2056 = 0.0360 >= 0.0100.
+30591,477,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.07614724540766105,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2903 - 0.2142 = 0.0761 >= 0.0100.
+30655,478,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30719,479,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30783,480,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.08164503680699603,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2817 - 0.2001 = 0.0816 >= 0.0100.
+30847,481,lin_lr_0_0001,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.025996490129500893,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2589 - 0.2329 = 0.0260 >= 0.0100.
+30911,482,lin_lr_0_001,lin_lr_0_002,stay,False,fixed_share_margin_too_small,0.0018413991191209567,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0018, threshold=0.0100."
+30975,483,lin_lr_0_001,lin_lr_0_002,stay,False,fixed_share_margin_too_small,0.008336908118986908,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0083, threshold=0.0100."
+31039,484,lin_lr_0_001,tree_regressor,switch,True,fixed_share_weight_advantage,0.10716368592249681,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2859 - 0.1788 = 0.1072 >= 0.0100.
+31103,485,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.12575554389914356,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2329 - 0.1071 = 0.1258 >= 0.0100.
+31167,486,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31231,487,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.046582473138431835,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2336 - 0.1871 = 0.0466 >= 0.0100.
+31295,488,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31359,489,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31423,490,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31487,491,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31551,492,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31615,493,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31679,494,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31743,495,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31807,496,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31871,497,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31935,498,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31999,499,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32063,500,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32127,501,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32191,502,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.06430780402581995,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2433 - 0.1790 = 0.0643 >= 0.0100.
+32255,503,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.6945564920654395,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.7555 - 0.0609 = 0.6946 >= 0.0100.
+32319,504,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32383,505,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32447,506,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32511,507,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.1851930605736744,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2815 - 0.0964 = 0.1852 >= 0.0100.
+32575,508,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32639,509,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32703,510,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32767,511,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.13747249687469934,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3027 - 0.1653 = 0.1375 >= 0.0100.
+32831,512,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32895,513,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32959,514,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33023,515,lin_lr_0_0001,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.0244873481582836,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2382 - 0.2137 = 0.0245 >= 0.0100.
+33087,516,lin_lr_0_001,tree_regressor,switch,True,fixed_share_weight_advantage,0.295493898200201,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4163 - 0.1208 = 0.2955 >= 0.0100.
+33151,517,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33215,518,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33279,519,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33343,520,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33407,521,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33471,522,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33535,523,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33599,524,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33663,525,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33727,526,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33791,527,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33855,528,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33919,529,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33983,530,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.16120232971563814,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2671 - 0.1059 = 0.1612 >= 0.0100.
+34047,531,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34111,532,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34175,533,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34239,534,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.32815851419157027,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4569 - 0.1288 = 0.3282 >= 0.0100.
+34303,535,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34367,536,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34431,537,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.011677557649640374,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2181 - 0.2064 = 0.0117 >= 0.0100.
+34495,538,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.18785364348791872,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3571 - 0.1693 = 0.1879 >= 0.0100.
+34559,539,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34623,540,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34687,541,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34751,542,tree_regressor,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.07938230037082852,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2208 - 0.1414 = 0.0794 >= 0.0100.
+34815,543,lin_lr_0_001,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.030610095411052723,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2456 - 0.2150 = 0.0306 >= 0.0100.
+34879,544,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.15541113982229857,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3253 - 0.1699 = 0.1554 >= 0.0100.
+34943,545,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.07381212154211736,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2494 - 0.1756 = 0.0738 >= 0.0100.
+35007,546,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.0771972743480771,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2666 - 0.1894 = 0.0772 >= 0.0100.
+35071,547,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.19040657364180721,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2674 - 0.0770 = 0.1904 >= 0.0100.
+35135,548,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.04322489241920158,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2493 - 0.2061 = 0.0432 >= 0.0100.
+35199,549,tree_regressor,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.009911879739915697,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0099, threshold=0.0100."
+35263,550,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35327,551,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35391,552,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35455,553,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35519,554,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.0864537985012103,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2770 - 0.1906 = 0.0865 >= 0.0100.
+35583,555,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.10858734733044348,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2931 - 0.1845 = 0.1086 >= 0.0100.
+35647,556,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35711,557,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35775,558,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35839,559,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.025876385386176898,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2181 - 0.1922 = 0.0259 >= 0.0100.
+35903,560,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.023272093781100317,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2207 - 0.1974 = 0.0233 >= 0.0100.
+35967,561,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.09496711674562955,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2405 - 0.1456 = 0.0950 >= 0.0100.
+36031,562,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.2200310666472718,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4009 - 0.1809 = 0.2200 >= 0.0100.
+36095,563,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36159,564,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36223,565,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36287,566,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36351,567,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36415,568,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36479,569,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36543,570,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36607,571,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36671,572,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36735,573,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36799,574,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.0577277008005424,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2172 - 0.1594 = 0.0577 >= 0.0100.
+36863,575,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.02890069365713127,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2237 - 0.1948 = 0.0289 >= 0.0100.
+36927,576,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36991,577,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37055,578,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37119,579,lin_lr_0_002,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.012786626780079136,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2629 - 0.2501 = 0.0128 >= 0.0100.
+37183,580,lin_lr_0_001,lin_lr_0_002,stay,False,fixed_share_margin_too_small,0.00042049352183606836,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0004, threshold=0.0100."
+37247,581,lin_lr_0_001,lin_lr_0_002,stay,False,fixed_share_margin_too_small,0.005728208770154453,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0057, threshold=0.0100."
+37311,582,lin_lr_0_001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.019500929633783082,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2661 - 0.2466 = 0.0195 >= 0.0100.
+37375,583,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37439,584,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37503,585,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.032993085459740085,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2341 - 0.2011 = 0.0330 >= 0.0100.
+37567,586,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37631,587,lin_lr_0_0001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.024414780860697705,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2178 - 0.1934 = 0.0244 >= 0.0100.
+37695,588,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37759,589,lin_lr_0_002,lin_lr_0_002,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37823,590,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.07997198448111201,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2628 - 0.1828 = 0.0800 >= 0.0100.
+37887,591,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37951,592,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38015,593,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38079,594,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38143,595,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38207,596,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38271,597,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38335,598,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38399,599,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38463,600,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38527,601,tree_regressor,lin_lr_0_0001,stay,False,fixed_share_margin_too_small,0.005939744460405932,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0059, threshold=0.0100."
+38591,602,tree_regressor,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.13502451675769006,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2300 - 0.0950 = 0.1350 >= 0.0100.
+38655,603,lin_lr_0_001,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.014831327997633426,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2246 - 0.2098 = 0.0148 >= 0.0100.
+38719,604,lin_lr_0_002,tree_regressor,switch,True,fixed_share_weight_advantage,0.35327207275401656,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4954 - 0.1421 = 0.3533 >= 0.0100.
+38783,605,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38847,606,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38911,607,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38975,608,tree_regressor,lin_lr_0_002,switch,True,fixed_share_weight_advantage,0.09838930965448564,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2297 - 0.1313 = 0.0984 >= 0.0100.
+39039,609,lin_lr_0_002,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.03555017553805678,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2369 - 0.2013 = 0.0356 >= 0.0100.
+39103,610,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39167,611,lin_lr_0_0001,lin_lr_0_001,switch,True,fixed_share_weight_advantage,0.040073336077032756,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2434 - 0.2033 = 0.0401 >= 0.0100.
+39231,612,lin_lr_0_001,lin_lr_0_002,stay,False,fixed_share_margin_too_small,0.007718011243560835,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0077, threshold=0.0100."
+39295,613,lin_lr_0_001,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.09910490237055253,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2742 - 0.1751 = 0.0991 >= 0.0100.
+39359,614,lin_lr_0_0001,lin_lr_0_0001,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39423,615,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.1250319460304124,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2998 - 0.1748 = 0.1250 >= 0.0100.
+39487,616,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39551,617,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39615,618,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39679,619,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39743,620,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39807,621,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39871,622,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39935,623,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39999,624,tree_regressor,tree_regressor,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40063,625,tree_regressor,lin_lr_0_0001,switch,True,fixed_share_weight_advantage,0.07575835792805719,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2408 - 0.1651 = 0.0758 >= 0.0100.
+40127,626,lin_lr_0_0001,tree_regressor,switch,True,fixed_share_weight_advantage,0.2635976322863606,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4163 - 0.1527 = 0.2636 >= 0.0100.

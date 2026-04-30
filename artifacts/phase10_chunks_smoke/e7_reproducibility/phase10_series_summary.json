@@ -1,0 +1,119 @@
+{
+  "series_id": "E7",
+  "title": "Reproducibility",
+  "series_type": "seeded_experiment_suite",
+  "config_source_path": "E:\\dipproj\\configs\\examples\\reproducibility.json",
+  "root_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility",
+  "n": 5,
+  "seeds": [
+    12345,
+    12345,
+    12345,
+    12345,
+    12345
+  ],
+  "reward_mean": 0.9879718679808812,
+  "reward_std": 0.0,
+  "reward_ci95": 0.0,
+  "suite_summary_json_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\suite_summary.json",
+  "suite_summary_md_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\suite_summary.md",
+  "primary_plot_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\phase10_reward_mean.png",
+  "switches_plot_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\phase10_switch_count.png",
+  "runs": [
+    {
+      "seed": 12345,
+      "experiment_id": "reproducibility-seed-12345-20260430052244-47751f19",
+      "status": "completed",
+      "reward_mean": 0.9879718679808812,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052244-47751f19",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052244-47751f19\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052244-47751f19\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052244-47751f19\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052244-47751f19\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052244-47751f19\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052244-47751f19\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052244-47751f19\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 12345,
+      "experiment_id": "reproducibility-seed-12345-20260430052247-991414ba",
+      "status": "completed",
+      "reward_mean": 0.9879718679808812,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052247-991414ba",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052247-991414ba\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052247-991414ba\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052247-991414ba\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052247-991414ba\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052247-991414ba\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052247-991414ba\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052247-991414ba\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 12345,
+      "experiment_id": "reproducibility-seed-12345-20260430052251-396368dd",
+      "status": "completed",
+      "reward_mean": 0.9879718679808812,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052251-396368dd",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052251-396368dd\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052251-396368dd\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052251-396368dd\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052251-396368dd\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052251-396368dd\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052251-396368dd\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052251-396368dd\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 12345,
+      "experiment_id": "reproducibility-seed-12345-20260430052254-512e920e",
+      "status": "completed",
+      "reward_mean": 0.9879718679808812,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052254-512e920e",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052254-512e920e\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052254-512e920e\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052254-512e920e\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052254-512e920e\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052254-512e920e\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052254-512e920e\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052254-512e920e\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 12345,
+      "experiment_id": "reproducibility-seed-12345-20260430052258-bf7092a0",
+      "status": "completed",
+      "reward_mean": 0.9879718679808812,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052258-bf7092a0",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052258-bf7092a0\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052258-bf7092a0\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052258-bf7092a0\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052258-bf7092a0\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052258-bf7092a0\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052258-bf7092a0\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\seed_12345\\experiments\\reproducibility-seed-12345-20260430052258-bf7092a0\\utility_lcb.png"
+      }
+    }
+  ],
+  "reproducibility": {
+    "all_reward_means_identical": true,
+    "all_switch_counts_identical": true,
+    "all_final_strategies_identical": true
+  }
+}

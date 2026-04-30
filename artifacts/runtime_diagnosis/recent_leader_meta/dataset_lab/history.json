@@ -1,0 +1,19 @@
+[
+  {
+    "created_at_utc": "2026-04-29T11:37:30.478815+00:00",
+    "dataset_name": "Bikes",
+    "task_type": "regression",
+    "policy_name": "recent_leader_meta",
+    "source_row_count": 182470,
+    "source_rows_used": 182470,
+    "sample_count": 182470,
+    "adaptive_score": 0.6700567399409114,
+    "best_fixed_score": 0.6696794988629915,
+    "delta_vs_best_fixed": 0.0003772410779199209,
+    "oracle_capture_ratio": 0.11704889005168445,
+    "switch_count": 87,
+    "summary_json_path": "artifacts\\runtime_diagnosis\\recent_leader_meta\\dataset_lab\\bikes-20260429113306\\dataset_lab_summary.json",
+    "report_md_path": "artifacts\\runtime_diagnosis\\recent_leader_meta\\dataset_lab\\bikes-20260429113306\\dataset_lab_report.md",
+    "artifact_root": "artifacts\\runtime_diagnosis\\recent_leader_meta\\dataset_lab\\bikes-20260429113306"
+  }
+]

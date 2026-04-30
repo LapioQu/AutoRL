@@ -1,0 +1,52 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+47,1,tree_regressor,tree_regressor,stay,False,recent_leader_warmup_same,0.0,0.002,Stay after warmup because the current strategy is already the recent leader.
+71,2,tree_regressor,tree_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+95,3,tree_regressor,tree_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+119,4,tree_regressor,tree_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+143,5,tree_regressor,pa_regressor,stay,False,recent_leader_incumbent_floor,0.026409419532981704,0.002,Stay because the candidate fails the incumbent floor check: 0.563160 + 0.001000 < 0.756785.
+167,6,tree_regressor,pa_regressor,stay,False,recent_leader_incumbent_floor,0.1881066053537256,0.002,Stay because the candidate fails the incumbent floor check: 0.595998 + 0.001000 < 0.710433.
+191,7,tree_regressor,pa_regressor,stay,False,recent_leader_incumbent_floor,0.2326123927429184,0.002,Stay because the candidate fails the incumbent floor check: 0.594518 + 0.001000 < 0.680183.
+215,8,tree_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.23723718003274136,0.002,Stay because the candidate fails the incumbent floor check: 0.429116 + 0.001000 < 0.652344.
+239,9,tree_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.1957769166721663,0.002,Stay because the candidate fails the incumbent floor check: 0.429558 + 0.001000 < 0.629917.
+263,10,tree_regressor,pa_regressor,switch,True,recent_leader_advantage,0.23858934113873664,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.702203 - 0.463614 = 0.238589.
+287,11,pa_regressor,pa_regressor,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+311,12,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.0442284814869639,0.002,Stay because the candidate fails the incumbent floor check: 0.505122 + 0.001000 < 0.628690.
+335,13,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.17557897293102454,0.002,Stay because the candidate fails the incumbent floor check: 0.532232 + 0.001000 < 0.634251.
+359,14,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.17683213352882254,0.002,Stay because the candidate fails the incumbent floor check: 0.554876 + 0.001000 < 0.641427.
+383,15,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.16165593062729755,0.002,Stay because the candidate fails the incumbent floor check: 0.578993 + 0.001000 < 0.649082.
+407,16,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.16285502887686598,0.002,Stay because the candidate fails the incumbent floor check: 0.601602 + 0.001000 < 0.656879.
+431,17,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.17311306618892708,0.002,Stay because the candidate fails the incumbent floor check: 0.621384 + 0.001000 < 0.664658.
+455,18,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.1632668150489338,0.002,Stay because the candidate fails the incumbent floor check: 0.638336 + 0.001000 < 0.671579.
+479,19,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.14873905987377622,0.002,Stay because the candidate fails the incumbent floor check: 0.652980 + 0.001000 < 0.677654.
+503,20,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.13501340725244604,0.002,Stay because the candidate fails the incumbent floor check: 0.664933 + 0.001000 < 0.682738.
+527,21,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.1264115648851455,0.002,Stay because the candidate fails the incumbent floor check: 0.674814 + 0.001000 < 0.686286.
+551,22,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.11556912667696184,0.002,Stay because the candidate fails the incumbent floor check: 0.684017 + 0.001000 < 0.690398.
+575,23,pa_regressor,lin_lr_0_001,switch,True,recent_leader_advantage,0.12790637443060926,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.909706 - 0.781800 = 0.127906.
+599,24,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+623,25,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+647,26,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+671,27,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+695,28,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+719,29,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+743,30,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+767,31,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+791,32,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+815,33,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+839,34,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+863,35,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+887,36,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+911,37,lin_lr_0_001,tree_regressor,stay,False,recent_leader_incumbent_floor,0.09886988454777035,0.002,Stay because the candidate fails the incumbent floor check: 0.708465 + 0.001000 < 0.761930.
+935,38,lin_lr_0_001,pa_regressor,stay,False,recent_leader_incumbent_floor,0.12087409076807665,0.002,Stay because the candidate fails the incumbent floor check: 0.724349 + 0.001000 < 0.757745.
+959,39,lin_lr_0_001,pa_regressor,stay,False,recent_leader_incumbent_floor,0.11711067867713187,0.002,Stay because the candidate fails the incumbent floor check: 0.724840 + 0.001000 < 0.758294.
+983,40,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1007,41,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1031,42,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1055,43,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1079,44,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1103,45,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1127,46,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1151,47,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1175,48,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1199,49,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1223,50,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1247,51,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.

@@ -1,0 +1,131 @@
+{
+  "created_at_utc": "2026-04-29T12:56:51.675918+00:00",
+  "dataset_name": "WaterFlow",
+  "task_type": "regression",
+  "target_column": "water_flow_lps",
+  "source_row_count": 1268,
+  "source_rows_used": 1268,
+  "sample_count": 1268,
+  "feature_count": 1,
+  "score_name": "normalized_reward",
+  "policy_name": "fixed_share_portfolio",
+  "adaptive_score": 0.8362791296993688,
+  "best_fixed_strategy": "lin_lr_0_001",
+  "best_fixed_score": 0.8039447799769271,
+  "delta_vs_best_fixed": 0.032334349722441647,
+  "oracle_score": 0.8740102107432259,
+  "oracle_gain": 0.07006543076629879,
+  "oracle_capture_ratio": 0.46148791734817035,
+  "prediction_mode": "next_step",
+  "final_strategy": "lin_lr_0_0005",
+  "switch_count": 10,
+  "next_prediction": "103.47866152881701",
+  "prediction_confidence": 0.9303438608801875,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "pa_regressor": "95.92428599491417",
+    "lin_lr_0_001": "103.29112895936917",
+    "lin_lr_0_0005": "103.47866152881701"
+  },
+  "forecast_row_preview": {
+    "Time": "2022-05-16 22:00:00+02:00"
+  },
+  "preview_rows": [
+    {
+      "row_index": 1256,
+      "actual_target": 104.39,
+      "adaptive_prediction": 102.91649792035908,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 08:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1257,
+      "actual_target": 104.71,
+      "adaptive_prediction": 102.96288940674677,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 09:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1258,
+      "actual_target": 104.77,
+      "adaptive_prediction": 103.01666409267419,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 10:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1259,
+      "actual_target": 104.69,
+      "adaptive_prediction": 103.07042831452809,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 11:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1260,
+      "actual_target": 104.69,
+      "adaptive_prediction": 103.12041442472716,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 12:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1261,
+      "actual_target": 104.64,
+      "adaptive_prediction": 103.16905998025734,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 13:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1262,
+      "actual_target": 104.59,
+      "adaptive_prediction": 103.21511336544513,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 14:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1263,
+      "actual_target": 104.62,
+      "adaptive_prediction": 103.25872658064421,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 15:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1264,
+      "actual_target": 104.65,
+      "adaptive_prediction": 103.30226491732094,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 16:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1265,
+      "actual_target": 104.3,
+      "adaptive_prediction": 103.41771448523589,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 20:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1266,
+      "actual_target": 104.23,
+      "adaptive_prediction": 103.44925702972262,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 21:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1267,
+      "actual_target": 104.1,
+      "adaptive_prediction": 103.4783007063431,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 22:00:00+02:00\"}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `fixed_share_portfolio` finished on strategy `lin_lr_0_0005` after 10 switches.",
+    "It achieved `0.8363` against the best fixed baseline `lin_lr_0_001` at `0.8039`.",
+    "Oracle upper bound on this stream is `0.8740`. Available oracle gain over best fixed is `0.0701`, and the current adaptive controller captures `46.1%` of it.",
+    "The uploaded stream looks non-stationary enough for adaptation to help: the gain over best fixed is `0.0323`.",
+    "Multiple switches suggest regime changes or at least changing local winners across the stream.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `103.4787` based on the latest lagged context `[104.3, 104.23, 104.1]`."
+  ],
+  "caveats": [
+    "\u0414\u043b\u044f \u0446\u044c\u043e\u0433\u043e \u0433\u043e\u0442\u043e\u0432\u043e\u0433\u043e \u0434\u0430\u0442\u0430\u0441\u0435\u0442\u0443 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043e \u043d\u0430\u0442\u0438\u0432\u043d\u0438\u0439 \u043f\u043e\u0442\u043e\u043a\u043e\u0432\u0438\u0439 \u043f\u0440\u043e\u0444\u0456\u043b\u044c \u0431\u0435\u0437 CSV-\u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u043e\u0437\u043d\u0430\u043a.",
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\ui_manual_check\\dataset_lab\\waterflow-20260429125651",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\ui_manual_check\\dataset_lab\\waterflow-20260429125651\\auto_meta_selection\\fixed_share_portfolio\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\ui_manual_check\\dataset_lab\\waterflow-20260429125651\\auto_meta_selection\\fixed_share_portfolio\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\ui_manual_check\\dataset_lab\\waterflow-20260429125651\\auto_meta_selection\\fixed_share_portfolio\\summary.md",
+  "score_plot_path": "artifacts\\ui_manual_check\\dataset_lab\\waterflow-20260429125651\\dataset_lab_scores.png",
+  "portfolio_plot_path": "artifacts\\ui_manual_check\\dataset_lab\\waterflow-20260429125651\\dataset_lab_portfolio.png",
+  "switch_plot_path": "artifacts\\ui_manual_check\\dataset_lab\\waterflow-20260429125651\\dataset_lab_switches.png",
+  "dataset_lab_report_md_path": "artifacts\\ui_manual_check\\dataset_lab\\waterflow-20260429125651\\dataset_lab_report.md"
+}

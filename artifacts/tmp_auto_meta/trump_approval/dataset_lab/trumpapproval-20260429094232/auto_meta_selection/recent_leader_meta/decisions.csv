@@ -1,0 +1,6 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+31,0,sgd_lr_0_01,sgd_lr_0_05,switch,True,recent_leader_warmup,,0.01,Switch after warmup because the recent block leader outperformed the initial incumbent: sgd_lr_0_05.
+63,1,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 4 block(s) remaining.
+95,2,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 3 block(s) remaining.
+127,3,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+159,4,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.

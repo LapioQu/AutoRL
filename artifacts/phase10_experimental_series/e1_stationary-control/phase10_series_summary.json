@@ -1,0 +1,114 @@
+{
+  "series_id": "E1",
+  "title": "Stationary control",
+  "series_type": "seeded_experiment_suite",
+  "config_source_path": "E:\\dipproj\\configs\\examples\\stationary.yaml",
+  "root_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control",
+  "n": 5,
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "reward_mean": 0.9890735911646452,
+  "reward_std": 0.00018104965442950608,
+  "reward_ci95": 0.0001586970191660308,
+  "suite_summary_json_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\suite_summary.json",
+  "suite_summary_md_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\suite_summary.md",
+  "primary_plot_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\phase10_reward_mean.png",
+  "switches_plot_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\phase10_switch_count.png",
+  "runs": [
+    {
+      "seed": 41,
+      "experiment_id": "stationary-seed-41-20260430080422-84a420bc",
+      "status": "completed",
+      "reward_mean": 0.9893079259542987,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430080422-84a420bc",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430080422-84a420bc\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430080422-84a420bc\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430080422-84a420bc\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430080422-84a420bc\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430080422-84a420bc\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430080422-84a420bc\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430080422-84a420bc\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 42,
+      "experiment_id": "stationary-seed-42-20260430080426-782d5e06",
+      "status": "completed",
+      "reward_mean": 0.9892097038717246,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_42\\experiments\\stationary-seed-42-20260430080426-782d5e06",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_42\\experiments\\stationary-seed-42-20260430080426-782d5e06\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_42\\experiments\\stationary-seed-42-20260430080426-782d5e06\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_42\\experiments\\stationary-seed-42-20260430080426-782d5e06\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_42\\experiments\\stationary-seed-42-20260430080426-782d5e06\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_42\\experiments\\stationary-seed-42-20260430080426-782d5e06\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_42\\experiments\\stationary-seed-42-20260430080426-782d5e06\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_42\\experiments\\stationary-seed-42-20260430080426-782d5e06\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 43,
+      "experiment_id": "stationary-seed-43-20260430080429-47bd9616",
+      "status": "completed",
+      "reward_mean": 0.9888654311036241,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_43\\experiments\\stationary-seed-43-20260430080429-47bd9616",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_43\\experiments\\stationary-seed-43-20260430080429-47bd9616\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_43\\experiments\\stationary-seed-43-20260430080429-47bd9616\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_43\\experiments\\stationary-seed-43-20260430080429-47bd9616\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_43\\experiments\\stationary-seed-43-20260430080429-47bd9616\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_43\\experiments\\stationary-seed-43-20260430080429-47bd9616\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_43\\experiments\\stationary-seed-43-20260430080429-47bd9616\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_43\\experiments\\stationary-seed-43-20260430080429-47bd9616\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 44,
+      "experiment_id": "stationary-seed-44-20260430080433-ef769502",
+      "status": "completed",
+      "reward_mean": 0.9890167088349027,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_44\\experiments\\stationary-seed-44-20260430080433-ef769502",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_44\\experiments\\stationary-seed-44-20260430080433-ef769502\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_44\\experiments\\stationary-seed-44-20260430080433-ef769502\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_44\\experiments\\stationary-seed-44-20260430080433-ef769502\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_44\\experiments\\stationary-seed-44-20260430080433-ef769502\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_44\\experiments\\stationary-seed-44-20260430080433-ef769502\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_44\\experiments\\stationary-seed-44-20260430080433-ef769502\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_44\\experiments\\stationary-seed-44-20260430080433-ef769502\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 45,
+      "experiment_id": "stationary-seed-45-20260430080437-b4065c6a",
+      "status": "completed",
+      "reward_mean": 0.9889681860586754,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_45\\experiments\\stationary-seed-45-20260430080437-b4065c6a",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_45\\experiments\\stationary-seed-45-20260430080437-b4065c6a\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_45\\experiments\\stationary-seed-45-20260430080437-b4065c6a\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_45\\experiments\\stationary-seed-45-20260430080437-b4065c6a\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_45\\experiments\\stationary-seed-45-20260430080437-b4065c6a\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_45\\experiments\\stationary-seed-45-20260430080437-b4065c6a\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_45\\experiments\\stationary-seed-45-20260430080437-b4065c6a\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_45\\experiments\\stationary-seed-45-20260430080437-b4065c6a\\utility_lcb.png"
+      }
+    }
+  ]
+}

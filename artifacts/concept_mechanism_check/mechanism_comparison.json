@@ -1,0 +1,130 @@
+[
+  {
+    "dataset": "waterflow",
+    "mode": "hard",
+    "adaptive_score": 0.806041481534151,
+    "best_fixed_score": 0.8039447799769271,
+    "delta": 0.0020967015572238568,
+    "switches": 4
+  },
+  {
+    "dataset": "waterflow",
+    "mode": "recent",
+    "adaptive_score": 0.799125472880342,
+    "best_fixed_score": 0.8039447799769271,
+    "delta": -0.004819307096585179,
+    "switches": 1
+  },
+  {
+    "dataset": "waterflow",
+    "mode": "hedge",
+    "adaptive_score": 0.8037588007243334,
+    "best_fixed_score": 0.8039447799769271,
+    "delta": -0.000185979252593782,
+    "switches": 1
+  },
+  {
+    "dataset": "waterflow",
+    "mode": "fixed_share",
+    "adaptive_score": 0.8362791296993688,
+    "best_fixed_score": 0.8039447799769271,
+    "delta": 0.032334349722441647,
+    "switches": 10
+  },
+  {
+    "dataset": "insects_recurring",
+    "mode": "hard",
+    "adaptive_score": 0.78735,
+    "best_fixed_score": 0.7822833333333333,
+    "delta": 0.005066666666666664,
+    "switches": 5
+  },
+  {
+    "dataset": "insects_recurring",
+    "mode": "recent",
+    "adaptive_score": 0.7822833333333333,
+    "best_fixed_score": 0.7822833333333333,
+    "delta": 0.0,
+    "switches": 0
+  },
+  {
+    "dataset": "insects_recurring",
+    "mode": "hedge",
+    "adaptive_score": 0.7822833333333333,
+    "best_fixed_score": 0.7822833333333333,
+    "delta": 0.0,
+    "switches": 0
+  },
+  {
+    "dataset": "insects_recurring",
+    "mode": "fixed_share",
+    "adaptive_score": 0.7842333333333333,
+    "best_fixed_score": 0.7822833333333333,
+    "delta": 0.0019500000000000073,
+    "switches": 68
+  },
+  {
+    "dataset": "bikes",
+    "mode": "hard",
+    "adaptive_score": 0.6770737061241092,
+    "best_fixed_score": 0.6762509033506491,
+    "delta": 0.0008228027734601406,
+    "switches": 1
+  },
+  {
+    "dataset": "bikes",
+    "mode": "recent",
+    "adaptive_score": 0.6779792520341166,
+    "best_fixed_score": 0.6762509033506491,
+    "delta": 0.0017283486834674955,
+    "switches": 87
+  },
+  {
+    "dataset": "bikes",
+    "mode": "hedge",
+    "adaptive_score": 0.5758996906585566,
+    "best_fixed_score": 0.6762509033506491,
+    "delta": -0.10035121269209246,
+    "switches": 6
+  },
+  {
+    "dataset": "bikes",
+    "mode": "fixed_share",
+    "adaptive_score": 0.6782003292074096,
+    "best_fixed_score": 0.6762509033506491,
+    "delta": 0.0019494258567605005,
+    "switches": 94
+  },
+  {
+    "dataset": "elec2",
+    "mode": "hard",
+    "adaptive_score": 0.916159074858757,
+    "best_fixed_score": 0.9160045903954802,
+    "delta": 0.00015448446327681609,
+    "switches": 5
+  },
+  {
+    "dataset": "elec2",
+    "mode": "recent",
+    "adaptive_score": 0.9166445974576272,
+    "best_fixed_score": 0.9160045903954802,
+    "delta": 0.0006400070621469522,
+    "switches": 7
+  },
+  {
+    "dataset": "elec2",
+    "mode": "hedge",
+    "adaptive_score": 0.9150776836158192,
+    "best_fixed_score": 0.9160045903954802,
+    "delta": -0.0009269067796610075,
+    "switches": 2
+  },
+  {
+    "dataset": "elec2",
+    "mode": "fixed_share",
+    "adaptive_score": 0.9140845692090396,
+    "best_fixed_score": 0.9160045903954802,
+    "delta": -0.0019200211864406347,
+    "switches": 166
+  }
+]

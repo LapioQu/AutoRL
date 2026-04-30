@@ -1,0 +1,312 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+255,1,sgd_lr_0_0005,sgd_lr_0_0001,switch,True,recent_leader_warmup,,0.0005,Switch after warmup because the recent block leader outperformed the initial incumbent: sgd_lr_0_0001.
+383,2,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+511,3,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+639,4,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.01015348085771206,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.754145 - 0.743991 = 0.010153.
+767,5,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0008191603774925227,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.748970 - 0.748151 = 0.000819.
+895,6,sgd_lr_0_0005,sgd_lr_0_0005,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+1023,7,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0028593898284728914,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.686163 - 0.683304 = 0.002859.
+1151,8,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+1279,9,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.0020941880055271866,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.732413 - 0.730318 = 0.002094.
+1407,10,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0044671486550219575,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.746446 - 0.741978 = 0.004467.
+1535,11,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+1663,12,sgd_lr_0_001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.00027453085161077695,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000275 < 0.000500.
+1791,13,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+1919,14,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.009622387108766839,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.665669 - 0.656046 = 0.009622.
+2047,15,sgd_lr_0_0005,sgd_lr_0_001,stay,False,recent_leader_margin_too_small,0.00017334638135180214,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000173 < 0.000500.
+2175,16,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.004182730888611541,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.836729 - 0.832546 = 0.004183.
+2303,17,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0021215530746699907,0.0005,Stay because the candidate fails the incumbent floor check: 0.741295 + 0.002000 < 0.745614.
+2431,18,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+2559,19,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.009166126960686527,0.0005,Stay because the candidate fails the incumbent floor check: 0.737958 + 0.002000 < 0.742326.
+2687,20,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.013192057182649375,0.0005,Stay because the candidate fails the incumbent floor check: 0.725276 + 0.002000 < 0.728809.
+2815,21,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+2943,22,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.023431245807306544,0.0005,Stay because the candidate fails the incumbent floor check: 0.710552 + 0.002000 < 0.712876.
+3071,23,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.011417978288393749,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.528825 - 0.517407 = 0.011418.
+3199,24,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+3327,25,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.002940313119779381,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.574690 - 0.571750 = 0.002940.
+3455,26,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+3583,27,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+3711,28,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+3839,29,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+3967,30,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+4095,31,sgd_lr_0_001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.0003100226666959971,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000310 < 0.000500.
+4223,32,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+4351,33,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+4479,34,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+4607,35,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+4735,36,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0009927614312489341,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.790115 - 0.789122 = 0.000993.
+4863,37,sgd_lr_0_0005,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.007464360989656527,0.0005,Stay because the candidate fails the incumbent floor check: 0.721005 + 0.002000 < 0.723669.
+4991,38,sgd_lr_0_0005,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.002284139464935886,0.0005,Stay because the candidate fails the incumbent floor check: 0.722133 + 0.002000 < 0.724670.
+5119,39,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0009265118652017623,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.728772 - 0.727846 = 0.000927.
+5247,40,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+5375,41,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+5503,42,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.011070914242568786,0.0005,Stay because the candidate fails the incumbent floor check: 0.724018 + 0.002000 < 0.726731.
+5631,43,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.002143978485154907,0.0005,Stay because the candidate fails the incumbent floor check: 0.720559 + 0.002000 < 0.723162.
+5759,44,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0037312151068441546,0.0005,Stay because the candidate fails the incumbent floor check: 0.717726 + 0.002000 < 0.720188.
+5887,45,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+6015,46,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+6143,47,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+6271,48,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+6399,49,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0007951440840292534,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.626907 - 0.626112 = 0.000795.
+6527,50,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.010148879705250136,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.767045 - 0.756896 = 0.010149.
+6655,51,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.009107859593223577,0.0005,Stay because the candidate fails the incumbent floor check: 0.701690 + 0.002000 < 0.704748.
+6783,52,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.000739083009890007,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.784443 - 0.783704 = 0.000739.
+6911,53,sgd_lr_0_0005,sgd_lr_0_0005,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+7039,54,sgd_lr_0_0005,sgd_lr_0_0005,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+7167,55,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0019054435775593959,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.789480 - 0.787575 = 0.001905.
+7295,56,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0019649746922231204,0.0005,Stay because the candidate fails the incumbent floor check: 0.707942 + 0.002000 < 0.710698.
+7423,57,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0007478103914481116,0.0005,Stay because the candidate fails the incumbent floor check: 0.708325 + 0.002000 < 0.711020.
+7551,58,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+7679,59,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0012005292650691946,0.0005,Stay because the candidate fails the incumbent floor check: 0.710666 + 0.002000 < 0.713309.
+7807,60,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+7935,61,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.001984832993126684,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.794185 - 0.792200 = 0.001985.
+8063,62,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0010416510150307312,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.779512 - 0.778471 = 0.001042.
+8191,63,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.003992600101120791,0.0005,Stay because the candidate fails the incumbent floor check: 0.718339 + 0.002000 < 0.720882.
+8319,64,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0012366315652118098,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.943100 - 0.941863 = 0.001237.
+8447,65,sgd_lr_0_0005,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0008176124665386642,0.0005,Stay because the candidate fails the incumbent floor check: 0.723962 + 0.002000 < 0.726006.
+8575,66,sgd_lr_0_0005,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.012192639868879973,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.615178 - 0.602985 = 0.012193.
+8703,67,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+8831,68,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.006827622857574989,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.568357 - 0.561529 = 0.006828.
+8959,69,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.008881890038157314,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.671004 - 0.662122 = 0.008882.
+9087,70,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.015380740244429036,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.703991 - 0.688610 = 0.015381.
+9215,71,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+9343,72,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.001453226490280679,0.0005,Stay because the candidate fails the incumbent floor check: 0.715590 + 0.002000 < 0.718391.
+9471,73,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+9599,74,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0065645703966180635,0.0005,Stay because the candidate fails the incumbent floor check: 0.712650 + 0.002000 < 0.715364.
+9727,75,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+9855,76,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+9983,77,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0045432805292049405,0.0005,Stay because the candidate fails the incumbent floor check: 0.711774 + 0.002000 < 0.714823.
+10111,78,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+10239,79,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.007486623670561188,0.0005,Stay because the candidate fails the incumbent floor check: 0.711284 + 0.002000 < 0.714347.
+10367,80,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0013272872011053094,0.0005,Stay because the candidate fails the incumbent floor check: 0.709685 + 0.002000 < 0.712694.
+10495,81,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.004513101322688895,0.0005,Stay because the candidate fails the incumbent floor check: 0.707988 + 0.002000 < 0.710906.
+10623,82,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.00335906645984696,0.0005,Stay because the candidate fails the incumbent floor check: 0.707299 + 0.002000 < 0.710141.
+10751,83,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0012128171852650027,0.0005,Stay because the candidate fails the incumbent floor check: 0.707614 + 0.002000 < 0.710407.
+10879,84,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0017586957566013695,0.0005,Stay because the candidate fails the incumbent floor check: 0.707856 + 0.002000 < 0.710596.
+11007,85,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+11135,86,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0015111198426704942,0.0005,Stay because the candidate fails the incumbent floor check: 0.705819 + 0.002000 < 0.708519.
+11263,87,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0052852402560581435,0.0005,Stay because the candidate fails the incumbent floor check: 0.705278 + 0.002000 < 0.707887.
+11391,88,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0012888243616050454,0.0005,Stay because the candidate fails the incumbent floor check: 0.704920 + 0.002000 < 0.707485.
+11519,89,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.005298912307355574,0.0005,Stay because the candidate fails the incumbent floor check: 0.704287 + 0.002000 < 0.706765.
+11647,90,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+11775,91,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+11903,92,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+12031,93,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0028962597838332327,0.0005,Stay because the candidate fails the incumbent floor check: 0.706356 + 0.002000 < 0.709127.
+12159,94,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.011173010860836108,0.0005,Stay because the candidate fails the incumbent floor check: 0.707773 + 0.002000 < 0.710398.
+12287,95,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.014266618336414072,0.0005,Stay because the candidate fails the incumbent floor check: 0.708964 + 0.002000 < 0.711413.
+12415,96,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0044338217634462,0.0005,Stay because the candidate fails the incumbent floor check: 0.710099 + 0.002000 < 0.712476.
+12543,97,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.008544894947508319,0.0005,Stay because the candidate fails the incumbent floor check: 0.710262 + 0.002000 < 0.712529.
+12671,98,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.00532363096877253,0.0005,Stay because the candidate fails the incumbent floor check: 0.709471 + 0.002000 < 0.711661.
+12799,99,sgd_lr_0_001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.0002742890613466331,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000274 < 0.000500.
+12927,100,sgd_lr_0_001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.00032360985532375874,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000324 < 0.000500.
+13055,101,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+13183,102,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0023343655262790808,0.0005,Stay because the candidate fails the incumbent floor check: 0.703017 + 0.002000 < 0.705189.
+13311,103,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+13439,104,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0010865639000966487,0.0005,Stay because the candidate fails the incumbent floor check: 0.704784 + 0.002000 < 0.707008.
+13567,105,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0024700483849383614,0.0005,Stay because the candidate fails the incumbent floor check: 0.704750 + 0.002000 < 0.706929.
+13695,106,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.006243492816314533,0.0005,Stay because the candidate fails the incumbent floor check: 0.704044 + 0.002000 < 0.706145.
+13823,107,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0006317261082775527,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.645791 - 0.645159 = 0.000632.
+13951,108,sgd_lr_0_0005,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.00496025969340097,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.781095 - 0.776135 = 0.004960.
+14079,109,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+14207,110,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.004869699150878315,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.842090 - 0.837220 = 0.004870.
+14335,111,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.008832824457295385,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.825196 - 0.816363 = 0.008833.
+14463,112,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.004247047970526108,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.777479 - 0.773232 = 0.004247.
+14591,113,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+14719,114,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.003076288365501778,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.548713 - 0.545637 = 0.003076.
+14847,115,sgd_lr_0_0001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.00027489530830993036,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000275 < 0.000500.
+14975,116,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+15103,117,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0032728001958960418,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.556621 - 0.553348 = 0.003273.
+15231,118,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0023912133287700144,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.593941 - 0.591549 = 0.002391.
+15359,119,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0006568609168426942,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.670583 - 0.669926 = 0.000657.
+15487,120,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0030278966175094624,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.729076 - 0.726048 = 0.003028.
+15615,121,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.00536216554944835,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.573551 - 0.568189 = 0.005362.
+15743,122,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.005987862817635858,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.630051 - 0.624063 = 0.005988.
+15871,123,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.008820620336480123,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.729665 - 0.720845 = 0.008821.
+15999,124,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+16127,125,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.0015645535046532322,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.887960 - 0.886396 = 0.001565.
+16255,126,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+16383,127,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+16511,128,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.007258697720570972,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.766298 - 0.759039 = 0.007259.
+16639,129,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+16767,130,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+16895,131,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+17023,132,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+17151,133,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+17279,134,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+17407,135,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+17535,136,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+17663,137,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.01491580078550947,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.603515 - 0.588599 = 0.014916.
+17791,138,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+17919,139,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+18047,140,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.006475726654880887,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.504531 - 0.498055 = 0.006476.
+18175,141,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+18303,142,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0005077905363022328,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.555683 - 0.555175 = 0.000508.
+18431,143,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.019057389089492394,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.729891 - 0.710833 = 0.019057.
+18559,144,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+18687,145,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+18815,146,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+18943,147,sgd_lr_0_001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.00024742827947632495,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000247 < 0.000500.
+19071,148,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+19199,149,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+19327,150,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+19455,151,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.010596130526597136,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.634923 - 0.624327 = 0.010596.
+19583,152,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+19711,153,sgd_lr_0_0001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0025656150460662275,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.571906 - 0.569340 = 0.002566.
+19839,154,sgd_lr_0_0005,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.0005938170060015846,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.507321 - 0.506727 = 0.000594.
+19967,155,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+20095,156,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.003437316745324881,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.533220 - 0.529783 = 0.003437.
+20223,157,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+20351,158,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.0068110811794600545,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.562710 - 0.555899 = 0.006811.
+20479,159,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+20607,160,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.015713568143541967,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.733517 - 0.717803 = 0.015714.
+20735,161,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+20863,162,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+20991,163,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.014010566633003929,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.629840 - 0.615830 = 0.014011.
+21119,164,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+21247,165,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+21375,166,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+21503,167,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+21631,168,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+21759,169,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+21887,170,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.005116235114759449,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.701409 - 0.696293 = 0.005116.
+22015,171,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+22143,172,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+22271,173,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.011462531636336704,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.722136 - 0.710673 = 0.011463.
+22399,174,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+22527,175,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.002179035940338747,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.710210 - 0.708031 = 0.002179.
+22655,176,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+22783,177,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+22911,178,sgd_lr_0_001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.00019469686251749607,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000195 < 0.000500.
+23039,179,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+23167,180,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.003051636580754802,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.529370 - 0.526318 = 0.003052.
+23295,181,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0007966184718852798,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.483110 - 0.482313 = 0.000797.
+23423,182,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+23551,183,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+23679,184,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+23807,185,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+23935,186,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.009896972808993598,0.0005,Stay because the candidate fails the incumbent floor check: 0.690317 + 0.002000 < 0.692431.
+24063,187,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+24191,188,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+24319,189,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.004072805666680779,0.0005,Stay because the candidate fails the incumbent floor check: 0.691428 + 0.002000 < 0.693507.
+24447,190,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0016300505328968873,0.0005,Stay because the candidate fails the incumbent floor check: 0.691511 + 0.002000 < 0.693571.
+24575,191,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0033318051425594852,0.0005,Stay because the candidate fails the incumbent floor check: 0.691463 + 0.002000 < 0.693495.
+24703,192,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+24831,193,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.001154759758091095,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.867390 - 0.866235 = 0.001155.
+24959,194,sgd_lr_0_0005,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.006579210173536687,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.734601 - 0.728022 = 0.006579.
+25087,195,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+25215,196,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+25343,197,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.010959497252919947,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.498467 - 0.487507 = 0.010959.
+25471,198,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.010607796113556778,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.617478 - 0.606870 = 0.010608.
+25599,199,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+25727,200,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.01289488860205612,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.628061 - 0.615166 = 0.012895.
+25855,201,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+25983,202,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+26111,203,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+26239,204,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+26367,205,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+26495,206,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.005206867417322347,0.0005,Stay because the candidate fails the incumbent floor check: 0.690501 + 0.002000 < 0.692556.
+26623,207,sgd_lr_0_001,sgd_lr_0_0001,stay,False,recent_leader_incumbent_floor,0.0058248231907906955,0.0005,Stay because the candidate fails the incumbent floor check: 0.689822 + 0.002000 < 0.691840.
+26751,208,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.004907697883886786,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.518298 - 0.513390 = 0.004908.
+26879,209,sgd_lr_0_0001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.002128574557902607,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.529407 - 0.527279 = 0.002129.
+27007,210,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.003355183918010929,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.507154 - 0.503799 = 0.003355.
+27135,211,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+27263,212,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+27391,213,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.0256328268111351,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.734448 - 0.708815 = 0.025633.
+27519,214,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+27647,215,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+27775,216,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.01548675055240989,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.657870 - 0.642383 = 0.015487.
+27903,217,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.0033348606623251342,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.646507 - 0.643172 = 0.003335.
+28031,218,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+28159,219,sgd_lr_0_0001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.00031748723137525747,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000317 < 0.000500.
+28287,220,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.012495985289779132,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.561936 - 0.549440 = 0.012496.
+28415,221,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.011876250763679486,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.673853 - 0.661976 = 0.011876.
+28543,222,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+28671,223,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.002395625986439942,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.606680 - 0.604284 = 0.002396.
+28799,224,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+28927,225,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0009414700324551495,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.622434 - 0.621493 = 0.000941.
+29055,226,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.009229440238921138,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.768219 - 0.758989 = 0.009229.
+29183,227,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.002259470608308445,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.792806 - 0.790547 = 0.002259.
+29311,228,sgd_lr_0_0005,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.005972834128250559,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.748979 - 0.743006 = 0.005973.
+29439,229,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+29567,230,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+29695,231,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+29823,232,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.002042618645264005,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.579041 - 0.576998 = 0.002043.
+29951,233,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+30079,234,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.00869397346703804,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.579085 - 0.570391 = 0.008694.
+30207,235,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+30335,236,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+30463,237,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.008298576849793293,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.582364 - 0.574065 = 0.008299.
+30591,238,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+30719,239,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+30847,240,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+30975,241,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+31103,242,sgd_lr_0_001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,1.7928851408832713e-05,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000018 < 0.000500.
+31231,243,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.00603285787699992,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.672793 - 0.666760 = 0.006033.
+31359,244,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+31487,245,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.000654270658494327,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.662343 - 0.661689 = 0.000654.
+31615,246,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0011377650919146554,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.682007 - 0.680869 = 0.001138.
+31743,247,sgd_lr_0_0005,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.003170481206169695,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.670129 - 0.666959 = 0.003170.
+31871,248,sgd_lr_0_0001,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,9.530390387740839e-05,0.0005,Stay because the recent leader advantage is below the switching margin: 0.000095 < 0.000500.
+31999,249,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+32127,250,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0010876647141629947,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.574061 - 0.572973 = 0.001088.
+32255,251,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.012781355139359185,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.567556 - 0.554775 = 0.012781.
+32383,252,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.008908928172633557,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.558473 - 0.549564 = 0.008909.
+32511,253,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+32639,254,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+32767,255,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.0023364294548741116,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.688535 - 0.686198 = 0.002336.
+32895,256,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+33023,257,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0035822379074156308,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.708171 - 0.704589 = 0.003582.
+33151,258,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.013698449197626639,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.600120 - 0.586422 = 0.013698.
+33279,259,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+33407,260,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.0024367267069604903,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.534893 - 0.532457 = 0.002437.
+33535,261,sgd_lr_0_001,sgd_lr_0_0001,switch,True,recent_leader_advantage,0.0031758473957761435,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.568151 - 0.564975 = 0.003176.
+33663,262,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+33791,263,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+33919,264,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+34047,265,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+34175,266,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+34303,267,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+34431,268,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+34559,269,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+34687,270,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+34815,271,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+34943,272,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+35071,273,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+35199,274,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+35327,275,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+35455,276,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+35583,277,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+35711,278,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+35839,279,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+35967,280,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+36095,281,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+36223,282,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+36351,283,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+36479,284,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+36607,285,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+36735,286,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+36863,287,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+36991,288,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+37119,289,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+37247,290,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+37375,291,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+37503,292,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+37631,293,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+37759,294,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+37887,295,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+38015,296,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+38143,297,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+38271,298,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+38399,299,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+38527,300,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+38655,301,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+38783,302,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+38911,303,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+39039,304,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+39167,305,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+39295,306,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+39423,307,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+39551,308,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+39679,309,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+39807,310,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+39935,311,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.

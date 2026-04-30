@@ -1,0 +1,18 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+23,0,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+47,1,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+71,2,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+95,3,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+119,4,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+143,5,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+167,6,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+191,7,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+215,8,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+239,9,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+263,10,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+287,11,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+311,12,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+335,13,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+359,14,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+383,15,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+407,16,pa_regressor,pa_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.

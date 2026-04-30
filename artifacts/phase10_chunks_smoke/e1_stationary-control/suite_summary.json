@@ -1,0 +1,24 @@
+{
+  "entry_label": "stationary",
+  "config_path": "E:\\dipproj\\configs\\examples\\stationary.yaml",
+  "n": 1,
+  "seeds": [
+    41
+  ],
+  "reward_mean": 0.9893079259542987,
+  "reward_std": 0.0,
+  "reward_ci95": 0.0,
+  "runs": [
+    {
+      "entry_label": "stationary",
+      "seed": 41,
+      "experiment_id": "stationary-seed-41-20260430052238-b89b7b3e",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430052238-b89b7b3e",
+      "reward_mean": 0.9893079259542987,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    }
+  ],
+  "suite_name": "stationary"
+}

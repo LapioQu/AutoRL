@@ -1,0 +1,22 @@
+[
+  {
+    "created_at_utc": "2026-04-29T12:21:34.540539+00:00",
+    "dataset_name": "Elec2",
+    "task_type": "classification",
+    "policy_name": "recent_leader_meta",
+    "source_row_count": 45312,
+    "source_rows_used": 45312,
+    "sample_count": 45312,
+    "adaptive_score": 0.9226694915254238,
+    "best_fixed_score": 0.9227136299435028,
+    "delta_vs_best_fixed": -4.413841807904273e-05,
+    "oracle_capture_ratio": 0.0,
+    "switch_count": 2,
+    "summary_json_path": "artifacts\\debug_elec2_recent\\dataset_lab\\elec2-20260429122112\\dataset_lab_summary.json",
+    "report_md_path": "artifacts\\debug_elec2_recent\\dataset_lab\\elec2-20260429122112\\dataset_lab_report.md",
+    "artifact_root": "artifacts\\debug_elec2_recent\\dataset_lab\\elec2-20260429122112",
+    "score_plot_path": "artifacts\\debug_elec2_recent\\dataset_lab\\elec2-20260429122112\\dataset_lab_scores.png",
+    "portfolio_plot_path": "artifacts\\debug_elec2_recent\\dataset_lab\\elec2-20260429122112\\dataset_lab_portfolio.png",
+    "switch_plot_path": "artifacts\\debug_elec2_recent\\dataset_lab\\elec2-20260429122112\\dataset_lab_switches.png"
+  }
+]

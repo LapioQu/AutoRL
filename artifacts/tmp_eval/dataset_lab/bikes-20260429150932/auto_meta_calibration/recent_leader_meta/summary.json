@@ -1,0 +1,38 @@
+{
+  "dataset_name": "Bikes calibration",
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "sample_count": 879,
+  "evaluation_interval": 64,
+  "window_size": 128,
+  "start_strategy": "lin_lr_0_0001",
+  "final_strategy": "tree_regressor",
+  "switch_count": 2,
+  "adaptive_score": 0.7442644024917002,
+  "best_fixed_strategy": "tree_regressor",
+  "best_fixed_score": 0.7536465090755897,
+  "delta_vs_best_fixed": -0.009382106583889493,
+  "fixed_scores": {
+    "lin_lr_0_0001": 0.7362894342080533,
+    "lin_lr_0_0005": 0.7376486943558769,
+    "lin_lr_0_001": 0.7373862841866775,
+    "lin_lr_0_002": 0.7356877653872189,
+    "tree_regressor": 0.7536465090755897
+  },
+  "block_delta_mean": -0.009912105393315867,
+  "block_delta_std": 0.038646077924021444,
+  "block_delta_ci95": 0.021008247267634384,
+  "block_count": 13,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 12,
+  "adaptive_accuracy": 0.7442644024917002,
+  "best_fixed_accuracy": 0.7536465090755897,
+  "fixed_accuracies": {
+    "lin_lr_0_0001": 0.7362894342080533,
+    "lin_lr_0_0005": 0.7376486943558769,
+    "lin_lr_0_001": 0.7373862841866775,
+    "lin_lr_0_002": 0.7356877653872189,
+    "tree_regressor": 0.7536465090755897
+  }
+}

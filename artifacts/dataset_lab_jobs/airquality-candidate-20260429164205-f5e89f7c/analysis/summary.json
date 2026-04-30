@@ -1,0 +1,38 @@
+{
+  "dataset_name": "AirQuality_candidate",
+  "score_name": "normalized_reward",
+  "policy_name": "hard_switch_lcb",
+  "sample_count": 9354,
+  "evaluation_interval": 64,
+  "window_size": 128,
+  "start_strategy": "knn_regressor",
+  "final_strategy": "tree_regressor",
+  "switch_count": 1,
+  "adaptive_score": 0.9933053246041674,
+  "best_fixed_strategy": "knn_regressor",
+  "best_fixed_score": 0.9864028126721217,
+  "delta_vs_best_fixed": 0.0069025119320457184,
+  "fixed_scores": {
+    "knn_regressor": 0.9864028126721217,
+    "tree_regressor": 0.951976762007693,
+    "lin_lr_0_001": 0.9566137618930414,
+    "lin_lr_0_002": 0.9640565329231213,
+    "pa_regressor": 0.9232241764672666
+  },
+  "block_delta_mean": 0.0069103425885199765,
+  "block_delta_std": 0.017137573512232707,
+  "block_delta_ci95": 0.0027798987239956315,
+  "block_count": 146,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 144,
+  "adaptive_accuracy": 0.9933053246041674,
+  "best_fixed_accuracy": 0.9864028126721217,
+  "fixed_accuracies": {
+    "knn_regressor": 0.9864028126721217,
+    "tree_regressor": 0.951976762007693,
+    "lin_lr_0_001": 0.9566137618930414,
+    "lin_lr_0_002": 0.9640565329231213,
+    "pa_regressor": 0.9232241764672666
+  }
+}

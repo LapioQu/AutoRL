@@ -1,0 +1,133 @@
+{
+  "created_at_utc": "2026-04-29T11:03:33.596920+00:00",
+  "dataset_name": "Bikes",
+  "task_type": "regression",
+  "target_column": "bikes_in_use",
+  "sample_count": 256,
+  "feature_count": 8,
+  "score_name": "normalized_reward",
+  "policy_name": "best_fixed_guard",
+  "adaptive_score": 0.6428124340181995,
+  "best_fixed_strategy": "sgd_lr_0_0001",
+  "best_fixed_score": 0.6428124340181995,
+  "delta_vs_best_fixed": 0.0,
+  "oracle_score": 0.6494137966216397,
+  "oracle_gain": 0.006601362603440131,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "sgd_lr_0_0001",
+  "switch_count": 0,
+  "next_prediction": "3.19297098237233",
+  "prediction_confidence": 0.9529372545654365,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "sgd_lr_0_0001": "3.19297098237233",
+    "sgd_lr_0_0005": "3.284419750350096",
+    "sgd_lr_0_001": "3.3548324318480054"
+  },
+  "forecast_row_preview": {
+    "moment": "2016-04-01 05:44:56",
+    "station": "pomme",
+    "clouds": "90",
+    "description": "overcast clouds",
+    "humidity": "87",
+    "pressure": "1018.0",
+    "temperature": "6.35",
+    "wind": "5.1"
+  },
+  "preview_rows": [
+    {
+      "row_index": 244,
+      "actual_target": 3,
+      "adaptive_prediction": 3.1046093881683534,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"light rain\", \"humidity\": 87, \"moment\": \"2016-04-01 05:28:39\", \"pressure\": 1018.0, \"station\": \"metro-canal-du-midi\", \"temperature\": 6.38, \"wind\": 5.7}"
+    },
+    {
+      "row_index": 245,
+      "actual_target": 0,
+      "adaptive_prediction": 3.101832429677632,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"light rain\", \"humidity\": 87, \"moment\": \"2016-04-01 05:29:01\", \"pressure\": 1018.0, \"station\": \"place-des-carmes\", \"temperature\": 6.38, \"wind\": 5.7}"
+    },
+    {
+      "row_index": 246,
+      "actual_target": 12,
+      "adaptive_prediction": 3.0407079625013607,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:29:33\", \"pressure\": 1018.0, \"station\": \"place-jeanne-darc\", \"temperature\": 6.35, \"wind\": 5.1}"
+    },
+    {
+      "row_index": 247,
+      "actual_target": 1,
+      "adaptive_prediction": 3.233865311339277,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:30:30\", \"pressure\": 1018.0, \"station\": \"pomme\", \"temperature\": 6.35, \"wind\": 5.1}"
+    },
+    {
+      "row_index": 248,
+      "actual_target": 4,
+      "adaptive_prediction": 3.184998697120979,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:34:10\", \"pressure\": 1018.0, \"station\": \"metro-canal-du-midi\", \"temperature\": 6.35, \"wind\": 5.1}"
+    },
+    {
+      "row_index": 249,
+      "actual_target": 0,
+      "adaptive_prediction": 3.201992548432914,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:36:37\", \"pressure\": 1018.0, \"station\": \"place-esquirol\", \"temperature\": 6.35, \"wind\": 5.1}"
+    },
+    {
+      "row_index": 250,
+      "actual_target": 0,
+      "adaptive_prediction": 3.1324176411695035,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:39:05\", \"pressure\": 1018.0, \"station\": \"place-des-carmes\", \"temperature\": 6.35, \"wind\": 5.1}"
+    },
+    {
+      "row_index": 251,
+      "actual_target": 12,
+      "adaptive_prediction": 3.0644613302130654,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:39:37\", \"pressure\": 1018.0, \"station\": \"place-jeanne-darc\", \"temperature\": 6.35, \"wind\": 5.1}"
+    },
+    {
+      "row_index": 252,
+      "actual_target": 1,
+      "adaptive_prediction": 3.2561179296412086,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:40:34\", \"pressure\": 1018.0, \"station\": \"pomme\", \"temperature\": 6.35, \"wind\": 5.1}"
+    },
+    {
+      "row_index": 253,
+      "actual_target": 2,
+      "adaptive_prediction": 3.207085384005198,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:41:30\", \"pressure\": 1018.0, \"station\": \"pomme\", \"temperature\": 6.35, \"wind\": 5.1}"
+    },
+    {
+      "row_index": 254,
+      "actual_target": 4,
+      "adaptive_prediction": 3.1806485340605177,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:44:12\", \"pressure\": 1018.0, \"station\": \"metro-canal-du-midi\", \"temperature\": 6.35, \"wind\": 5.1}"
+    },
+    {
+      "row_index": 255,
+      "actual_target": 3,
+      "adaptive_prediction": 3.1977099169188516,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 05:44:56\", \"pressure\": 1018.0, \"station\": \"pomme\", \"temperature\": 6.35, \"wind\": 5.1}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `best_fixed_guard` finished on strategy `sgd_lr_0_0001` after 0 switches.",
+    "It achieved `0.6428` against the best fixed baseline `sgd_lr_0_0001` at `0.6428`.",
+    "Oracle upper bound on this stream is `0.6494`. Available oracle gain over best fixed is `0.0066`, and the current adaptive controller captures `0.0%` of it.",
+    "Adaptive and best fixed finished effectively tied on this stream.",
+    "No strategy changes were needed; the stream behaved close to one dominant regime.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `3.1930` based on the latest lagged context `[2, 4, 3]`."
+  ],
+  "caveats": [
+    "\u0414\u043b\u044f \u0446\u044c\u043e\u0433\u043e \u0433\u043e\u0442\u043e\u0432\u043e\u0433\u043e \u0434\u0430\u0442\u0430\u0441\u0435\u0442\u0443 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043e \u043d\u0430\u0442\u0438\u0432\u043d\u0438\u0439 \u043f\u043e\u0442\u043e\u043a\u043e\u0432\u0438\u0439 \u043f\u0440\u043e\u0444\u0456\u043b\u044c \u0431\u0435\u0437 CSV-\u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u043e\u0437\u043d\u0430\u043a.",
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\bikes_diagnosis_short\\256\\dataset_lab\\bikes-20260429110333",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\bikes_diagnosis_short\\256\\dataset_lab\\bikes-20260429110333\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\bikes_diagnosis_short\\256\\dataset_lab\\bikes-20260429110333\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\bikes_diagnosis_short\\256\\dataset_lab\\bikes-20260429110333\\summary.md",
+  "dataset_lab_report_md_path": "artifacts\\bikes_diagnosis_short\\256\\dataset_lab\\bikes-20260429110333\\dataset_lab_report.md"
+}

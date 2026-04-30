@@ -1,0 +1,2 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+11,0,softmax_lr_0_20,softmax_lr_0_05,switch,True,warmup_leader,,0.015,Switch after warmup because cumulative reward leader differs from the starting strategy: softmax_lr_0_05.

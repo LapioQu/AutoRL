@@ -1,0 +1,104 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+95,1,tree_classifier,tree_classifier,stay,False,recent_leader_warmup_same,0.0,0.0,Stay after warmup because the current strategy is already the recent leader.
+143,2,tree_classifier,gaussian_nb,switch,True,recent_leader_advantage,0.01388888888888884,0.0,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.923611 - 0.909722 = 0.013889.
+191,3,gaussian_nb,gaussian_nb,stay,False,recent_leader_cooldown,0.0,0.0,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+239,4,gaussian_nb,pa_classifier,switch,True,recent_leader_advantage,0.15972222222222232,0.0,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.965278 - 0.805556 = 0.159722.
+287,5,pa_classifier,pa_classifier,stay,False,recent_leader_cooldown,0.0,0.0,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+335,6,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+383,7,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+431,8,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+479,9,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+527,10,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+575,11,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+623,12,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.006944444444444309,0.0,Stay because the candidate fails the incumbent floor check: 0.926282 + 0.000000 < 0.935897.
+671,13,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+719,14,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+767,15,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+815,16,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+863,17,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+911,18,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+959,19,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,1.1102230246251565e-16,0.0,Stay because the candidate fails the incumbent floor check: 0.936458 + 0.000000 < 0.946875.
+1007,20,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,1.1102230246251565e-16,0.0,Stay because the candidate fails the incumbent floor check: 0.937500 + 0.000000 < 0.948413.
+1055,21,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,1.1102230246251565e-16,0.0,Stay because the candidate fails the incumbent floor check: 0.940341 + 0.000000 < 0.950758.
+1103,22,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1151,23,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1199,24,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1247,25,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1295,26,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1343,27,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1391,28,pa_classifier,tree_classifier,stay,False,recent_leader_incumbent_floor,0.006944444444444309,0.0,Stay because the candidate fails the incumbent floor check: 0.876437 + 0.000000 < 0.955460.
+1439,29,pa_classifier,tree_classifier,stay,False,recent_leader_incumbent_floor,0.006944444444444309,0.0,Stay because the candidate fails the incumbent floor check: 0.880556 + 0.000000 < 0.956944.
+1487,30,pa_classifier,tree_classifier,stay,False,recent_leader_incumbent_floor,0.006944444444444309,0.0,Stay because the candidate fails the incumbent floor check: 0.884409 + 0.000000 < 0.958333.
+1535,31,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1583,32,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1631,33,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1679,34,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.00694444444444442,0.0,Stay because the candidate fails the incumbent floor check: 0.947024 + 0.000000 < 0.959524.
+1727,35,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.02083333333333326,0.0,Stay because the candidate fails the incumbent floor check: 0.947338 + 0.000000 < 0.958333.
+1775,36,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.01388888888888884,0.0,Stay because the candidate fails the incumbent floor check: 0.947072 + 0.000000 < 0.958333.
+1823,37,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1871,38,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1919,39,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+1967,40,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2015,41,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2063,42,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.01388888888888895,0.0,Stay because the candidate fails the incumbent floor check: 0.944283 + 0.000000 < 0.955426.
+2111,43,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.02083333333333337,0.0,Stay because the candidate fails the incumbent floor check: 0.944129 + 0.000000 < 0.955019.
+2159,44,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.02083333333333348,0.0,Stay because the candidate fails the incumbent floor check: 0.941204 + 0.000000 < 0.951389.
+2207,45,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2255,46,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2303,47,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2351,48,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2399,49,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.01388888888888895,0.0,Stay because the candidate fails the incumbent floor check: 0.941667 + 0.000000 < 0.952083.
+2447,50,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2495,51,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2543,52,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2591,53,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.00694444444444442,0.0,Stay because the candidate fails the incumbent floor check: 0.940972 + 0.000000 < 0.951003.
+2639,54,pa_classifier,softmax_lr_0_05,stay,False,recent_leader_incumbent_floor,0.02083333333333326,0.0,Stay because the candidate fails the incumbent floor check: 0.904167 + 0.000000 < 0.951136.
+2687,55,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2735,56,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2783,57,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2831,58,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2879,59,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2927,60,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2975,61,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3023,62,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3071,63,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3119,64,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3167,65,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3215,66,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3263,67,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3311,68,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3359,69,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3407,70,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3455,71,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3503,72,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3551,73,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3599,74,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3647,75,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3695,76,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3743,77,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3791,78,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+3839,79,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,1.1102230246251565e-16,0.0,Stay because the candidate fails the incumbent floor check: 0.942708 + 0.000000 < 0.954167.
+3887,80,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,1.1102230246251565e-16,0.0,Stay because the candidate fails the incumbent floor check: 0.942644 + 0.000000 < 0.954218.
+3935,81,pa_classifier,softmax_lr_0_05,stay,False,recent_leader_incumbent_floor,0.00694444444444442,0.0,Stay because the candidate fails the incumbent floor check: 0.910823 + 0.000000 < 0.954014.
+3983,82,pa_classifier,softmax_lr_0_05,stay,False,recent_leader_incumbent_floor,0.01388888888888884,0.0,Stay because the candidate fails the incumbent floor check: 0.911898 + 0.000000 < 0.954568.
+4031,83,pa_classifier,softmax_lr_0_05,stay,False,recent_leader_incumbent_floor,0.02083333333333326,0.0,Stay because the candidate fails the incumbent floor check: 0.912450 + 0.000000 < 0.954365.
+4079,84,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4127,85,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4175,86,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.02083333333333326,0.0,Stay because the candidate fails the incumbent floor check: 0.944684 + 0.000000 < 0.954502.
+4223,87,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.02083333333333348,0.0,Stay because the candidate fails the incumbent floor check: 0.944839 + 0.000000 < 0.954782.
+4271,88,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.0277777777777779,0.0,Stay because the candidate fails the incumbent floor check: 0.944522 + 0.000000 < 0.954120.
+4319,89,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4367,90,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4415,91,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4463,92,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4511,93,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.01388888888888884,0.0,Stay because the candidate fails the incumbent floor check: 0.943262 + 0.000000 < 0.952349.
+4559,94,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4607,95,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4655,96,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4703,97,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.006944444444444531,0.0,Stay because the candidate fails the incumbent floor check: 0.942815 + 0.000000 < 0.951743.
+4751,98,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.006944444444444531,0.0,Stay because the candidate fails the incumbent floor check: 0.943182 + 0.000000 < 0.952020.
+4799,99,pa_classifier,tree_classifier,stay,False,recent_leader_incumbent_floor,0.01388888888888895,0.0,Stay because the candidate fails the incumbent floor check: 0.872708 + 0.000000 < 0.951875.
+4847,100,pa_classifier,softmax_lr_0_20,stay,False,recent_leader_incumbent_floor,0.00694444444444442,0.0,Stay because the candidate fails the incumbent floor check: 0.943894 + 0.000000 < 0.952351.
+4895,101,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4943,102,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+4991,103,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.

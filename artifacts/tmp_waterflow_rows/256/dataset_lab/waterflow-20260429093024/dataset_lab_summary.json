@@ -1,0 +1,122 @@
+{
+  "dataset_name": "WaterFlow",
+  "task_type": "regression",
+  "target_column": "water_flow_lps",
+  "sample_count": 253,
+  "feature_count": 3,
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "adaptive_score": 0.6510119288390177,
+  "best_fixed_strategy": "pa_regressor",
+  "best_fixed_score": 0.6699571242009027,
+  "delta_vs_best_fixed": -0.018945195361884992,
+  "oracle_score": 0.7059682184858449,
+  "oracle_gain": 0.0360110942849422,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "pa_regressor",
+  "switch_count": 2,
+  "next_prediction": "100.46095538590609",
+  "prediction_confidence": 0.9780224614406717,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "pa_regressor": "100.46095538590609",
+    "lin_lr_0_002": "99.11132161263993",
+    "lin_lr_0_001": "98.23027482933938"
+  },
+  "forecast_row_preview": {
+    "Time": "2022-03-31 04:00:00+02:00",
+    "water_flow_lps": "100.38"
+  },
+  "preview_rows": [
+    {
+      "row_index": 241,
+      "actual_target": 101.84,
+      "adaptive_prediction": 101.53774972613353,
+      "feature_snapshot": "{\"target_lag_1\": 101.87, \"target_lag_2\": 101.86, \"target_lag_3\": 101.95}"
+    },
+    {
+      "row_index": 242,
+      "actual_target": 102.08,
+      "adaptive_prediction": 102.8633082839645,
+      "feature_snapshot": "{\"target_lag_1\": 101.84, \"target_lag_2\": 101.87, \"target_lag_3\": 101.86}"
+    },
+    {
+      "row_index": 243,
+      "actual_target": 101.95,
+      "adaptive_prediction": 101.64047553845111,
+      "feature_snapshot": "{\"target_lag_1\": 102.08, \"target_lag_2\": 101.84, \"target_lag_3\": 101.87}"
+    },
+    {
+      "row_index": 244,
+      "actual_target": 101.68,
+      "adaptive_prediction": 102.94362479312554,
+      "feature_snapshot": "{\"target_lag_1\": 101.95, \"target_lag_2\": 102.08, \"target_lag_3\": 101.84}"
+    },
+    {
+      "row_index": 245,
+      "actual_target": 101.64,
+      "adaptive_prediction": 101.38899869065158,
+      "feature_snapshot": "{\"target_lag_1\": 101.68, \"target_lag_2\": 101.95, \"target_lag_3\": 102.08}"
+    },
+    {
+      "row_index": 246,
+      "actual_target": 101.51,
+      "adaptive_prediction": 102.65720248417902,
+      "feature_snapshot": "{\"target_lag_1\": 101.64, \"target_lag_2\": 101.68, \"target_lag_3\": 101.95}"
+    },
+    {
+      "row_index": 247,
+      "actual_target": 101.29,
+      "adaptive_prediction": 101.25393663598936,
+      "feature_snapshot": "{\"target_lag_1\": 101.51, \"target_lag_2\": 101.64, \"target_lag_3\": 101.68}"
+    },
+    {
+      "row_index": 248,
+      "actual_target": 101.0,
+      "adaptive_prediction": 102.40527116992679,
+      "feature_snapshot": "{\"target_lag_1\": 101.29, \"target_lag_2\": 101.51, \"target_lag_3\": 101.64}"
+    },
+    {
+      "row_index": 249,
+      "actual_target": 100.84,
+      "adaptive_prediction": 100.89822868721473,
+      "feature_snapshot": "{\"target_lag_1\": 101.0, \"target_lag_2\": 101.29, \"target_lag_3\": 101.51}"
+    },
+    {
+      "row_index": 250,
+      "actual_target": 100.85,
+      "adaptive_prediction": 99.49168281717498,
+      "feature_snapshot": "{\"target_lag_1\": 100.84, \"target_lag_2\": 101.0, \"target_lag_3\": 101.29}"
+    },
+    {
+      "row_index": 251,
+      "actual_target": 100.82,
+      "adaptive_prediction": 100.74482860984605,
+      "feature_snapshot": "{\"target_lag_1\": 100.85, \"target_lag_2\": 100.84, \"target_lag_3\": 101.0}"
+    },
+    {
+      "row_index": 252,
+      "actual_target": 100.38,
+      "adaptive_prediction": 101.97692403275477,
+      "feature_snapshot": "{\"target_lag_1\": 100.82, \"target_lag_2\": 100.85, \"target_lag_3\": 100.84}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `recent_leader_meta` finished on strategy `pa_regressor` after 2 switches.",
+    "It achieved `0.6510` against the best fixed baseline `pa_regressor` at `0.6700`.",
+    "Oracle upper bound on this stream is `0.7060`. Available oracle gain over best fixed is `0.0360`, and the current adaptive controller captures `0.0%` of it.",
+    "The current stationary portfolio dominated the adaptive controller here; the gap is `-0.0189`.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `100.4610` based on the latest lagged context `['100.85', '100.82', '100.38']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\tmp_waterflow_rows\\256\\dataset_lab\\waterflow-20260429093024\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\tmp_waterflow_rows\\256\\dataset_lab\\waterflow-20260429093024\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\tmp_waterflow_rows\\256\\dataset_lab\\waterflow-20260429093024\\summary.md"
+}

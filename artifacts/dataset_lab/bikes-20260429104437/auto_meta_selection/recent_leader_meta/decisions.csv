@@ -1,0 +1,9 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+255,1,sgd_lr_0_0005,sgd_lr_0_0001,switch,True,recent_leader_warmup,,0.0005,Switch after warmup because the recent block leader outperformed the initial incumbent: sgd_lr_0_0001.
+383,2,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+511,3,sgd_lr_0_0001,sgd_lr_0_0001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+639,4,sgd_lr_0_0001,sgd_lr_0_001,switch,True,recent_leader_advantage,0.012661832794497285,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.685071 - 0.672410 = 0.012662.
+767,5,sgd_lr_0_001,sgd_lr_0_0005,switch,True,recent_leader_advantage,0.0010247057501295842,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.676596 - 0.675571 = 0.001025.
+895,6,sgd_lr_0_0005,sgd_lr_0_0005,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.
+1023,7,sgd_lr_0_0005,sgd_lr_0_001,switch,True,recent_leader_advantage,0.004127526653400215,0.0005,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.606500 - 0.602372 = 0.004128.
+1151,8,sgd_lr_0_001,sgd_lr_0_001,stay,False,recent_leader_same,0.0,0.0005,Stay because the current strategy remains the recent block leader.

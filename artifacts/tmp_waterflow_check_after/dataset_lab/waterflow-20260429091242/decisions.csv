@@ -1,0 +1,12 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+41,1,knn_regressor,tree_regressor,stay,False,high_uncertainty,-0.012014952208856178,0.001,"Stay because utility uncertainty is too high: current_std=0.0073, candidate_std=0.0086, threshold=0.0010."
+62,2,knn_regressor,tree_regressor,stay,False,high_uncertainty,-0.01170085150195388,0.001,"Stay because utility uncertainty is too high: current_std=0.0016, candidate_std=0.0007, threshold=0.0010."
+83,3,knn_regressor,tree_regressor,stay,False,high_uncertainty,-0.0083371470597281,0.001,"Stay because utility uncertainty is too high: current_std=0.0017, candidate_std=0.0061, threshold=0.0010."
+104,4,knn_regressor,lin_lr_0_01,stay,False,high_uncertainty,-0.19533665658598276,0.001,"Stay because utility uncertainty is too high: current_std=0.0675, candidate_std=0.2135, threshold=0.0010."
+125,5,knn_regressor,lin_lr_0_01,stay,False,high_uncertainty,-0.09772649151203638,0.001,"Stay because utility uncertainty is too high: current_std=0.0631, candidate_std=0.1202, threshold=0.0010."
+146,6,knn_regressor,pa_regressor,stay,False,high_uncertainty,-0.015294166817412691,0.001,"Stay because utility uncertainty is too high: current_std=0.0023, candidate_std=0.0024, threshold=0.0010."
+167,7,knn_regressor,pa_regressor,stay,False,high_uncertainty,-0.004014312062149417,0.001,"Stay because utility uncertainty is too high: current_std=0.0084, candidate_std=0.0018, threshold=0.0010."
+188,8,knn_regressor,pa_regressor,stay,False,high_uncertainty,0.008451719029156202,0.001,"Stay because utility uncertainty is too high: current_std=0.0077, candidate_std=0.0019, threshold=0.0010."
+209,9,knn_regressor,pa_regressor,stay,False,high_uncertainty,0.004642862314040097,0.001,"Stay because utility uncertainty is too high: current_std=0.1333, candidate_std=0.1430, threshold=0.0010."
+230,10,knn_regressor,pa_regressor,stay,False,high_uncertainty,-0.009875681254757684,0.001,"Stay because utility uncertainty is too high: current_std=0.1531, candidate_std=0.1482, threshold=0.0010."
+251,11,knn_regressor,pa_regressor,stay,False,high_uncertainty,-0.0175224920016519,0.001,"Stay because utility uncertainty is too high: current_std=0.0016, candidate_std=0.0011, threshold=0.0010."

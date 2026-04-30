@@ -1,0 +1,114 @@
+{
+  "series_id": "E2",
+  "title": "Abrupt drift",
+  "series_type": "seeded_experiment_suite",
+  "config_source_path": "E:\\dipproj\\configs\\examples\\abrupt_drift.yaml",
+  "root_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift",
+  "n": 5,
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "reward_mean": 0.97379477259227,
+  "reward_std": 7.819268224195714e-05,
+  "reward_ci95": 6.853890791173428e-05,
+  "suite_summary_json_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\suite_summary.json",
+  "suite_summary_md_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\suite_summary.md",
+  "primary_plot_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\phase10_reward_mean.png",
+  "switches_plot_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\phase10_switch_count.png",
+  "runs": [
+    {
+      "seed": 41,
+      "experiment_id": "abrupt-drift-seed-41-20260430080440-9b2cfc80",
+      "status": "completed",
+      "reward_mean": 0.9738783701182055,
+      "switch_count": 1,
+      "final_strategy": "drift_aware",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_41\\experiments\\abrupt-drift-seed-41-20260430080440-9b2cfc80",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_41\\experiments\\abrupt-drift-seed-41-20260430080440-9b2cfc80\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_41\\experiments\\abrupt-drift-seed-41-20260430080440-9b2cfc80\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_41\\experiments\\abrupt-drift-seed-41-20260430080440-9b2cfc80\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_41\\experiments\\abrupt-drift-seed-41-20260430080440-9b2cfc80\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_41\\experiments\\abrupt-drift-seed-41-20260430080440-9b2cfc80\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_41\\experiments\\abrupt-drift-seed-41-20260430080440-9b2cfc80\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_41\\experiments\\abrupt-drift-seed-41-20260430080440-9b2cfc80\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 42,
+      "experiment_id": "abrupt-drift-seed-42-20260430080445-6bebcd75",
+      "status": "completed",
+      "reward_mean": 0.9738395964238155,
+      "switch_count": 1,
+      "final_strategy": "drift_aware",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_42\\experiments\\abrupt-drift-seed-42-20260430080445-6bebcd75",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_42\\experiments\\abrupt-drift-seed-42-20260430080445-6bebcd75\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_42\\experiments\\abrupt-drift-seed-42-20260430080445-6bebcd75\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_42\\experiments\\abrupt-drift-seed-42-20260430080445-6bebcd75\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_42\\experiments\\abrupt-drift-seed-42-20260430080445-6bebcd75\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_42\\experiments\\abrupt-drift-seed-42-20260430080445-6bebcd75\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_42\\experiments\\abrupt-drift-seed-42-20260430080445-6bebcd75\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_42\\experiments\\abrupt-drift-seed-42-20260430080445-6bebcd75\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 43,
+      "experiment_id": "abrupt-drift-seed-43-20260430080449-851062cd",
+      "status": "completed",
+      "reward_mean": 0.9737003188829195,
+      "switch_count": 1,
+      "final_strategy": "drift_aware",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_43\\experiments\\abrupt-drift-seed-43-20260430080449-851062cd",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_43\\experiments\\abrupt-drift-seed-43-20260430080449-851062cd\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_43\\experiments\\abrupt-drift-seed-43-20260430080449-851062cd\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_43\\experiments\\abrupt-drift-seed-43-20260430080449-851062cd\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_43\\experiments\\abrupt-drift-seed-43-20260430080449-851062cd\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_43\\experiments\\abrupt-drift-seed-43-20260430080449-851062cd\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_43\\experiments\\abrupt-drift-seed-43-20260430080449-851062cd\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_43\\experiments\\abrupt-drift-seed-43-20260430080449-851062cd\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 44,
+      "experiment_id": "abrupt-drift-seed-44-20260430080453-f928790f",
+      "status": "completed",
+      "reward_mean": 0.9738323793179272,
+      "switch_count": 1,
+      "final_strategy": "drift_aware",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_44\\experiments\\abrupt-drift-seed-44-20260430080453-f928790f",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_44\\experiments\\abrupt-drift-seed-44-20260430080453-f928790f\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_44\\experiments\\abrupt-drift-seed-44-20260430080453-f928790f\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_44\\experiments\\abrupt-drift-seed-44-20260430080453-f928790f\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_44\\experiments\\abrupt-drift-seed-44-20260430080453-f928790f\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_44\\experiments\\abrupt-drift-seed-44-20260430080453-f928790f\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_44\\experiments\\abrupt-drift-seed-44-20260430080453-f928790f\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_44\\experiments\\abrupt-drift-seed-44-20260430080453-f928790f\\utility_lcb.png"
+      }
+    },
+    {
+      "seed": 45,
+      "experiment_id": "abrupt-drift-seed-45-20260430080457-15e7edec",
+      "status": "completed",
+      "reward_mean": 0.9737231982184824,
+      "switch_count": 1,
+      "final_strategy": "drift_aware",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_45\\experiments\\abrupt-drift-seed-45-20260430080457-15e7edec",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_45\\experiments\\abrupt-drift-seed-45-20260430080457-15e7edec\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_45\\experiments\\abrupt-drift-seed-45-20260430080457-15e7edec\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_45\\experiments\\abrupt-drift-seed-45-20260430080457-15e7edec\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_45\\experiments\\abrupt-drift-seed-45-20260430080457-15e7edec\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_45\\experiments\\abrupt-drift-seed-45-20260430080457-15e7edec\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_45\\experiments\\abrupt-drift-seed-45-20260430080457-15e7edec\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_45\\experiments\\abrupt-drift-seed-45-20260430080457-15e7edec\\utility_lcb.png"
+      }
+    }
+  ]
+}

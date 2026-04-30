@@ -1,0 +1,7 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+95,1,tree_classifier,softmax_lr_0_20,switch,True,recent_leader_warmup,,0.0,Switch after warmup because the recent block leader outperformed the initial incumbent: softmax_lr_0_20.
+143,2,softmax_lr_0_20,softmax_lr_0_20,stay,False,recent_leader_cooldown,0.0,0.0,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+191,3,softmax_lr_0_20,pa_classifier,switch,True,recent_leader_advantage,0.02777777777777768,0.0,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.972222 - 0.944444 = 0.027778.
+239,4,pa_classifier,pa_classifier,stay,False,recent_leader_cooldown,0.0,0.0,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+287,5,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+335,6,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.

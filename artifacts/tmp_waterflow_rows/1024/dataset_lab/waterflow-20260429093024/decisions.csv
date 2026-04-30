@@ -1,0 +1,42 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+47,1,lin_lr_0_001,lin_lr_0_001,stay,False,recent_leader_warmup_same,0.0,0.002,Stay after warmup because the current strategy is already the recent leader.
+71,2,lin_lr_0_001,lin_lr_0_002,stay,False,recent_leader_margin_too_small,0.0003101738510912222,0.002,Stay because the recent leader advantage is below the switching margin: 0.000310 < 0.002000.
+95,3,lin_lr_0_001,lin_lr_0_002,switch,True,recent_leader_advantage,0.005955393554354649,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.314303 - 0.308347 = 0.005955.
+119,4,lin_lr_0_002,lin_lr_0_002,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+143,5,lin_lr_0_002,pa_regressor,switch,True,recent_leader_advantage,0.12533199608651902,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.618027 - 0.492695 = 0.125332.
+167,6,pa_regressor,pa_regressor,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+191,7,pa_regressor,pa_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+215,8,pa_regressor,pa_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+239,9,pa_regressor,pa_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+263,10,pa_regressor,pa_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+287,11,pa_regressor,pa_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+311,12,pa_regressor,pa_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+335,13,pa_regressor,pa_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+359,14,pa_regressor,pa_regressor,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+383,15,pa_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.0076495738044688455,0.002,Stay because the candidate fails the incumbent floor check: 0.665747 + 0.001000 < 0.728969.
+407,16,pa_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.009956211926548941,0.002,Stay because the candidate fails the incumbent floor check: 0.683774 + 0.001000 < 0.742390.
+431,17,pa_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.013823752815981916,0.002,Stay because the candidate fails the incumbent floor check: 0.699774 + 0.001000 < 0.754163.
+455,18,pa_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.016600853550218675,0.002,Stay because the candidate fails the incumbent floor check: 0.714196 + 0.001000 < 0.764815.
+479,19,pa_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.012498559968246892,0.002,Stay because the candidate fails the incumbent floor check: 0.726522 + 0.001000 < 0.774470.
+503,20,pa_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.013107253510211803,0.002,Stay because the candidate fails the incumbent floor check: 0.738303 + 0.001000 < 0.783049.
+527,21,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.01459655213446931,0.002,Stay because the candidate fails the incumbent floor check: 0.725952 + 0.001000 < 0.790900.
+551,22,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.020494311199308557,0.002,Stay because the candidate fails the incumbent floor check: 0.736444 + 0.001000 < 0.797792.
+575,23,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.0181547773487698,0.002,Stay because the candidate fails the incumbent floor check: 0.746277 + 0.001000 < 0.804440.
+599,24,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.01837261961642689,0.002,Stay because the candidate fails the incumbent floor check: 0.755640 + 0.001000 < 0.810590.
+623,25,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.019163086407778307,0.002,Stay because the candidate fails the incumbent floor check: 0.764147 + 0.001000 < 0.816205.
+647,26,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.019806247013286482,0.002,Stay because the candidate fails the incumbent floor check: 0.771918 + 0.001000 < 0.821419.
+671,27,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.01631147478028727,0.002,Stay because the candidate fails the incumbent floor check: 0.778994 + 0.001000 < 0.826309.
+695,28,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.015997607229343958,0.002,Stay because the candidate fails the incumbent floor check: 0.785777 + 0.001000 < 0.830796.
+719,29,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.01733431225365689,0.002,Stay because the candidate fails the incumbent floor check: 0.792109 + 0.001000 < 0.834926.
+743,30,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.020613168483653244,0.002,Stay because the candidate fails the incumbent floor check: 0.798043 + 0.001000 < 0.838783.
+767,31,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.01946156687367029,0.002,Stay because the candidate fails the incumbent floor check: 0.803633 + 0.001000 < 0.842607.
+791,32,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.019556480678897925,0.002,Stay because the candidate fails the incumbent floor check: 0.808963 + 0.001000 < 0.846110.
+815,33,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.01866415863266435,0.002,Stay because the candidate fails the incumbent floor check: 0.813868 + 0.001000 < 0.849367.
+839,34,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.020527206081865645,0.002,Stay because the candidate fails the incumbent floor check: 0.818359 + 0.001000 < 0.852232.
+863,35,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.019429003714902526,0.002,Stay because the candidate fails the incumbent floor check: 0.822691 + 0.001000 < 0.855123.
+887,36,pa_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.0543485246903318,0.002,Stay because the candidate fails the incumbent floor check: 0.832423 + 0.001000 < 0.847274.
+911,37,pa_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.05649059459895478,0.002,Stay because the candidate fails the incumbent floor check: 0.836055 + 0.001000 < 0.849978.
+935,38,pa_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.056031962842115646,0.002,Stay because the candidate fails the incumbent floor check: 0.839602 + 0.001000 < 0.852798.
+959,39,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.025152270039844993,0.002,Stay because the candidate fails the incumbent floor check: 0.830678 + 0.001000 < 0.855343.
+983,40,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.02198115982351201,0.002,Stay because the candidate fails the incumbent floor check: 0.834355 + 0.001000 < 0.857923.
+1007,41,pa_regressor,lin_lr_0_001,stay,False,recent_leader_incumbent_floor,0.017956859269908643,0.002,Stay because the candidate fails the incumbent floor check: 0.837512 + 0.001000 < 0.860344.

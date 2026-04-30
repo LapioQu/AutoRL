@@ -1,0 +1,38 @@
+{
+  "dataset_name": "Bikes",
+  "score_name": "normalized_reward",
+  "policy_name": "fixed_share_portfolio",
+  "sample_count": 3997,
+  "evaluation_interval": 64,
+  "window_size": 64,
+  "start_strategy": "lin_lr_0_0001",
+  "final_strategy": "lin_lr_0_002",
+  "switch_count": 18,
+  "adaptive_score": 0.7280133521701768,
+  "best_fixed_strategy": "lin_lr_0_001",
+  "best_fixed_score": 0.6905654106521181,
+  "delta_vs_best_fixed": 0.03744794151805875,
+  "fixed_scores": {
+    "lin_lr_0_0001": 0.6864190132653609,
+    "lin_lr_0_0005": 0.689551211511635,
+    "lin_lr_0_001": 0.6905654106521181,
+    "lin_lr_0_002": 0.6905147622856597,
+    "tree_regressor": 0.6812190571574511
+  },
+  "block_delta_mean": 0.03776125191484034,
+  "block_delta_std": 0.07234624653547869,
+  "block_delta_ci95": 0.018008445696066057,
+  "block_count": 62,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 62,
+  "adaptive_accuracy": 0.7280133521701768,
+  "best_fixed_accuracy": 0.6905654106521181,
+  "fixed_accuracies": {
+    "lin_lr_0_0001": 0.6864190132653609,
+    "lin_lr_0_0005": 0.689551211511635,
+    "lin_lr_0_001": 0.6905654106521181,
+    "lin_lr_0_002": 0.6905147622856597,
+    "tree_regressor": 0.6812190571574511
+  }
+}

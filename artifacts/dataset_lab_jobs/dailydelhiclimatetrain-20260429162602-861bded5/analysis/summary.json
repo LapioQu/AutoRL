@@ -1,0 +1,38 @@
+{
+  "dataset_name": "DailyDelhiClimateTrain",
+  "score_name": "normalized_reward",
+  "policy_name": "hard_switch_lcb",
+  "sample_count": 1459,
+  "evaluation_interval": 64,
+  "window_size": 128,
+  "start_strategy": "knn_regressor",
+  "final_strategy": "knn_regressor",
+  "switch_count": 0,
+  "adaptive_score": 0.9805271193259892,
+  "best_fixed_strategy": "knn_regressor",
+  "best_fixed_score": 0.9805271193259892,
+  "delta_vs_best_fixed": 0.0,
+  "fixed_scores": {
+    "knn_regressor": 0.9805271193259892,
+    "tree_regressor": 0.9320825452207899,
+    "lin_lr_0_0001": 0.8536030398689254,
+    "lin_lr_0_0005": 0.8184351012075158,
+    "lin_lr_0_002": 0.8013287716525896
+  },
+  "block_delta_mean": 0.0,
+  "block_delta_std": 0.0,
+  "block_delta_ci95": 0.0,
+  "block_count": 22,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 20,
+  "adaptive_accuracy": 0.9805271193259892,
+  "best_fixed_accuracy": 0.9805271193259892,
+  "fixed_accuracies": {
+    "knn_regressor": 0.9805271193259892,
+    "tree_regressor": 0.9320825452207899,
+    "lin_lr_0_0001": 0.8536030398689254,
+    "lin_lr_0_0005": 0.8184351012075158,
+    "lin_lr_0_002": 0.8013287716525896
+  }
+}

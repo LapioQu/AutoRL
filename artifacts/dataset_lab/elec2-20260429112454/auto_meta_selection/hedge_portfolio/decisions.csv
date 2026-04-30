@@ -1,0 +1,27 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+47,0,tree_classifier,tree_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+95,1,tree_classifier,tree_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+143,2,tree_classifier,tree_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+191,3,tree_classifier,pa_classifier,switch,True,hedge_weight_advantage,0.5233500613067861,0.015,Switch because candidate Hedge weight exceeds current weight beyond the switch threshold: 0.5468 - 0.0234 = 0.5234 >= 0.0150.
+239,4,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+287,5,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+335,6,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+383,7,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+431,8,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+479,9,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+527,10,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+575,11,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+623,12,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+671,13,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+719,14,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+767,15,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+815,16,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+863,17,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+911,18,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+959,19,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+1007,20,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+1055,21,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+1103,22,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+1151,23,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+1199,24,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+1247,25,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.

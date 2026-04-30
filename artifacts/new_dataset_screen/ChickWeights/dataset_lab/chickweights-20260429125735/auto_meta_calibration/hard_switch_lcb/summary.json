@@ -1,0 +1,36 @@
+{
+  "dataset_name": "ChickWeights calibration",
+  "score_name": "accuracy",
+  "policy_name": "hard_switch_lcb",
+  "sample_count": 512,
+  "evaluation_interval": 128,
+  "window_size": 128,
+  "start_strategy": "softmax_lr_0_20",
+  "final_strategy": "softmax_lr_0_20",
+  "switch_count": 0,
+  "adaptive_score": 0.060546875,
+  "best_fixed_strategy": "knn_classifier",
+  "best_fixed_score": 0.064453125,
+  "delta_vs_best_fixed": -0.00390625,
+  "fixed_scores": {
+    "knn_classifier": 0.064453125,
+    "gaussian_nb": 0.041015625,
+    "softmax_lr_0_20": 0.060546875,
+    "softmax_lr_0_05": 0.056640625
+  },
+  "block_delta_mean": -0.00390625,
+  "block_delta_std": 0.022439697838039174,
+  "block_delta_ci95": 0.02199090388127839,
+  "block_count": 4,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming classification task.",
+  "source_url": "local-upload",
+  "decision_rows": 3,
+  "adaptive_accuracy": 0.060546875,
+  "best_fixed_accuracy": 0.064453125,
+  "fixed_accuracies": {
+    "knn_classifier": 0.064453125,
+    "gaussian_nb": 0.041015625,
+    "softmax_lr_0_20": 0.060546875,
+    "softmax_lr_0_05": 0.056640625
+  }
+}

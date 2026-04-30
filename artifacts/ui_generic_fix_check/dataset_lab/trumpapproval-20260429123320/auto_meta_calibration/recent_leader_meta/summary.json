@@ -1,0 +1,34 @@
+{
+  "dataset_name": "TrumpApproval calibration",
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "sample_count": 250,
+  "evaluation_interval": 32,
+  "window_size": 256,
+  "start_strategy": "sgd_lr_0_01",
+  "final_strategy": "sgd_lr_0_05",
+  "switch_count": 1,
+  "adaptive_score": 0.5842521366462352,
+  "best_fixed_strategy": "sgd_lr_0_05",
+  "best_fixed_score": 0.5864333562384845,
+  "delta_vs_best_fixed": -0.0021812195922492617,
+  "fixed_scores": {
+    "sgd_lr_0_001": 0.43915930914575624,
+    "sgd_lr_0_01": 0.5426906854799968,
+    "sgd_lr_0_05": 0.5864333562384845
+  },
+  "block_delta_mean": -0.002434396866349799,
+  "block_delta_std": 0.005963030153987343,
+  "block_delta_ci95": 0.004417474557392316,
+  "block_count": 7,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 7,
+  "adaptive_accuracy": 0.5842521366462352,
+  "best_fixed_accuracy": 0.5864333562384845,
+  "fixed_accuracies": {
+    "sgd_lr_0_001": 0.43915930914575624,
+    "sgd_lr_0_01": 0.5426906854799968,
+    "sgd_lr_0_05": 0.5864333562384845
+  }
+}

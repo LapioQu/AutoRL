@@ -1,0 +1,68 @@
+{
+  "entry_label": "abrupt_drift",
+  "config_path": "E:\\dipproj\\configs\\examples\\abrupt_drift.yaml",
+  "n": 5,
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "reward_mean": 0.97379477259227,
+  "reward_std": 7.819268224195714e-05,
+  "reward_ci95": 6.853890791173428e-05,
+  "runs": [
+    {
+      "entry_label": "abrupt_drift",
+      "seed": 41,
+      "experiment_id": "abrupt-drift-seed-41-20260430080440-9b2cfc80",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_41\\experiments\\abrupt-drift-seed-41-20260430080440-9b2cfc80",
+      "reward_mean": 0.9738783701182055,
+      "switch_count": 1,
+      "final_strategy": "drift_aware"
+    },
+    {
+      "entry_label": "abrupt_drift",
+      "seed": 42,
+      "experiment_id": "abrupt-drift-seed-42-20260430080445-6bebcd75",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_42\\experiments\\abrupt-drift-seed-42-20260430080445-6bebcd75",
+      "reward_mean": 0.9738395964238155,
+      "switch_count": 1,
+      "final_strategy": "drift_aware"
+    },
+    {
+      "entry_label": "abrupt_drift",
+      "seed": 43,
+      "experiment_id": "abrupt-drift-seed-43-20260430080449-851062cd",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_43\\experiments\\abrupt-drift-seed-43-20260430080449-851062cd",
+      "reward_mean": 0.9737003188829195,
+      "switch_count": 1,
+      "final_strategy": "drift_aware"
+    },
+    {
+      "entry_label": "abrupt_drift",
+      "seed": 44,
+      "experiment_id": "abrupt-drift-seed-44-20260430080453-f928790f",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_44\\experiments\\abrupt-drift-seed-44-20260430080453-f928790f",
+      "reward_mean": 0.9738323793179272,
+      "switch_count": 1,
+      "final_strategy": "drift_aware"
+    },
+    {
+      "entry_label": "abrupt_drift",
+      "seed": 45,
+      "experiment_id": "abrupt-drift-seed-45-20260430080457-15e7edec",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e2_abrupt-drift\\seed_45\\experiments\\abrupt-drift-seed-45-20260430080457-15e7edec",
+      "reward_mean": 0.9737231982184824,
+      "switch_count": 1,
+      "final_strategy": "drift_aware"
+    }
+  ],
+  "suite_name": "abrupt_drift"
+}

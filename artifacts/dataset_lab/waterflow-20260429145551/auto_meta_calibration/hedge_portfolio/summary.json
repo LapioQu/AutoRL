@@ -1,0 +1,36 @@
+{
+  "dataset_name": "WaterFlow calibration",
+  "score_name": "normalized_reward",
+  "policy_name": "hedge_portfolio",
+  "sample_count": 256,
+  "evaluation_interval": 64,
+  "window_size": 64,
+  "start_strategy": "knn_regressor",
+  "final_strategy": "knn_regressor",
+  "switch_count": 0,
+  "adaptive_score": 0.9135039610039855,
+  "best_fixed_strategy": "knn_regressor",
+  "best_fixed_score": 0.9135039610039855,
+  "delta_vs_best_fixed": 0.0,
+  "fixed_scores": {
+    "knn_regressor": 0.9135039610039855,
+    "lin_lr_0_002": 0.5528627104562645,
+    "lin_lr_0_01": 0.6023808635415279,
+    "pa_regressor": 0.6344517203724926
+  },
+  "block_delta_mean": 0.0,
+  "block_delta_std": 0.0,
+  "block_delta_ci95": 0.0,
+  "block_count": 4,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 4,
+  "adaptive_accuracy": 0.9135039610039855,
+  "best_fixed_accuracy": 0.9135039610039855,
+  "fixed_accuracies": {
+    "knn_regressor": 0.9135039610039855,
+    "lin_lr_0_002": 0.5528627104562645,
+    "lin_lr_0_01": 0.6023808635415279,
+    "pa_regressor": 0.6344517203724926
+  }
+}

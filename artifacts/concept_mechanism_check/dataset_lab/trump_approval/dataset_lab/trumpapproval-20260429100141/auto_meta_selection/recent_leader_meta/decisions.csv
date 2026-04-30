@@ -1,0 +1,17 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+31,0,sgd_lr_0_01,sgd_lr_0_05,switch,True,recent_leader_warmup,,0.01,Switch after warmup because the recent block leader outperformed the initial incumbent: sgd_lr_0_05.
+63,1,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 4 block(s) remaining.
+95,2,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 3 block(s) remaining.
+127,3,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+159,4,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+191,5,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+223,6,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+255,7,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+287,8,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+319,9,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+351,10,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+383,11,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+415,12,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+447,13,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+479,14,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.
+511,15,sgd_lr_0_05,sgd_lr_0_05,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.

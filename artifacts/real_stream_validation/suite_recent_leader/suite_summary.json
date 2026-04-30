@@ -1,0 +1,49 @@
+{
+  "dataset_count": 3,
+  "datasets": [
+    {
+      "dataset_name": "Elec2",
+      "policy_name": "recent_leader_meta",
+      "score_name": "accuracy",
+      "sample_count": 45312,
+      "adaptive_score": 0.9166445974576272,
+      "best_fixed_strategy": "sgd_lr_0_5",
+      "best_fixed_score": 0.9160045903954802,
+      "delta_vs_best_fixed": 0.0006400070621469522,
+      "switch_count": 7,
+      "block_delta_mean": 0.0006400070621468926,
+      "block_delta_ci95": 0.0008934404908524916,
+      "summary_json_path": "E:\\dipproj\\artifacts\\real_stream_validation\\suite_recent_leader\\elec2\\summary.json"
+    },
+    {
+      "dataset_name": "Bikes",
+      "policy_name": "recent_leader_meta",
+      "score_name": "normalized_reward",
+      "sample_count": 40000,
+      "adaptive_score": 0.6779792520341166,
+      "best_fixed_strategy": "sgd_lr_0_0001",
+      "best_fixed_score": 0.6762509033506491,
+      "delta_vs_best_fixed": 0.0017283486834674955,
+      "switch_count": 87,
+      "block_delta_mean": 0.0017311184730243762,
+      "block_delta_ci95": 0.001002778869816201,
+      "summary_json_path": "E:\\dipproj\\artifacts\\real_stream_validation\\suite_recent_leader\\bikes\\summary.json"
+    },
+    {
+      "dataset_name": "TrumpApproval",
+      "policy_name": "recent_leader_meta",
+      "score_name": "normalized_reward",
+      "sample_count": 1001,
+      "adaptive_score": 0.8008874071802242,
+      "best_fixed_strategy": "sgd_lr_0_05",
+      "best_fixed_score": 0.8014321673181487,
+      "delta_vs_best_fixed": -0.0005447601379244826,
+      "switch_count": 1,
+      "block_delta_mean": -0.0005497025182080191,
+      "block_delta_ci95": 0.0010598967935027744,
+      "summary_json_path": "E:\\dipproj\\artifacts\\real_stream_validation\\suite_recent_leader\\trump_approval\\summary.json"
+    }
+  ],
+  "wins_vs_best_fixed": 2,
+  "non_losses_vs_best_fixed": 2
+}

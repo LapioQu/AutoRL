@@ -1,0 +1,140 @@
+{
+  "created_at_utc": "2026-04-29T15:09:46.555802+00:00",
+  "dataset_name": "Bikes",
+  "task_type": "regression",
+  "target_column": "bikes_in_use",
+  "source_row_count": 4000,
+  "source_rows_used": 4000,
+  "sample_count": 3997,
+  "feature_count": 10,
+  "score_name": "normalized_reward",
+  "policy_name": "fixed_share_portfolio",
+  "adaptive_score": 0.7280133521701768,
+  "best_fixed_strategy": "lin_lr_0_001",
+  "best_fixed_score": 0.6905654106521181,
+  "delta_vs_best_fixed": 0.03744794151805875,
+  "oracle_score": 0.7887059888026144,
+  "oracle_gain": 0.09814057815049637,
+  "oracle_capture_ratio": 0.38157449470730825,
+  "prediction_mode": "next_step",
+  "final_strategy": "lin_lr_0_002",
+  "switch_count": 18,
+  "next_prediction": "1.7255346356144574",
+  "prediction_confidence": 0.2565837610870068,
+  "confidence_label": "low",
+  "next_prediction_by_strategy": {
+    "tree_regressor": "13.15024630541873",
+    "lin_lr_0_0001": "1.6836984994899724",
+    "lin_lr_0_0005": "1.6554693831036529",
+    "lin_lr_0_001": "1.6430696118875083",
+    "lin_lr_0_002": "1.7255346356144574"
+  },
+  "forecast_row_preview": {
+    "moment": "2016-04-03 07:14:49",
+    "station": "place-esquirol",
+    "clouds": "0",
+    "description": "clear sky",
+    "humidity": "87",
+    "pressure": "1009.0",
+    "temperature": "10.28",
+    "wind": "3.6",
+    "bikes_in_use": "1"
+  },
+  "preview_rows": [
+    {
+      "row_index": 3985,
+      "actual_target": 1.0,
+      "adaptive_prediction": 1.4574691827687618,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"pomme\", \"target_lag_1\": 7.0, \"target_lag_2\": 0.0, \"target_lag_3\": 0.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3986,
+      "actual_target": 0.0,
+      "adaptive_prediction": 1.9305599572398928,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"place-esquirol\", \"target_lag_1\": 1.0, \"target_lag_2\": 7.0, \"target_lag_3\": 0.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3987,
+      "actual_target": 0.0,
+      "adaptive_prediction": 1.741244289896569,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"place-jeanne-darc\", \"target_lag_1\": 0.0, \"target_lag_2\": 1.0, \"target_lag_3\": 7.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3988,
+      "actual_target": 0.0,
+      "adaptive_prediction": 1.6474262737458338,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"place-des-carmes\", \"target_lag_1\": 0.0, \"target_lag_2\": 0.0, \"target_lag_3\": 1.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3989,
+      "actual_target": 7.0,
+      "adaptive_prediction": 1.553864199283879,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"metro-canal-du-midi\", \"target_lag_1\": 0.0, \"target_lag_2\": 0.0, \"target_lag_3\": 0.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3990,
+      "actual_target": 1.0,
+      "adaptive_prediction": 1.4575074122653422,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"pomme\", \"target_lag_1\": 7.0, \"target_lag_2\": 0.0, \"target_lag_3\": 0.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3991,
+      "actual_target": 0.0,
+      "adaptive_prediction": 1.9263005419453114,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"place-esquirol\", \"target_lag_1\": 1.0, \"target_lag_2\": 7.0, \"target_lag_3\": 0.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3992,
+      "actual_target": 0.0,
+      "adaptive_prediction": 1.7374493303350693,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"place-jeanne-darc\", \"target_lag_1\": 0.0, \"target_lag_2\": 1.0, \"target_lag_3\": 7.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3993,
+      "actual_target": 0.0,
+      "adaptive_prediction": 1.64880623570558,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"place-des-carmes\", \"target_lag_1\": 0.0, \"target_lag_2\": 0.0, \"target_lag_3\": 1.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3994,
+      "actual_target": 7.0,
+      "adaptive_prediction": 1.5560607401633926,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"metro-canal-du-midi\", \"target_lag_1\": 0.0, \"target_lag_2\": 0.0, \"target_lag_3\": 0.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3995,
+      "actual_target": 1.0,
+      "adaptive_prediction": 1.4577751437293616,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"pomme\", \"target_lag_1\": 7.0, \"target_lag_2\": 0.0, \"target_lag_3\": 0.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    },
+    {
+      "row_index": 3996,
+      "actual_target": 1.0,
+      "adaptive_prediction": 1.9222674709211154,
+      "feature_snapshot": "{\"clouds\": 0, \"description\": \"clear sky\", \"humidity\": 87, \"pressure\": 1009, \"station\": \"place-esquirol\", \"target_lag_1\": 1.0, \"target_lag_2\": 7.0, \"target_lag_3\": 0.0, \"temperature\": 10.28, \"wind\": 3.6}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `fixed_share_portfolio` finished on strategy `lin_lr_0_002` after 18 switches.",
+    "It achieved `0.7280` against the best fixed baseline `lin_lr_0_001` at `0.6906`.",
+    "Oracle upper bound on this stream is `0.7887`. Available oracle gain over best fixed is `0.0981`, and the current adaptive controller captures `38.2%` of it.",
+    "The uploaded stream looks non-stationary enough for adaptation to help: the gain over best fixed is `0.0374`.",
+    "Multiple switches suggest regime changes or at least changing local winners across the stream.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `1.7255` based on the latest lagged context `['7', '1', '1']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\tmp_eval\\dataset_lab\\bikes-20260429150932",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\bikes-20260429150932\\auto_meta_selection\\fixed_share_portfolio\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\bikes-20260429150932\\auto_meta_selection\\fixed_share_portfolio\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\bikes-20260429150932\\auto_meta_selection\\fixed_share_portfolio\\summary.md",
+  "score_plot_path": "artifacts\\tmp_eval\\dataset_lab\\bikes-20260429150932\\dataset_lab_scores.png",
+  "portfolio_plot_path": "artifacts\\tmp_eval\\dataset_lab\\bikes-20260429150932\\dataset_lab_portfolio.png",
+  "switch_plot_path": "artifacts\\tmp_eval\\dataset_lab\\bikes-20260429150932\\dataset_lab_switches.png",
+  "dataset_lab_report_md_path": "artifacts\\tmp_eval\\dataset_lab\\bikes-20260429150932\\dataset_lab_report.md"
+}

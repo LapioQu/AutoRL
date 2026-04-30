@@ -1,0 +1,35 @@
+{
+  "dataset_count": 2,
+  "datasets": [
+    {
+      "dataset_name": "WebTraffic",
+      "policy_name": "hard_switch_lcb",
+      "score_name": "normalized_multioutput_reward",
+      "sample_count": 42803,
+      "adaptive_score": 0.6502968918165278,
+      "best_fixed_strategy": "sgd_lr_1e-10",
+      "best_fixed_score": 0.6502970344663921,
+      "delta_vs_best_fixed": -1.4264986425427395e-07,
+      "switch_count": 0,
+      "block_delta_mean": -1.427723782073139e-07,
+      "block_delta_ci95": 1.418382955478544e-08,
+      "summary_json_path": "E:\\dipproj\\artifacts\\real_stream_validation\\suite_new_candidates_hard\\web_traffic\\summary.json"
+    },
+    {
+      "dataset_name": "WaterFlow",
+      "policy_name": "hard_switch_lcb",
+      "score_name": "normalized_reward",
+      "sample_count": 1268,
+      "adaptive_score": 0.803869441514292,
+      "best_fixed_strategy": "sgd_lr_0_005",
+      "best_fixed_score": 0.8174255523266853,
+      "delta_vs_best_fixed": -0.013556110812393385,
+      "switch_count": 3,
+      "block_delta_mean": -0.014126105626592982,
+      "block_delta_ci95": 0.01784555541992154,
+      "summary_json_path": "E:\\dipproj\\artifacts\\real_stream_validation\\suite_new_candidates_hard\\waterflow\\summary.json"
+    }
+  ],
+  "wins_vs_best_fixed": 0,
+  "non_losses_vs_best_fixed": 0
+}

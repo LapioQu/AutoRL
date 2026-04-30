@@ -1,0 +1,390 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+511,1,tree_classifier,tree_classifier,stay,False,recent_leader_warmup_same,0.0,0.002,Stay after warmup because the current strategy is already the recent leader.
+767,2,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1023,3,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1279,4,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1535,5,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1791,6,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+2047,7,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+2303,8,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+2559,9,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+2815,10,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+3071,11,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+3327,12,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+3583,13,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+3839,14,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+4095,15,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+4351,16,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+4607,17,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+4863,18,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+5119,19,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.597852 + 0.001000 < 0.666992.
+5375,20,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.0234375,0.002,Stay because the candidate fails the incumbent floor check: 0.655134 + 0.001000 < 0.659598.
+5631,21,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.02734375,0.002,Stay because the candidate fails the incumbent floor check: 0.651989 + 0.001000 < 0.657138.
+5887,22,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.02473958333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.648268 + 0.001000 < 0.651325.
+6143,23,tree_classifier,logistic_lr_0_1,switch,True,recent_leader_advantage,0.02994791666666663,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.572917 - 0.542969 = 0.029948.
+6399,24,logistic_lr_0_1,logistic_lr_0_1,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+6655,25,logistic_lr_0_1,logistic_lr_0_1,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+6911,26,logistic_lr_0_1,logistic_lr_0_1,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+7167,27,logistic_lr_0_1,logistic_lr_0_1,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+7423,28,logistic_lr_0_1,tree_classifier,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.627694 + 0.001000 < 0.628906.
+7679,29,logistic_lr_0_1,tree_classifier,stay,False,recent_leader_incumbent_floor,0.02083333333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.626302 + 0.001000 < 0.627344.
+7935,30,logistic_lr_0_1,tree_classifier,switch,True,recent_leader_advantage,0.01432291666666663,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.569010 - 0.554688 = 0.014323.
+8191,31,tree_classifier,tree_classifier,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+8447,32,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+8703,33,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.575023 + 0.001000 < 0.618451.
+8959,34,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01302083333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.574554 + 0.001000 < 0.615960.
+9215,35,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.573242 + 0.001000 < 0.613932.
+9471,36,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+9727,37,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+9983,38,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.04036458333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.574519 + 0.001000 < 0.608974.
+10239,39,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.05729166666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.573535 + 0.001000 < 0.606445.
+10495,40,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.05859375,0.002,Stay because the candidate fails the incumbent floor check: 0.573457 + 0.001000 < 0.605278.
+10751,41,tree_classifier,logistic_lr_0_1,switch,True,recent_leader_advantage,0.0078125,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.554688 - 0.546875 = 0.007812.
+11007,42,logistic_lr_0_1,logistic_lr_0_1,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+11263,43,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02604166666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.572798 + 0.001000 < 0.600852.
+11519,44,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01692708333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.572396 + 0.001000 < 0.600347.
+11775,45,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.03645833333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.573285 + 0.001000 < 0.599185.
+12031,46,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.03255208333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.573554 + 0.001000 < 0.597739.
+12287,47,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.06119791666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.574219 + 0.001000 < 0.596598.
+12543,48,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.046875,0.002,Stay because the candidate fails the incumbent floor check: 0.574139 + 0.001000 < 0.595584.
+12799,49,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02734375,0.002,Stay because the candidate fails the incumbent floor check: 0.573750 + 0.001000 < 0.594844.
+13055,50,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02473958333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.574602 + 0.001000 < 0.594210.
+13311,51,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.0390625,0.002,Stay because the candidate fails the incumbent floor check: 0.574820 + 0.001000 < 0.592773.
+13567,52,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.04947916666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.575029 + 0.001000 < 0.592129.
+13823,53,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.03255208333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.574508 + 0.001000 < 0.591218.
+14079,54,logistic_lr_0_1,tree_classifier,switch,True,recent_leader_advantage,0.02734375,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.559896 - 0.532552 = 0.027344.
+14335,55,tree_classifier,tree_classifier,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+14591,56,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+14847,57,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+15103,58,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+15359,59,tree_classifier,logistic_lr_0_1,switch,True,recent_leader_advantage,0.00390625,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.561198 - 0.557292 = 0.003906.
+15615,60,logistic_lr_0_1,logistic_lr_0_1,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+15871,61,logistic_lr_0_1,pa_classifier,stay,False,recent_leader_incumbent_floor,0.00651041666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.571762 + 0.001000 < 0.585244.
+16127,62,logistic_lr_0_1,tree_classifier,switch,True,recent_leader_advantage,0.01692708333333326,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.565104 - 0.548177 = 0.016927.
+16383,63,tree_classifier,tree_classifier,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+16639,64,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+16895,65,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+17151,66,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+17407,67,tree_classifier,logistic_lr_0_1,switch,True,recent_leader_advantage,0.01692708333333326,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.518229 - 0.501302 = 0.016927.
+17663,68,logistic_lr_0_1,logistic_lr_0_1,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+17919,69,logistic_lr_0_1,logistic_lr_0_1,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+18175,70,logistic_lr_0_1,logistic_lr_0_1,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+18431,71,logistic_lr_0_1,tree_classifier,switch,True,recent_leader_advantage,0.0546875,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.812500 - 0.757812 = 0.054688.
+18687,72,tree_classifier,tree_classifier,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+18943,73,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+19199,74,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+19455,75,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+19711,76,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+19967,77,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+20223,78,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+20479,79,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+20735,80,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+20991,81,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+21247,82,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+21503,83,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+21759,84,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+22015,85,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+22271,86,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+22527,87,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+22783,88,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+23039,89,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+23295,90,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+23551,91,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+23807,92,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+24063,93,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+24319,94,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+24575,95,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+24831,96,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+25087,97,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+25343,98,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+25599,99,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+25855,100,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+26111,101,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+26367,102,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+26623,103,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+26879,104,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+27135,105,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+27391,106,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+27647,107,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+27903,108,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+28159,109,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+28415,110,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+28671,111,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+28927,112,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+29183,113,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+29439,114,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+29695,115,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+29951,116,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+30207,117,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+30463,118,tree_classifier,pa_classifier,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+30719,119,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+30975,120,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+31231,121,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+31487,122,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+31743,123,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+31999,124,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+32255,125,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+32511,126,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+32767,127,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+33023,128,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+33279,129,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+33535,130,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+33791,131,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+34047,132,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+34303,133,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+34559,134,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+34815,135,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+35071,136,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+35327,137,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+35583,138,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+35839,139,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+36095,140,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+36351,141,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+36607,142,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+36863,143,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+37119,144,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+37375,145,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+37631,146,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+37887,147,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+38143,148,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+38399,149,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+38655,150,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+38911,151,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+39167,152,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+39423,153,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+39679,154,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+39935,155,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+40191,156,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+40447,157,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+40703,158,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+40959,159,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+41215,160,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+41471,161,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+41727,162,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+41983,163,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+42239,164,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+42495,165,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+42751,166,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+43007,167,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+43263,168,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+43519,169,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+43775,170,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+44031,171,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+44287,172,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+44543,173,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+44799,174,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+45055,175,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+45311,176,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+45567,177,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+45823,178,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+46079,179,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+46335,180,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+46591,181,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+46847,182,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+47103,183,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+47359,184,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+47615,185,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+47871,186,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01041666666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.646725 + 0.001000 < 0.658464.
+48127,187,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.0026041666666667407,0.002,Stay because the candidate fails the incumbent floor check: 0.646796 + 0.001000 < 0.658536.
+48383,188,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+48639,189,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+48895,190,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+49151,191,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+49407,192,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+49663,193,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+49919,194,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+50175,195,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+50431,196,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+50687,197,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+50943,198,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+51199,199,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+51455,200,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+51711,201,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+51967,202,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+52223,203,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+52479,204,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+52735,205,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+52991,206,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+53247,207,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+53503,208,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+53759,209,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+54015,210,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+54271,211,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+54527,212,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+54783,213,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+55039,214,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+55295,215,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+55551,216,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+55807,217,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+56063,218,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+56319,219,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+56575,220,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+56831,221,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+57087,222,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+57343,223,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+57599,224,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+57855,225,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.0026041666666667407,0.002,Stay because the candidate fails the incumbent floor check: 0.652620 + 0.001000 < 0.664875.
+58111,226,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+58367,227,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+58623,228,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+58879,229,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+59135,230,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+59391,231,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+59647,232,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+59903,233,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+60159,234,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+60415,235,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+60671,236,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+60927,237,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+61183,238,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+61439,239,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+61695,240,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+61951,241,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+62207,242,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+62463,243,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+62719,244,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+62975,245,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+63231,246,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+63487,247,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+63743,248,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+63999,249,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+64255,250,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+64511,251,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+64767,252,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+65023,253,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+65279,254,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+65535,255,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+65791,256,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+66047,257,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+66303,258,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+66559,259,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+66815,260,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+67071,261,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+67327,262,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+67583,263,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+67839,264,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+68095,265,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+68351,266,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+68607,267,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+68863,268,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+69119,269,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+69375,270,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+69631,271,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+69887,272,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+70143,273,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+70399,274,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+70655,275,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+70911,276,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+71167,277,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+71423,278,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+71679,279,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+71935,280,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+72191,281,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+72447,282,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+72703,283,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+72959,284,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+73215,285,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+73471,286,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+73727,287,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+73983,288,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+74239,289,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+74495,290,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+74751,291,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+75007,292,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+75263,293,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+75519,294,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+75775,295,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+76031,296,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+76287,297,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+76543,298,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+76799,299,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+77055,300,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+77311,301,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+77567,302,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+77823,303,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+78079,304,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.00520833333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.650435 + 0.001000 < 0.664511.
+78335,305,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.02864583333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.650059 + 0.001000 < 0.664062.
+78591,306,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+78847,307,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+79103,308,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+79359,309,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.03385416666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.599798 + 0.001000 < 0.662374.
+79615,310,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+79871,311,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+80127,312,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.599416 + 0.001000 < 0.661354.
+80383,313,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01432291666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.599211 + 0.001000 < 0.661114.
+80639,314,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02083333333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.598884 + 0.001000 < 0.660479.
+80895,315,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01822916666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.598781 + 0.001000 < 0.659958.
+81151,316,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.03255208333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.645887 + 0.001000 < 0.659663.
+81407,317,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+81663,318,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+81919,319,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+82175,320,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+82431,321,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+82687,322,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.643806 + 0.001000 < 0.657471.
+82943,323,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.03385416666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.643543 + 0.001000 < 0.657082.
+83199,324,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.04036458333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.643245 + 0.001000 < 0.656683.
+83455,325,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01822916666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.642842 + 0.001000 < 0.656214.
+83711,326,tree_classifier,pa_classifier,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+83967,327,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.057291666666666685,0.002,Stay because the candidate fails the incumbent floor check: 0.596537 + 0.001000 < 0.655238.
+84223,328,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.08723958333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.596576 + 0.001000 < 0.654801.
+84479,329,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.05208333333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.596259 + 0.001000 < 0.654545.
+84735,330,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01432291666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.641368 + 0.001000 < 0.654161.
+84991,331,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+85247,332,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.03385416666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.640871 + 0.001000 < 0.653529.
+85503,333,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.00520833333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.641374 + 0.001000 < 0.654004.
+85759,334,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.0026041666666667407,0.002,Stay because the candidate fails the incumbent floor check: 0.641814 + 0.001000 < 0.654489.
+86015,335,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+86271,336,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+86527,337,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+86783,338,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+87039,339,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+87295,340,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+87551,341,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+87807,342,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+88063,343,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+88319,344,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+88575,345,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+88831,346,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+89087,347,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+89343,348,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+89599,349,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.005208333333333259,0.002,Stay because the candidate fails the incumbent floor check: 0.642801 + 0.001000 < 0.656116.
+89855,350,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+90111,351,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+90367,352,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+90623,353,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.015625,0.002,Stay because the candidate fails the incumbent floor check: 0.596773 + 0.001000 < 0.655257.
+90879,354,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.00911458333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.641780 + 0.001000 < 0.655029.
+91135,355,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.641678 + 0.001000 < 0.654824.
+91391,356,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.04427083333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.641533 + 0.001000 < 0.654357.
+91647,357,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.04166666666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.641334 + 0.001000 < 0.654122.
+91903,358,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.02864583333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.641289 + 0.001000 < 0.654085.
+92159,359,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+92415,360,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+92671,361,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+92927,362,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+93183,363,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+93439,364,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+93695,365,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+93951,366,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+94207,367,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+94463,368,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+94719,369,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+94975,370,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+95231,371,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+95487,372,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.594640 + 0.001000 < 0.651464.
+95743,373,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01432291666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.638275 + 0.001000 < 0.651310.
+95999,374,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.00520833333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.638083 + 0.001000 < 0.651177.
+96255,375,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+96511,376,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+96767,377,tree_classifier,pa_classifier,stay,False,recent_leader_incumbent_floor,0.00651041666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.594050 + 0.001000 < 0.650318.
+97023,378,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+97279,379,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+97535,380,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.00911458333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.636585 + 0.001000 < 0.649586.
+97791,381,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01822916666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.636238 + 0.001000 < 0.649153.
+98047,382,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.636178 + 0.001000 < 0.649080.
+98303,383,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.635824 + 0.001000 < 0.648702.
+98559,384,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+98815,385,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+99071,386,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+99327,387,tree_classifier,logistic_lr_0_1,stay,False,recent_leader_incumbent_floor,0.015625,0.002,Stay because the candidate fails the incumbent floor check: 0.634886 + 0.001000 < 0.647572.
+99583,388,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+99839,389,tree_classifier,tree_classifier,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.

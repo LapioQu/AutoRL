@@ -1,0 +1,8 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+127,0,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+255,1,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_warmup_leader,,0.015,Switch after warmup because the cumulative reward leader differs from the starting strategy: softmax_lr_0_20.
+255,1,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+383,2,softmax_lr_0_20,knn_classifier,switch,True,fixed_share_weight_advantage,0.5096760067014562,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.6579 - 0.1483 = 0.5097 >= 0.0150.
+511,3,knn_classifier,knn_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+639,4,knn_classifier,knn_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+767,5,knn_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.17520123461589454,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3280 - 0.1528 = 0.1752 >= 0.0150.

@@ -1,0 +1,33 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+31,0,sgd_lr_0_01,sgd_lr_0_05,switch,True,hedge_weight_advantage,0.1547814857449401,0.005,Switch because candidate Hedge weight exceeds current weight beyond the switch threshold: 0.5547 - 0.3999 = 0.1548 >= 0.0050.
+63,1,sgd_lr_0_05,sgd_lr_0_01,switch,True,warmup_leader,,0.005,Switch after warmup because cumulative reward leader differs from the starting strategy: sgd_lr_0_01.
+63,1,sgd_lr_0_01,sgd_lr_0_01,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+95,2,sgd_lr_0_01,sgd_lr_0_05,switch,True,hedge_weight_advantage,0.4727833454501,0.005,Switch because candidate Hedge weight exceeds current weight beyond the switch threshold: 0.7364 - 0.2636 = 0.4728 >= 0.0050.
+127,3,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+159,4,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+191,5,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+223,6,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+255,7,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+287,8,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+319,9,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+351,10,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+383,11,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+415,12,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+447,13,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+479,14,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+511,15,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+543,16,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+575,17,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+607,18,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+639,19,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+671,20,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+703,21,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+735,22,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+767,23,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+799,24,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+831,25,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+863,26,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+895,27,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+927,28,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+959,29,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.
+991,30,sgd_lr_0_05,sgd_lr_0_05,stay,False,hedge_same_leader,0.0,0.005,Stay because the current strategy remains the highest-weight Hedge expert.

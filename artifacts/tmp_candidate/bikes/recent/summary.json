@@ -1,0 +1,34 @@
+{
+  "dataset_name": "bikes",
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "sample_count": 512,
+  "evaluation_interval": 128,
+  "window_size": 128,
+  "start_strategy": "sgd_lr_0_0005",
+  "final_strategy": "sgd_lr_0_0001",
+  "switch_count": 1,
+  "adaptive_score": 0.6566883313050565,
+  "best_fixed_strategy": "sgd_lr_0_0001",
+  "best_fixed_score": 0.6572330777000587,
+  "delta_vs_best_fixed": -0.000544746395002127,
+  "fixed_scores": {
+    "sgd_lr_0_0001": 0.6572330777000587,
+    "sgd_lr_0_0005": 0.6560260587166485,
+    "sgd_lr_0_001": 0.6548481634158837
+  },
+  "block_delta_mean": -0.0005447463950021825,
+  "block_delta_std": 0.0011932229232978781,
+  "block_delta_ci95": 0.0011693584648319205,
+  "block_count": 4,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 3,
+  "adaptive_accuracy": 0.6566883313050565,
+  "best_fixed_accuracy": 0.6572330777000587,
+  "fixed_accuracies": {
+    "sgd_lr_0_0001": 0.6572330777000587,
+    "sgd_lr_0_0005": 0.6560260587166485,
+    "sgd_lr_0_001": 0.6548481634158837
+  }
+}

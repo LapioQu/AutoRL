@@ -1,0 +1,68 @@
+{
+  "entry_label": "fallback",
+  "config_path": "E:\\dipproj\\configs\\examples\\fallback.yaml",
+  "n": 5,
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "reward_mean": 1.137804198660319,
+  "reward_std": 0.00024056115275541477,
+  "reward_ci95": 0.00021086114740027272,
+  "runs": [
+    {
+      "entry_label": "fallback",
+      "seed": 41,
+      "experiment_id": "fallback-seed-41-20260430080812-cd061005",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e8_fallback-insufficient-data\\seed_41\\experiments\\fallback-seed-41-20260430080812-cd061005",
+      "reward_mean": 1.1380565044110973,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    },
+    {
+      "entry_label": "fallback",
+      "seed": 42,
+      "experiment_id": "fallback-seed-42-20260430080815-15b8d02c",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e8_fallback-insufficient-data\\seed_42\\experiments\\fallback-seed-42-20260430080815-15b8d02c",
+      "reward_mean": 1.1379381162600402,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    },
+    {
+      "entry_label": "fallback",
+      "seed": 43,
+      "experiment_id": "fallback-seed-43-20260430080818-4c5240cf",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e8_fallback-insufficient-data\\seed_43\\experiments\\fallback-seed-43-20260430080818-4c5240cf",
+      "reward_mean": 1.1374173600707465,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    },
+    {
+      "entry_label": "fallback",
+      "seed": 44,
+      "experiment_id": "fallback-seed-44-20260430080821-c7221228",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e8_fallback-insufficient-data\\seed_44\\experiments\\fallback-seed-44-20260430080821-c7221228",
+      "reward_mean": 1.1378155125014402,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    },
+    {
+      "entry_label": "fallback",
+      "seed": 45,
+      "experiment_id": "fallback-seed-45-20260430080825-9651d341",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e8_fallback-insufficient-data\\seed_45\\experiments\\fallback-seed-45-20260430080825-9651d341",
+      "reward_mean": 1.1377935000582706,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    }
+  ],
+  "suite_name": "fallback"
+}

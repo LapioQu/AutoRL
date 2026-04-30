@@ -1,0 +1,34 @@
+{
+  "dataset_name": "WaterFlow calibration",
+  "score_name": "normalized_reward",
+  "policy_name": "fixed_share_portfolio",
+  "sample_count": 317,
+  "evaluation_interval": 24,
+  "window_size": 24,
+  "start_strategy": "pa_regressor",
+  "final_strategy": "lin_lr_0_001",
+  "switch_count": 4,
+  "adaptive_score": 0.6342162668456603,
+  "best_fixed_strategy": "pa_regressor",
+  "best_fixed_score": 0.630478676296456,
+  "delta_vs_best_fixed": 0.003737590549204306,
+  "fixed_scores": {
+    "lin_lr_0_0005": 0.49343462790884196,
+    "lin_lr_0_001": 0.5105854926779676,
+    "pa_regressor": 0.630478676296456
+  },
+  "block_delta_mean": 0.0020437127919924083,
+  "block_delta_std": 0.08263984784405662,
+  "block_delta_ci95": 0.04492353301881886,
+  "block_count": 13,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 13,
+  "adaptive_accuracy": 0.6342162668456603,
+  "best_fixed_accuracy": 0.630478676296456,
+  "fixed_accuracies": {
+    "lin_lr_0_0005": 0.49343462790884196,
+    "lin_lr_0_001": 0.5105854926779676,
+    "pa_regressor": 0.630478676296456
+  }
+}

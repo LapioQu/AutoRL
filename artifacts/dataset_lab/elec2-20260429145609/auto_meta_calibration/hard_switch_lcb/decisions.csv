@@ -1,0 +1,6 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+255,1,tree_classifier,softmax_lr_0_20,stay,False,high_uncertainty,0.1171875,0.002,"Stay because utility uncertainty is too high: current_std=0.1523, candidate_std=0.0117, threshold=0.0020."
+383,2,tree_classifier,softmax_lr_0_20,stay,False,high_uncertainty,0.16015625,0.002,"Stay because utility uncertainty is too high: current_std=0.1094, candidate_std=0.0117, threshold=0.0020."
+511,3,tree_classifier,knn_classifier,stay,False,high_uncertainty,0.06640625,0.002,"Stay because utility uncertainty is too high: current_std=0.0234, candidate_std=0.0195, threshold=0.0020."
+639,4,tree_classifier,knn_classifier,stay,False,high_uncertainty,0.0703125,0.002,"Stay because utility uncertainty is too high: current_std=0.0430, candidate_std=0.0039, threshold=0.0020."
+767,5,tree_classifier,knn_classifier,stay,False,high_uncertainty,0.03515625,0.002,"Stay because utility uncertainty is too high: current_std=0.0508, candidate_std=0.0312, threshold=0.0020."

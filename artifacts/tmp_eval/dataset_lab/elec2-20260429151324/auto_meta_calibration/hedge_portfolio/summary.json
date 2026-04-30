@@ -1,0 +1,38 @@
+{
+  "dataset_name": "Elec2 calibration",
+  "score_name": "accuracy",
+  "policy_name": "hedge_portfolio",
+  "sample_count": 880,
+  "evaluation_interval": 128,
+  "window_size": 128,
+  "start_strategy": "tree_classifier",
+  "final_strategy": "pa_classifier",
+  "switch_count": 1,
+  "adaptive_score": 0.9420454545454545,
+  "best_fixed_strategy": "pa_classifier",
+  "best_fixed_score": 0.9443181818181818,
+  "delta_vs_best_fixed": -0.002272727272727315,
+  "fixed_scores": {
+    "knn_classifier": 0.875,
+    "pa_classifier": 0.9443181818181818,
+    "sgd_lr_0_05": 0.8443181818181819,
+    "sgd_lr_0_10": 0.8602272727272727,
+    "tree_classifier": 0.8181818181818182
+  },
+  "block_delta_mean": -0.0026041666666666665,
+  "block_delta_std": 0.005823093691405702,
+  "block_delta_ci95": 0.004659445367665476,
+  "block_count": 6,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming classification task.",
+  "source_url": "local-upload",
+  "decision_rows": 6,
+  "adaptive_accuracy": 0.9420454545454545,
+  "best_fixed_accuracy": 0.9443181818181818,
+  "fixed_accuracies": {
+    "knn_classifier": 0.875,
+    "pa_classifier": 0.9443181818181818,
+    "sgd_lr_0_05": 0.8443181818181819,
+    "sgd_lr_0_10": 0.8602272727272727,
+    "tree_classifier": 0.8181818181818182
+  }
+}

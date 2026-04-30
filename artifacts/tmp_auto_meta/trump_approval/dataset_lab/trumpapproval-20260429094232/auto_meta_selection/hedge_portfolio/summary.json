@@ -1,0 +1,34 @@
+{
+  "dataset_name": "TrumpApproval",
+  "score_name": "normalized_reward",
+  "policy_name": "hedge_portfolio",
+  "sample_count": 160,
+  "evaluation_interval": 32,
+  "window_size": 32,
+  "start_strategy": "sgd_lr_0_01",
+  "final_strategy": "sgd_lr_0_05",
+  "switch_count": 3,
+  "adaptive_score": 0.4764084102501337,
+  "best_fixed_strategy": "sgd_lr_0_05",
+  "best_fixed_score": 0.50257006005996,
+  "delta_vs_best_fixed": -0.02616164980982627,
+  "fixed_scores": {
+    "sgd_lr_0_001": 0.36833216753338344,
+    "sgd_lr_0_01": 0.4803006946989908,
+    "sgd_lr_0_05": 0.50257006005996
+  },
+  "block_delta_mean": -0.026161649809826264,
+  "block_delta_std": 0.04353085329041681,
+  "block_delta_ci95": 0.03815647525376941,
+  "block_count": 5,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 6,
+  "adaptive_accuracy": 0.4764084102501337,
+  "best_fixed_accuracy": 0.50257006005996,
+  "fixed_accuracies": {
+    "sgd_lr_0_001": 0.36833216753338344,
+    "sgd_lr_0_01": 0.4803006946989908,
+    "sgd_lr_0_05": 0.50257006005996
+  }
+}

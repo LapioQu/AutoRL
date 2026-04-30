@@ -1,0 +1,68 @@
+{
+  "entry_label": "gradual_drift",
+  "config_path": "E:\\dipproj\\configs\\examples\\gradual_drift.yaml",
+  "n": 5,
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "reward_mean": 0.7762063297088865,
+  "reward_std": 0.0008954744454035651,
+  "reward_ci95": 0.0007849179589582278,
+  "runs": [
+    {
+      "entry_label": "gradual_drift",
+      "seed": 41,
+      "experiment_id": "gradual-drift-seed-41-20260430080501-4a968056",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e3_gradual-drift\\seed_41\\experiments\\gradual-drift-seed-41-20260430080501-4a968056",
+      "reward_mean": 0.7770082865760228,
+      "switch_count": 0,
+      "final_strategy": "tempered_reward"
+    },
+    {
+      "entry_label": "gradual_drift",
+      "seed": 42,
+      "experiment_id": "gradual-drift-seed-42-20260430080507-db1e1cf2",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e3_gradual-drift\\seed_42\\experiments\\gradual-drift-seed-42-20260430080507-db1e1cf2",
+      "reward_mean": 0.7755417294366542,
+      "switch_count": 0,
+      "final_strategy": "tempered_reward"
+    },
+    {
+      "entry_label": "gradual_drift",
+      "seed": 43,
+      "experiment_id": "gradual-drift-seed-43-20260430080512-130bfd4c",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e3_gradual-drift\\seed_43\\experiments\\gradual-drift-seed-43-20260430080512-130bfd4c",
+      "reward_mean": 0.7754089239981385,
+      "switch_count": 0,
+      "final_strategy": "tempered_reward"
+    },
+    {
+      "entry_label": "gradual_drift",
+      "seed": 44,
+      "experiment_id": "gradual-drift-seed-44-20260430080518-f8041a2a",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e3_gradual-drift\\seed_44\\experiments\\gradual-drift-seed-44-20260430080518-f8041a2a",
+      "reward_mean": 0.7773329034823904,
+      "switch_count": 0,
+      "final_strategy": "tempered_reward"
+    },
+    {
+      "entry_label": "gradual_drift",
+      "seed": 45,
+      "experiment_id": "gradual-drift-seed-45-20260430080523-01013e22",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e3_gradual-drift\\seed_45\\experiments\\gradual-drift-seed-45-20260430080523-01013e22",
+      "reward_mean": 0.7757398050512265,
+      "switch_count": 0,
+      "final_strategy": "tempered_reward"
+    }
+  ],
+  "suite_name": "gradual_drift"
+}

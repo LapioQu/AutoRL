@@ -1,0 +1,36 @@
+{
+  "dataset_name": "pollution",
+  "score_name": "accuracy",
+  "policy_name": "fixed_share_portfolio",
+  "sample_count": 41757,
+  "evaluation_interval": 128,
+  "window_size": 128,
+  "start_strategy": "tree_classifier",
+  "final_strategy": "softmax_lr_0_20",
+  "switch_count": 144,
+  "adaptive_score": 0.036903992145029575,
+  "best_fixed_strategy": "knn_classifier",
+  "best_fixed_score": 0.04212467370740235,
+  "delta_vs_best_fixed": -0.005220681562372778,
+  "fixed_scores": {
+    "knn_classifier": 0.04212467370740235,
+    "softmax_lr_0_10": 0.025193380750532846,
+    "softmax_lr_0_20": 0.03276097420791724,
+    "tree_classifier": 0.015398615800943554
+  },
+  "block_delta_mean": -0.0052243098159509204,
+  "block_delta_std": 0.014168483089552037,
+  "block_delta_ci95": 0.001538050614266802,
+  "block_count": 326,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming classification task.",
+  "source_url": "local-upload",
+  "decision_rows": 327,
+  "adaptive_accuracy": 0.036903992145029575,
+  "best_fixed_accuracy": 0.04212467370740235,
+  "fixed_accuracies": {
+    "knn_classifier": 0.04212467370740235,
+    "softmax_lr_0_10": 0.025193380750532846,
+    "softmax_lr_0_20": 0.03276097420791724,
+    "tree_classifier": 0.015398615800943554
+  }
+}

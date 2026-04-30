@@ -1,0 +1,8 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+127,0,tree_classifier,tree_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+255,1,tree_classifier,pa_classifier,switch,True,warmup_leader,,0.015,Switch after warmup because cumulative reward leader differs from the starting strategy: pa_classifier.
+255,1,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+383,2,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+511,3,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+639,4,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+767,5,pa_classifier,pa_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.

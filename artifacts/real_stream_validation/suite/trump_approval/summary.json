@@ -1,0 +1,33 @@
+{
+  "dataset_name": "TrumpApproval",
+  "score_name": "normalized_reward",
+  "sample_count": 1001,
+  "evaluation_interval": 32,
+  "window_size": 64,
+  "start_strategy": "sgd_lr_0_01",
+  "final_strategy": "sgd_lr_0_05",
+  "switch_count": 1,
+  "adaptive_score": 0.7835158555321373,
+  "best_fixed_strategy": "sgd_lr_0_05",
+  "best_fixed_score": 0.8014321673181487,
+  "delta_vs_best_fixed": -0.017916311786011385,
+  "fixed_scores": {
+    "sgd_lr_0_001": 0.6456869469438214,
+    "sgd_lr_0_01": 0.7339563542508843,
+    "sgd_lr_0_05": 0.8014321673181487
+  },
+  "block_delta_mean": -0.01807885896955376,
+  "block_delta_std": 0.04426894794940329,
+  "block_delta_ci95": 0.015583838023045905,
+  "block_count": 31,
+  "source_description": "Real approval-rating regression stream replayed in temporal order; used as a compact regression case where one fixed learner may dominate.",
+  "source_url": "https://riverml.xyz/",
+  "decision_rows": 29,
+  "adaptive_accuracy": 0.7835158555321373,
+  "best_fixed_accuracy": 0.8014321673181487,
+  "fixed_accuracies": {
+    "sgd_lr_0_001": 0.6456869469438214,
+    "sgd_lr_0_01": 0.7339563542508843,
+    "sgd_lr_0_05": 0.8014321673181487
+  }
+}

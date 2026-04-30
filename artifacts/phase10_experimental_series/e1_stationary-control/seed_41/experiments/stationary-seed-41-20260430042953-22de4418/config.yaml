@@ -1,0 +1,34 @@
+schema_version: "1.0"
+experiment_name: "stationary-adaptive-baseline"
+seed: 42
+mode: "adaptive"
+scenario:
+  name: "stationary"
+  episodes: 120
+  steps_per_episode: 50
+  tags: ["control", "stable"]
+  description: "Stable reward regime without drift."
+strategies:
+  - name: "fixed"
+    parameters:
+      exploration_rate: 0.10
+    compute_cost: 0.05
+  - name: "adaptive_meta"
+    parameters:
+      temperature: 0.8
+      evaluation_window: 20
+    compute_cost: 0.25
+meta_controller:
+  window_size: 20
+  min_samples: 10
+  delta: 0.05
+  lambda: 1.0
+  switch_cost: 0.15
+  utility_weights:
+    reward_mean: 1.0
+    reward_variance: 0.2
+    compute_cost: 0.1
+    switch_cost: 0.5
+artifacts_root: "artifacts"
+tags: ["phase1", "stationary"]
+notes: "Phase 1 baseline example."

@@ -1,0 +1,34 @@
+schema_version: "1.0"
+experiment_name: "noisy-reward-selector"
+seed: 72
+mode: "adaptive"
+scenario:
+  name: "noisy_reward"
+  episodes: 140
+  steps_per_episode: 55
+  reward_noise_std: 0.35
+  tags: ["noise", "variance"]
+  description: "Stable regime with stochastic reward noise."
+strategies:
+  - name: "lcb_conservative"
+    parameters:
+      confidence_lambda: 1.5
+    compute_cost: 0.12
+  - name: "adaptive_meta"
+    parameters:
+      temperature: 0.75
+      evaluation_window: 18
+    compute_cost: 0.22
+meta_controller:
+  window_size: 18
+  min_samples: 10
+  delta: 0.05
+  lambda: 1.4
+  switch_cost: 0.16
+  utility_weights:
+    reward_mean: 1.0
+    reward_variance: 0.35
+    compute_cost: 0.10
+    switch_cost: 0.55
+artifacts_root: "artifacts"
+tags: ["phase1", "noisy_reward"]

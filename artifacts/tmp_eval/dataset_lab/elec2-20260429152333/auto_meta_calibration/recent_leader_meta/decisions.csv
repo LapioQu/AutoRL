@@ -1,0 +1,5 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+383,2,tree_classifier,pa_classifier,switch,True,recent_leader_warmup,,0.01,Switch after warmup because the recent block leader outperformed the initial incumbent: pa_classifier.
+511,3,pa_classifier,pa_classifier,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+639,4,pa_classifier,pa_classifier,stay,False,recent_leader_cooldown,0.0,0.01,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+767,5,pa_classifier,pa_classifier,stay,False,recent_leader_same,0.0,0.01,Stay because the current strategy remains the recent block leader.

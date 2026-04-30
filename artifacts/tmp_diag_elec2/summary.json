@@ -1,0 +1,33 @@
+{
+  "dataset_name": "Elec2",
+  "score_name": "accuracy",
+  "sample_count": 45312,
+  "evaluation_interval": 128,
+  "window_size": 256,
+  "start_strategy": "sgd_lr_1_0",
+  "final_strategy": "sgd_lr_0_5",
+  "switch_count": 5,
+  "adaptive_score": 0.916159074858757,
+  "best_fixed_strategy": "sgd_lr_0_5",
+  "best_fixed_score": 0.9160045903954802,
+  "delta_vs_best_fixed": 0.00015448446327681609,
+  "fixed_scores": {
+    "sgd_lr_0_1": 0.8949284957627118,
+    "sgd_lr_0_5": 0.9160045903954802,
+    "sgd_lr_1_0": 0.9151218220338984
+  },
+  "block_delta_mean": 0.00015448446327683617,
+  "block_delta_std": 0.011513635589313901,
+  "block_delta_ci95": 0.0011994079416374232,
+  "block_count": 354,
+  "source_description": "Real NSW electricity market stream replayed in temporal order; target is whether the electricity price goes up or down.",
+  "source_url": "https://maxhalford.github.io/files/datasets/electricity.zip",
+  "decision_rows": 351,
+  "adaptive_accuracy": 0.916159074858757,
+  "best_fixed_accuracy": 0.9160045903954802,
+  "fixed_accuracies": {
+    "sgd_lr_0_1": 0.8949284957627118,
+    "sgd_lr_0_5": 0.9160045903954802,
+    "sgd_lr_1_0": 0.9151218220338984
+  }
+}

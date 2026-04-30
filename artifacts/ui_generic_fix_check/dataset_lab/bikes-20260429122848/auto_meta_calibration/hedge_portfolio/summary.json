@@ -1,0 +1,34 @@
+{
+  "dataset_name": "Bikes calibration",
+  "score_name": "normalized_reward",
+  "policy_name": "hedge_portfolio",
+  "sample_count": 45617,
+  "evaluation_interval": 128,
+  "window_size": 128,
+  "start_strategy": "sgd_lr_0_0005",
+  "final_strategy": "sgd_lr_0_0005",
+  "switch_count": 5,
+  "adaptive_score": 0.5086503841167375,
+  "best_fixed_strategy": "sgd_lr_0_0001",
+  "best_fixed_score": 0.6791994892278258,
+  "delta_vs_best_fixed": -0.17054910511108834,
+  "fixed_scores": {
+    "sgd_lr_0_0001": 0.6791994892278258,
+    "sgd_lr_0_0005": 0.5086776420516165,
+    "sgd_lr_0_001": 0.5069139133348709
+  },
+  "block_delta_mean": -0.17016211672083398,
+  "block_delta_std": 0.29586724923492574,
+  "block_delta_ci95": 0.030734628381328795,
+  "block_count": 356,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 357,
+  "adaptive_accuracy": 0.5086503841167375,
+  "best_fixed_accuracy": 0.6791994892278258,
+  "fixed_accuracies": {
+    "sgd_lr_0_0001": 0.6791994892278258,
+    "sgd_lr_0_0005": 0.5086776420516165,
+    "sgd_lr_0_001": 0.5069139133348709
+  }
+}

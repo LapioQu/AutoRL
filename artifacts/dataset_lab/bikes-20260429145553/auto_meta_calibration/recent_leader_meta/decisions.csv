@@ -1,0 +1,13 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+127,1,lin_lr_0_0005,lin_lr_0_002,switch,True,recent_leader_warmup,,0.001,Switch after warmup because the recent block leader outperformed the initial incumbent: lin_lr_0_002.
+191,2,lin_lr_0_002,lin_lr_0_002,stay,False,recent_leader_cooldown,0.0,0.001,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+255,3,lin_lr_0_002,tree_regressor,switch,True,recent_leader_advantage,0.1006584024837911,0.001,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.850734 - 0.750076 = 0.100658.
+319,4,tree_regressor,tree_regressor,stay,False,recent_leader_cooldown,0.0,0.001,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+383,5,tree_regressor,lin_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.002074086183068924,0.001,Stay because the candidate fails the incumbent floor check: 0.776858 + 0.001000 < 0.800082.
+447,6,tree_regressor,lin_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.001330079190516531,0.001,Stay because the candidate fails the incumbent floor check: 0.766587 + 0.001000 < 0.792906.
+511,7,tree_regressor,tree_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+575,8,tree_regressor,tree_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+639,9,tree_regressor,tree_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+703,10,tree_regressor,tree_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+767,11,tree_regressor,tree_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+831,12,tree_regressor,lin_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.041880612715462284,0.001,Stay because the candidate fails the incumbent floor check: 0.743531 + 0.001000 < 0.763802.

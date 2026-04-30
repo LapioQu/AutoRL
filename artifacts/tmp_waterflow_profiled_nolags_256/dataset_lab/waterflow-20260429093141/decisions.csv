@@ -1,0 +1,9 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+71,1,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.6544906329535867,0.003,"Stay because utility uncertainty is too high: current_std=0.0175, candidate_std=0.0508, threshold=0.0030."
+95,2,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.5529999483709661,0.003,"Stay because utility uncertainty is too high: current_std=0.0144, candidate_std=0.0537, threshold=0.0030."
+119,3,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.33699625470680195,0.003,"Stay because utility uncertainty is too high: current_std=0.1551, candidate_std=0.0072, threshold=0.0030."
+143,4,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.10938259601391742,0.003,"Stay because utility uncertainty is too high: current_std=0.0825, candidate_std=0.0028, threshold=0.0030."
+167,5,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.040433441486310895,0.003,"Stay because utility uncertainty is too high: current_std=0.0714, candidate_std=0.0606, threshold=0.0030."
+191,6,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.041107160199302495,0.003,"Stay because utility uncertainty is too high: current_std=0.0493, candidate_std=0.0594, threshold=0.0030."
+215,7,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.03979709576515367,0.003,"Stay because utility uncertainty is too high: current_std=0.0172, candidate_std=0.0084, threshold=0.0030."
+239,8,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.04557593992960007,0.003,"Stay because utility uncertainty is too high: current_std=0.0512, candidate_std=0.0482, threshold=0.0030."

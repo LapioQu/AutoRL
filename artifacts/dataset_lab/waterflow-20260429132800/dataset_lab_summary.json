@@ -1,0 +1,131 @@
+{
+  "created_at_utc": "2026-04-29T13:28:00.551774+00:00",
+  "dataset_name": "WaterFlow",
+  "task_type": "regression",
+  "target_column": "water_flow_lps",
+  "source_row_count": 128,
+  "source_rows_used": 128,
+  "sample_count": 128,
+  "feature_count": 0,
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "adaptive_score": 0.8204688673681441,
+  "best_fixed_strategy": "tree_regressor",
+  "best_fixed_score": 0.8204688673681441,
+  "delta_vs_best_fixed": 0.0,
+  "oracle_score": 0.8271486233664086,
+  "oracle_gain": 0.006679755998264536,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "tree_regressor",
+  "switch_count": 0,
+  "next_prediction": "90.00312883435582",
+  "prediction_confidence": 0.9002682951391782,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "tree_regressor": "90.00312883435582",
+    "lin_lr_0_002": "80.71829939650436",
+    "lin_lr_0_001": "80.71829939650436"
+  },
+  "forecast_row_preview": {
+    "Time": "2022-03-25 18:00:00+01:00",
+    "water_flow_lps": "103.12"
+  },
+  "preview_rows": [
+    {
+      "row_index": 116,
+      "actual_target": 104.23,
+      "adaptive_prediction": 70.86023355232044,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 117,
+      "actual_target": 104.6,
+      "adaptive_prediction": 71.52762888127403,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 118,
+      "actual_target": 105.17,
+      "adaptive_prediction": 72.18907630364855,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 119,
+      "actual_target": 104.03,
+      "adaptive_prediction": 72.84869477757557,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 120,
+      "actual_target": 103.93,
+      "adaptive_prediction": 74.09594698647255,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 121,
+      "actual_target": 103.87,
+      "adaptive_prediction": 74.69262804674311,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 122,
+      "actual_target": 104.02,
+      "adaptive_prediction": 75.27617548580825,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 123,
+      "actual_target": 103.45,
+      "adaptive_prediction": 75.8510519760921,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 124,
+      "actual_target": 102.81,
+      "adaptive_prediction": 89.6774213836478,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 125,
+      "actual_target": 102.9,
+      "adaptive_prediction": 89.7595,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 126,
+      "actual_target": 102.97,
+      "adaptive_prediction": 89.84111801242236,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 127,
+      "actual_target": 103.12,
+      "adaptive_prediction": 89.92216049382715,
+      "feature_snapshot": "{}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `recent_leader_meta` finished on strategy `tree_regressor` after 0 switches.",
+    "It achieved `0.8205` against the best fixed baseline `tree_regressor` at `0.8205`.",
+    "Oracle upper bound on this stream is `0.8271`. Available oracle gain over best fixed is `0.0067`, and the current adaptive controller captures `0.0%` of it.",
+    "Adaptive and best fixed finished effectively tied on this stream.",
+    "No strategy changes were needed; the stream behaved close to one dominant regime.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `90.0031` based on the latest lagged context `['102.9', '102.97', '103.12']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\dataset_lab\\waterflow-20260429132800",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\dataset_lab\\waterflow-20260429132800\\auto_meta_selection\\recent_leader_meta\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\dataset_lab\\waterflow-20260429132800\\auto_meta_selection\\recent_leader_meta\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\dataset_lab\\waterflow-20260429132800\\auto_meta_selection\\recent_leader_meta\\summary.md",
+  "score_plot_path": "artifacts\\dataset_lab\\waterflow-20260429132800\\dataset_lab_scores.png",
+  "portfolio_plot_path": "artifacts\\dataset_lab\\waterflow-20260429132800\\dataset_lab_portfolio.png",
+  "switch_plot_path": "artifacts\\dataset_lab\\waterflow-20260429132800\\dataset_lab_switches.png",
+  "dataset_lab_report_md_path": "artifacts\\dataset_lab\\waterflow-20260429132800\\dataset_lab_report.md"
+}

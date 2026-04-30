@@ -1,0 +1,38 @@
+{
+  "series_id": "E1",
+  "title": "Stationary control",
+  "series_type": "seeded_experiment_suite",
+  "config_source_path": "E:\\dipproj\\configs\\examples\\stationary.yaml",
+  "root_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control",
+  "n": 1,
+  "seeds": [
+    41
+  ],
+  "reward_mean": 0.9893079259542987,
+  "reward_std": 0.0,
+  "reward_ci95": 0.0,
+  "suite_summary_json_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\suite_summary.json",
+  "suite_summary_md_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\suite_summary.md",
+  "primary_plot_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\phase10_reward_mean.png",
+  "switches_plot_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\phase10_switch_count.png",
+  "runs": [
+    {
+      "seed": 41,
+      "experiment_id": "stationary-seed-41-20260430052238-b89b7b3e",
+      "status": "completed",
+      "reward_mean": 0.9893079259542987,
+      "switch_count": 0,
+      "final_strategy": "fixed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430052238-b89b7b3e",
+      "config_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430052238-b89b7b3e\\config.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430052238-b89b7b3e\\metrics.csv",
+      "decisions_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430052238-b89b7b3e\\decisions.csv",
+      "report_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430052238-b89b7b3e\\report.md",
+      "plot_paths": {
+        "reward_curve": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430052238-b89b7b3e\\reward_curve.png",
+        "strategy_timeline": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430052238-b89b7b3e\\strategy_timeline.png",
+        "utility_lcb": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430052238-b89b7b3e\\utility_lcb.png"
+      }
+    }
+  ]
+}

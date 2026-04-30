@@ -1,0 +1,4 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+191,1,knn_regressor,tree_regressor,stay,False,high_uncertainty,-0.02595498555408471,0.003,"Stay because utility uncertainty is too high: current_std=0.0001, candidate_std=0.0049, threshold=0.0030."
+255,2,knn_regressor,tree_regressor,stay,False,no_candidate_improvement,-0.027937373337861726,0.003,"Stay because candidate improvement is not sufficient after LCB comparison: margin=-0.0279, threshold=0.0030."
+319,3,knn_regressor,tree_regressor,stay,False,high_uncertainty,-0.020209410482955104,0.003,"Stay because utility uncertainty is too high: current_std=0.0024, candidate_std=0.0072, threshold=0.0030."

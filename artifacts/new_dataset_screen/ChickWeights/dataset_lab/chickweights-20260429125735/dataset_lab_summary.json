@@ -1,0 +1,133 @@
+{
+  "created_at_utc": "2026-04-29T12:57:38.858965+00:00",
+  "dataset_name": "ChickWeights",
+  "task_type": "classification",
+  "target_column": "target",
+  "source_row_count": 578,
+  "source_rows_used": 578,
+  "sample_count": 578,
+  "feature_count": 3,
+  "score_name": "accuracy",
+  "policy_name": "recent_leader_meta",
+  "adaptive_score": 0.058823529411764705,
+  "best_fixed_strategy": "knn_classifier",
+  "best_fixed_score": 0.05709342560553633,
+  "delta_vs_best_fixed": 0.0017301038062283725,
+  "oracle_score": 0.11072664359861592,
+  "oracle_gain": 0.05363321799307959,
+  "oracle_capture_ratio": 0.03225806451612901,
+  "prediction_mode": "next_step",
+  "final_strategy": "knn_classifier",
+  "switch_count": 1,
+  "next_prediction": "264",
+  "prediction_confidence": 0.5,
+  "confidence_label": "low",
+  "next_prediction_by_strategy": {
+    "knn_classifier": "264",
+    "gaussian_nb": "233",
+    "softmax_lr_0_20": "264",
+    "softmax_lr_0_05": "184"
+  },
+  "forecast_row_preview": {
+    "time": "21",
+    "chick": "50",
+    "diet": "4",
+    "target": "264"
+  },
+  "preview_rows": [
+    {
+      "row_index": 566,
+      "actual_target": 290,
+      "adaptive_prediction": 103,
+      "feature_snapshot": "{\"chick\": 38, \"diet\": 3, \"time\": 21}"
+    },
+    {
+      "row_index": 567,
+      "actual_target": 272,
+      "adaptive_prediction": 128,
+      "feature_snapshot": "{\"chick\": 39, \"diet\": 3, \"time\": 21}"
+    },
+    {
+      "row_index": 568,
+      "actual_target": 321,
+      "adaptive_prediction": 130,
+      "feature_snapshot": "{\"chick\": 40, \"diet\": 3, \"time\": 21}"
+    },
+    {
+      "row_index": 569,
+      "actual_target": 204,
+      "adaptive_prediction": 153,
+      "feature_snapshot": "{\"chick\": 41, \"diet\": 4, \"time\": 21}"
+    },
+    {
+      "row_index": 570,
+      "actual_target": 281,
+      "adaptive_prediction": 174,
+      "feature_snapshot": "{\"chick\": 42, \"diet\": 4, \"time\": 21}"
+    },
+    {
+      "row_index": 571,
+      "actual_target": 200,
+      "adaptive_prediction": 188,
+      "feature_snapshot": "{\"chick\": 43, \"diet\": 4, \"time\": 21}"
+    },
+    {
+      "row_index": 572,
+      "actual_target": 196,
+      "adaptive_prediction": 141,
+      "feature_snapshot": "{\"chick\": 45, \"diet\": 4, \"time\": 21}"
+    },
+    {
+      "row_index": 573,
+      "actual_target": 238,
+      "adaptive_prediction": 156,
+      "feature_snapshot": "{\"chick\": 46, \"diet\": 4, \"time\": 21}"
+    },
+    {
+      "row_index": 574,
+      "actual_target": 205,
+      "adaptive_prediction": 157,
+      "feature_snapshot": "{\"chick\": 47, \"diet\": 4, \"time\": 21}"
+    },
+    {
+      "row_index": 575,
+      "actual_target": 322,
+      "adaptive_prediction": 170,
+      "feature_snapshot": "{\"chick\": 48, \"diet\": 4, \"time\": 21}"
+    },
+    {
+      "row_index": 576,
+      "actual_target": 237,
+      "adaptive_prediction": 166,
+      "feature_snapshot": "{\"chick\": 49, \"diet\": 4, \"time\": 21}"
+    },
+    {
+      "row_index": 577,
+      "actual_target": 264,
+      "adaptive_prediction": 175,
+      "feature_snapshot": "{\"chick\": 50, \"diet\": 4, \"time\": 21}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `recent_leader_meta` finished on strategy `knn_classifier` after 1 switches.",
+    "It achieved `0.0588` against the best fixed baseline `knn_classifier` at `0.0571`.",
+    "Oracle upper bound on this stream is `0.1107`. Available oracle gain over best fixed is `0.0536`, and the current adaptive controller captures `3.2%` of it.",
+    "The uploaded stream looks non-stationary enough for adaptation to help: the gain over best fixed is `0.0017`.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step class from the final adaptive strategy is `264` based on the latest lagged context `['322', '237', '264']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the original CSV row order.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is prequential accuracy over the uploaded stream.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\auto_meta_selection\\recent_leader_meta\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\auto_meta_selection\\recent_leader_meta\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\auto_meta_selection\\recent_leader_meta\\summary.md",
+  "score_plot_path": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\dataset_lab_scores.png",
+  "portfolio_plot_path": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\dataset_lab_portfolio.png",
+  "switch_plot_path": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\dataset_lab_switches.png",
+  "dataset_lab_report_md_path": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\dataset_lab_report.md"
+}

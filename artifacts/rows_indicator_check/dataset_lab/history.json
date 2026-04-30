@@ -1,0 +1,19 @@
+[
+  {
+    "created_at_utc": "2026-04-29T11:12:05.991071+00:00",
+    "dataset_name": "Bikes",
+    "task_type": "regression",
+    "policy_name": "best_fixed_guard",
+    "source_row_count": 182470,
+    "source_rows_used": 512,
+    "sample_count": 512,
+    "adaptive_score": 0.6572330777000587,
+    "best_fixed_score": 0.6572330777000587,
+    "delta_vs_best_fixed": 0.0,
+    "oracle_capture_ratio": 0.0,
+    "switch_count": 0,
+    "summary_json_path": "artifacts\\rows_indicator_check\\dataset_lab\\bikes-20260429111205\\dataset_lab_summary.json",
+    "report_md_path": "artifacts\\rows_indicator_check\\dataset_lab\\bikes-20260429111205\\dataset_lab_report.md",
+    "artifact_root": "artifacts\\rows_indicator_check\\dataset_lab\\bikes-20260429111205"
+  }
+]

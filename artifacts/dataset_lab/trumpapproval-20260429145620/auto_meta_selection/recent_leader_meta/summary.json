@@ -1,0 +1,36 @@
+{
+  "dataset_name": "TrumpApproval",
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "sample_count": 998,
+  "evaluation_interval": 64,
+  "window_size": 128,
+  "start_strategy": "knn_regressor",
+  "final_strategy": "knn_regressor",
+  "switch_count": 0,
+  "adaptive_score": 0.817875873229035,
+  "best_fixed_strategy": "knn_regressor",
+  "best_fixed_score": 0.817875873229035,
+  "delta_vs_best_fixed": 0.0,
+  "fixed_scores": {
+    "knn_regressor": 0.817875873229035,
+    "lin_lr_0_0005": 0.5810325474727025,
+    "pa_regressor": 0.3586498321637034,
+    "tree_regressor": 0.5588742604533582
+  },
+  "block_delta_mean": 0.0,
+  "block_delta_std": 0.0,
+  "block_delta_ci95": 0.0,
+  "block_count": 15,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 14,
+  "adaptive_accuracy": 0.817875873229035,
+  "best_fixed_accuracy": 0.817875873229035,
+  "fixed_accuracies": {
+    "knn_regressor": 0.817875873229035,
+    "lin_lr_0_0005": 0.5810325474727025,
+    "pa_regressor": 0.3586498321637034,
+    "tree_regressor": 0.5588742604533582
+  }
+}

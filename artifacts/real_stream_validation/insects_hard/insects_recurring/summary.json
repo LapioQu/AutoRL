@@ -1,0 +1,34 @@
+{
+  "dataset_name": "InsectsRecurring",
+  "score_name": "accuracy",
+  "policy_name": "hard_switch_lcb",
+  "sample_count": 60000,
+  "evaluation_interval": 256,
+  "window_size": 256,
+  "start_strategy": "softmax_lr_0_01",
+  "final_strategy": "softmax_lr_0_01",
+  "switch_count": 4,
+  "adaptive_score": 0.7876666666666666,
+  "best_fixed_strategy": "softmax_lr_0_01",
+  "best_fixed_score": 0.7822833333333333,
+  "delta_vs_best_fixed": 0.0053833333333332956,
+  "fixed_scores": {
+    "softmax_lr_0_01": 0.7822833333333333,
+    "softmax_lr_0_1": 0.7633,
+    "tree_classifier": 0.6266
+  },
+  "block_delta_mean": 0.00539196047008547,
+  "block_delta_std": 0.03670179482566923,
+  "block_delta_ci95": 0.0047025719138453015,
+  "block_count": 234,
+  "source_description": "Official USP INSECTS recurring-drift stream replayed in temporal order; target is the insect class under incremental recurring concept drift.",
+  "source_url": "https://sites.google.com/view/uspdsrepository",
+  "decision_rows": 233,
+  "adaptive_accuracy": 0.7876666666666666,
+  "best_fixed_accuracy": 0.7822833333333333,
+  "fixed_accuracies": {
+    "softmax_lr_0_01": 0.7822833333333333,
+    "softmax_lr_0_1": 0.7633,
+    "tree_classifier": 0.6266
+  }
+}

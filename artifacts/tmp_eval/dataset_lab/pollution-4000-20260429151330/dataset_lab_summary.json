@@ -1,0 +1,144 @@
+{
+  "created_at_utc": "2026-04-29T15:13:47.496598+00:00",
+  "dataset_name": "pollution_4000",
+  "task_type": "regression",
+  "target_column": "pm2.5",
+  "source_row_count": 43824,
+  "source_rows_used": 4000,
+  "sample_count": 3997,
+  "feature_count": 15,
+  "score_name": "normalized_reward",
+  "policy_name": "fixed_share_portfolio",
+  "adaptive_score": 0.839908268333352,
+  "best_fixed_strategy": "lin_lr_0_002",
+  "best_fixed_score": 0.8384800619016669,
+  "delta_vs_best_fixed": 0.001428206431685064,
+  "oracle_score": 0.9071537590582561,
+  "oracle_gain": 0.06867369715658922,
+  "oracle_capture_ratio": 0.020796993475223548,
+  "prediction_mode": "next_step",
+  "final_strategy": "lin_lr_0_002",
+  "switch_count": 23,
+  "next_prediction": "177.6897225737224",
+  "prediction_confidence": 0.1666608295412081,
+  "confidence_label": "low",
+  "next_prediction_by_strategy": {
+    "knn_regressor": "165.8",
+    "pa_regressor": "209.1033461090165",
+    "lin_lr_0_01": "-788907951.9425099",
+    "lin_lr_0_002": "177.6897225737224",
+    "lin_lr_0_005": "16301.766790179074"
+  },
+  "forecast_row_preview": {
+    "No": "4291",
+    "year": "2010",
+    "month": "6",
+    "day": "28",
+    "hour": "18",
+    "pm2.5": "189",
+    "DEWP": "19",
+    "TEMP": "30",
+    "PRES": "1001",
+    "cbwd": "SE",
+    "Iws": "25.47",
+    "Is": "0",
+    "Ir": "0"
+  },
+  "preview_rows": [
+    {
+      "row_index": 3985,
+      "actual_target": 112.0,
+      "adaptive_prediction": 128.6944954921016,
+      "feature_snapshot": "{\"DEWP\": 20, \"Ir\": 0, \"Is\": 0, \"Iws\": 8.05, \"No\": 4280, \"PRES\": 1002, \"TEMP\": 23, \"cbwd\": \"NW\", \"day\": 28, \"hour\": 7, \"month\": 6, \"target_lag_1\": 124.0, \"target_lag_2\": 118.0, \"target_lag_3\": 134.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3986,
+      "actual_target": 101.0,
+      "adaptive_prediction": 115.58148680378473,
+      "feature_snapshot": "{\"DEWP\": 19, \"Ir\": 0, \"Is\": 0, \"Iws\": 9.84, \"No\": 4281, \"PRES\": 1002, \"TEMP\": 25, \"cbwd\": \"NW\", \"day\": 28, \"hour\": 8, \"month\": 6, \"target_lag_1\": 112.0, \"target_lag_2\": 124.0, \"target_lag_3\": 118.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3987,
+      "actual_target": 131.0,
+      "adaptive_prediction": 106.7051070393205,
+      "feature_snapshot": "{\"DEWP\": 19, \"Ir\": 0, \"Is\": 0, \"Iws\": 0.89, \"No\": 4282, \"PRES\": 1002, \"TEMP\": 26, \"cbwd\": \"cv\", \"day\": 28, \"hour\": 9, \"month\": 6, \"target_lag_1\": 101.0, \"target_lag_2\": 112.0, \"target_lag_3\": 124.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3988,
+      "actual_target": 137.0,
+      "adaptive_prediction": 130.43746484148824,
+      "feature_snapshot": "{\"DEWP\": 18, \"Ir\": 0, \"Is\": 0, \"Iws\": 1.78, \"No\": 4283, \"PRES\": 1002, \"TEMP\": 27, \"cbwd\": \"cv\", \"day\": 28, \"hour\": 10, \"month\": 6, \"target_lag_1\": 131.0, \"target_lag_2\": 101.0, \"target_lag_3\": 112.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3989,
+      "actual_target": 166.0,
+      "adaptive_prediction": 133.02476070199327,
+      "feature_snapshot": "{\"DEWP\": 19, \"Ir\": 0, \"Is\": 0, \"Iws\": 3.57, \"No\": 4284, \"PRES\": 1002, \"TEMP\": 29, \"cbwd\": \"cv\", \"day\": 28, \"hour\": 11, \"month\": 6, \"target_lag_1\": 137.0, \"target_lag_2\": 131.0, \"target_lag_3\": 101.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3990,
+      "actual_target": 152.0,
+      "adaptive_prediction": 155.3501046060009,
+      "feature_snapshot": "{\"DEWP\": 18, \"Ir\": 0, \"Is\": 0, \"Iws\": 3.13, \"No\": 4285, \"PRES\": 1002, \"TEMP\": 30, \"cbwd\": \"SE\", \"day\": 28, \"hour\": 12, \"month\": 6, \"target_lag_1\": 166.0, \"target_lag_2\": 137.0, \"target_lag_3\": 131.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3991,
+      "actual_target": 153.0,
+      "adaptive_prediction": 142.48111076500177,
+      "feature_snapshot": "{\"DEWP\": 18, \"Ir\": 0, \"Is\": 0, \"Iws\": 6.26, \"No\": 4286, \"PRES\": 1001, \"TEMP\": 30, \"cbwd\": \"SE\", \"day\": 28, \"hour\": 13, \"month\": 6, \"target_lag_1\": 152.0, \"target_lag_2\": 166.0, \"target_lag_3\": 137.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3992,
+      "actual_target": 164.0,
+      "adaptive_prediction": 143.82711159929346,
+      "feature_snapshot": "{\"DEWP\": 18, \"Ir\": 0, \"Is\": 0, \"Iws\": 10.28, \"No\": 4287, \"PRES\": 1001, \"TEMP\": 31, \"cbwd\": \"SE\", \"day\": 28, \"hour\": 14, \"month\": 6, \"target_lag_1\": 153.0, \"target_lag_2\": 152.0, \"target_lag_3\": 166.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3993,
+      "actual_target": 174.0,
+      "adaptive_prediction": 154.1201984584742,
+      "feature_snapshot": "{\"DEWP\": 19, \"Ir\": 0, \"Is\": 0, \"Iws\": 14.3, \"No\": 4288, \"PRES\": 1001, \"TEMP\": 32, \"cbwd\": \"SE\", \"day\": 28, \"hour\": 15, \"month\": 6, \"target_lag_1\": 164.0, \"target_lag_2\": 153.0, \"target_lag_3\": 152.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3994,
+      "actual_target": 159.0,
+      "adaptive_prediction": 162.88648489529498,
+      "feature_snapshot": "{\"DEWP\": 19, \"Ir\": 0, \"Is\": 0, \"Iws\": 18.32, \"No\": 4289, \"PRES\": 1001, \"TEMP\": 31, \"cbwd\": \"SE\", \"day\": 28, \"hour\": 16, \"month\": 6, \"target_lag_1\": 174.0, \"target_lag_2\": 164.0, \"target_lag_3\": 153.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3995,
+      "actual_target": 174.0,
+      "adaptive_prediction": 148.85594232621543,
+      "feature_snapshot": "{\"DEWP\": 18, \"Ir\": 0, \"Is\": 0, \"Iws\": 22.34, \"No\": 4290, \"PRES\": 1001, \"TEMP\": 31, \"cbwd\": \"SE\", \"day\": 28, \"hour\": 17, \"month\": 6, \"target_lag_1\": 159.0, \"target_lag_2\": 174.0, \"target_lag_3\": 164.0, \"year\": 2010}"
+    },
+    {
+      "row_index": 3996,
+      "actual_target": 189.0,
+      "adaptive_prediction": 164.70839897517646,
+      "feature_snapshot": "{\"DEWP\": 19, \"Ir\": 0, \"Is\": 0, \"Iws\": 25.47, \"No\": 4291, \"PRES\": 1001, \"TEMP\": 30, \"cbwd\": \"SE\", \"day\": 28, \"hour\": 18, \"month\": 6, \"target_lag_1\": 174.0, \"target_lag_2\": 159.0, \"target_lag_3\": 174.0, \"year\": 2010}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `fixed_share_portfolio` finished on strategy `lin_lr_0_002` after 23 switches.",
+    "It achieved `0.8399` against the best fixed baseline `lin_lr_0_002` at `0.8385`.",
+    "Oracle upper bound on this stream is `0.9072`. Available oracle gain over best fixed is `0.0687`, and the current adaptive controller captures `2.1%` of it.",
+    "The uploaded stream looks non-stationary enough for adaptation to help: the gain over best fixed is `0.0014`.",
+    "Multiple switches suggest regime changes or at least changing local winners across the stream.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `177.6897` based on the latest lagged context `['159', '174', '189']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the original CSV row order.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\tmp_eval\\dataset_lab\\pollution-4000-20260429151330",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\pollution-4000-20260429151330\\auto_meta_selection\\fixed_share_portfolio\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\pollution-4000-20260429151330\\auto_meta_selection\\fixed_share_portfolio\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\pollution-4000-20260429151330\\auto_meta_selection\\fixed_share_portfolio\\summary.md",
+  "score_plot_path": "artifacts\\tmp_eval\\dataset_lab\\pollution-4000-20260429151330\\dataset_lab_scores.png",
+  "portfolio_plot_path": "artifacts\\tmp_eval\\dataset_lab\\pollution-4000-20260429151330\\dataset_lab_portfolio.png",
+  "switch_plot_path": "artifacts\\tmp_eval\\dataset_lab\\pollution-4000-20260429151330\\dataset_lab_switches.png",
+  "dataset_lab_report_md_path": "artifacts\\tmp_eval\\dataset_lab\\pollution-4000-20260429151330\\dataset_lab_report.md"
+}

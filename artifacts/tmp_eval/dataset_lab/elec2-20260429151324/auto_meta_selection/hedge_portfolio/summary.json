@@ -1,0 +1,38 @@
+{
+  "dataset_name": "Elec2",
+  "score_name": "accuracy",
+  "policy_name": "hedge_portfolio",
+  "sample_count": 4000,
+  "evaluation_interval": 128,
+  "window_size": 128,
+  "start_strategy": "tree_classifier",
+  "final_strategy": "pa_classifier",
+  "switch_count": 1,
+  "adaptive_score": 0.94775,
+  "best_fixed_strategy": "pa_classifier",
+  "best_fixed_score": 0.94825,
+  "delta_vs_best_fixed": -0.000500000000000056,
+  "fixed_scores": {
+    "knn_classifier": 0.87075,
+    "pa_classifier": 0.94825,
+    "sgd_lr_0_05": 0.853,
+    "sgd_lr_0_10": 0.86725,
+    "tree_classifier": 0.85
+  },
+  "block_delta_mean": -0.0005040322580645161,
+  "block_delta_std": 0.0027606983745220065,
+  "block_delta_ci95": 0.000971838688107269,
+  "block_count": 31,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming classification task.",
+  "source_url": "local-upload",
+  "decision_rows": 31,
+  "adaptive_accuracy": 0.94775,
+  "best_fixed_accuracy": 0.94825,
+  "fixed_accuracies": {
+    "knn_classifier": 0.87075,
+    "pa_classifier": 0.94825,
+    "sgd_lr_0_05": 0.853,
+    "sgd_lr_0_10": 0.86725,
+    "tree_classifier": 0.85
+  }
+}

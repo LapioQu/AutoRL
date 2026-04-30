@@ -1,0 +1,14 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+63,0,lin_lr_0_0005,lin_lr_0_002,switch,True,hedge_weight_advantage,0.01226142791434437,0.01,Switch because candidate Hedge weight exceeds current weight beyond the switch threshold: 0.3019 - 0.2897 = 0.0123 >= 0.0100.
+127,1,lin_lr_0_002,lin_lr_0_002,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+191,2,lin_lr_0_002,tree_regressor,switch,True,hedge_weight_advantage,0.02383205829930707,0.01,Switch because candidate Hedge weight exceeds current weight beyond the switch threshold: 0.3023 - 0.2784 = 0.0238 >= 0.0100.
+255,3,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+319,4,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+383,5,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+447,6,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+511,7,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+575,8,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+639,9,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+703,10,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+767,11,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+831,12,tree_regressor,tree_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.

@@ -1,0 +1,12 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+41,1,lin_lr_0_01,knn_regressor,switch,True,recent_leader_warmup,,0.001,Switch after warmup because the recent block leader outperformed the initial incumbent: knn_regressor.
+62,2,knn_regressor,knn_regressor,stay,False,recent_leader_cooldown,0.0,0.001,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+83,3,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+104,4,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+125,5,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+146,6,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+167,7,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+188,8,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+209,9,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+230,10,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+251,11,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.

@@ -1,0 +1,46 @@
+schema_version: '1.0'
+experiment_name: ui-ai-review-run
+seed: 42
+mode: adaptive
+scenario:
+  name: abrupt_drift
+  episodes: 24
+  steps_per_episode: 8
+  reward_noise_std: 0.0
+  drift_episode: 12
+  drift_start_episode: null
+  drift_end_episode: null
+  fallback_patience: null
+  tags:
+  - ui
+  - ai-review
+  description: Run for UI review.
+strategies:
+- name: fixed
+  parameters:
+    fixed_action_index: 0
+  enabled: true
+  compute_cost: 0.05
+  description: null
+- name: adaptive_meta
+  parameters:
+    temperature: 0.6
+  enabled: true
+  compute_cost: 0.2
+  description: null
+meta_controller:
+  window_size: 6
+  min_samples: 3
+  delta: 0.01
+  lambda: 0.0
+  switch_cost: 0.05
+  utility_weights:
+    reward_mean: 1.0
+    reward_variance: 0.0
+    compute_cost: 0.0
+    switch_cost: 0.0
+artifacts_root: E:\dipproj\artifacts\ui_external_ai_review\workspace\artifacts
+tags:
+- ui
+- ai-review
+notes: Generated for UI review.

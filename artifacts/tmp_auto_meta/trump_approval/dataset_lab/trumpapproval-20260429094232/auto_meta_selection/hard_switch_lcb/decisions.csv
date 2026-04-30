@@ -1,0 +1,4 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+95,1,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,-0.003917584886858394,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0643, candidate_std=0.0880, threshold=0.0100."
+127,2,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,0.05380085895494602,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0369, candidate_std=0.0710, threshold=0.0100."
+159,3,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,0.05751134799543611,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0680, candidate_std=0.0376, threshold=0.0100."

@@ -1,0 +1,67 @@
+{
+  "title": [
+    "AutoRL Strategy Manager"
+  ],
+  "subheaders": [
+    "Dataset Lab",
+    "External AI Review"
+  ],
+  "metrics": {
+    "Next prediction": "106.6",
+    "Confidence": "low (0.43)",
+    "Adaptive score": "0.1587",
+    "Switches": "1",
+    "Delta vs best fixed": "-0.3664"
+  },
+  "info": [
+    "Set `OPENAI_API_KEY` on the server to let an external AI explain this forecast and critique the Forecast Studio UX."
+  ],
+  "warnings": [
+    "External AI review is off. Set `OPENAI_API_KEY` to enable forecast and UX critique."
+  ],
+  "captions": [
+    "Adaptive strategy switching, live monitoring, uploaded dataset forecasting, and decision interpretation.",
+    "artifact_root: E:\\dipproj\\artifacts\\ui_external_ai_review\\workspace\\artifacts\\dataset_lab\\pasted-stream-20260429070810",
+    "Operational workflow: bring a temporal CSV, define what should be forecast next, and receive an adaptive prediction plus an explanation that business users can read.",
+    "For repeatable demos, the application already has curated non-stationary streams such as WaterFlow, Airlines, and InsectsRecurring under the benchmark replay layer.",
+    "Upload temporal CSV data, run adaptive replay, and get the next-step forecast with interpretation.",
+    "The UI reads SQLite, reports, and uploaded-dataset artifacts from this root.",
+    "Optional: set `OPENAI_REVIEW_MODEL` to override the default review model."
+  ],
+  "markdown": [
+    "<style>\n.stApp {\n    background:\n        radial-gradient(circle at top right, rgba(21, 94, 117, 0.10), transparent 28%),\n        radial-gradient(circle at left top, rgba(180, 83, 9, 0.08), transparent 26%),\n        linear-gradient(180deg, #f6f3ee 0%, #f3efe7 100%);\n    color: #16212b;\n}\n.stApp, .stApp [data-testid=\"stMarkdownContainer\"] p, .stApp label {\n    font-family: Georgia, \"Times New Roman\", serif;\n}\nh1, h2, h3, .stTabs [data-baseweb=\"tab\"] {\n    font-family: \"Trebuchet MS\", \"Segoe UI\", sans-serif;\n    letter-spacing: 0.02em;\n}\n[data-testid=\"stMetric\"] {\n    background: rgba(255, 252, 247, 0.92);\n    border: 1px solid rgba(22, 33, 43, 0.08);\n    border-radius: 18px;\n    padding: 1rem 1rem 0.8rem 1rem;\n    box-shadow: 0 12px 30px rgba(22, 33, 43, 0.06);\n}\n[data-testid=\"stSidebar\"] {\n    background: linear-gradient(180deg, #173042 0%, #244b5e 100%);\n}\n[data-testid=\"stSidebar\"] * {\n    color: #f4efe6 !important;\n}\n.hero-card {\n    border-radius: 24px;\n    padding: 1.25rem 1.4rem;\n    background: linear-gradient(135deg, rgba(255,255,255,0.94), rgba(251, 244, 234, 0.92));\n    border: 1px solid rgba(22, 33, 43, 0.08);\n    box-shadow: 0 18px 44px rgba(22, 33, 43, 0.08);\n    margin-bottom: 1rem;\n}\n.insight-card {\n    border-left: 5px solid #0f766e;\n    background: rgba(255, 251, 245, 0.95);\n    border-radius: 16px;\n    padding: 1rem 1.1rem;\n    margin-bottom: 0.8rem;\n    box-shadow: 0 10px 28px rgba(22, 33, 43, 0.05);\n}\n.warning-card {\n    border-left: 5px solid #b45309;\n    background: rgba(255, 249, 238, 0.96);\n    border-radius: 16px;\n    padding: 1rem 1.1rem;\n    margin-bottom: 0.8rem;\n}\n</style>",
+    "<div class=\"hero-card\">\n    <h3 style=\"margin:0 0 0.35rem 0;\">Forecast Studio</h3>\n    <p style=\"margin:0;\">\n        Use the system as an operational forecasting tool: upload a temporal dataset, let the adaptive controller compare stationary learners, and receive a next-step prediction with an interpretation panel.\n        Current repository state: <strong>2</strong> persisted experiments,\n        latest status <strong>completed</strong>.\n    </p>\n</div>",
+    "<div class=\"hero-card\">\n    <strong>Detected schema.</strong> 12 data rows and 4 columns found.\n    The application will replay this stream in temporal order and compare adaptive vs fixed learners.\n</div>",
+    "#### Forecast Configuration",
+    "<div class=\"insight-card\">\n    The system will learn online, compare stationary update strategies over time, and then use the final\n    adaptive winner to generate the next-step prediction.\n</div>",
+    "### Next-Step Forecast",
+    "<div class=\"hero-card\">\n    <strong>Forecast brief.</strong> The adaptive controller ended on <strong>knn_regressor</strong>\n    for the <strong>regression</strong> target <strong>target_flow</strong>. Artifacts are\n    stored under <code>E:\\dipproj\\artifacts\\ui_external_ai_review\\workspace\\artifacts\\dataset_lab\\pasted-stream-20260429070810</code>.\n</div>",
+    "#### Interpretation Panel",
+    "<div class=\"insight-card\">Adaptive policy `recent_leader_meta` finished on strategy `knn_regressor` after 1 switches.</div>",
+    "<div class=\"insight-card\">It achieved `0.1587` against the best fixed baseline `knn_regressor` at `0.5250`.</div>",
+    "<div class=\"insight-card\">The current stationary portfolio dominated the adaptive controller here; the gap is `-0.3664`.</div>",
+    "<div class=\"insight-card\">Next-step forecast from the final adaptive strategy is `106.6000` based on the latest lagged context `['108', '114', '117']`.</div>",
+    "<div class=\"warning-card\">The stream is replayed in the original CSV row order.</div>",
+    "<div class=\"warning-card\">Automatic lag generation uses the previous `3` observed target values.</div>",
+    "<div class=\"warning-card\">The quality score is a bounded normalized reward, not raw MAE or RMSE.</div>",
+    "<div class=\"warning-card\">If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot.</div>",
+    "#### Supporting Evidence",
+    "#### External AI Review",
+    "#### Latest Adaptive Prediction Preview",
+    "### Benchmark Spotlight"
+  ],
+  "buttons": [
+    "Analyze dataset and forecast next step"
+  ],
+  "selectboxes": [
+    "Selected experiment",
+    "Target column",
+    "Order column",
+    "Task type",
+    "Adaptive policy"
+  ],
+  "radios": [
+    "Dataset source",
+    "Workspace"
+  ]
+}

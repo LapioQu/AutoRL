@@ -1,0 +1,34 @@
+{
+  "dataset_name": "Elec2 calibration",
+  "score_name": "accuracy",
+  "policy_name": "fixed_share_portfolio",
+  "sample_count": 9968,
+  "evaluation_interval": 128,
+  "window_size": 128,
+  "start_strategy": "sgd_lr_1_0",
+  "final_strategy": "sgd_lr_1_0",
+  "switch_count": 29,
+  "adaptive_score": 0.9445224719101124,
+  "best_fixed_strategy": "sgd_lr_1_0",
+  "best_fixed_score": 0.9458266452648475,
+  "delta_vs_best_fixed": -0.0013041733547350942,
+  "fixed_scores": {
+    "sgd_lr_0_1": 0.911115569823435,
+    "sgd_lr_0_5": 0.9437199036918138,
+    "sgd_lr_1_0": 0.9458266452648475
+  },
+  "block_delta_mean": -0.0013189935064935065,
+  "block_delta_std": 0.008938942102888295,
+  "block_delta_ci95": 0.001996626510169577,
+  "block_count": 77,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming classification task.",
+  "source_url": "local-upload",
+  "decision_rows": 77,
+  "adaptive_accuracy": 0.9445224719101124,
+  "best_fixed_accuracy": 0.9458266452648475,
+  "fixed_accuracies": {
+    "sgd_lr_0_1": 0.911115569823435,
+    "sgd_lr_0_5": 0.9437199036918138,
+    "sgd_lr_1_0": 0.9458266452648475
+  }
+}

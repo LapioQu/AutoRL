@@ -1,0 +1,34 @@
+{
+  "dataset_name": "Airlines",
+  "score_name": "accuracy",
+  "policy_name": "hard_switch_lcb",
+  "sample_count": 100000,
+  "evaluation_interval": 256,
+  "window_size": 256,
+  "start_strategy": "gaussian_nb",
+  "final_strategy": "pa_classifier",
+  "switch_count": 7,
+  "adaptive_score": 0.64167,
+  "best_fixed_strategy": "gaussian_nb",
+  "best_fixed_score": 0.64217,
+  "delta_vs_best_fixed": -0.000500000000000056,
+  "fixed_scores": {
+    "gaussian_nb": 0.64217,
+    "pa_classifier": 0.59219,
+    "logistic_lr_0_1": 0.63419
+  },
+  "block_delta_mean": -0.0004106570512820513,
+  "block_delta_std": 0.02973772856337802,
+  "block_delta_ci95": 0.00295142370357057,
+  "block_count": 390,
+  "source_description": "MOA Airlines delay stream replayed in temporal order from the official SourceForge archive; target is whether the flight is delayed.",
+  "source_url": "https://downloads.sourceforge.net/project/moa-datastream/Datasets/Classification/airlines.arff.zip",
+  "decision_rows": 389,
+  "adaptive_accuracy": 0.64167,
+  "best_fixed_accuracy": 0.64217,
+  "fixed_accuracies": {
+    "gaussian_nb": 0.64217,
+    "pa_classifier": 0.59219,
+    "logistic_lr_0_1": 0.63419
+  }
+}

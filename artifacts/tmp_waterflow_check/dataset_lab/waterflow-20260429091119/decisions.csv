@@ -1,0 +1,12 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+41,1,lin_lr_0_001,knn_regressor,stay,False,high_uncertainty,0.7024163208900014,0.001,"Stay because utility uncertainty is too high: current_std=0.0507, candidate_std=0.0073, threshold=0.0010."
+62,2,lin_lr_0_001,knn_regressor,stay,False,high_uncertainty,0.6007253208062577,0.001,"Stay because utility uncertainty is too high: current_std=0.0600, candidate_std=0.0016, threshold=0.0010."
+83,3,lin_lr_0_001,knn_regressor,stay,False,high_uncertainty,0.5046044294604775,0.001,"Stay because utility uncertainty is too high: current_std=0.0395, candidate_std=0.0017, threshold=0.0010."
+104,4,lin_lr_0_001,knn_regressor,stay,False,high_uncertainty,0.4026242950514146,0.001,"Stay because utility uncertainty is too high: current_std=0.0033, candidate_std=0.0675, threshold=0.0010."
+125,5,lin_lr_0_001,knn_regressor,stay,False,high_uncertainty,0.3678741539965049,0.001,"Stay because utility uncertainty is too high: current_std=0.0337, candidate_std=0.0631, threshold=0.0010."
+146,6,lin_lr_0_001,knn_regressor,stay,False,high_uncertainty,0.3492340338939479,0.001,"Stay because utility uncertainty is too high: current_std=0.0459, candidate_std=0.0023, threshold=0.0010."
+167,7,lin_lr_0_001,knn_regressor,stay,False,high_uncertainty,0.25357590391988816,0.001,"Stay because utility uncertainty is too high: current_std=0.0391, candidate_std=0.0084, threshold=0.0010."
+188,8,lin_lr_0_001,pa_regressor,stay,False,high_uncertainty,0.1871126569325562,0.001,"Stay because utility uncertainty is too high: current_std=0.0196, candidate_std=0.0019, threshold=0.0010."
+209,9,lin_lr_0_001,pa_regressor,stay,False,high_uncertainty,0.09565462835981087,0.001,"Stay because utility uncertainty is too high: current_std=0.0730, candidate_std=0.1430, threshold=0.0010."
+230,10,lin_lr_0_001,knn_regressor,stay,False,high_uncertainty,0.09532175099811702,0.001,"Stay because utility uncertainty is too high: current_std=0.0885, candidate_std=0.1531, threshold=0.0010."
+251,11,lin_lr_0_001,knn_regressor,stay,False,high_uncertainty,0.12538291387423572,0.001,"Stay because utility uncertainty is too high: current_std=0.0362, candidate_std=0.0016, threshold=0.0010."

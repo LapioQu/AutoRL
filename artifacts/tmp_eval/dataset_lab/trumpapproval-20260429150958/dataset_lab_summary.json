@@ -1,0 +1,138 @@
+{
+  "created_at_utc": "2026-04-29T15:10:02.000278+00:00",
+  "dataset_name": "TrumpApproval",
+  "task_type": "regression",
+  "target_column": "approval",
+  "source_row_count": 1001,
+  "source_rows_used": 1001,
+  "sample_count": 998,
+  "feature_count": 8,
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "adaptive_score": 0.8178670956087135,
+  "best_fixed_strategy": "knn_regressor",
+  "best_fixed_score": 0.8178670956087135,
+  "delta_vs_best_fixed": 0.0,
+  "oracle_score": 0.868764921899377,
+  "oracle_gain": 0.05089782629066353,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "knn_regressor",
+  "switch_count": 0,
+  "next_prediction": "41.8841946",
+  "prediction_confidence": 0.9727891627063607,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "knn_regressor": "41.8841946",
+    "lin_lr_0_0001": "41.58710466384829",
+    "tree_regressor": "40.72471515718568",
+    "lin_lr_0_0005": "41.57999211713506",
+    "lin_lr_0_001": "41.48131233423526"
+  },
+  "forecast_row_preview": {
+    "ordinal_date": "737389",
+    "gallup": "43.843213",
+    "ipsos": "40.570679",
+    "morning_consult": "37.818749",
+    "rasmussen": "40.104692",
+    "you_gov": "41.636914000000004",
+    "approval": "41.740203"
+  },
+  "preview_rows": [
+    {
+      "row_index": 986,
+      "actual_target": 41.196125,
+      "adaptive_prediction": 41.3612436,
+      "feature_snapshot": "{\"gallup\": 41.843213, \"ipsos\": 41.570679, \"morning_consult\": 37.318749, \"rasmussen\": 44.104692, \"target_lag_1\": 41.151785, \"target_lag_2\": 40.950028, \"target_lag_3\": 41.10089, \"you_gov\": 42.636914000000004}"
+    },
+    {
+      "row_index": 987,
+      "actual_target": 41.196125,
+      "adaptive_prediction": 41.3505686,
+      "feature_snapshot": "{\"gallup\": 41.843213, \"ipsos\": 41.570679, \"morning_consult\": 37.318749, \"rasmussen\": 44.104692, \"target_lag_1\": 41.196125, \"target_lag_2\": 41.151785, \"target_lag_3\": 40.950028, \"you_gov\": 42.636914000000004}"
+    },
+    {
+      "row_index": 988,
+      "actual_target": 41.196125,
+      "adaptive_prediction": 41.3120696,
+      "feature_snapshot": "{\"gallup\": 41.843213, \"ipsos\": 41.570679, \"morning_consult\": 37.318749, \"rasmussen\": 44.104692, \"target_lag_1\": 41.196125, \"target_lag_2\": 41.196125, \"target_lag_3\": 41.151785, \"you_gov\": 42.636914000000004}"
+    },
+    {
+      "row_index": 989,
+      "actual_target": 41.218683,
+      "adaptive_prediction": 41.318615199999996,
+      "feature_snapshot": "{\"gallup\": 41.843213, \"ipsos\": 41.570679, \"morning_consult\": 39.318749, \"rasmussen\": 44.104692, \"target_lag_1\": 41.196125, \"target_lag_2\": 41.196125, \"target_lag_3\": 41.196125, \"you_gov\": 41.97024733333334}"
+    },
+    {
+      "row_index": 990,
+      "actual_target": 41.285517999999996,
+      "adaptive_prediction": 40.435122,
+      "feature_snapshot": "{\"gallup\": 41.843213, \"ipsos\": 41.570679, \"morning_consult\": 38.318749, \"rasmussen\": 42.104692, \"target_lag_1\": 41.218683, \"target_lag_2\": 41.196125, \"target_lag_3\": 41.196125, \"you_gov\": 45.636914000000004}"
+    },
+    {
+      "row_index": 991,
+      "actual_target": 41.351546,
+      "adaptive_prediction": 40.32385,
+      "feature_snapshot": "{\"gallup\": 43.843213, \"ipsos\": 40.570679, \"morning_consult\": 36.318749, \"rasmussen\": 42.104692, \"target_lag_1\": 41.285517999999996, \"target_lag_2\": 41.218683, \"target_lag_3\": 41.196125, \"you_gov\": 39.636914000000004}"
+    },
+    {
+      "row_index": 992,
+      "actual_target": 41.876382,
+      "adaptive_prediction": 41.2429256,
+      "feature_snapshot": "{\"gallup\": 43.843213, \"ipsos\": 40.570679, \"morning_consult\": 36.318749, \"rasmussen\": 40.104692, \"target_lag_1\": 41.351546, \"target_lag_2\": 41.285517999999996, \"target_lag_3\": 41.218683, \"you_gov\": 42.636914000000004}"
+    },
+    {
+      "row_index": 993,
+      "actual_target": 41.891828000000004,
+      "adaptive_prediction": 41.197824000000004,
+      "feature_snapshot": "{\"gallup\": 43.843213, \"ipsos\": 40.570679, \"morning_consult\": 38.818749, \"rasmussen\": 40.104692, \"target_lag_1\": 41.876382, \"target_lag_2\": 41.351546, \"target_lag_3\": 41.285517999999996, \"you_gov\": 43.636914000000004}"
+    },
+    {
+      "row_index": 994,
+      "actual_target": 41.891828000000004,
+      "adaptive_prediction": 41.3524356,
+      "feature_snapshot": "{\"gallup\": 43.843213, \"ipsos\": 40.570679, \"morning_consult\": 38.818749, \"rasmussen\": 40.104692, \"target_lag_1\": 41.891828000000004, \"target_lag_2\": 41.876382, \"target_lag_3\": 41.351546, \"you_gov\": 43.636914000000004}"
+    },
+    {
+      "row_index": 995,
+      "actual_target": 41.891828000000004,
+      "adaptive_prediction": 41.584245200000005,
+      "feature_snapshot": "{\"gallup\": 43.843213, \"ipsos\": 40.570679, \"morning_consult\": 38.818749, \"rasmussen\": 40.104692, \"target_lag_1\": 41.891828000000004, \"target_lag_2\": 41.891828000000004, \"target_lag_3\": 41.876382, \"you_gov\": 43.636914000000004}"
+    },
+    {
+      "row_index": 996,
+      "actual_target": 41.725396999999994,
+      "adaptive_prediction": 41.5394996,
+      "feature_snapshot": "{\"gallup\": 43.843213, \"ipsos\": 40.570679, \"morning_consult\": 38.818749, \"rasmussen\": 38.104692, \"target_lag_1\": 41.891828000000004, \"target_lag_2\": 41.891828000000004, \"target_lag_3\": 41.891828000000004, \"you_gov\": 41.636914000000004}"
+    },
+    {
+      "row_index": 997,
+      "actual_target": 41.740203,
+      "adaptive_prediction": 41.76527,
+      "feature_snapshot": "{\"gallup\": 43.843213, \"ipsos\": 40.570679, \"morning_consult\": 37.818749, \"rasmussen\": 40.104692, \"target_lag_1\": 41.725396999999994, \"target_lag_2\": 41.891828000000004, \"target_lag_3\": 41.891828000000004, \"you_gov\": 41.636914000000004}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `recent_leader_meta` finished on strategy `knn_regressor` after 0 switches.",
+    "It achieved `0.8179` against the best fixed baseline `knn_regressor` at `0.8179`.",
+    "Oracle upper bound on this stream is `0.8688`. Available oracle gain over best fixed is `0.0509`, and the current adaptive controller captures `0.0%` of it.",
+    "Adaptive and best fixed finished effectively tied on this stream.",
+    "No strategy changes were needed; the stream behaved close to one dominant regime.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `41.8842` based on the latest lagged context `['41.891828000000004', '41.725396999999994', '41.740203']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\tmp_eval\\dataset_lab\\trumpapproval-20260429150958",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\trumpapproval-20260429150958\\auto_meta_selection\\recent_leader_meta\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\trumpapproval-20260429150958\\auto_meta_selection\\recent_leader_meta\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\trumpapproval-20260429150958\\auto_meta_selection\\recent_leader_meta\\summary.md",
+  "score_plot_path": "artifacts\\tmp_eval\\dataset_lab\\trumpapproval-20260429150958\\dataset_lab_scores.png",
+  "portfolio_plot_path": "artifacts\\tmp_eval\\dataset_lab\\trumpapproval-20260429150958\\dataset_lab_portfolio.png",
+  "switch_plot_path": "artifacts\\tmp_eval\\dataset_lab\\trumpapproval-20260429150958\\dataset_lab_switches.png",
+  "dataset_lab_report_md_path": "artifacts\\tmp_eval\\dataset_lab\\trumpapproval-20260429150958\\dataset_lab_report.md"
+}

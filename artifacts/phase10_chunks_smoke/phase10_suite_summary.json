@@ -1,0 +1,32 @@
+{
+  "phase": 10,
+  "title": "Experimental series",
+  "series": [
+    {
+      "series_id": "E1",
+      "title": "Stationary control",
+      "series_type": "seeded_experiment_suite",
+      "root_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control",
+      "summary_json_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\phase10_series_summary.json",
+      "report_md_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\phase10_series_report.md",
+      "primary_plot_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\phase10_reward_mean.png",
+      "switches_plot_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e1_stationary-control\\phase10_switch_count.png",
+      "run_count": 1
+    },
+    {
+      "series_id": "E7",
+      "title": "Reproducibility",
+      "series_type": "seeded_experiment_suite",
+      "root_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility",
+      "summary_json_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\phase10_series_summary.json",
+      "report_md_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\phase10_series_report.md",
+      "primary_plot_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\phase10_reward_mean.png",
+      "switches_plot_path": "E:\\dipproj\\artifacts\\phase10_chunks_smoke\\e7_reproducibility\\phase10_switch_count.png",
+      "run_count": 5
+    }
+  ],
+  "requested_series_ids": [
+    "E1",
+    "E7"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "dataset_count": 2,
+  "datasets": [
+    {
+      "dataset_name": "WaterFlow",
+      "policy_name": "recent_leader_meta",
+      "score_name": "normalized_reward",
+      "sample_count": 1268,
+      "adaptive_score": 0.8031823701689538,
+      "best_fixed_strategy": "lin_lr_0_001",
+      "best_fixed_score": 0.8039447799769271,
+      "delta_vs_best_fixed": -0.0007624098079733743,
+      "switch_count": 2,
+      "block_delta_mean": -0.000774627913870286,
+      "block_delta_ci95": 0.0563377403769629,
+      "summary_json_path": "E:\\dipproj\\artifacts\\real_stream_validation\\suite_portfolio_improved\\waterflow\\summary.json"
+    },
+    {
+      "dataset_name": "Airlines",
+      "policy_name": "recent_leader_meta",
+      "score_name": "accuracy",
+      "sample_count": 100000,
+      "adaptive_score": 0.64601,
+      "best_fixed_strategy": "logistic_lr_0_01",
+      "best_fixed_score": 0.6462,
+      "delta_vs_best_fixed": -0.00019000000000002348,
+      "switch_count": 6,
+      "block_delta_mean": -0.00019030448717948718,
+      "block_delta_ci95": 0.00046872406649056577,
+      "summary_json_path": "E:\\dipproj\\artifacts\\real_stream_validation\\suite_portfolio_improved\\airlines\\summary.json"
+    }
+  ],
+  "wins_vs_best_fixed": 0,
+  "non_losses_vs_best_fixed": 0
+}

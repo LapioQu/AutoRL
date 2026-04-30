@@ -1,0 +1,19 @@
+[
+  {
+    "created_at_utc": "2026-04-29T11:33:03.602466+00:00",
+    "dataset_name": "Bikes",
+    "task_type": "regression",
+    "policy_name": "hard_switch_lcb",
+    "source_row_count": 182470,
+    "source_rows_used": 182470,
+    "sample_count": 182470,
+    "adaptive_score": 0.6698574258523068,
+    "best_fixed_score": 0.6696794988629915,
+    "delta_vs_best_fixed": 0.00017792698931529127,
+    "oracle_capture_ratio": 0.05520649215728741,
+    "switch_count": 1,
+    "summary_json_path": "artifacts\\runtime_diagnosis\\hard_switch_lcb\\dataset_lab\\bikes-20260429112642\\dataset_lab_summary.json",
+    "report_md_path": "artifacts\\runtime_diagnosis\\hard_switch_lcb\\dataset_lab\\bikes-20260429112642\\dataset_lab_report.md",
+    "artifact_root": "artifacts\\runtime_diagnosis\\hard_switch_lcb\\dataset_lab\\bikes-20260429112642"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "dataset_name": "WebTraffic",
+  "score_name": "normalized_multioutput_reward",
+  "policy_name": "recent_leader_meta",
+  "sample_count": 42803,
+  "evaluation_interval": 96,
+  "window_size": 192,
+  "start_strategy": "sgd_lr_5e-11",
+  "final_strategy": "sgd_lr_1e-10",
+  "switch_count": 1,
+  "adaptive_score": 0.6502970344643991,
+  "best_fixed_strategy": "sgd_lr_1e-10",
+  "best_fixed_score": 0.6502970344663921,
+  "delta_vs_best_fixed": -1.9929613515046185e-12,
+  "fixed_scores": {
+    "sgd_lr_1e-10": 0.6502970344663921,
+    "sgd_lr_1e-11": 0.6502967776968862,
+    "sgd_lr_5e-11": 0.6502968918165278
+  },
+  "block_delta_mean": -1.9968508744156086e-12,
+  "block_delta_std": 3.561630998998336e-11,
+  "block_delta_ci95": 3.3092150322495768e-12,
+  "block_count": 445,
+  "source_description": "Real South African web-traffic stream replayed in temporal order; target includes sessionsA and sessionsB under anomalous events and missing captures.",
+  "source_url": "https://maxhalford.github.io/files/datasets/web-traffic.csv.zip",
+  "decision_rows": 444,
+  "adaptive_accuracy": 0.6502970344643991,
+  "best_fixed_accuracy": 0.6502970344663921,
+  "fixed_accuracies": {
+    "sgd_lr_1e-10": 0.6502970344663921,
+    "sgd_lr_1e-11": 0.6502967776968862,
+    "sgd_lr_5e-11": 0.6502968918165278
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "dataset_name": "Elec2",
+  "score_name": "accuracy",
+  "policy_name": "best_fixed_guard",
+  "sample_count": 4000,
+  "evaluation_interval": 1000,
+  "window_size": 1000,
+  "start_strategy": "softmax_lr_0_20",
+  "final_strategy": "softmax_lr_0_20",
+  "switch_count": 0,
+  "adaptive_score": 0.88125,
+  "best_fixed_strategy": "softmax_lr_0_20",
+  "best_fixed_score": 0.88125,
+  "delta_vs_best_fixed": 0.0,
+  "fixed_scores": {
+    "knn_classifier": 0.8675,
+    "tree_classifier": 0.8495,
+    "softmax_lr_0_20": 0.88125,
+    "softmax_lr_0_05": 0.853
+  },
+  "block_delta_mean": 0.0,
+  "block_delta_std": 0.0,
+  "block_delta_ci95": 0.0,
+  "block_count": 0,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming classification task.",
+  "source_url": "local-upload",
+  "decision_rows": 0,
+  "adaptive_accuracy": 0.88125,
+  "best_fixed_accuracy": 0.88125,
+  "fixed_accuracies": {
+    "knn_classifier": 0.8675,
+    "tree_classifier": 0.8495,
+    "softmax_lr_0_20": 0.88125,
+    "softmax_lr_0_05": 0.853
+  }
+}

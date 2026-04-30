@@ -1,0 +1,8 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+127,0,tree_classifier,tree_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+255,1,tree_classifier,softmax_lr_0_20,switch,True,warmup_leader,,0.015,Switch after warmup because cumulative reward leader differs from the starting strategy: softmax_lr_0_20.
+255,1,softmax_lr_0_20,softmax_lr_0_20,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+383,2,softmax_lr_0_20,softmax_lr_0_20,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+511,3,softmax_lr_0_20,knn_classifier,switch,True,hedge_weight_advantage,0.970298181877796,0.015,Switch because candidate Hedge weight exceeds current weight beyond the switch threshold: 0.9851 - 0.0148 = 0.9703 >= 0.0150.
+639,4,knn_classifier,knn_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.
+767,5,knn_classifier,knn_classifier,stay,False,hedge_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Hedge expert.

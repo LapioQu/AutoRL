@@ -1,0 +1,131 @@
+{
+  "dataset_name": "Elec2",
+  "task_type": "classification",
+  "target_column": "price_up",
+  "sample_count": 1024,
+  "feature_count": 8,
+  "score_name": "accuracy",
+  "policy_name": "recent_leader_meta",
+  "adaptive_score": 0.9462890625,
+  "best_fixed_strategy": "pa_classifier",
+  "best_fixed_score": 0.94921875,
+  "delta_vs_best_fixed": -0.0029296875,
+  "oracle_score": 0.9814453125,
+  "oracle_gain": 0.0322265625,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "pa_classifier",
+  "switch_count": 2,
+  "next_prediction": "False",
+  "prediction_confidence": 1.0,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "softmax_lr_0_05": "False",
+    "softmax_lr_0_20": "False",
+    "pa_classifier": "False",
+    "gaussian_nb": "False",
+    "tree_classifier": "False"
+  },
+  "forecast_row_preview": {
+    "date": "0.000929",
+    "day": "2",
+    "period": "0.319149",
+    "nswprice": "0.043983",
+    "nswdemand": "0.591788",
+    "vicprice": "0.003467",
+    "vicdemand": "0.422915",
+    "transfer": "0.414912"
+  },
+  "preview_rows": [
+    {
+      "row_index": 1012,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.325945, \"nswprice\": 0.081122, \"period\": 0.085106, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1013,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.284737, \"nswprice\": 0.081122, \"period\": 0.106383, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1014,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.236983, \"nswprice\": 0.081122, \"period\": 0.12766, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1015,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.20366, \"nswprice\": 0.081122, \"period\": 0.148936, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1016,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.187742, \"nswprice\": 0.076438, \"period\": 0.170213, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1017,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.185064, \"nswprice\": 0.074877, \"period\": 0.191489, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1018,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.214073, \"nswprice\": 0.077999, \"period\": 0.212766, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1019,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.262571, \"nswprice\": 0.082112, \"period\": 0.234043, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1020,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.372954, \"nswprice\": 0.087426, \"period\": 0.255319, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1021,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.486462, \"nswprice\": 0.044134, \"period\": 0.276596, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1022,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.513835, \"nswprice\": 0.043833, \"period\": 0.297872, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 1023,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"date\": 0.000929, \"day\": 2, \"nswdemand\": 0.591788, \"nswprice\": 0.043983, \"period\": 0.319149, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `recent_leader_meta` finished on strategy `pa_classifier` after 2 switches.",
+    "It achieved `0.9463` against the best fixed baseline `pa_classifier` at `0.9492`.",
+    "Oracle upper bound on this stream is `0.9814`. Available oracle gain over best fixed is `0.0322`, and the current adaptive controller captures `0.0%` of it.",
+    "The current stationary portfolio dominated the adaptive controller here; the gap is `-0.0029`.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step class from the final adaptive strategy is `False` based on the latest lagged context `[False, False, False]`."
+  ],
+  "caveats": [
+    "\u0414\u043b\u044f \u0446\u044c\u043e\u0433\u043e \u0433\u043e\u0442\u043e\u0432\u043e\u0433\u043e \u0434\u0430\u0442\u0430\u0441\u0435\u0442\u0443 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043e \u043d\u0430\u0442\u0438\u0432\u043d\u0438\u0439 \u043f\u043e\u0442\u043e\u043a\u043e\u0432\u0438\u0439 \u043f\u0440\u043e\u0444\u0456\u043b\u044c \u0431\u0435\u0437 CSV-\u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u043e\u0437\u043d\u0430\u043a.",
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is prequential accuracy over the uploaded stream.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\tmp_auto_meta\\elec2\\dataset_lab\\elec2-20260429094232\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\tmp_auto_meta\\elec2\\dataset_lab\\elec2-20260429094232\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\tmp_auto_meta\\elec2\\dataset_lab\\elec2-20260429094232\\summary.md"
+}

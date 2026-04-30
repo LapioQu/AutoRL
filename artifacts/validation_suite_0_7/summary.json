@@ -1,0 +1,506 @@
+{
+  "runs": [
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150545-b1c23b63",
+      "experiment_id": "phase0-7-abrupt-adaptive-20260428150545-b1c23b63",
+      "mean_reward": 1.0216177254376766,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150545-b1c23b63\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150549-f00a9aea",
+      "experiment_id": "phase0-7-abrupt-fixed-low-20260428150549-f00a9aea",
+      "mean_reward": 0.7452489658456248,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150549-f00a9aea\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150553-a48e79bd",
+      "experiment_id": "phase0-7-abrupt-fixed-mid-20260428150553-a48e79bd",
+      "mean_reward": 0.9425905871485926,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150553-a48e79bd\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150556-48c84242",
+      "experiment_id": "phase0-7-abrupt-fixed-high-20260428150556-48c84242",
+      "mean_reward": 0.7221883245042777,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150556-48c84242\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150601-a57d1c10",
+      "experiment_id": "phase0-7-abrupt-adaptive-meta-final-20260428150601-a57d1c10",
+      "mean_reward": 0.9418324495800816,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_41\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150601-a57d1c10\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150605-692810ce",
+      "experiment_id": "phase0-7-abrupt-adaptive-20260428150605-692810ce",
+      "mean_reward": 1.0212562805723144,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150605-692810ce\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150609-7b555f0a",
+      "experiment_id": "phase0-7-abrupt-fixed-low-20260428150609-7b555f0a",
+      "mean_reward": 0.7448875209802642,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150609-7b555f0a\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150613-4821501d",
+      "experiment_id": "phase0-7-abrupt-fixed-mid-20260428150613-4821501d",
+      "mean_reward": 0.9422261121928418,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150613-4821501d\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150617-b495241f",
+      "experiment_id": "phase0-7-abrupt-fixed-high-20260428150617-b495241f",
+      "mean_reward": 0.7218801226557704,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150617-b495241f\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150621-80d5a2c0",
+      "experiment_id": "phase0-7-abrupt-adaptive-meta-final-20260428150621-80d5a2c0",
+      "mean_reward": 0.9414718541348399,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_42\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150621-80d5a2c0\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150625-1c1925c4",
+      "experiment_id": "phase0-7-abrupt-adaptive-20260428150625-1c1925c4",
+      "mean_reward": 1.0210438836923585,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150625-1c1925c4\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150629-677b4a3a",
+      "experiment_id": "phase0-7-abrupt-fixed-low-20260428150629-677b4a3a",
+      "mean_reward": 0.7446751241003052,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150629-677b4a3a\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150633-33d46424",
+      "experiment_id": "phase0-7-abrupt-fixed-mid-20260428150633-33d46424",
+      "mean_reward": 0.942020761220002,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150633-33d46424\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150637-e324a310",
+      "experiment_id": "phase0-7-abrupt-fixed-high-20260428150637-e324a310",
+      "mean_reward": 0.7215439191221467,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150637-e324a310\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150641-6a69562a",
+      "experiment_id": "phase0-7-abrupt-adaptive-meta-final-20260428150641-6a69562a",
+      "mean_reward": 0.9412574820876436,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_43\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150641-6a69562a\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150645-d1c4d1c5",
+      "experiment_id": "phase0-7-abrupt-adaptive-20260428150645-d1c4d1c5",
+      "mean_reward": 1.0215730391049695,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150645-d1c4d1c5\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150650-326d3795",
+      "experiment_id": "phase0-7-abrupt-fixed-low-20260428150650-326d3795",
+      "mean_reward": 0.7452042795129178,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150650-326d3795\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150654-0ec0abac",
+      "experiment_id": "phase0-7-abrupt-fixed-mid-20260428150654-0ec0abac",
+      "mean_reward": 0.942545578170608,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150654-0ec0abac\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150658-fe90b3ce",
+      "experiment_id": "phase0-7-abrupt-fixed-high-20260428150658-fe90b3ce",
+      "mean_reward": 0.7221493075100168,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150658-fe90b3ce\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150702-2f136fce",
+      "experiment_id": "phase0-7-abrupt-adaptive-meta-final-20260428150702-2f136fce",
+      "mean_reward": 0.9417878536939799,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_44\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150702-2f136fce\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150706-9f1eaf67",
+      "experiment_id": "phase0-7-abrupt-adaptive-20260428150706-9f1eaf67",
+      "mean_reward": 1.0211287096595063,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\adaptive\\experiments\\phase0-7-abrupt-adaptive-20260428150706-9f1eaf67\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 45
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150709-0116fb77",
+      "experiment_id": "phase0-7-abrupt-fixed-low-20260428150709-0116fb77",
+      "mean_reward": 0.744759950067454,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\fixed_low\\experiments\\phase0-7-abrupt-fixed-low-20260428150709-0116fb77\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 45
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150712-75162a21",
+      "experiment_id": "phase0-7-abrupt-fixed-mid-20260428150712-75162a21",
+      "mean_reward": 0.9421028512165242,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\fixed_mid\\experiments\\phase0-7-abrupt-fixed-mid-20260428150712-75162a21\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 45
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150715-ff70999c",
+      "experiment_id": "phase0-7-abrupt-fixed-high-20260428150715-ff70999c",
+      "mean_reward": 0.7216768200017364,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\fixed_high\\experiments\\phase0-7-abrupt-fixed-high-20260428150715-ff70999c\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 45
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150718-cf73a8a7",
+      "experiment_id": "phase0-7-abrupt-adaptive-meta-final-20260428150718-cf73a8a7",
+      "mean_reward": 0.9413430750248155,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\abrupt_drift\\seed_45\\adaptive_meta_final\\experiments\\phase0-7-abrupt-adaptive-meta-final-20260428150718-cf73a8a7\\report.md",
+      "scenario_name": "abrupt_drift",
+      "seed": 45
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150722-cd1290e4",
+      "experiment_id": "phase0-7-gradual-adaptive-20260428150722-cd1290e4",
+      "mean_reward": 1.0433762952348322,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150722-cd1290e4\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150725-12cb7afb",
+      "experiment_id": "phase0-7-gradual-fixed-low-20260428150725-12cb7afb",
+      "mean_reward": 0.7473307330349829,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150725-12cb7afb\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150728-b4813654",
+      "experiment_id": "phase0-7-gradual-fixed-mid-20260428150728-b4813654",
+      "mean_reward": 0.9904217937300445,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150728-b4813654\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150732-23784d59",
+      "experiment_id": "phase0-7-gradual-fixed-high-20260428150732-23784d59",
+      "mean_reward": 0.718528763957,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150732-23784d59\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150735-720709b6",
+      "experiment_id": "phase0-7-gradual-adaptive-meta-final-20260428150735-720709b6",
+      "mean_reward": 0.9897478936691458,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_41\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150735-720709b6\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 41
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150738-01f9a6f7",
+      "experiment_id": "phase0-7-gradual-adaptive-20260428150738-01f9a6f7",
+      "mean_reward": 1.0402867322387093,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150738-01f9a6f7\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150742-3e7c2020",
+      "experiment_id": "phase0-7-gradual-fixed-low-20260428150742-3e7c2020",
+      "mean_reward": 0.7470461052101816,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150742-3e7c2020\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150745-fb237486",
+      "experiment_id": "phase0-7-gradual-fixed-mid-20260428150745-fb237486",
+      "mean_reward": 0.990134472491563,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150745-fb237486\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150748-ddf0575a",
+      "experiment_id": "phase0-7-gradual-fixed-high-20260428150748-ddf0575a",
+      "mean_reward": 0.7182914632582907,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150748-ddf0575a\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150752-c8d62caf",
+      "experiment_id": "phase0-7-gradual-adaptive-meta-final-20260428150752-c8d62caf",
+      "mean_reward": 0.9894640208844504,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_42\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150752-c8d62caf\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 42
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150755-e795845f",
+      "experiment_id": "phase0-7-gradual-adaptive-20260428150755-e795845f",
+      "mean_reward": 1.040151210652484,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150755-e795845f\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150758-fdeeea77",
+      "experiment_id": "phase0-7-gradual-fixed-low-20260428150758-fdeeea77",
+      "mean_reward": 0.7469105836239537,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150758-fdeeea77\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150802-0add4830",
+      "experiment_id": "phase0-7-gradual-fixed-mid-20260428150802-0add4830",
+      "mean_reward": 0.9900052139338855,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150802-0add4830\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150805-6bc64904",
+      "experiment_id": "phase0-7-gradual-fixed-high-20260428150805-6bc64904",
+      "mean_reward": 0.7180458913132495,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150805-6bc64904\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150808-bc9bc075",
+      "experiment_id": "phase0-7-gradual-adaptive-meta-final-20260428150808-bc9bc075",
+      "mean_reward": 0.9893267435940114,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_43\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150808-bc9bc075\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 43
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150811-8f30fbc7",
+      "experiment_id": "phase0-7-gradual-adaptive-20260428150811-8f30fbc7",
+      "mean_reward": 1.0433160052035289,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150811-8f30fbc7\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150814-257584cc",
+      "experiment_id": "phase0-7-gradual-fixed-low-20260428150814-257584cc",
+      "mean_reward": 0.7472704430036797,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150814-257584cc\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150817-58f27c70",
+      "experiment_id": "phase0-7-gradual-fixed-mid-20260428150817-58f27c70",
+      "mean_reward": 0.990361216902939,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150817-58f27c70\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150821-62e42b58",
+      "experiment_id": "phase0-7-gradual-fixed-high-20260428150821-62e42b58",
+      "mean_reward": 0.7184735133376491,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150821-62e42b58\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150824-31bab986",
+      "experiment_id": "phase0-7-gradual-adaptive-meta-final-20260428150824-31bab986",
+      "mean_reward": 0.9896876840348252,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_44\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150824-31bab986\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 44
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150827-ead5131e",
+      "experiment_id": "phase0-7-gradual-adaptive-20260428150827-ead5131e",
+      "mean_reward": 1.0431921631384795,
+      "mode_label": "adaptive",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\adaptive\\experiments\\phase0-7-gradual-adaptive-20260428150827-ead5131e\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 45
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150830-daf89815",
+      "experiment_id": "phase0-7-gradual-fixed-low-20260428150830-daf89815",
+      "mean_reward": 0.74714660093863,
+      "mode_label": "fixed_low",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\fixed_low\\experiments\\phase0-7-gradual-fixed-low-20260428150830-daf89815\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 45
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150834-36e181a2",
+      "experiment_id": "phase0-7-gradual-fixed-mid-20260428150834-36e181a2",
+      "mean_reward": 0.9902387992746712,
+      "mode_label": "fixed_mid",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\fixed_mid\\experiments\\phase0-7-gradual-fixed-mid-20260428150834-36e181a2\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 45
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150837-4b3146c9",
+      "experiment_id": "phase0-7-gradual-fixed-high-20260428150837-4b3146c9",
+      "mean_reward": 0.7183246418834287,
+      "mode_label": "fixed_high",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\fixed_high\\experiments\\phase0-7-gradual-fixed-high-20260428150837-4b3146c9\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 45
+    },
+    {
+      "artifacts_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150840-942b2c42",
+      "experiment_id": "phase0-7-gradual-adaptive-meta-final-20260428150840-942b2c42",
+      "mean_reward": 0.9895634426598191,
+      "mode_label": "adaptive_meta_final",
+      "report_path": "E:\\dipproj\\artifacts\\validation_suite_0_7\\gradual_drift\\seed_45\\adaptive_meta_final\\experiments\\phase0-7-gradual-adaptive-meta-final-20260428150840-942b2c42\\report.md",
+      "scenario_name": "gradual_drift",
+      "seed": 45
+    }
+  ],
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "suite": "phase_0_7_nonstationary_validation",
+  "summaries": [
+    {
+      "adaptive_ci95": 0.00022751390345343448,
+      "adaptive_mean": 1.021323927693365,
+      "adaptive_std": 0.0002595594663001039,
+      "best_fixed_ci95": 0.00022646740134396145,
+      "best_fixed_label": "fixed_mid",
+      "best_fixed_mean": 0.9422971779897138,
+      "best_fixed_std": 0.00025836556331266587,
+      "delta_ci95": 2.247400673389081e-06,
+      "delta_mean": 0.07902674970365138,
+      "delta_std": 2.563949325702443e-06,
+      "effect_size_d": 30822.27441527164,
+      "scenario_name": "abrupt_drift",
+      "seeds": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "adaptive_ci95": 0.0014784579275125924,
+      "adaptive_mean": 1.0420644812936068,
+      "adaptive_std": 0.0016867002182610273,
+      "best_fixed_ci95": 0.00014778710957517012,
+      "best_fixed_label": "fixed_mid",
+      "best_fixed_mean": 0.9902322992666207,
+      "best_fixed_std": 0.00016860307306545432,
+      "delta_ci95": 0.0013467249946564302,
+      "delta_mean": 0.05183218202698614,
+      "delta_std": 0.001536412568902969,
+      "effect_size_d": 33.7358487401567,
+      "scenario_name": "gradual_drift",
+      "seeds": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    }
+  ]
+}

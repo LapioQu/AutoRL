@@ -1,0 +1,15 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+95,1,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,-0.003917584886858394,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0643, candidate_std=0.0880, threshold=0.0100."
+127,2,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,0.05380085895494602,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0369, candidate_std=0.0710, threshold=0.0100."
+159,3,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,0.05751134799543611,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0680, candidate_std=0.0376, threshold=0.0100."
+191,4,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,0.03295566361992741,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0107, candidate_std=0.0165, threshold=0.0100."
+223,5,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,0.05548954929506311,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0023, candidate_std=0.0190, threshold=0.0100."
+255,6,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,0.07173981586590328,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0253, candidate_std=0.0249, threshold=0.0100."
+287,7,sgd_lr_0_01,sgd_lr_0_05,stay,False,high_uncertainty,0.09616199987894114,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0242, candidate_std=0.0006, threshold=0.0100."
+319,8,sgd_lr_0_01,sgd_lr_0_05,switch,True,switch_advantage,0.11269723346301064,0.009999999999999998,Switch because candidate LCB exceeds current LCB beyond the decision threshold: 0.7983 - 0.6856 = 0.1127 > 0.0100.
+351,9,sgd_lr_0_05,sgd_lr_0_01,stay,False,high_uncertainty,-0.06380503947580785,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0060, candidate_std=0.0465, threshold=0.0100."
+383,10,sgd_lr_0_05,sgd_lr_0_01,stay,False,high_uncertainty,-0.06708713599730587,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0173, candidate_std=0.0265, threshold=0.0100."
+415,11,sgd_lr_0_05,sgd_lr_0_01,stay,False,high_uncertainty,-0.14097798718158328,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0174, candidate_std=0.0126, threshold=0.0100."
+447,12,sgd_lr_0_05,sgd_lr_0_01,stay,False,high_uncertainty,-0.1340440744471083,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0073, candidate_std=0.0443, threshold=0.0100."
+479,13,sgd_lr_0_05,sgd_lr_0_01,stay,False,high_uncertainty,-0.0759171137190775,0.009999999999999998,"Stay because utility uncertainty is too high: current_std=0.0012, candidate_std=0.0200, threshold=0.0100."
+511,14,sgd_lr_0_05,sgd_lr_0_01,stay,False,no_candidate_improvement,-0.05488786055750583,0.009999999999999998,"Stay because candidate improvement is not sufficient after LCB comparison: margin=-0.0549, threshold=0.0100."

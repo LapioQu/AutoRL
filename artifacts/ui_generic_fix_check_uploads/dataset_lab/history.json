@@ -1,0 +1,22 @@
+[
+  {
+    "created_at_utc": "2026-04-29T12:31:15.611528+00:00",
+    "dataset_name": "uploaded-classification",
+    "task_type": "classification",
+    "policy_name": "recent_leader_meta",
+    "source_row_count": 12,
+    "source_rows_used": 12,
+    "sample_count": 12,
+    "adaptive_score": 0.75,
+    "best_fixed_score": 0.75,
+    "delta_vs_best_fixed": 0.0,
+    "oracle_capture_ratio": 0.0,
+    "switch_count": 0,
+    "summary_json_path": "artifacts\\ui_generic_fix_check_uploads\\dataset_lab\\uploaded-classification-20260429123115\\dataset_lab_summary.json",
+    "report_md_path": "artifacts\\ui_generic_fix_check_uploads\\dataset_lab\\uploaded-classification-20260429123115\\dataset_lab_report.md",
+    "artifact_root": "artifacts\\ui_generic_fix_check_uploads\\dataset_lab\\uploaded-classification-20260429123115",
+    "score_plot_path": "artifacts\\ui_generic_fix_check_uploads\\dataset_lab\\uploaded-classification-20260429123115\\dataset_lab_scores.png",
+    "portfolio_plot_path": "artifacts\\ui_generic_fix_check_uploads\\dataset_lab\\uploaded-classification-20260429123115\\dataset_lab_portfolio.png",
+    "switch_plot_path": "artifacts\\ui_generic_fix_check_uploads\\dataset_lab\\uploaded-classification-20260429123115\\dataset_lab_switches.png"
+  }
+]

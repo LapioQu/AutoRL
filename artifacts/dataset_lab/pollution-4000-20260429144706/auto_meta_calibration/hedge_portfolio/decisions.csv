@@ -1,0 +1,14 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+63,0,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+127,1,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+191,2,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+255,3,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+319,4,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+383,5,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+447,6,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+511,7,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+575,8,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+639,9,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+703,10,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+767,11,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.
+831,12,knn_regressor,knn_regressor,stay,False,hedge_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Hedge expert.

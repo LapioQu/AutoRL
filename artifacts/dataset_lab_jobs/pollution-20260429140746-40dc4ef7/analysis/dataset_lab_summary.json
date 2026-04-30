@@ -1,0 +1,143 @@
+{
+  "created_at_utc": "2026-04-29T14:43:44.067340+00:00",
+  "dataset_name": "pollution",
+  "task_type": "classification",
+  "target_column": "pm2.5",
+  "source_row_count": 43824,
+  "source_rows_used": 41757,
+  "sample_count": 41757,
+  "feature_count": 12,
+  "score_name": "accuracy",
+  "policy_name": "fixed_share_portfolio",
+  "adaptive_score": 0.036903992145029575,
+  "best_fixed_strategy": "knn_classifier",
+  "best_fixed_score": 0.04212467370740235,
+  "delta_vs_best_fixed": -0.005220681562372778,
+  "oracle_score": 0.07428694590128601,
+  "oracle_gain": 0.03216227219388366,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "softmax_lr_0_20",
+  "switch_count": 144,
+  "next_prediction": "12",
+  "prediction_confidence": 0.75,
+  "confidence_label": "medium",
+  "next_prediction_by_strategy": {
+    "knn_classifier": "12",
+    "softmax_lr_0_20": "12",
+    "softmax_lr_0_10": "12",
+    "tree_classifier": "11"
+  },
+  "forecast_row_preview": {
+    "No": "43824",
+    "year": "2014",
+    "month": "12",
+    "day": "31",
+    "hour": "23",
+    "pm2.5": "12",
+    "DEWP": "-21",
+    "TEMP": "-3",
+    "PRES": "1034",
+    "cbwd": "NW",
+    "Iws": "249.85",
+    "Is": "0",
+    "Ir": "0"
+  },
+  "preview_rows": [
+    {
+      "row_index": 41745,
+      "actual_target": 17,
+      "adaptive_prediction": 12,
+      "feature_snapshot": "{\"DEWP\": -22, \"Ir\": 0, \"Is\": 0, \"Iws\": 177.44, \"No\": 43813, \"PRES\": 1033, \"TEMP\": 0, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 12, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41746,
+      "actual_target": 11,
+      "adaptive_prediction": 17,
+      "feature_snapshot": "{\"DEWP\": -27, \"Ir\": 0, \"Is\": 0, \"Iws\": 186.38, \"No\": 43814, \"PRES\": 1032, \"TEMP\": 0, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 13, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41747,
+      "actual_target": 9,
+      "adaptive_prediction": 11,
+      "feature_snapshot": "{\"DEWP\": -27, \"Ir\": 0, \"Is\": 0, \"Iws\": 196.21, \"No\": 43815, \"PRES\": 1032, \"TEMP\": 1, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 14, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41748,
+      "actual_target": 11,
+      "adaptive_prediction": 9,
+      "feature_snapshot": "{\"DEWP\": -26, \"Ir\": 0, \"Is\": 0, \"Iws\": 205.15, \"No\": 43816, \"PRES\": 1032, \"TEMP\": 1, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 15, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41749,
+      "actual_target": 8,
+      "adaptive_prediction": 11,
+      "feature_snapshot": "{\"DEWP\": -23, \"Ir\": 0, \"Is\": 0, \"Iws\": 214.09, \"No\": 43817, \"PRES\": 1032, \"TEMP\": 0, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 16, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41750,
+      "actual_target": 9,
+      "adaptive_prediction": 8,
+      "feature_snapshot": "{\"DEWP\": -22, \"Ir\": 0, \"Is\": 0, \"Iws\": 221.24, \"No\": 43818, \"PRES\": 1033, \"TEMP\": -1, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 17, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41751,
+      "actual_target": 10,
+      "adaptive_prediction": 9,
+      "feature_snapshot": "{\"DEWP\": -22, \"Ir\": 0, \"Is\": 0, \"Iws\": 226.16, \"No\": 43819, \"PRES\": 1033, \"TEMP\": -2, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 18, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41752,
+      "actual_target": 8,
+      "adaptive_prediction": 10,
+      "feature_snapshot": "{\"DEWP\": -23, \"Ir\": 0, \"Is\": 0, \"Iws\": 231.97, \"No\": 43820, \"PRES\": 1034, \"TEMP\": -2, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 19, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41753,
+      "actual_target": 10,
+      "adaptive_prediction": 8,
+      "feature_snapshot": "{\"DEWP\": -22, \"Ir\": 0, \"Is\": 0, \"Iws\": 237.78, \"No\": 43821, \"PRES\": 1034, \"TEMP\": -3, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 20, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41754,
+      "actual_target": 10,
+      "adaptive_prediction": 10,
+      "feature_snapshot": "{\"DEWP\": -22, \"Ir\": 0, \"Is\": 0, \"Iws\": 242.7, \"No\": 43822, \"PRES\": 1034, \"TEMP\": -3, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 21, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41755,
+      "actual_target": 8,
+      "adaptive_prediction": 10,
+      "feature_snapshot": "{\"DEWP\": -22, \"Ir\": 0, \"Is\": 0, \"Iws\": 246.72, \"No\": 43823, \"PRES\": 1034, \"TEMP\": -4, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 22, \"month\": 12, \"year\": 2014}"
+    },
+    {
+      "row_index": 41756,
+      "actual_target": 12,
+      "adaptive_prediction": 8,
+      "feature_snapshot": "{\"DEWP\": -21, \"Ir\": 0, \"Is\": 0, \"Iws\": 249.85, \"No\": 43824, \"PRES\": 1034, \"TEMP\": -3, \"cbwd\": \"NW\", \"day\": 31, \"hour\": 23, \"month\": 12, \"year\": 2014}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `fixed_share_portfolio` finished on strategy `softmax_lr_0_20` after 144 switches.",
+    "It achieved `0.0369` against the best fixed baseline `knn_classifier` at `0.0421`.",
+    "Oracle upper bound on this stream is `0.0743`. Available oracle gain over best fixed is `0.0322`, and the current adaptive controller captures `0.0%` of it.",
+    "The current stationary portfolio dominated the adaptive controller here; the gap is `-0.0052`.",
+    "Multiple switches suggest regime changes or at least changing local winners across the stream.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step class from the final adaptive strategy is `12` based on the latest lagged context `['10', '8', '12']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the original CSV row order.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is prequential accuracy over the uploaded stream.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\dataset_lab_jobs\\pollution-20260429140746-40dc4ef7\\analysis",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\dataset_lab_jobs\\pollution-20260429140746-40dc4ef7\\analysis\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\dataset_lab_jobs\\pollution-20260429140746-40dc4ef7\\analysis\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\dataset_lab_jobs\\pollution-20260429140746-40dc4ef7\\analysis\\summary.md",
+  "score_plot_path": "artifacts\\dataset_lab_jobs\\pollution-20260429140746-40dc4ef7\\analysis\\dataset_lab_scores.png",
+  "portfolio_plot_path": "artifacts\\dataset_lab_jobs\\pollution-20260429140746-40dc4ef7\\analysis\\dataset_lab_portfolio.png",
+  "switch_plot_path": "artifacts\\dataset_lab_jobs\\pollution-20260429140746-40dc4ef7\\analysis\\dataset_lab_switches.png",
+  "dataset_lab_report_md_path": "artifacts\\dataset_lab_jobs\\pollution-20260429140746-40dc4ef7\\analysis\\dataset_lab_report.md"
+}

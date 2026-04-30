@@ -1,0 +1,38 @@
+{
+  "dataset_name": "pasted-stream",
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "sample_count": 9,
+  "evaluation_interval": 8,
+  "window_size": 24,
+  "start_strategy": "lin_lr_0_001",
+  "final_strategy": "knn_regressor",
+  "switch_count": 1,
+  "adaptive_score": 0.15867005407029572,
+  "best_fixed_strategy": "knn_regressor",
+  "best_fixed_score": 0.5250446312468331,
+  "delta_vs_best_fixed": -0.3663745771765374,
+  "fixed_scores": {
+    "knn_regressor": 0.5250446312468331,
+    "lin_lr_0_001": 0.12117025168787826,
+    "lin_lr_0_01": 0.14606397733128418,
+    "pa_regressor": 0.12913232377338235,
+    "tree_regressor": 0.4298495489855
+  },
+  "block_delta_mean": -0.41217139932360447,
+  "block_delta_std": 0.0,
+  "block_delta_ci95": 0.0,
+  "block_count": 1,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 1,
+  "adaptive_accuracy": 0.15867005407029572,
+  "best_fixed_accuracy": 0.5250446312468331,
+  "fixed_accuracies": {
+    "knn_regressor": 0.5250446312468331,
+    "lin_lr_0_001": 0.12117025168787826,
+    "lin_lr_0_01": 0.14606397733128418,
+    "pa_regressor": 0.12913232377338235,
+    "tree_regressor": 0.4298495489855
+  }
+}

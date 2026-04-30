@@ -1,0 +1,946 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+47,0,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+95,1,tree_classifier,gaussian_nb,switch,True,fixed_share_warmup_leader,,0.015,Switch after warmup because the cumulative reward leader differs from the starting strategy: gaussian_nb.
+95,1,gaussian_nb,pa_classifier,switch,True,fixed_share_weight_advantage,0.06499507083147968,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2311 - 0.1661 = 0.0650 >= 0.0150.
+143,2,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+191,3,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+239,4,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+287,5,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+335,6,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+383,7,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+431,8,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+479,9,pa_classifier,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.0035015943513143633,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0035, threshold=0.0150."
+527,10,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+575,11,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+623,12,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.14012866417403735,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3327 - 0.1926 = 0.1401 >= 0.0150.
+671,13,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.05247883500198025,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2911 - 0.2386 = 0.0525 >= 0.0150.
+719,14,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+767,15,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+815,16,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+863,17,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+911,18,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+959,19,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.04549901900676201,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3167 - 0.2712 = 0.0455 >= 0.0150.
+1007,20,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.10367729861299091,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4562 - 0.3525 = 0.1037 >= 0.0150.
+1055,21,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1103,22,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1151,23,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1199,24,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1247,25,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1295,26,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1343,27,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1391,28,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1439,29,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1487,30,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1535,31,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1583,32,pa_classifier,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.013060240214662677,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0131, threshold=0.0150."
+1631,33,pa_classifier,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.005429591718020127,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0054, threshold=0.0150."
+1679,34,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.03821225103529269,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2585 - 0.2203 = 0.0382 >= 0.0150.
+1727,35,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1775,36,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1823,37,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.17267723186359657,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4876 - 0.3149 = 0.1727 >= 0.0150.
+1871,38,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1919,39,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1967,40,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2015,41,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.04191635703512961,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2380 - 0.1961 = 0.0419 >= 0.0150.
+2063,42,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2111,43,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2159,44,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2207,45,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.17669342892117196,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4581 - 0.2814 = 0.1767 >= 0.0150.
+2255,46,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2303,47,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2351,48,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.019153637197911855,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3145 - 0.2954 = 0.0192 >= 0.0150.
+2399,49,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2447,50,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.09048406745405857,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4087 - 0.3182 = 0.0905 >= 0.0150.
+2495,51,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2543,52,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.031735423919522165,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3155 - 0.2838 = 0.0317 >= 0.0150.
+2591,53,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2639,54,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.039820088598169046,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3541 - 0.3143 = 0.0398 >= 0.0150.
+2687,55,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.04057584272295914,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2794 - 0.2389 = 0.0406 >= 0.0150.
+2735,56,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2783,57,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2831,58,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2879,59,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2927,60,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+2975,61,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3023,62,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3071,63,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3119,64,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3167,65,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3215,66,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3263,67,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3311,68,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3359,69,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3407,70,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3455,71,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3503,72,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3551,73,pa_classifier,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.01304559687621637,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0130, threshold=0.0150."
+3599,74,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3647,75,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3695,76,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3743,77,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3791,78,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.595888208893932,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.6795 - 0.0837 = 0.5959 >= 0.0150.
+3839,79,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.11985245001484993,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2605 - 0.1406 = 0.1199 >= 0.0150.
+3887,80,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+3935,81,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.09330538178039291,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3225 - 0.2291 = 0.0933 >= 0.0150.
+3983,82,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4031,83,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4079,84,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4127,85,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4175,86,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.12796398593589897,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3815 - 0.2535 = 0.1280 >= 0.0150.
+4223,87,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4271,88,softmax_lr_0_20,tree_classifier,stay,False,fixed_share_margin_too_small,0.012629972492068847,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0126, threshold=0.0150."
+4319,89,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.10501989438953624,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2962 - 0.1912 = 0.1050 >= 0.0150.
+4367,90,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.3868978934408236,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4514 - 0.0645 = 0.3869 >= 0.0150.
+4415,91,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4463,92,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4511,93,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.11022216187502581,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3013 - 0.1911 = 0.1102 >= 0.0150.
+4559,94,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.06971707512677405,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3326 - 0.2629 = 0.0697 >= 0.0150.
+4607,95,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4655,96,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.085819806201055,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3515 - 0.2657 = 0.0858 >= 0.0150.
+4703,97,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4751,98,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4799,99,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.05563422026133005,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3016 - 0.2459 = 0.0556 >= 0.0150.
+4847,100,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.1461055774176868,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3266 - 0.1805 = 0.1461 >= 0.0150.
+4895,101,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.22431023688638146,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4428 - 0.2185 = 0.2243 >= 0.0150.
+4943,102,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+4991,103,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5039,104,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5087,105,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5135,106,pa_classifier,gaussian_nb,switch,True,fixed_share_weight_advantage,0.025569651217630995,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2564 - 0.2308 = 0.0256 >= 0.0150.
+5183,107,gaussian_nb,pa_classifier,switch,True,fixed_share_weight_advantage,0.4043481461402809,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5316 - 0.1272 = 0.4043 >= 0.0150.
+5231,108,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5279,109,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5327,110,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5375,111,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5423,112,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5471,113,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5519,114,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5567,115,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5615,116,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.03373727385245559,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2821 - 0.2484 = 0.0337 >= 0.0150.
+5663,117,softmax_lr_0_20,gaussian_nb,switch,True,fixed_share_weight_advantage,0.03515022869691664,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2888 - 0.2537 = 0.0352 >= 0.0150.
+5711,118,gaussian_nb,gaussian_nb,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5759,119,gaussian_nb,tree_classifier,switch,True,fixed_share_weight_advantage,0.21383737626716737,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3105 - 0.0967 = 0.2138 >= 0.0150.
+5807,120,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.06967514384376933,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2970 - 0.2273 = 0.0697 >= 0.0150.
+5855,121,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.10585163915637597,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3423 - 0.2364 = 0.1059 >= 0.0150.
+5903,122,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5951,123,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+5999,124,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6047,125,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6095,126,pa_classifier,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.01041734672328673,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0104, threshold=0.0150."
+6143,127,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.06992944499969866,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2913 - 0.2214 = 0.0699 >= 0.0150.
+6191,128,softmax_lr_0_20,tree_classifier,stay,False,fixed_share_margin_too_small,0.0008769932193654628,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0009, threshold=0.0150."
+6239,129,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6287,130,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6335,131,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.3076098594337302,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5543 - 0.2467 = 0.3076 >= 0.0150.
+6383,132,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6431,133,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6479,134,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6527,135,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.09108456839478812,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3137 - 0.2226 = 0.0911 >= 0.0150.
+6575,136,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6623,137,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.04037266479074175,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3064 - 0.2660 = 0.0404 >= 0.0150.
+6671,138,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6719,139,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6767,140,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6815,141,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.026372765003588067,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2536 - 0.2272 = 0.0264 >= 0.0150.
+6863,142,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+6911,143,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.09261905791179334,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2386 - 0.1460 = 0.0926 >= 0.0150.
+6959,144,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.19730393958073858,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3418 - 0.1445 = 0.1973 >= 0.0150.
+7007,145,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.02902208915629384,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3294 - 0.3003 = 0.0290 >= 0.0150.
+7055,146,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.08914899671320398,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3865 - 0.2974 = 0.0891 >= 0.0150.
+7103,147,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.17390127385426962,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4548 - 0.2809 = 0.1739 >= 0.0150.
+7151,148,pa_classifier,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.013112617554149664,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0131, threshold=0.0150."
+7199,149,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7247,150,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.016568453693457164,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2725 - 0.2559 = 0.0166 >= 0.0150.
+7295,151,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.09090190808564563,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3242 - 0.2333 = 0.0909 >= 0.0150.
+7343,152,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7391,153,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7439,154,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7487,155,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7535,156,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7583,157,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7631,158,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7679,159,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.08155820848339079,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3196 - 0.2381 = 0.0816 >= 0.0150.
+7727,160,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7775,161,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7823,162,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.13239141871435478,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4469 - 0.3145 = 0.1324 >= 0.0150.
+7871,163,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7919,164,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+7967,165,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8015,166,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8063,167,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8111,168,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8159,169,pa_classifier,gaussian_nb,switch,True,fixed_share_weight_advantage,0.02054821050340383,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2262 - 0.2056 = 0.0205 >= 0.0150.
+8207,170,gaussian_nb,pa_classifier,switch,True,fixed_share_weight_advantage,0.1688337390186331,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3028 - 0.1339 = 0.1688 >= 0.0150.
+8255,171,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8303,172,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.05644130617135751,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2912 - 0.2348 = 0.0564 >= 0.0150.
+8351,173,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8399,174,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8447,175,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.1644508580171926,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3463 - 0.1819 = 0.1645 >= 0.0150.
+8495,176,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8543,177,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8591,178,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8639,179,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8687,180,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8735,181,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.047856912545852864,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2498 - 0.2019 = 0.0479 >= 0.0150.
+8783,182,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.04419952196387095,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2910 - 0.2468 = 0.0442 >= 0.0150.
+8831,183,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8879,184,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8927,185,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+8975,186,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9023,187,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9071,188,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9119,189,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9167,190,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9215,191,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9263,192,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9311,193,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9359,194,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9407,195,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9455,196,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9503,197,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9551,198,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9599,199,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9647,200,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9695,201,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9743,202,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9791,203,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.03199820272725712,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3775 - 0.3455 = 0.0320 >= 0.0150.
+9839,204,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.03827999952387576,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2598 - 0.2215 = 0.0383 >= 0.0150.
+9887,205,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+9935,206,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.05028834253192893,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2995 - 0.2492 = 0.0503 >= 0.0150.
+9983,207,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10031,208,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.025097315280974558,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2390 - 0.2139 = 0.0251 >= 0.0150.
+10079,209,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.07373482394570532,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2729 - 0.1992 = 0.0737 >= 0.0150.
+10127,210,softmax_lr_0_20,tree_classifier,stay,False,fixed_share_margin_too_small,0.0038643561506946644,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0039, threshold=0.0150."
+10175,211,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10223,212,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10271,213,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10319,214,softmax_lr_0_20,pa_classifier,stay,False,fixed_share_margin_too_small,0.0126951013524631,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0127, threshold=0.0150."
+10367,215,softmax_lr_0_20,pa_classifier,stay,False,fixed_share_margin_too_small,0.007574854187614832,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0076, threshold=0.0150."
+10415,216,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.04021041475358106,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2783 - 0.2381 = 0.0402 >= 0.0150.
+10463,217,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10511,218,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10559,219,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10607,220,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10655,221,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10703,222,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10751,223,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10799,224,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10847,225,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10895,226,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10943,227,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+10991,228,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11039,229,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.15268220713040823,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3397 - 0.1870 = 0.1527 >= 0.0150.
+11087,230,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.12550454926417798,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3715 - 0.2460 = 0.1255 >= 0.0150.
+11135,231,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11183,232,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11231,233,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11279,234,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11327,235,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11375,236,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11423,237,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.16762976985149952,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2967 - 0.1291 = 0.1676 >= 0.0150.
+11471,238,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11519,239,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.2283343973131279,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4251 - 0.1968 = 0.2283 >= 0.0150.
+11567,240,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11615,241,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11663,242,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11711,243,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11759,244,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11807,245,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11855,246,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11903,247,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11951,248,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+11999,249,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12047,250,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12095,251,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12143,252,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.016758273193369977,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2779 - 0.2612 = 0.0168 >= 0.0150.
+12191,253,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12239,254,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12287,255,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12335,256,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12383,257,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12431,258,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.06533247569622033,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3060 - 0.2406 = 0.0653 >= 0.0150.
+12479,259,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12527,260,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12575,261,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.07765036973774075,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4179 - 0.3402 = 0.0777 >= 0.0150.
+12623,262,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.17065058682226525,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4172 - 0.2465 = 0.1707 >= 0.0150.
+12671,263,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12719,264,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12767,265,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12815,266,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12863,267,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12911,268,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+12959,269,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.08265756719639555,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3621 - 0.2795 = 0.0827 >= 0.0150.
+13007,270,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13055,271,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.01731484140570383,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2271 - 0.2098 = 0.0173 >= 0.0150.
+13103,272,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.115468963529226,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3654 - 0.2499 = 0.1155 >= 0.0150.
+13151,273,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13199,274,pa_classifier,tree_classifier,stay,False,fixed_share_margin_too_small,0.006608434037280564,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0066, threshold=0.0150."
+13247,275,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.11826679712397631,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2705 - 0.1522 = 0.1183 >= 0.0150.
+13295,276,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.025220300044124122,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3725 - 0.3472 = 0.0252 >= 0.0150.
+13343,277,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13391,278,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13439,279,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13487,280,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13535,281,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13583,282,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.05171834849091844,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3321 - 0.2804 = 0.0517 >= 0.0150.
+13631,283,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.12777155952408212,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2803 - 0.1526 = 0.1278 >= 0.0150.
+13679,284,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13727,285,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13775,286,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13823,287,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.06187708924720209,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3359 - 0.2740 = 0.0619 >= 0.0150.
+13871,288,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13919,289,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+13967,290,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14015,291,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14063,292,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.1770447006416787,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4083 - 0.2313 = 0.1770 >= 0.0150.
+14111,293,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14159,294,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14207,295,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14255,296,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.11518570361334488,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3319 - 0.2167 = 0.1152 >= 0.0150.
+14303,297,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14351,298,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14399,299,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.10004314973882639,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4174 - 0.3174 = 0.1000 >= 0.0150.
+14447,300,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14495,301,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.11385586153574506,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3929 - 0.2790 = 0.1139 >= 0.0150.
+14543,302,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14591,303,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14639,304,softmax_lr_0_20,gaussian_nb,switch,True,fixed_share_weight_advantage,0.09911710057966336,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2996 - 0.2005 = 0.0991 >= 0.0150.
+14687,305,gaussian_nb,pa_classifier,switch,True,fixed_share_weight_advantage,0.25221965957864123,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2856 - 0.0334 = 0.2522 >= 0.0150.
+14735,306,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14783,307,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.11755931535826533,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3203 - 0.2028 = 0.1176 >= 0.0150.
+14831,308,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14879,309,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.1970262199554796,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3077 - 0.1107 = 0.1970 >= 0.0150.
+14927,310,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+14975,311,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15023,312,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15071,313,softmax_lr_0_20,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.001033134855824458,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0010, threshold=0.0150."
+15119,314,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.14907850846082163,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3539 - 0.2048 = 0.1491 >= 0.0150.
+15167,315,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15215,316,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15263,317,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15311,318,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15359,319,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15407,320,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15455,321,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15503,322,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.14914527591699647,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3593 - 0.2101 = 0.1491 >= 0.0150.
+15551,323,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15599,324,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15647,325,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15695,326,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.14192922969993327,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4303 - 0.2884 = 0.1419 >= 0.0150.
+15743,327,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.047574304335892575,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2488 - 0.2012 = 0.0476 >= 0.0150.
+15791,328,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.15538063642575003,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3948 - 0.2394 = 0.1554 >= 0.0150.
+15839,329,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.09900360314267995,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2821 - 0.1831 = 0.0990 >= 0.0150.
+15887,330,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+15935,331,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.1093143198767654,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3352 - 0.2259 = 0.1093 >= 0.0150.
+15983,332,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.13139717268517093,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3971 - 0.2657 = 0.1314 >= 0.0150.
+16031,333,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16079,334,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16127,335,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.2427328567790104,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4290 - 0.1863 = 0.2427 >= 0.0150.
+16175,336,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16223,337,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16271,338,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16319,339,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16367,340,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16415,341,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.33276610687002023,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5352 - 0.2024 = 0.3328 >= 0.0150.
+16463,342,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16511,343,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.17454940742580224,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3937 - 0.2192 = 0.1745 >= 0.0150.
+16559,344,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16607,345,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16655,346,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16703,347,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.07749609142888561,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2557 - 0.1782 = 0.0775 >= 0.0150.
+16751,348,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.1953129921394814,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3192 - 0.1239 = 0.1953 >= 0.0150.
+16799,349,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.06482054525859182,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3269 - 0.2620 = 0.0648 >= 0.0150.
+16847,350,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.24045650029579724,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3780 - 0.1375 = 0.2405 >= 0.0150.
+16895,351,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+16943,352,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.07768040291210149,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2840 - 0.2063 = 0.0777 >= 0.0150.
+16991,353,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.09318644719659541,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3067 - 0.2135 = 0.0932 >= 0.0150.
+17039,354,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.3499010448710591,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4283 - 0.0784 = 0.3499 >= 0.0150.
+17087,355,softmax_lr_0_20,tree_classifier,stay,False,fixed_share_margin_too_small,0.013112105934964813,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0131, threshold=0.0150."
+17135,356,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.12607173114170406,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4186 - 0.2925 = 0.1261 >= 0.0150.
+17183,357,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17231,358,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17279,359,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17327,360,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17375,361,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17423,362,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17471,363,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17519,364,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17567,365,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17615,366,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17663,367,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17711,368,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17759,369,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17807,370,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.14011356192522872,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3206 - 0.1805 = 0.1401 >= 0.0150.
+17855,371,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.05808873888329297,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2577 - 0.1996 = 0.0581 >= 0.0150.
+17903,372,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.21681952991863826,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3700 - 0.1531 = 0.2168 >= 0.0150.
+17951,373,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+17999,374,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.12100749642389352,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3427 - 0.2217 = 0.1210 >= 0.0150.
+18047,375,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18095,376,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18143,377,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18191,378,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18239,379,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18287,380,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18335,381,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18383,382,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18431,383,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18479,384,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+18527,385,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.0161306522903312,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2605 - 0.2443 = 0.0161 >= 0.0150.
+18575,386,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.08101069313732293,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3262 - 0.2452 = 0.0810 >= 0.0150.
+18623,387,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.02968116817703431,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2825 - 0.2528 = 0.0297 >= 0.0150.
+18671,388,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.05426954433662662,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2780 - 0.2238 = 0.0543 >= 0.0150.
+18719,389,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.13077807283736256,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3239 - 0.1932 = 0.1308 >= 0.0150.
+18767,390,tree_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.25682490463774194,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3518 - 0.0950 = 0.2568 >= 0.0150.
+18815,391,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.08841251405397618,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3353 - 0.2469 = 0.0884 >= 0.0150.
+18863,392,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.027714643108595505,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3093 - 0.2815 = 0.0277 >= 0.0150.
+18911,393,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.036431351555966496,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2998 - 0.2634 = 0.0364 >= 0.0150.
+18959,394,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.06409664427203748,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3378 - 0.2737 = 0.0641 >= 0.0150.
+19007,395,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.0791513750331774,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2822 - 0.2031 = 0.0792 >= 0.0150.
+19055,396,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19103,397,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19151,398,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19199,399,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19247,400,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.02319345598953315,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3538 - 0.3306 = 0.0232 >= 0.0150.
+19295,401,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19343,402,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.12708217944822608,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3369 - 0.2098 = 0.1271 >= 0.0150.
+19391,403,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19439,404,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19487,405,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19535,406,pa_classifier,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.009495980999626064,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0095, threshold=0.0150."
+19583,407,pa_classifier,gaussian_nb,switch,True,fixed_share_weight_advantage,0.03505116695488908,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2614 - 0.2263 = 0.0351 >= 0.0150.
+19631,408,gaussian_nb,pa_classifier,switch,True,fixed_share_weight_advantage,0.25156621561703774,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3400 - 0.0884 = 0.2516 >= 0.0150.
+19679,409,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19727,410,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.04672443082814798,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2654 - 0.2187 = 0.0467 >= 0.0150.
+19775,411,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.10207981649134898,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3266 - 0.2245 = 0.1021 >= 0.0150.
+19823,412,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19871,413,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+19919,414,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.16798145349264612,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3902 - 0.2222 = 0.1680 >= 0.0150.
+19967,415,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20015,416,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.06762540335177547,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3352 - 0.2676 = 0.0676 >= 0.0150.
+20063,417,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.21355139616680813,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4352 - 0.2216 = 0.2136 >= 0.0150.
+20111,418,pa_classifier,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.008017996405624284,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0080, threshold=0.0150."
+20159,419,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20207,420,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20255,421,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.07770340056093578,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3032 - 0.2255 = 0.0777 >= 0.0150.
+20303,422,softmax_lr_0_05,tree_classifier,switch,True,fixed_share_weight_advantage,0.09757633680990371,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3199 - 0.2223 = 0.0976 >= 0.0150.
+20351,423,tree_classifier,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.011976458970900383,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0120, threshold=0.0150."
+20399,424,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.3570886836871993,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4123 - 0.0552 = 0.3571 >= 0.0150.
+20447,425,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.015145697503275712,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2852 - 0.2701 = 0.0151 >= 0.0150.
+20495,426,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20543,427,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.20010863092817852,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4203 - 0.2202 = 0.2001 >= 0.0150.
+20591,428,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.06165143029532222,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3096 - 0.2479 = 0.0617 >= 0.0150.
+20639,429,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20687,430,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.08281606241343253,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3330 - 0.2502 = 0.0828 >= 0.0150.
+20735,431,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20783,432,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20831,433,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+20879,434,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.0723258788278103,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2922 - 0.2198 = 0.0723 >= 0.0150.
+20927,435,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.03825553370063836,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2630 - 0.2247 = 0.0383 >= 0.0150.
+20975,436,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21023,437,pa_classifier,tree_classifier,stay,False,fixed_share_margin_too_small,0.00745382828683272,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0075, threshold=0.0150."
+21071,438,pa_classifier,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.014729565530105904,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0147, threshold=0.0150."
+21119,439,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21167,440,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21215,441,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.10326370204944496,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3372 - 0.2340 = 0.1033 >= 0.0150.
+21263,442,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.07575975206215019,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3417 - 0.2659 = 0.0758 >= 0.0150.
+21311,443,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21359,444,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21407,445,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.060111028677141354,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3133 - 0.2532 = 0.0601 >= 0.0150.
+21455,446,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21503,447,softmax_lr_0_05,tree_classifier,switch,True,fixed_share_weight_advantage,0.12763629868457183,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3114 - 0.1838 = 0.1276 >= 0.0150.
+21551,448,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.18751527426585615,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3554 - 0.1679 = 0.1875 >= 0.0150.
+21599,449,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21647,450,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.048515552572064524,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3338 - 0.2853 = 0.0485 >= 0.0150.
+21695,451,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.06835637701785507,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3206 - 0.2523 = 0.0684 >= 0.0150.
+21743,452,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.10537818533433865,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3102 - 0.2048 = 0.1054 >= 0.0150.
+21791,453,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21839,454,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.17042069046964128,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3951 - 0.2247 = 0.1704 >= 0.0150.
+21887,455,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+21935,456,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.10122530539537292,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3026 - 0.2014 = 0.1012 >= 0.0150.
+21983,457,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22031,458,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22079,459,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.058004018148028025,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3219 - 0.2639 = 0.0580 >= 0.0150.
+22127,460,softmax_lr_0_20,gaussian_nb,switch,True,fixed_share_weight_advantage,0.2533697614625179,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4613 - 0.2079 = 0.2534 >= 0.0150.
+22175,461,gaussian_nb,pa_classifier,switch,True,fixed_share_weight_advantage,0.21235039289252006,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2876 - 0.0753 = 0.2124 >= 0.0150.
+22223,462,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22271,463,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22319,464,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22367,465,pa_classifier,tree_classifier,stay,False,fixed_share_margin_too_small,0.005909404288689857,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0059, threshold=0.0150."
+22415,466,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.09624239367482695,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3083 - 0.2121 = 0.0962 >= 0.0150.
+22463,467,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.12767219977010227,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3295 - 0.2019 = 0.1277 >= 0.0150.
+22511,468,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22559,469,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22607,470,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22655,471,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22703,472,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22751,473,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22799,474,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22847,475,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22895,476,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22943,477,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+22991,478,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23039,479,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.03127925499059181,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3344 - 0.3031 = 0.0313 >= 0.0150.
+23087,480,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23135,481,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23183,482,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.06567768560452503,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3875 - 0.3218 = 0.0657 >= 0.0150.
+23231,483,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23279,484,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23327,485,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23375,486,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23423,487,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23471,488,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23519,489,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23567,490,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23615,491,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.11886071782209146,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4662 - 0.3474 = 0.1189 >= 0.0150.
+23663,492,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.2613915296381666,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5299 - 0.2685 = 0.2614 >= 0.0150.
+23711,493,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23759,494,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+23807,495,pa_classifier,gaussian_nb,switch,True,fixed_share_weight_advantage,0.18409423352572135,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2818 - 0.0977 = 0.1841 >= 0.0150.
+23855,496,gaussian_nb,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.2222094979028597,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3187 - 0.0965 = 0.2222 >= 0.0150.
+23903,497,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.19647034544304223,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4107 - 0.2143 = 0.1965 >= 0.0150.
+23951,498,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.0885309755447456,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4047 - 0.3162 = 0.0885 >= 0.0150.
+23999,499,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.24714543127251706,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4381 - 0.1909 = 0.2471 >= 0.0150.
+24047,500,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.17158067463007362,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4108 - 0.2392 = 0.1716 >= 0.0150.
+24095,501,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.017836467021072,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3202 - 0.3024 = 0.0178 >= 0.0150.
+24143,502,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24191,503,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.05504676312547335,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4346 - 0.3795 = 0.0550 >= 0.0150.
+24239,504,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.16121918896581888,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4585 - 0.2972 = 0.1612 >= 0.0150.
+24287,505,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24335,506,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24383,507,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24431,508,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24479,509,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24527,510,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24575,511,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24623,512,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24671,513,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24719,514,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.0816125804353634,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3734 - 0.2918 = 0.0816 >= 0.0150.
+24767,515,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.11488796029800252,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3773 - 0.2625 = 0.1149 >= 0.0150.
+24815,516,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24863,517,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24911,518,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+24959,519,pa_classifier,gaussian_nb,switch,True,fixed_share_weight_advantage,0.18539028539689514,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4157 - 0.2303 = 0.1854 >= 0.0150.
+25007,520,gaussian_nb,gaussian_nb,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25055,521,gaussian_nb,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.25089881665767866,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3658 - 0.1149 = 0.2509 >= 0.0150.
+25103,522,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25151,523,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.12369818516305989,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2913 - 0.1676 = 0.1237 >= 0.0150.
+25199,524,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25247,525,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.09653358268420242,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3666 - 0.2701 = 0.0965 >= 0.0150.
+25295,526,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.2141667500361096,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4240 - 0.2099 = 0.2142 >= 0.0150.
+25343,527,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.1171817147663381,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3085 - 0.1913 = 0.1172 >= 0.0150.
+25391,528,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.01865655199714622,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2565 - 0.2379 = 0.0187 >= 0.0150.
+25439,529,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25487,530,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25535,531,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.10537547144970288,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3193 - 0.2139 = 0.1054 >= 0.0150.
+25583,532,tree_classifier,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.0027889493774824747,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0028, threshold=0.0150."
+25631,533,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.21873539207978399,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2948 - 0.0761 = 0.2187 >= 0.0150.
+25679,534,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25727,535,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25775,536,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25823,537,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.06175229848636271,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2512 - 0.1894 = 0.0618 >= 0.0150.
+25871,538,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+25919,539,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.07438826182023031,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2879 - 0.2135 = 0.0744 >= 0.0150.
+25967,540,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.13497578972566296,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3433 - 0.2083 = 0.1350 >= 0.0150.
+26015,541,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.0360562063760885,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2398 - 0.2037 = 0.0361 >= 0.0150.
+26063,542,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26111,543,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26159,544,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26207,545,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.14113741578586972,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3401 - 0.1990 = 0.1411 >= 0.0150.
+26255,546,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26303,547,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26351,548,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26399,549,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26447,550,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.033293723880614134,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2942 - 0.2609 = 0.0333 >= 0.0150.
+26495,551,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.1862347972242286,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3781 - 0.1919 = 0.1862 >= 0.0150.
+26543,552,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26591,553,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26639,554,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26687,555,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26735,556,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26783,557,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26831,558,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26879,559,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+26927,560,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.12732576292237893,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3604 - 0.2331 = 0.1273 >= 0.0150.
+26975,561,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.2640530290035876,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3433 - 0.0792 = 0.2641 >= 0.0150.
+27023,562,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.030801914671943653,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2778 - 0.2470 = 0.0308 >= 0.0150.
+27071,563,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27119,564,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.1286713346816339,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4029 - 0.2742 = 0.1287 >= 0.0150.
+27167,565,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27215,566,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27263,567,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27311,568,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27359,569,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27407,570,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27455,571,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27503,572,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27551,573,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27599,574,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27647,575,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.047270740142860646,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4096 - 0.3623 = 0.0473 >= 0.0150.
+27695,576,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.04257764118800153,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2854 - 0.2428 = 0.0426 >= 0.0150.
+27743,577,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27791,578,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27839,579,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.2716198218081276,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4694 - 0.1978 = 0.2716 >= 0.0150.
+27887,580,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27935,581,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+27983,582,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28031,583,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.07248345824084668,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3371 - 0.2646 = 0.0725 >= 0.0150.
+28079,584,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28127,585,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28175,586,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.22292327101465986,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3987 - 0.1758 = 0.2229 >= 0.0150.
+28223,587,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.17897201138607277,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3557 - 0.1767 = 0.1790 >= 0.0150.
+28271,588,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.4254873931089367,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5273 - 0.1018 = 0.4255 >= 0.0150.
+28319,589,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.03404812623908682,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3130 - 0.2790 = 0.0340 >= 0.0150.
+28367,590,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28415,591,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.2824506299965718,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4379 - 0.1554 = 0.2825 >= 0.0150.
+28463,592,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28511,593,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.2822819871744664,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3624 - 0.0801 = 0.2823 >= 0.0150.
+28559,594,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28607,595,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28655,596,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28703,597,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.04248315188223062,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3852 - 0.3427 = 0.0425 >= 0.0150.
+28751,598,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28799,599,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28847,600,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.05478570026161403,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2983 - 0.2435 = 0.0548 >= 0.0150.
+28895,601,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+28943,602,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.45487025647359086,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5351 - 0.0802 = 0.4549 >= 0.0150.
+28991,603,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29039,604,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29087,605,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29135,606,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29183,607,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.08603582729371323,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3787 - 0.2927 = 0.0860 >= 0.0150.
+29231,608,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29279,609,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.08214840943823326,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4103 - 0.3281 = 0.0821 >= 0.0150.
+29327,610,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29375,611,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29423,612,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.24333943764615912,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4459 - 0.2026 = 0.2433 >= 0.0150.
+29471,613,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29519,614,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29567,615,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29615,616,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.2300977165225512,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3638 - 0.1337 = 0.2301 >= 0.0150.
+29663,617,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.035137521691587514,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3018 - 0.2667 = 0.0351 >= 0.0150.
+29711,618,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29759,619,tree_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.16260499874768447,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2873 - 0.1247 = 0.1626 >= 0.0150.
+29807,620,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.1838143897724349,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3698 - 0.1860 = 0.1838 >= 0.0150.
+29855,621,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29903,622,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29951,623,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+29999,624,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30047,625,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30095,626,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30143,627,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.19670468955801898,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3560 - 0.1593 = 0.1967 >= 0.0150.
+30191,628,softmax_lr_0_05,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.005951153737054293,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0060, threshold=0.0150."
+30239,629,softmax_lr_0_05,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.0015772476514562261,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0016, threshold=0.0150."
+30287,630,softmax_lr_0_05,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.0009580224489273981,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0010, threshold=0.0150."
+30335,631,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.1346592432783675,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3475 - 0.2129 = 0.1347 >= 0.0150.
+30383,632,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30431,633,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30479,634,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30527,635,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.018516886804975985,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2959 - 0.2774 = 0.0185 >= 0.0150.
+30575,636,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30623,637,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30671,638,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.11549365710085321,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3147 - 0.1992 = 0.1155 >= 0.0150.
+30719,639,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.12655108214317207,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3656 - 0.2391 = 0.1266 >= 0.0150.
+30767,640,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30815,641,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30863,642,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.11533302558946862,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3098 - 0.1945 = 0.1153 >= 0.0150.
+30911,643,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+30959,644,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.06550886205086426,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2714 - 0.2059 = 0.0655 >= 0.0150.
+31007,645,tree_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.21048634264332938,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4456 - 0.2351 = 0.2105 >= 0.0150.
+31055,646,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.09575749921401688,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3539 - 0.2581 = 0.0958 >= 0.0150.
+31103,647,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31151,648,softmax_lr_0_20,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.011484518015966172,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0115, threshold=0.0150."
+31199,649,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31247,650,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31295,651,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.06772933454377528,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3096 - 0.2419 = 0.0677 >= 0.0150.
+31343,652,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.4236264523822035,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4549 - 0.0313 = 0.4236 >= 0.0150.
+31391,653,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.1960292114448793,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4084 - 0.2123 = 0.1960 >= 0.0150.
+31439,654,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.20505154378515336,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3929 - 0.1879 = 0.2051 >= 0.0150.
+31487,655,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31535,656,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31583,657,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31631,658,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.12055810425974622,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3375 - 0.2170 = 0.1206 >= 0.0150.
+31679,659,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.07674173258691255,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3164 - 0.2396 = 0.0767 >= 0.0150.
+31727,660,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31775,661,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.04039626760925297,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3526 - 0.3123 = 0.0404 >= 0.0150.
+31823,662,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31871,663,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+31919,664,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.07575154894135655,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3051 - 0.2294 = 0.0758 >= 0.0150.
+31967,665,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.31596167349325277,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4234 - 0.1074 = 0.3160 >= 0.0150.
+32015,666,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32063,667,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32111,668,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32159,669,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32207,670,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32255,671,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32303,672,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.42918258067332593,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5630 - 0.1338 = 0.4292 >= 0.0150.
+32351,673,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.23465019021348787,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3510 - 0.1164 = 0.2347 >= 0.0150.
+32399,674,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32447,675,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.07684459085309445,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2786 - 0.2018 = 0.0768 >= 0.0150.
+32495,676,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32543,677,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32591,678,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32639,679,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.2343963643485771,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4257 - 0.1913 = 0.2344 >= 0.0150.
+32687,680,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.06704007220308733,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3577 - 0.2906 = 0.0670 >= 0.0150.
+32735,681,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.2140514834665346,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3860 - 0.1720 = 0.2141 >= 0.0150.
+32783,682,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.05305323552813285,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2793 - 0.2263 = 0.0531 >= 0.0150.
+32831,683,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.04361905012906375,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3369 - 0.2933 = 0.0436 >= 0.0150.
+32879,684,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32927,685,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+32975,686,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33023,687,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33071,688,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33119,689,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.5048067614067923,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.6359 - 0.1311 = 0.5048 >= 0.0150.
+33167,690,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33215,691,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.1727159862898195,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3222 - 0.1495 = 0.1727 >= 0.0150.
+33263,692,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33311,693,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33359,694,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33407,695,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.02237662021991149,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2709 - 0.2485 = 0.0224 >= 0.0150.
+33455,696,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.29837854372895656,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4400 - 0.1416 = 0.2984 >= 0.0150.
+33503,697,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.09125568056367106,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3266 - 0.2353 = 0.0913 >= 0.0150.
+33551,698,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.12760582003370669,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3974 - 0.2698 = 0.1276 >= 0.0150.
+33599,699,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.2659008211469799,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4583 - 0.1924 = 0.2659 >= 0.0150.
+33647,700,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33695,701,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.08718588135936517,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3223 - 0.2352 = 0.0872 >= 0.0150.
+33743,702,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.1623461616853915,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2844 - 0.1221 = 0.1623 >= 0.0150.
+33791,703,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33839,704,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.0702237087191735,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3357 - 0.2655 = 0.0702 >= 0.0150.
+33887,705,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+33935,706,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.22010407198385412,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3825 - 0.1624 = 0.2201 >= 0.0150.
+33983,707,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34031,708,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.05190409314757677,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3852 - 0.3333 = 0.0519 >= 0.0150.
+34079,709,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34127,710,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34175,711,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.0214876251224409,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4108 - 0.3893 = 0.0215 >= 0.0150.
+34223,712,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34271,713,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34319,714,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.2349358616015358,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4967 - 0.2617 = 0.2349 >= 0.0150.
+34367,715,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34415,716,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34463,717,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.1584135397041371,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4082 - 0.2498 = 0.1584 >= 0.0150.
+34511,718,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34559,719,softmax_lr_0_20,tree_classifier,switch,True,fixed_share_weight_advantage,0.19355628988617002,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4132 - 0.2197 = 0.1936 >= 0.0150.
+34607,720,tree_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.35992449930276066,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4308 - 0.0709 = 0.3599 >= 0.0150.
+34655,721,softmax_lr_0_20,pa_classifier,stay,False,fixed_share_margin_too_small,0.011473318102148078,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0115, threshold=0.0150."
+34703,722,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.015144212857070433,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2537 - 0.2386 = 0.0151 >= 0.0150.
+34751,723,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.12759834738590756,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3125 - 0.1849 = 0.1276 >= 0.0150.
+34799,724,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34847,725,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34895,726,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.09956549723681085,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3330 - 0.2334 = 0.0996 >= 0.0150.
+34943,727,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+34991,728,softmax_lr_0_05,tree_classifier,switch,True,fixed_share_weight_advantage,0.12993044308212576,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3047 - 0.1747 = 0.1299 >= 0.0150.
+35039,729,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35087,730,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35135,731,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35183,732,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.33841980267461563,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3916 - 0.0532 = 0.3384 >= 0.0150.
+35231,733,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35279,734,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35327,735,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35375,736,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35423,737,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35471,738,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35519,739,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.05088909665782626,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3442 - 0.2933 = 0.0509 >= 0.0150.
+35567,740,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.01951981465639041,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3324 - 0.3129 = 0.0195 >= 0.0150.
+35615,741,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35663,742,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35711,743,pa_classifier,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.0076878396681256955,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0077, threshold=0.0150."
+35759,744,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35807,745,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35855,746,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35903,747,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+35951,748,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.046523798822064366,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3149 - 0.2684 = 0.0465 >= 0.0150.
+35999,749,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.15535849962315468,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3667 - 0.2113 = 0.1554 >= 0.0150.
+36047,750,pa_classifier,gaussian_nb,stay,False,fixed_share_margin_too_small,0.010257561791543801,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0103, threshold=0.0150."
+36095,751,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36143,752,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.022398685723155676,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3266 - 0.3042 = 0.0224 >= 0.0150.
+36191,753,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36239,754,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.390560569794267,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.6110 - 0.2205 = 0.3906 >= 0.0150.
+36287,755,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36335,756,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36383,757,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36431,758,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36479,759,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36527,760,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36575,761,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36623,762,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36671,763,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36719,764,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.11615624603397107,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3743 - 0.2581 = 0.1162 >= 0.0150.
+36767,765,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+36815,766,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.0925118347367922,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3090 - 0.2165 = 0.0925 >= 0.0150.
+36863,767,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.03955001498137711,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2863 - 0.2467 = 0.0396 >= 0.0150.
+36911,768,pa_classifier,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.010551318118942388,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0106, threshold=0.0150."
+36959,769,pa_classifier,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.003557086559891176,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0036, threshold=0.0150."
+37007,770,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.17051542045039247,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3186 - 0.1481 = 0.1705 >= 0.0150.
+37055,771,softmax_lr_0_20,tree_classifier,stay,False,fixed_share_margin_too_small,0.011941190459139606,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0119, threshold=0.0150."
+37103,772,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37151,773,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37199,774,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37247,775,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37295,776,softmax_lr_0_20,pa_classifier,stay,False,fixed_share_margin_too_small,0.010792512612480598,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0108, threshold=0.0150."
+37343,777,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.29140581422491135,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4346 - 0.1432 = 0.2914 >= 0.0150.
+37391,778,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37439,779,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37487,780,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37535,781,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37583,782,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37631,783,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37679,784,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37727,785,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37775,786,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37823,787,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37871,788,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37919,789,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+37967,790,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38015,791,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.2357922166066363,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4065 - 0.1707 = 0.2358 >= 0.0150.
+38063,792,softmax_lr_0_20,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.005630978346492177,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0056, threshold=0.0150."
+38111,793,softmax_lr_0_20,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.003643142320654935,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0036, threshold=0.0150."
+38159,794,softmax_lr_0_20,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.0015107804366432387,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0015, threshold=0.0150."
+38207,795,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.01786273088294521,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3205 - 0.3026 = 0.0179 >= 0.0150.
+38255,796,pa_classifier,gaussian_nb,stay,False,fixed_share_margin_too_small,0.011943237107296611,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0119, threshold=0.0150."
+38303,797,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38351,798,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38399,799,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38447,800,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38495,801,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.19723667411334941,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3474 - 0.1502 = 0.1972 >= 0.0150.
+38543,802,softmax_lr_0_05,gaussian_nb,switch,True,fixed_share_weight_advantage,0.03877634705080127,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2837 - 0.2449 = 0.0388 >= 0.0150.
+38591,803,gaussian_nb,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.16073346588289764,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2861 - 0.1254 = 0.1607 >= 0.0150.
+38639,804,softmax_lr_0_05,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.004172429757979601,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0042, threshold=0.0150."
+38687,805,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.1717054289344601,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3658 - 0.1941 = 0.1717 >= 0.0150.
+38735,806,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38783,807,softmax_lr_0_20,gaussian_nb,switch,True,fixed_share_weight_advantage,0.016435048026017335,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2425 - 0.2260 = 0.0164 >= 0.0150.
+38831,808,gaussian_nb,tree_classifier,stay,False,fixed_share_margin_too_small,0.005052934707341805,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0051, threshold=0.0150."
+38879,809,gaussian_nb,gaussian_nb,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+38927,810,gaussian_nb,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.32130742741449936,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3531 - 0.0317 = 0.3213 >= 0.0150.
+38975,811,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39023,812,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.19687567538502979,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3564 - 0.1595 = 0.1969 >= 0.0150.
+39071,813,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.09062361165462521,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2951 - 0.2045 = 0.0906 >= 0.0150.
+39119,814,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.1274797129584233,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4183 - 0.2908 = 0.1275 >= 0.0150.
+39167,815,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39215,816,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39263,817,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.15648159237355794,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3593 - 0.2029 = 0.1565 >= 0.0150.
+39311,818,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39359,819,softmax_lr_0_05,gaussian_nb,switch,True,fixed_share_weight_advantage,0.07548348150298703,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3038 - 0.2283 = 0.0755 >= 0.0150.
+39407,820,gaussian_nb,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.06243177433451824,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2553 - 0.1929 = 0.0624 >= 0.0150.
+39455,821,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39503,822,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.21586542482161925,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3557 - 0.1398 = 0.2159 >= 0.0150.
+39551,823,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39599,824,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39647,825,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.07735966963924029,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3581 - 0.2807 = 0.0774 >= 0.0150.
+39695,826,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.016527284740204484,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2774 - 0.2609 = 0.0165 >= 0.0150.
+39743,827,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.1269282676956482,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3215 - 0.1946 = 0.1269 >= 0.0150.
+39791,828,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39839,829,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39887,830,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.031023101731953884,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2863 - 0.2553 = 0.0310 >= 0.0150.
+39935,831,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+39983,832,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40031,833,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40079,834,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40127,835,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40175,836,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40223,837,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.03627554002759786,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2719 - 0.2356 = 0.0363 >= 0.0150.
+40271,838,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40319,839,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.09740420284438184,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3897 - 0.2923 = 0.0974 >= 0.0150.
+40367,840,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40415,841,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40463,842,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40511,843,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40559,844,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.23206434567995102,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4224 - 0.1904 = 0.2321 >= 0.0150.
+40607,845,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40655,846,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40703,847,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40751,848,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+40799,849,softmax_lr_0_20,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.0763578448506066,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3202 - 0.2439 = 0.0764 >= 0.0150.
+40847,850,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.05496391492299105,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2871 - 0.2321 = 0.0550 >= 0.0150.
+40895,851,pa_classifier,softmax_lr_0_05,stay,False,fixed_share_margin_too_small,0.005369496030089904,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0054, threshold=0.0150."
+40943,852,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.08816184016147399,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2905 - 0.2023 = 0.0882 >= 0.0150.
+40991,853,softmax_lr_0_05,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.013294814365375635,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0133, threshold=0.0150."
+41039,854,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.06552649462519627,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2313 - 0.1657 = 0.0655 >= 0.0150.
+41087,855,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.3318143981888474,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4543 - 0.1225 = 0.3318 >= 0.0150.
+41135,856,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+41183,857,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+41231,858,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+41279,859,pa_classifier,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.01451067221467095,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0145, threshold=0.0150."
+41327,860,pa_classifier,softmax_lr_0_20,stay,False,fixed_share_margin_too_small,0.011314454188672829,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0113, threshold=0.0150."
+41375,861,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.04825653212691089,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2694 - 0.2211 = 0.0483 >= 0.0150.
+41423,862,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+41471,863,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.10096062555813778,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4061 - 0.3051 = 0.1010 >= 0.0150.
+41519,864,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+41567,865,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+41615,866,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+41663,867,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.04685667079762018,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3027 - 0.2559 = 0.0469 >= 0.0150.
+41711,868,softmax_lr_0_05,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.029609176184006353,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2443 - 0.2147 = 0.0296 >= 0.0150.
+41759,869,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+41807,870,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.03340692773242682,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3452 - 0.3118 = 0.0334 >= 0.0150.
+41855,871,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+41903,872,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.04091319589228018,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2633 - 0.2224 = 0.0409 >= 0.0150.
+41951,873,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.0515254481783064,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2718 - 0.2203 = 0.0515 >= 0.0150.
+41999,874,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42047,875,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.04122523246650256,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3209 - 0.2797 = 0.0412 >= 0.0150.
+42095,876,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.0580317439186836,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2795 - 0.2215 = 0.0580 >= 0.0150.
+42143,877,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42191,878,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42239,879,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42287,880,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42335,881,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.22369668788396985,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4708 - 0.2472 = 0.2237 >= 0.0150.
+42383,882,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42431,883,tree_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.3112315049767342,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3887 - 0.0775 = 0.3112 >= 0.0150.
+42479,884,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42527,885,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.08450986113210829,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2526 - 0.1681 = 0.0845 >= 0.0150.
+42575,886,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.20153819562858105,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3743 - 0.1728 = 0.2015 >= 0.0150.
+42623,887,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42671,888,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.26382865236476194,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3290 - 0.0652 = 0.2638 >= 0.0150.
+42719,889,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42767,890,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42815,891,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42863,892,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42911,893,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+42959,894,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.029461390733227233,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2907 - 0.2613 = 0.0295 >= 0.0150.
+43007,895,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.40448841685061937,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4635 - 0.0590 = 0.4045 >= 0.0150.
+43055,896,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43103,897,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.09458411229658559,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2988 - 0.2042 = 0.0946 >= 0.0150.
+43151,898,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.22519378469908152,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3423 - 0.1171 = 0.2252 >= 0.0150.
+43199,899,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43247,900,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43295,901,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43343,902,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43391,903,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43439,904,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43487,905,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43535,906,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.07999362149817568,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2514 - 0.1714 = 0.0800 >= 0.0150.
+43583,907,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.10713940353434515,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2706 - 0.1635 = 0.1071 >= 0.0150.
+43631,908,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.11847553172837721,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3540 - 0.2355 = 0.1185 >= 0.0150.
+43679,909,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.16529703147088456,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4064 - 0.2411 = 0.1653 >= 0.0150.
+43727,910,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43775,911,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.05554889848218525,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2775 - 0.2220 = 0.0555 >= 0.0150.
+43823,912,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.3198435477324704,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.5260 - 0.2062 = 0.3198 >= 0.0150.
+43871,913,pa_classifier,tree_classifier,stay,False,fixed_share_margin_too_small,0.006545007395781732,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0065, threshold=0.0150."
+43919,914,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+43967,915,pa_classifier,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.13260594575531792,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3549 - 0.2223 = 0.1326 >= 0.0150.
+44015,916,softmax_lr_0_05,pa_classifier,switch,True,fixed_share_weight_advantage,0.3484291411136554,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4603 - 0.1119 = 0.3484 >= 0.0150.
+44063,917,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44111,918,pa_classifier,tree_classifier,switch,True,fixed_share_weight_advantage,0.10747591053126096,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2969 - 0.1895 = 0.1075 >= 0.0150.
+44159,919,tree_classifier,tree_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44207,920,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.16866164020154956,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3055 - 0.1369 = 0.1687 >= 0.0150.
+44255,921,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.11911365090097156,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2969 - 0.1778 = 0.1191 >= 0.0150.
+44303,922,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44351,923,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44399,924,softmax_lr_0_20,pa_classifier,switch,True,fixed_share_weight_advantage,0.08550546274152321,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4324 - 0.3469 = 0.0855 >= 0.0150.
+44447,925,pa_classifier,softmax_lr_0_20,switch,True,fixed_share_weight_advantage,0.02627107806774781,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2474 - 0.2212 = 0.0263 >= 0.0150.
+44495,926,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44543,927,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44591,928,softmax_lr_0_20,tree_classifier,stay,False,fixed_share_margin_too_small,0.0023107019006753937,0.015,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0023, threshold=0.0150."
+44639,929,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44687,930,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44735,931,softmax_lr_0_20,gaussian_nb,switch,True,fixed_share_weight_advantage,0.19699673093908304,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3292 - 0.1322 = 0.1970 >= 0.0150.
+44783,932,gaussian_nb,gaussian_nb,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44831,933,gaussian_nb,gaussian_nb,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44879,934,gaussian_nb,gaussian_nb,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+44927,935,gaussian_nb,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.06368270699043699,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2615 - 0.1978 = 0.0637 >= 0.0150.
+44975,936,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+45023,937,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+45071,938,softmax_lr_0_05,softmax_lr_0_05,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+45119,939,softmax_lr_0_05,tree_classifier,switch,True,fixed_share_weight_advantage,0.2461646977282862,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3698 - 0.1237 = 0.2462 >= 0.0150.
+45167,940,tree_classifier,pa_classifier,switch,True,fixed_share_weight_advantage,0.19817728860282774,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3633 - 0.1652 = 0.1982 >= 0.0150.
+45215,941,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+45263,942,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+45311,943,pa_classifier,pa_classifier,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.

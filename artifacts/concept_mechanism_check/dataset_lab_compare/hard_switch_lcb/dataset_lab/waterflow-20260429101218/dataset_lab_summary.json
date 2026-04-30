@@ -1,0 +1,123 @@
+{
+  "dataset_name": "WaterFlow",
+  "task_type": "regression",
+  "target_column": "water_flow_lps",
+  "sample_count": 1268,
+  "feature_count": 1,
+  "score_name": "normalized_reward",
+  "policy_name": "hard_switch_lcb",
+  "adaptive_score": 0.806041481534151,
+  "best_fixed_strategy": "lin_lr_0_001",
+  "best_fixed_score": 0.8039447799769271,
+  "delta_vs_best_fixed": 0.0020967015572238568,
+  "oracle_score": 0.8740102107432259,
+  "oracle_gain": 0.07006543076629879,
+  "oracle_capture_ratio": 0.02992490782248016,
+  "prediction_mode": "next_step",
+  "final_strategy": "lin_lr_0_001",
+  "switch_count": 4,
+  "next_prediction": "103.29112895936917",
+  "prediction_confidence": 0.9303438608801875,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "pa_regressor": "95.92428599491417",
+    "lin_lr_0_001": "103.29112895936917",
+    "lin_lr_0_0005": "103.47866152881701"
+  },
+  "forecast_row_preview": {
+    "Time": "2022-05-16 22:00:00+02:00"
+  },
+  "preview_rows": [
+    {
+      "row_index": 1256,
+      "actual_target": 104.39,
+      "adaptive_prediction": 102.38077738709313,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 08:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1257,
+      "actual_target": 104.71,
+      "adaptive_prediction": 102.46080500091622,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 09:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1258,
+      "actual_target": 104.77,
+      "adaptive_prediction": 102.54865913854215,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 10:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1259,
+      "actual_target": 104.69,
+      "adaptive_prediction": 102.63496915710203,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 11:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1260,
+      "actual_target": 104.69,
+      "adaptive_prediction": 102.71512792993906,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 12:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1261,
+      "actual_target": 104.64,
+      "adaptive_prediction": 102.79248204771255,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 13:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1262,
+      "actual_target": 104.59,
+      "adaptive_prediction": 102.86560637687484,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 14:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1263,
+      "actual_target": 104.62,
+      "adaptive_prediction": 102.93485529161293,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 15:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1264,
+      "actual_target": 104.65,
+      "adaptive_prediction": 103.00339769192992,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 16:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1265,
+      "actual_target": 104.3,
+      "adaptive_prediction": 103.1908325247036,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 20:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1266,
+      "actual_target": 104.23,
+      "adaptive_prediction": 103.24219387288959,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 21:00:00+02:00\"}"
+    },
+    {
+      "row_index": 1267,
+      "actual_target": 104.1,
+      "adaptive_prediction": 103.29006218209057,
+      "feature_snapshot": "{\"Time\": \"2022-05-16 22:00:00+02:00\"}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `hard_switch_lcb` finished on strategy `lin_lr_0_001` after 4 switches.",
+    "It achieved `0.8060` against the best fixed baseline `lin_lr_0_001` at `0.8039`.",
+    "Oracle upper bound on this stream is `0.8740`. Available oracle gain over best fixed is `0.0701`, and the current adaptive controller captures `3.0%` of it.",
+    "The uploaded stream looks non-stationary enough for adaptation to help: the gain over best fixed is `0.0021`.",
+    "Multiple switches suggest regime changes or at least changing local winners across the stream.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `103.2911` based on the latest lagged context `[104.3, 104.23, 104.1]`."
+  ],
+  "caveats": [
+    "\u0414\u043b\u044f \u0446\u044c\u043e\u0433\u043e \u0433\u043e\u0442\u043e\u0432\u043e\u0433\u043e \u0434\u0430\u0442\u0430\u0441\u0435\u0442\u0443 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043e \u043d\u0430\u0442\u0438\u0432\u043d\u0438\u0439 \u043f\u043e\u0442\u043e\u043a\u043e\u0432\u0438\u0439 \u043f\u0440\u043e\u0444\u0456\u043b\u044c \u0431\u0435\u0437 CSV-\u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u043e\u0437\u043d\u0430\u043a.",
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\concept_mechanism_check\\dataset_lab_compare\\hard_switch_lcb\\dataset_lab\\waterflow-20260429101218\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\concept_mechanism_check\\dataset_lab_compare\\hard_switch_lcb\\dataset_lab\\waterflow-20260429101218\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\concept_mechanism_check\\dataset_lab_compare\\hard_switch_lcb\\dataset_lab\\waterflow-20260429101218\\summary.md"
+}

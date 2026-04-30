@@ -1,0 +1,2 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+383,1,sgd_lr_0_0005,sgd_lr_0_0001,stay,False,no_candidate_improvement,0.0017055520456490392,0.01,"Stay because candidate improvement is not sufficient after LCB comparison: margin=0.0017, threshold=0.0100."

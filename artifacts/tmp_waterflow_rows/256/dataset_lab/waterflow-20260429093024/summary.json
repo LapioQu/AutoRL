@@ -1,0 +1,34 @@
+{
+  "dataset_name": "WaterFlow",
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "sample_count": 253,
+  "evaluation_interval": 24,
+  "window_size": 72,
+  "start_strategy": "lin_lr_0_001",
+  "final_strategy": "pa_regressor",
+  "switch_count": 2,
+  "adaptive_score": 0.6510119288390177,
+  "best_fixed_strategy": "pa_regressor",
+  "best_fixed_score": 0.6699571242009027,
+  "delta_vs_best_fixed": -0.018945195361884992,
+  "fixed_scores": {
+    "lin_lr_0_001": 0.5758322800277292,
+    "lin_lr_0_002": 0.6086654620045348,
+    "pa_regressor": 0.6699571242009027
+  },
+  "block_delta_mean": -0.019971393443987163,
+  "block_delta_std": 0.09102165344883158,
+  "block_delta_ci95": 0.05641580529339433,
+  "block_count": 10,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 9,
+  "adaptive_accuracy": 0.6510119288390177,
+  "best_fixed_accuracy": 0.6699571242009027,
+  "fixed_accuracies": {
+    "lin_lr_0_001": 0.5758322800277292,
+    "lin_lr_0_002": 0.6086654620045348,
+    "pa_regressor": 0.6699571242009027
+  }
+}

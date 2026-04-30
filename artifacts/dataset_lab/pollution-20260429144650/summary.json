@@ -1,0 +1,36 @@
+{
+  "dataset_name": "pollution",
+  "score_name": "normalized_reward",
+  "policy_name": "recent_leader_meta",
+  "sample_count": 3997,
+  "evaluation_interval": 64,
+  "window_size": 128,
+  "start_strategy": "knn_regressor",
+  "final_strategy": "lin_lr_0_002",
+  "switch_count": 4,
+  "adaptive_score": 0.8373870385270216,
+  "best_fixed_strategy": "lin_lr_0_002",
+  "best_fixed_score": 0.8384800619016669,
+  "delta_vs_best_fixed": -0.001093023374645341,
+  "fixed_scores": {
+    "knn_regressor": 0.8174888194917793,
+    "lin_lr_0_002": 0.8384800619016669,
+    "lin_lr_0_01": 0.32403878627566823,
+    "pa_regressor": 0.8222801383111054
+  },
+  "block_delta_mean": -0.0011010117007201157,
+  "block_delta_std": 0.030106346526862653,
+  "block_delta_ci95": 0.00749407927154967,
+  "block_count": 62,
+  "source_description": "User-uploaded CSV replayed as a temporal streaming regression task.",
+  "source_url": "local-upload",
+  "decision_rows": 61,
+  "adaptive_accuracy": 0.8373870385270216,
+  "best_fixed_accuracy": 0.8384800619016669,
+  "fixed_accuracies": {
+    "knn_regressor": 0.8174888194917793,
+    "lin_lr_0_002": 0.8384800619016669,
+    "lin_lr_0_01": 0.32403878627566823,
+    "pa_regressor": 0.8222801383111054
+  }
+}

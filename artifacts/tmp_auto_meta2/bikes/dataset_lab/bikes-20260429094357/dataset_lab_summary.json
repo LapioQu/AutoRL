@@ -1,0 +1,130 @@
+{
+  "dataset_name": "Bikes",
+  "task_type": "regression",
+  "target_column": "bikes_in_use",
+  "sample_count": 512,
+  "feature_count": 8,
+  "score_name": "normalized_reward",
+  "policy_name": "best_fixed_guard",
+  "adaptive_score": 0.6572330777000587,
+  "best_fixed_strategy": "sgd_lr_0_0001",
+  "best_fixed_score": 0.6572330777000587,
+  "delta_vs_best_fixed": 0.0,
+  "oracle_score": 0.6634705115812184,
+  "oracle_gain": 0.006237433881159715,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "sgd_lr_0_0001",
+  "switch_count": 0,
+  "next_prediction": "6.514284880465447",
+  "prediction_confidence": 0.989074255310205,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "sgd_lr_0_0001": "6.514284880465447",
+    "sgd_lr_0_0005": "6.475218996742467",
+    "sgd_lr_0_001": "6.442732566774535"
+  },
+  "forecast_row_preview": {
+    "moment": "2016-04-01 09:22:28",
+    "station": "place-esquirol",
+    "clouds": "90",
+    "description": "overcast clouds",
+    "humidity": "87",
+    "pressure": "1018.0",
+    "temperature": "6.49",
+    "wind": "4.6"
+  },
+  "preview_rows": [
+    {
+      "row_index": 500,
+      "actual_target": 14,
+      "adaptive_prediction": 6.571422845546726,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:16:03\", \"pressure\": 1018.0, \"station\": \"place-jeanne-darc\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 501,
+      "actual_target": 6,
+      "adaptive_prediction": 6.7248625003216596,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:17:10\", \"pressure\": 1018.0, \"station\": \"pomme\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 502,
+      "actual_target": 3,
+      "adaptive_prediction": 6.709473747404349,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:17:11\", \"pressure\": 1018.0, \"station\": \"place-esquirol\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 503,
+      "actual_target": 6,
+      "adaptive_prediction": 6.63231350028229,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:17:16\", \"pressure\": 1018.0, \"station\": \"place-des-carmes\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 504,
+      "actual_target": 6,
+      "adaptive_prediction": 6.618858223411169,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:17:41\", \"pressure\": 1018.0, \"station\": \"pomme\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 505,
+      "actual_target": 2,
+      "adaptive_prediction": 6.605687408558529,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:18:13\", \"pressure\": 1018.0, \"station\": \"place-esquirol\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 506,
+      "actual_target": 2,
+      "adaptive_prediction": 6.510038392186192,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:19:16\", \"pressure\": 1018.0, \"station\": \"place-esquirol\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 507,
+      "actual_target": 1,
+      "adaptive_prediction": 6.416392737139827,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:19:40\", \"pressure\": 1018.0, \"station\": \"place-esquirol\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 508,
+      "actual_target": 15,
+      "adaptive_prediction": 6.304025149311192,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:20:47\", \"pressure\": 1018.0, \"station\": \"place-jeanne-darc\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 509,
+      "actual_target": 2,
+      "adaptive_prediction": 6.483524662244488,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:21:35\", \"pressure\": 1018.0, \"station\": \"place-esquirol\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 510,
+      "actual_target": 16,
+      "adaptive_prediction": 6.390479711168797,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:22:26\", \"pressure\": 1018.0, \"station\": \"place-jeanne-darc\", \"temperature\": 6.49, \"wind\": 4.6}"
+    },
+    {
+      "row_index": 511,
+      "actual_target": 3,
+      "adaptive_prediction": 6.588810621107239,
+      "feature_snapshot": "{\"clouds\": 90, \"description\": \"overcast clouds\", \"humidity\": 87, \"moment\": \"2016-04-01 09:22:28\", \"pressure\": 1018.0, \"station\": \"place-esquirol\", \"temperature\": 6.49, \"wind\": 4.6}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `best_fixed_guard` finished on strategy `sgd_lr_0_0001` after 0 switches.",
+    "It achieved `0.6572` against the best fixed baseline `sgd_lr_0_0001` at `0.6572`.",
+    "Oracle upper bound on this stream is `0.6635`. Available oracle gain over best fixed is `0.0062`, and the current adaptive controller captures `0.0%` of it.",
+    "Adaptive and best fixed finished effectively tied on this stream.",
+    "No strategy changes were needed; the stream behaved close to one dominant regime.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `6.5143` based on the latest lagged context `[2, 16, 3]`."
+  ],
+  "caveats": [
+    "\u0414\u043b\u044f \u0446\u044c\u043e\u0433\u043e \u0433\u043e\u0442\u043e\u0432\u043e\u0433\u043e \u0434\u0430\u0442\u0430\u0441\u0435\u0442\u0443 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043e \u043d\u0430\u0442\u0438\u0432\u043d\u0438\u0439 \u043f\u043e\u0442\u043e\u043a\u043e\u0432\u0438\u0439 \u043f\u0440\u043e\u0444\u0456\u043b\u044c \u0431\u0435\u0437 CSV-\u043f\u0435\u0440\u0435\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u043e\u0437\u043d\u0430\u043a.",
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\tmp_auto_meta2\\bikes\\dataset_lab\\bikes-20260429094357\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\tmp_auto_meta2\\bikes\\dataset_lab\\bikes-20260429094357\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\tmp_auto_meta2\\bikes\\dataset_lab\\bikes-20260429094357\\summary.md"
+}

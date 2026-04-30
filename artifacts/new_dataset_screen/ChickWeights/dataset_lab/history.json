@@ -1,0 +1,22 @@
+[
+  {
+    "created_at_utc": "2026-04-29T12:57:38.858965+00:00",
+    "dataset_name": "ChickWeights",
+    "task_type": "classification",
+    "policy_name": "recent_leader_meta",
+    "source_row_count": 578,
+    "source_rows_used": 578,
+    "sample_count": 578,
+    "adaptive_score": 0.058823529411764705,
+    "best_fixed_score": 0.05709342560553633,
+    "delta_vs_best_fixed": 0.0017301038062283725,
+    "oracle_capture_ratio": 0.03225806451612901,
+    "switch_count": 1,
+    "summary_json_path": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\dataset_lab_summary.json",
+    "report_md_path": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\dataset_lab_report.md",
+    "artifact_root": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735",
+    "score_plot_path": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\dataset_lab_scores.png",
+    "portfolio_plot_path": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\dataset_lab_portfolio.png",
+    "switch_plot_path": "artifacts\\new_dataset_screen\\ChickWeights\\dataset_lab\\chickweights-20260429125735\\dataset_lab_switches.png"
+  }
+]

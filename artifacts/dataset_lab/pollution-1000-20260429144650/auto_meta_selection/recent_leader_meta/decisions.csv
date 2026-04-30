@@ -1,0 +1,15 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+127,1,knn_regressor,knn_regressor,stay,False,recent_leader_warmup_same,0.0,0.001,Stay after warmup because the current strategy is already the recent leader.
+191,2,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+255,3,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+319,4,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+383,5,knn_regressor,lin_lr_0_01,stay,False,recent_leader_incumbent_floor,0.021905645168097787,0.001,Stay because the candidate fails the incumbent floor check: 0.838516 + 0.001000 < 0.850614.
+447,6,knn_regressor,lin_lr_0_01,stay,False,recent_leader_incumbent_floor,0.01874360530330632,0.001,Stay because the candidate fails the incumbent floor check: 0.821262 + 0.001000 < 0.833826.
+511,7,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+575,8,knn_regressor,pa_regressor,stay,False,recent_leader_incumbent_floor,0.021272955418056183,0.001,Stay because the candidate fails the incumbent floor check: 0.818771 + 0.001000 < 0.840256.
+639,9,knn_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.032577899188643844,0.001,Stay because the candidate fails the incumbent floor check: 0.824692 + 0.001000 < 0.844439.
+703,10,knn_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.02606498414096603,0.001,Stay because the candidate fails the incumbent floor check: 0.830131 + 0.001000 < 0.845206.
+767,11,knn_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.030491619107023915,0.001,Stay because the candidate fails the incumbent floor check: 0.832347 + 0.001000 < 0.843721.
+831,12,knn_regressor,pa_regressor,stay,False,recent_leader_incumbent_floor,0.040423678033287724,0.001,Stay because the candidate fails the incumbent floor check: 0.829872 + 0.001000 < 0.842750.
+895,13,knn_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.033652546300383945,0.001,Stay because the candidate fails the incumbent floor check: 0.837815 + 0.001000 < 0.842757.
+959,14,knn_regressor,lin_lr_0_002,stay,False,recent_leader_incumbent_floor,0.016601232098493957,0.001,Stay because the candidate fails the incumbent floor check: 0.842445 + 0.001000 < 0.846073.

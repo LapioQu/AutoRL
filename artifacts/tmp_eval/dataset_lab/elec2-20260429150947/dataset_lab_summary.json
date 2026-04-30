@@ -1,0 +1,140 @@
+{
+  "created_at_utc": "2026-04-29T15:09:57.483359+00:00",
+  "dataset_name": "Elec2",
+  "task_type": "classification",
+  "target_column": "price_up",
+  "source_row_count": 4000,
+  "source_rows_used": 4000,
+  "sample_count": 4000,
+  "feature_count": 7,
+  "score_name": "accuracy",
+  "policy_name": "best_fixed_guard",
+  "adaptive_score": 0.94825,
+  "best_fixed_strategy": "pa_classifier",
+  "best_fixed_score": 0.94825,
+  "delta_vs_best_fixed": 0.0,
+  "oracle_score": 0.985,
+  "oracle_gain": 0.03674999999999995,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "pa_classifier",
+  "switch_count": 0,
+  "next_prediction": "False",
+  "prediction_confidence": 1.0,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "pa_classifier": "False",
+    "knn_classifier": "False",
+    "sgd_lr_0_10": "False",
+    "tree_classifier": "False",
+    "sgd_lr_0_05": "False"
+  },
+  "forecast_row_preview": {
+    "date": "0.009823",
+    "day": "1",
+    "period": "0.319149",
+    "nswprice": "0.041732",
+    "nswdemand": "0.595507",
+    "vicprice": "0.003467",
+    "vicdemand": "0.422915",
+    "transfer": "0.414912",
+    "price_up": "false"
+  },
+  "preview_rows": [
+    {
+      "row_index": 3988,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.237876, \"nswprice\": 0.041281, \"period\": 0.085106, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3989,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.211098, \"nswprice\": 0.040681, \"period\": 0.106383, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3990,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.184766, \"nswprice\": 0.040591, \"period\": 0.12766, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3991,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.162452, \"nswprice\": 0.040591, \"period\": 0.148936, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3992,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.150104, \"nswprice\": 0.041582, \"period\": 0.170213, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3993,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.158733, \"nswprice\": 0.044824, \"period\": 0.191489, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3994,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.190866, \"nswprice\": 0.041281, \"period\": 0.212766, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3995,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.251711, \"nswprice\": 0.044824, \"period\": 0.234043, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3996,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.359268, \"nswprice\": 0.041732, \"period\": 0.255319, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3997,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.486314, \"nswprice\": 0.043683, \"period\": 0.276596, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3998,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.522464, \"nswprice\": 0.044824, \"period\": 0.297872, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    },
+    {
+      "row_index": 3999,
+      "actual_target": false,
+      "adaptive_prediction": false,
+      "feature_snapshot": "{\"day\": 1, \"nswdemand\": 0.595507, \"nswprice\": 0.041732, \"period\": 0.319149, \"transfer\": 0.414912, \"vicdemand\": 0.422915, \"vicprice\": 0.003467}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `best_fixed_guard` finished on strategy `pa_classifier` after 0 switches.",
+    "It achieved `0.9483` against the best fixed baseline `pa_classifier` at `0.9483`.",
+    "Oracle upper bound on this stream is `0.9850`. Available oracle gain over best fixed is `0.0367`, and the current adaptive controller captures `0.0%` of it.",
+    "Adaptive and best fixed finished effectively tied on this stream.",
+    "No strategy changes were needed; the stream behaved close to one dominant regime.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step class from the final adaptive strategy is `False` based on the latest lagged context `['false', 'false', 'false']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is prequential accuracy over the uploaded stream.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\tmp_eval\\dataset_lab\\elec2-20260429150947",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\elec2-20260429150947\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\elec2-20260429150947\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\tmp_eval\\dataset_lab\\elec2-20260429150947\\summary.md",
+  "score_plot_path": "artifacts\\tmp_eval\\dataset_lab\\elec2-20260429150947\\dataset_lab_scores.png",
+  "portfolio_plot_path": "artifacts\\tmp_eval\\dataset_lab\\elec2-20260429150947\\dataset_lab_portfolio.png",
+  "switch_plot_path": "artifacts\\tmp_eval\\dataset_lab\\elec2-20260429150947\\dataset_lab_switches.png",
+  "dataset_lab_report_md_path": "artifacts\\tmp_eval\\dataset_lab\\elec2-20260429150947\\dataset_lab_report.md"
+}

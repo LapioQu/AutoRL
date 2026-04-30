@@ -1,0 +1,52 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+47,1,sgd_lr_0_001,sgd_lr_0_005,switch,True,recent_leader_warmup,,0.001,Switch after warmup because the recent block leader outperformed the initial incumbent: sgd_lr_0_005.
+71,2,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_cooldown,0.0,0.001,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+95,3,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+119,4,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+143,5,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+167,6,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+191,7,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.0030688118823312127,0.001,Stay because the candidate fails the incumbent floor check: 0.380887 + 0.000000 < 0.460143.
+215,8,sgd_lr_0_005,sgd_lr_0_001,stay,False,recent_leader_incumbent_floor,0.13210085974944963,0.001,Stay because the candidate fails the incumbent floor check: 0.429116 + 0.000000 < 0.479806.
+239,9,sgd_lr_0_005,sgd_lr_0_001,stay,False,recent_leader_incumbent_floor,0.07396406729954919,0.001,Stay because the candidate fails the incumbent floor check: 0.429558 + 0.000000 < 0.472381.
+263,10,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+287,11,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+311,12,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+335,13,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+359,14,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+383,15,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.026721709224648338,0.001,Stay because the candidate fails the incumbent floor check: 0.566546 + 0.000000 < 0.621185.
+407,16,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.0058560469973027995,0.001,Stay because the candidate fails the incumbent floor check: 0.589506 + 0.000000 < 0.641352.
+431,17,sgd_lr_0_005,sgd_lr_0_001,stay,False,recent_leader_incumbent_floor,0.002490996803235279,0.001,Stay because the candidate fails the incumbent floor check: 0.621384 + 0.000000 < 0.658611.
+455,18,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+479,19,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+503,20,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+527,21,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+551,22,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.0009506193326029866,0.001,Stay because the recent leader advantage is below the switching margin: 0.000951 < 0.001000.
+575,23,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+599,24,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+623,25,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+647,26,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+671,27,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+695,28,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+719,29,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+743,30,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_margin_too_small,0.00017437962243815885,0.001,Stay because the recent leader advantage is below the switching margin: 0.000174 < 0.001000.
+767,31,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.005690613898897023,0.001,Stay because the candidate fails the incumbent floor check: 0.753370 + 0.000000 < 0.785436.
+791,32,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.004178295601884874,0.001,Stay because the candidate fails the incumbent floor check: 0.759964 + 0.000000 < 0.790935.
+815,33,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+839,34,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.013581677967485217,0.001,Stay because the candidate fails the incumbent floor check: 0.770967 + 0.000000 < 0.799392.
+863,35,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.03850437635203208,0.001,Stay because the candidate fails the incumbent floor check: 0.775448 + 0.000000 < 0.801896.
+887,36,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.026561840363154787,0.001,Stay because the candidate fails the incumbent floor check: 0.768126 + 0.000000 < 0.793579.
+911,37,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.021459142991468894,0.001,Stay because the candidate fails the incumbent floor check: 0.759738 + 0.000000 < 0.783665.
+935,38,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+959,39,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+983,40,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+1007,41,sgd_lr_0_005,sgd_lr_0_001,stay,False,recent_leader_incumbent_floor,0.04826982894721721,0.001,Stay because the candidate fails the incumbent floor check: 0.766372 + 0.000000 < 0.789563.
+1031,42,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.05539478366820727,0.001,Stay because the candidate fails the incumbent floor check: 0.766513 + 0.000000 < 0.792355.
+1055,43,sgd_lr_0_005,sgd_lr_0_001,stay,False,recent_leader_incumbent_floor,0.019592334824558577,0.001,Stay because the candidate fails the incumbent floor check: 0.774463 + 0.000000 < 0.795709.
+1079,44,sgd_lr_0_005,sgd_lr_0_001,stay,False,recent_leader_incumbent_floor,0.007734648919593079,0.001,Stay because the candidate fails the incumbent floor check: 0.778438 + 0.000000 < 0.799167.
+1103,45,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+1127,46,sgd_lr_0_005,sgd_lr_0_005,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+1151,47,sgd_lr_0_005,sgd_lr_0_001,stay,False,recent_leader_incumbent_floor,0.026086805251453904,0.001,Stay because the candidate fails the incumbent floor check: 0.789422 + 0.000000 < 0.807843.
+1175,48,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.058493490155091976,0.001,Stay because the candidate fails the incumbent floor check: 0.789134 + 0.000000 < 0.809766.
+1199,49,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.07876403451282366,0.001,Stay because the candidate fails the incumbent floor check: 0.793103 + 0.000000 < 0.811319.
+1223,50,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.07481575541993235,0.001,Stay because the candidate fails the incumbent floor check: 0.796718 + 0.000000 < 0.813607.
+1247,51,sgd_lr_0_005,sgd_lr_0_0005,stay,False,recent_leader_incumbent_floor,0.02807938204771443,0.001,Stay because the candidate fails the incumbent floor check: 0.799974 + 0.000000 < 0.816410.

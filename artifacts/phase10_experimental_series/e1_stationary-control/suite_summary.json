@@ -1,0 +1,68 @@
+{
+  "entry_label": "stationary",
+  "config_path": "E:\\dipproj\\configs\\examples\\stationary.yaml",
+  "n": 5,
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "reward_mean": 0.9890735911646452,
+  "reward_std": 0.00018104965442950608,
+  "reward_ci95": 0.0001586970191660308,
+  "runs": [
+    {
+      "entry_label": "stationary",
+      "seed": 41,
+      "experiment_id": "stationary-seed-41-20260430080422-84a420bc",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_41\\experiments\\stationary-seed-41-20260430080422-84a420bc",
+      "reward_mean": 0.9893079259542987,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    },
+    {
+      "entry_label": "stationary",
+      "seed": 42,
+      "experiment_id": "stationary-seed-42-20260430080426-782d5e06",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_42\\experiments\\stationary-seed-42-20260430080426-782d5e06",
+      "reward_mean": 0.9892097038717246,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    },
+    {
+      "entry_label": "stationary",
+      "seed": 43,
+      "experiment_id": "stationary-seed-43-20260430080429-47bd9616",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_43\\experiments\\stationary-seed-43-20260430080429-47bd9616",
+      "reward_mean": 0.9888654311036241,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    },
+    {
+      "entry_label": "stationary",
+      "seed": 44,
+      "experiment_id": "stationary-seed-44-20260430080433-ef769502",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_44\\experiments\\stationary-seed-44-20260430080433-ef769502",
+      "reward_mean": 0.9890167088349027,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    },
+    {
+      "entry_label": "stationary",
+      "seed": 45,
+      "experiment_id": "stationary-seed-45-20260430080437-b4065c6a",
+      "status": "completed",
+      "artifacts_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e1_stationary-control\\seed_45\\experiments\\stationary-seed-45-20260430080437-b4065c6a",
+      "reward_mean": 0.9889681860586754,
+      "switch_count": 0,
+      "final_strategy": "fixed"
+    }
+  ],
+  "suite_name": "stationary"
+}

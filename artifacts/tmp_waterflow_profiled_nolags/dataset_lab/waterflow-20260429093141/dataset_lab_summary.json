@@ -1,0 +1,123 @@
+{
+  "dataset_name": "WaterFlow",
+  "task_type": "regression",
+  "target_column": "water_flow_lps",
+  "sample_count": 1268,
+  "feature_count": 0,
+  "score_name": "normalized_reward",
+  "policy_name": "hard_switch_lcb",
+  "adaptive_score": 0.8630133140514843,
+  "best_fixed_strategy": "tree_regressor",
+  "best_fixed_score": 0.8630133140514843,
+  "delta_vs_best_fixed": 0.0,
+  "oracle_score": 0.8671946706237353,
+  "oracle_gain": 0.004181356572251049,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "tree_regressor",
+  "switch_count": 0,
+  "next_prediction": "103.57416910834914",
+  "prediction_confidence": 0.9990083883972071,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "tree_regressor": "103.57416910834914",
+    "lin_lr_0_002": "103.47142980134869",
+    "lin_lr_0_001": "103.47142980134869"
+  },
+  "forecast_row_preview": {
+    "Time": "2022-05-16 22:00:00+02:00",
+    "water_flow_lps": "104.1"
+  },
+  "preview_rows": [
+    {
+      "row_index": 1256,
+      "actual_target": 104.39,
+      "adaptive_prediction": 103.24869153267754,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1257,
+      "actual_target": 104.71,
+      "adaptive_prediction": 103.27151770202398,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1258,
+      "actual_target": 104.77,
+      "adaptive_prediction": 103.3002873479835,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1259,
+      "actual_target": 104.69,
+      "adaptive_prediction": 103.32968160102382,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1260,
+      "actual_target": 104.69,
+      "adaptive_prediction": 103.35688796900334,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1261,
+      "actual_target": 104.64,
+      "adaptive_prediction": 103.38355020962327,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1262,
+      "actual_target": 104.59,
+      "adaptive_prediction": 103.4086792054308,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1263,
+      "actual_target": 104.62,
+      "adaptive_prediction": 103.43230562132219,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1264,
+      "actual_target": 104.65,
+      "adaptive_prediction": 103.45605950889575,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1265,
+      "actual_target": 104.3,
+      "adaptive_prediction": 103.50381712853992,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1266,
+      "actual_target": 104.23,
+      "adaptive_prediction": 103.53566444339832,
+      "feature_snapshot": "{}"
+    },
+    {
+      "row_index": 1267,
+      "actual_target": 104.1,
+      "adaptive_prediction": 103.56343786566238,
+      "feature_snapshot": "{}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `hard_switch_lcb` finished on strategy `tree_regressor` after 0 switches.",
+    "It achieved `0.8630` against the best fixed baseline `tree_regressor` at `0.8630`.",
+    "Oracle upper bound on this stream is `0.8672`. Available oracle gain over best fixed is `0.0042`, and the current adaptive controller captures `0.0%` of it.",
+    "Adaptive and best fixed finished effectively tied on this stream.",
+    "No strategy changes were needed; the stream behaved close to one dominant regime.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `103.5742` based on the latest lagged context `['104.3', '104.23', '104.1']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\tmp_waterflow_profiled_nolags\\dataset_lab\\waterflow-20260429093141\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\tmp_waterflow_profiled_nolags\\dataset_lab\\waterflow-20260429093141\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\tmp_waterflow_profiled_nolags\\dataset_lab\\waterflow-20260429093141\\summary.md"
+}

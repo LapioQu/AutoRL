@@ -1,0 +1,5 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+127,0,softmax_lr_0_20,softmax_lr_0_20,stay,False,fixed_share_same_leader,0.0,0.015,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+255,1,softmax_lr_0_20,gaussian_nb,switch,True,fixed_share_weight_advantage,0.039612918944456454,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2953 - 0.2557 = 0.0396 >= 0.0150.
+383,2,gaussian_nb,softmax_lr_0_05,switch,True,fixed_share_weight_advantage,0.024931942000537638,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2664 - 0.2415 = 0.0249 >= 0.0150.
+511,3,softmax_lr_0_05,knn_classifier,switch,True,fixed_share_weight_advantage,0.16571301314710288,0.015,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3645 - 0.1988 = 0.1657 >= 0.0150.

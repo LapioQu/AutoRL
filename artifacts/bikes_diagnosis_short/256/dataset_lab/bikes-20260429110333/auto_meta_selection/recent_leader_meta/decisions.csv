@@ -1,0 +1,2 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+255,1,sgd_lr_0_0005,sgd_lr_0_0001,switch,True,recent_leader_warmup,,0.0005,Switch after warmup because the recent block leader outperformed the initial incumbent: sgd_lr_0_0001.

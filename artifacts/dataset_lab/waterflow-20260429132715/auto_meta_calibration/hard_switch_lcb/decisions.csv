@@ -1,0 +1,3 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+71,1,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.6547286040705971,0.003,"Stay because utility uncertainty is too high: current_std=0.0176, candidate_std=0.0508, threshold=0.0030."
+95,2,tree_regressor,lin_lr_0_002,stay,False,high_uncertainty,-0.5532421708745544,0.003,"Stay because utility uncertainty is too high: current_std=0.0146, candidate_std=0.0537, threshold=0.0030."

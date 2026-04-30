@@ -1,0 +1,4 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+127,1,knn_regressor,knn_regressor,stay,False,recent_leader_warmup_same,0.0,0.001,Stay after warmup because the current strategy is already the recent leader.
+191,2,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.
+255,3,knn_regressor,knn_regressor,stay,False,recent_leader_same,0.0,0.001,Stay because the current strategy remains the recent block leader.

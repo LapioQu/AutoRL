@@ -1,0 +1,16 @@
+[
+  {
+    "created_at_utc": "2026-04-29T11:03:34.172381+00:00",
+    "dataset_name": "Bikes",
+    "task_type": "regression",
+    "policy_name": "best_fixed_guard",
+    "adaptive_score": 0.6572330777000587,
+    "best_fixed_score": 0.6572330777000587,
+    "delta_vs_best_fixed": 0.0,
+    "oracle_capture_ratio": 0.0,
+    "switch_count": 0,
+    "summary_json_path": "artifacts\\bikes_diagnosis_short\\512\\dataset_lab\\bikes-20260429110334\\dataset_lab_summary.json",
+    "report_md_path": "artifacts\\bikes_diagnosis_short\\512\\dataset_lab\\bikes-20260429110334\\dataset_lab_report.md",
+    "artifact_root": "artifacts\\bikes_diagnosis_short\\512\\dataset_lab\\bikes-20260429110334"
+  }
+]

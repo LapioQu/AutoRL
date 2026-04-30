@@ -1,0 +1,34 @@
+{
+  "dataset_name": "WaterFlow",
+  "score_name": "normalized_reward",
+  "policy_name": "hard_switch_lcb",
+  "sample_count": 1268,
+  "evaluation_interval": 24,
+  "window_size": 48,
+  "start_strategy": "sgd_lr_0_001",
+  "final_strategy": "sgd_lr_0_001",
+  "switch_count": 3,
+  "adaptive_score": 0.803869441514292,
+  "best_fixed_strategy": "sgd_lr_0_005",
+  "best_fixed_score": 0.8174255523266853,
+  "delta_vs_best_fixed": -0.013556110812393385,
+  "fixed_scores": {
+    "sgd_lr_0_0005": 0.802088950574691,
+    "sgd_lr_0_001": 0.8039447799769271,
+    "sgd_lr_0_005": 0.8174255523266853
+  },
+  "block_delta_mean": -0.014126105626592982,
+  "block_delta_std": 0.06565618888332797,
+  "block_delta_ci95": 0.01784555541992154,
+  "block_count": 52,
+  "source_description": "Real pipeline water-flow stream replayed in temporal order; evaluation includes anomalous low-flow segments and a pumping-induced peak.",
+  "source_url": "",
+  "decision_rows": 50,
+  "adaptive_accuracy": 0.803869441514292,
+  "best_fixed_accuracy": 0.8174255523266853,
+  "fixed_accuracies": {
+    "sgd_lr_0_0005": 0.802088950574691,
+    "sgd_lr_0_001": 0.8039447799769271,
+    "sgd_lr_0_005": 0.8174255523266853
+  }
+}

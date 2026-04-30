@@ -1,0 +1,7 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+95,1,tree_classifier,softmax_lr_0_20,stay,False,no_candidate_improvement,0.0,0.0,"Stay because candidate improvement is not sufficient after LCB comparison: margin=0.0000, threshold=0.0000."
+143,2,tree_classifier,softmax_lr_0_20,stay,False,high_uncertainty,0.125,0.0,"Stay because utility uncertainty is too high: current_std=0.1250, candidate_std=0.0000, threshold=0.0000."
+191,3,tree_classifier,softmax_lr_0_20,stay,False,high_uncertainty,0.125,0.0,"Stay because utility uncertainty is too high: current_std=0.0000, candidate_std=0.1250, threshold=0.0000."
+239,4,tree_classifier,softmax_lr_0_20,stay,False,high_uncertainty,0.125,0.0,"Stay because utility uncertainty is too high: current_std=0.0000, candidate_std=0.1250, threshold=0.0000."
+287,5,tree_classifier,softmax_lr_0_20,stay,False,high_uncertainty,0.125,0.0,"Stay because utility uncertainty is too high: current_std=0.1250, candidate_std=0.0000, threshold=0.0000."
+335,6,tree_classifier,softmax_lr_0_20,stay,False,high_uncertainty,0.125,0.0,"Stay because utility uncertainty is too high: current_std=0.3750, candidate_std=0.2500, threshold=0.0000."

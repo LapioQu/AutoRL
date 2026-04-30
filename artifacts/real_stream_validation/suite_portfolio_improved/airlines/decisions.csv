@@ -1,0 +1,390 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+511,1,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_warmup_same,0.0,0.002,Stay after warmup because the current strategy is already the recent leader.
+767,2,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1023,3,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1279,4,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1535,5,logistic_lr_0_01,gaussian_nb,switch,True,recent_leader_advantage,0.0026041666666666297,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.740885 - 0.738281 = 0.002604.
+1791,6,gaussian_nb,gaussian_nb,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+2047,7,gaussian_nb,gaussian_nb,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+2303,8,gaussian_nb,gaussian_nb,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+2559,9,gaussian_nb,gaussian_nb,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+2815,10,gaussian_nb,logistic_lr_0_01,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+3071,11,gaussian_nb,logistic_lr_0_01,stay,False,recent_leader_margin_too_small,0.0013020833333332593,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+3327,12,gaussian_nb,logistic_lr_0_01,switch,True,recent_leader_advantage,0.02473958333333337,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.664062 - 0.639323 = 0.024740.
+3583,13,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+3839,14,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+4095,15,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+4351,16,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+4607,17,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01041666666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.683160 + 0.001000 < 0.685764.
+4863,18,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00911458333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.676192 + 0.001000 < 0.678454.
+5119,19,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.597852 + 0.001000 < 0.671875.
+5375,20,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+5631,21,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.00911458333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.592862 + 0.001000 < 0.660866.
+5887,22,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.005208333333333259,0.002,Stay because the candidate fails the incumbent floor check: 0.653872 + 0.001000 < 0.655740.
+6143,23,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02083333333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.590169 + 0.001000 < 0.650716.
+6399,24,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.006510416666666741,0.002,Stay because the candidate fails the incumbent floor check: 0.587031 + 0.001000 < 0.646094.
+6655,25,logistic_lr_0_01,gaussian_nb,switch,True,recent_leader_advantage,0.00911458333333337,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.548177 - 0.539062 = 0.009115.
+6911,26,gaussian_nb,gaussian_nb,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+7167,27,gaussian_nb,gaussian_nb,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+7423,28,gaussian_nb,gaussian_nb,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+7679,29,gaussian_nb,gaussian_nb,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+7935,30,gaussian_nb,logistic_lr_0_01,switch,True,recent_leader_advantage,0.0078125,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.557292 - 0.549479 = 0.007812.
+8191,31,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+8447,32,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+8703,33,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01692708333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.575023 + 0.001000 < 0.621438.
+8959,34,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_margin_too_small,0.0013020833333332593,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+9215,35,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+9471,36,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+9727,37,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.02213541666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.608244 + 0.001000 < 0.613795.
+9983,38,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.0390625,0.002,Stay because the candidate fails the incumbent floor check: 0.574519 + 0.001000 < 0.612079.
+10239,39,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.04166666666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.573535 + 0.001000 < 0.609863.
+10495,40,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.05208333333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.573457 + 0.001000 < 0.607946.
+10751,41,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.015625,0.002,Stay because the candidate fails the incumbent floor check: 0.572731 + 0.001000 < 0.606492.
+11007,42,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02473958333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.572765 + 0.001000 < 0.604833.
+11263,43,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02604166666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.572798 + 0.001000 < 0.603161.
+11519,44,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.03645833333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.572396 + 0.001000 < 0.601476.
+11775,45,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.06380208333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.573285 + 0.001000 < 0.599100.
+12031,46,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.05859375,0.002,Stay because the candidate fails the incumbent floor check: 0.573554 + 0.001000 < 0.598238.
+12287,47,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.07161458333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.574219 + 0.001000 < 0.597005.
+12543,48,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.05338541666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.574139 + 0.001000 < 0.595105.
+12799,49,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.03776041666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.573750 + 0.001000 < 0.594688.
+13055,50,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.04166666666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.574602 + 0.001000 < 0.593597.
+13311,51,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.04557291666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.574820 + 0.001000 < 0.591947.
+13567,52,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.06770833333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.575029 + 0.001000 < 0.590949.
+13823,53,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.05208333333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.574508 + 0.001000 < 0.589554.
+14079,54,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.03385416666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.573509 + 0.001000 < 0.587855.
+14335,55,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.03255208333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.573661 + 0.001000 < 0.586984.
+14591,56,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.04036458333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.574150 + 0.001000 < 0.586280.
+14847,57,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02473958333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.573882 + 0.001000 < 0.586207.
+15103,58,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.584481 + 0.001000 < 0.585606.
+15359,59,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+15615,60,logistic_lr_0_01,gaussian_nb,switch,True,recent_leader_advantage,0.0234375,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.557292 - 0.533854 = 0.023438.
+15871,61,gaussian_nb,gaussian_nb,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+16127,62,gaussian_nb,gaussian_nb,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+16383,63,gaussian_nb,gaussian_nb,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+16639,64,gaussian_nb,logistic_lr_0_01,switch,True,recent_leader_advantage,0.0026041666666666297,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.562500 - 0.559896 = 0.002604.
+16895,65,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+17151,66,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+17407,67,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+17663,68,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+17919,69,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+18175,70,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+18431,71,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.005208333333333259,0.002,Stay because the candidate fails the incumbent floor check: 0.588487 + 0.001000 < 0.590332.
+18687,72,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+18943,73,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+19199,74,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+19455,75,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+19711,76,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+19967,77,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+20223,78,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+20479,79,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+20735,80,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+20991,81,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+21247,82,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+21503,83,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+21759,84,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+22015,85,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+22271,86,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+22527,87,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+22783,88,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.620699 + 0.001000 < 0.622103.
+23039,89,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.622179 + 0.001000 < 0.623568.
+23295,90,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.622854 + 0.001000 < 0.624184.
+23551,91,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+23807,92,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666667407,0.002,Stay because the candidate fails the incumbent floor check: 0.624076 + 0.001000 < 0.625336.
+24063,93,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+24319,94,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+24575,95,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+24831,96,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+25087,97,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.627591 + 0.001000 < 0.628747.
+25343,98,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+25599,99,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+25855,100,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+26111,101,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+26367,102,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333332593,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+26623,103,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+26879,104,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+27135,105,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+27391,106,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+27647,107,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+27903,108,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+28159,109,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+28415,110,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+28671,111,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+28927,112,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+29183,113,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.631099 + 0.001000 < 0.632778.
+29439,114,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+29695,115,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+29951,116,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+30207,117,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+30463,118,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.590041 + 0.001000 < 0.632681.
+30719,119,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+30975,120,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+31231,121,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+31487,122,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+31743,123,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+31999,124,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+32255,125,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+32511,126,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+32767,127,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+33023,128,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+33279,129,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.005208333333333259,0.002,Stay because the candidate fails the incumbent floor check: 0.628726 + 0.001000 < 0.631701.
+33535,130,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.006510416666666741,0.002,Stay because the candidate fails the incumbent floor check: 0.628876 + 0.001000 < 0.631828.
+33791,131,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+34047,132,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+34303,133,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+34559,134,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+34815,135,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+35071,136,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+35327,137,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+35583,138,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+35839,139,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+36095,140,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+36351,141,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+36607,142,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+36863,143,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+37119,144,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+37375,145,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+37631,146,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+37887,147,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+38143,148,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+38399,149,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+38655,150,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+38911,151,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+39167,152,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+39423,153,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+39679,154,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+39935,155,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+40191,156,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+40447,157,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+40703,158,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+40959,159,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+41215,160,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+41471,161,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+41727,162,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+41983,163,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+42239,164,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+42495,165,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+42751,166,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+43007,167,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+43263,168,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.654516 + 0.001000 < 0.658122.
+43519,169,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+43775,170,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.655085 + 0.001000 < 0.658649.
+44031,171,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.006510416666666741,0.002,Stay because the candidate fails the incumbent floor check: 0.655251 + 0.001000 < 0.658680.
+44287,172,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.655505 + 0.001000 < 0.658892.
+44543,173,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.006510416666666741,0.002,Stay because the candidate fails the incumbent floor check: 0.655532 + 0.001000 < 0.658922.
+44799,174,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+45055,175,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+45311,176,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+45567,177,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+45823,178,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+46079,179,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+46335,180,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+46591,181,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+46847,182,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+47103,183,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+47359,184,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+47615,185,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+47871,186,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+48127,187,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+48383,188,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+48639,189,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+48895,190,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.602340 + 0.001000 < 0.657641.
+49151,191,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+49407,192,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+49663,193,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+49919,194,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+50175,195,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+50431,196,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+50687,197,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+50943,198,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+51199,199,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+51455,200,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.006510416666666741,0.002,Stay because the candidate fails the incumbent floor check: 0.652247 + 0.001000 < 0.656114.
+51711,201,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333332593,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+51967,202,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+52223,203,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+52479,204,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+52735,205,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333332593,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+52991,206,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+53247,207,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+53503,208,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+53759,209,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+54015,210,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+54271,211,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+54527,212,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+54783,213,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+55039,214,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+55295,215,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+55551,216,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+55807,217,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+56063,218,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+56319,219,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+56575,220,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+56831,221,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+57087,222,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+57343,223,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+57599,224,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+57855,225,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+58111,226,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+58367,227,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+58623,228,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+58879,229,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+59135,230,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.661052 + 0.001000 < 0.665432.
+59391,231,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666667407,0.002,Stay because the candidate fails the incumbent floor check: 0.661082 + 0.001000 < 0.665460.
+59647,232,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+59903,233,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+60159,234,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+60415,235,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+60671,236,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+60927,237,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.660698 + 0.001000 < 0.664982.
+61183,238,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00911458333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.660532 + 0.001000 < 0.664749.
+61439,239,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0078125,0.002,Stay because the candidate fails the incumbent floor check: 0.660417 + 0.001000 < 0.664583.
+61695,240,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00651041666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.660108 + 0.001000 < 0.664257.
+61951,241,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.005208333333333259,0.002,Stay because the candidate fails the incumbent floor check: 0.660124 + 0.001000 < 0.664224.
+62207,242,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+62463,243,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+62719,244,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+62975,245,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+63231,246,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+63487,247,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+63743,248,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+63999,249,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.658422 + 0.001000 < 0.662516.
+64255,250,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+64511,251,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+64767,252,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+65023,253,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+65279,254,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+65535,255,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+65791,256,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+66047,257,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+66303,258,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+66559,259,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+66815,260,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+67071,261,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+67327,262,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+67583,263,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+67839,264,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+68095,265,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+68351,266,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+68607,267,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+68863,268,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+69119,269,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+69375,270,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+69631,271,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+69887,272,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+70143,273,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+70399,274,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+70655,275,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+70911,276,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+71167,277,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+71423,278,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+71679,279,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+71935,280,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+72191,281,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+72447,282,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+72703,283,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+72959,284,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+73215,285,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+73471,286,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+73727,287,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+73983,288,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+74239,289,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+74495,290,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+74751,291,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+75007,292,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+75263,293,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.663757 + 0.001000 < 0.668288.
+75519,294,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+75775,295,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.663284 + 0.001000 < 0.667758.
+76031,296,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+76287,297,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+76543,298,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01302083333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.662286 + 0.001000 < 0.666584.
+76799,299,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01953125,0.002,Stay because the candidate fails the incumbent floor check: 0.662109 + 0.001000 < 0.666380.
+77055,300,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01432291666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.661584 + 0.001000 < 0.665866.
+77311,301,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+77567,302,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666667407,0.002,Stay because the candidate fails the incumbent floor check: 0.660981 + 0.001000 < 0.665184.
+77823,303,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00911458333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.660388 + 0.001000 < 0.664538.
+78079,304,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01432291666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.660118 + 0.001000 < 0.664229.
+78335,305,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01041666666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.600592 + 0.001000 < 0.663807.
+78591,306,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.659342 + 0.001000 < 0.663414.
+78847,307,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.005208333333333259,0.002,Stay because the candidate fails the incumbent floor check: 0.659040 + 0.001000 < 0.663061.
+79103,308,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0078125,0.002,Stay because the candidate fails the incumbent floor check: 0.658715 + 0.001000 < 0.662710.
+79359,309,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01302083333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.599798 + 0.001000 < 0.662324.
+79615,310,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+79871,311,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.599359 + 0.001000 < 0.661458.
+80127,312,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.04296875,0.002,Stay because the candidate fails the incumbent floor check: 0.599416 + 0.001000 < 0.660930.
+80383,313,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.08072916666666669,0.002,Stay because the candidate fails the incumbent floor check: 0.599211 + 0.001000 < 0.660368.
+80639,314,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.050781249999999944,0.002,Stay because the candidate fails the incumbent floor check: 0.598884 + 0.001000 < 0.659908.
+80895,315,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02864583333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.598781 + 0.001000 < 0.659439.
+81151,316,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02994791666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.598654 + 0.001000 < 0.658949.
+81407,317,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.033854166666666685,0.002,Stay because the candidate fails the incumbent floor check: 0.598246 + 0.001000 < 0.658375.
+81663,318,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01692708333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.654327 + 0.001000 < 0.658038.
+81919,319,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.015625,0.002,Stay because the candidate fails the incumbent floor check: 0.653979 + 0.001000 < 0.657678.
+82175,320,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.653609 + 0.001000 < 0.657224.
+82431,321,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01692708333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.597523 + 0.001000 < 0.656893.
+82687,322,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.006510416666666741,0.002,Stay because the candidate fails the incumbent floor check: 0.597342 + 0.001000 < 0.656601.
+82943,323,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+83199,324,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.02473958333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.652200 + 0.001000 < 0.655889.
+83455,325,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01432291666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.651852 + 0.001000 < 0.655507.
+83711,326,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.04166666666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.651376 + 0.001000 < 0.654840.
+83967,327,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.058593750000000056,0.002,Stay because the candidate fails the incumbent floor check: 0.596537 + 0.001000 < 0.654440.
+84223,328,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.07291666666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.596576 + 0.001000 < 0.654232.
+84479,329,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02734375,0.002,Stay because the candidate fails the incumbent floor check: 0.596259 + 0.001000 < 0.653776.
+84735,330,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+84991,331,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+85247,332,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+85503,333,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+85759,334,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+86015,335,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+86271,336,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+86527,337,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+86783,338,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+87039,339,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+87295,340,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+87551,341,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+87807,342,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+88063,343,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+88319,344,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+88575,345,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+88831,346,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+89087,347,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.651917 + 0.001000 < 0.656317.
+89343,348,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333332593,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+89599,349,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00911458333333326,0.002,Stay because the candidate fails the incumbent floor check: 0.651551 + 0.001000 < 0.655882.
+89855,350,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.651331 + 0.001000 < 0.655660.
+90111,351,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0078125,0.002,Stay because the candidate fails the incumbent floor check: 0.651134 + 0.001000 < 0.655440.
+90367,352,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.0078125,0.002,Stay because the candidate fails the incumbent floor check: 0.650905 + 0.001000 < 0.655132.
+90623,353,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01822916666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.596773 + 0.001000 < 0.654981.
+90879,354,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+91135,355,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+91391,356,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+91647,357,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.02083333333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.596369 + 0.001000 < 0.653850.
+91903,358,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+92159,359,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01822916666666674,0.002,Stay because the candidate fails the incumbent floor check: 0.649284 + 0.001000 < 0.653559.
+92415,360,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+92671,361,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+92927,362,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+93183,363,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+93439,364,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.648352 + 0.001000 < 0.652568.
+93695,365,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+93951,366,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+94207,367,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+94463,368,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+94719,369,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.00520833333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.647582 + 0.001000 < 0.651763.
+94975,370,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+95231,371,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333333703,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+95487,372,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+95743,373,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+95999,374,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+96255,375,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+96511,376,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01432291666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.646003 + 0.001000 < 0.650116.
+96767,377,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.03255208333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.645813 + 0.001000 < 0.649781.
+97023,378,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01822916666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.645665 + 0.001000 < 0.649705.
+97279,379,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+97535,380,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_margin_too_small,0.0013020833333332593,0.002,Stay because the recent leader advantage is below the switching margin: 0.001302 < 0.002000.
+97791,381,logistic_lr_0_01,gaussian_nb,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.644715 + 0.001000 < 0.648632.
+98047,382,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.593434 + 0.001000 < 0.648539.
+98303,383,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.015625,0.002,Stay because the candidate fails the incumbent floor check: 0.593191 + 0.001000 < 0.648092.
+98559,384,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.00911458333333337,0.002,Stay because the candidate fails the incumbent floor check: 0.593111 + 0.001000 < 0.647839.
+98815,385,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.024739583333333315,0.002,Stay because the candidate fails the incumbent floor check: 0.592849 + 0.001000 < 0.647334.
+99071,386,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.0026041666666666297,0.002,Stay because the candidate fails the incumbent floor check: 0.592741 + 0.001000 < 0.647196.
+99327,387,logistic_lr_0_01,pa_classifier,stay,False,recent_leader_incumbent_floor,0.00651041666666663,0.002,Stay because the candidate fails the incumbent floor check: 0.592592 + 0.001000 < 0.646847.
+99583,388,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+99839,389,logistic_lr_0_01,logistic_lr_0_01,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.

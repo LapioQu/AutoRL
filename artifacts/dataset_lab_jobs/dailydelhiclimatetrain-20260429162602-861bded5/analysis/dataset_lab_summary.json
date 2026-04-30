@@ -1,0 +1,136 @@
+{
+  "created_at_utc": "2026-04-29T16:26:08.246637+00:00",
+  "dataset_name": "DailyDelhiClimateTrain",
+  "task_type": "regression",
+  "target_column": "meanpressure",
+  "source_row_count": 1462,
+  "source_rows_used": 1462,
+  "sample_count": 1459,
+  "feature_count": 6,
+  "score_name": "normalized_reward",
+  "policy_name": "hard_switch_lcb",
+  "adaptive_score": 0.9805271193259892,
+  "best_fixed_strategy": "knn_regressor",
+  "best_fixed_score": 0.9805271193259892,
+  "delta_vs_best_fixed": 0.0,
+  "oracle_score": 0.9848697292713853,
+  "oracle_gain": 0.0043426099453960365,
+  "oracle_capture_ratio": 0.0,
+  "prediction_mode": "next_step",
+  "final_strategy": "knn_regressor",
+  "switch_count": 0,
+  "next_prediction": "1015.8619047619047",
+  "prediction_confidence": 0.8921496994412121,
+  "confidence_label": "high",
+  "next_prediction_by_strategy": {
+    "knn_regressor": "1015.8619047619047",
+    "tree_regressor": "1121.3233109049293",
+    "lin_lr_0_0001": "996.2615473362109",
+    "lin_lr_0_0005": "1024.7193918283704",
+    "lin_lr_0_002": "1014.4580382093151"
+  },
+  "forecast_row_preview": {
+    "date": "2017-01-01",
+    "meantemp": "10.0",
+    "humidity": "100.0",
+    "wind_speed": "0.0",
+    "meanpressure": "1016.0"
+  },
+  "preview_rows": [
+    {
+      "row_index": 1447,
+      "actual_target": 1015.6190476190476,
+      "adaptive_prediction": 1011.915,
+      "feature_snapshot": "{\"humidity\": 54.3, \"meantemp\": 18.05, \"target_lag_1\": 1015.2, \"target_lag_2\": 1017.4285714285714, \"target_lag_3\": 1018.0833333333334, \"wind_speed\": 19.40476190476191}"
+    },
+    {
+      "row_index": 1448,
+      "actual_target": 1016.1428571428571,
+      "adaptive_prediction": 1017.8218979266347,
+      "feature_snapshot": "{\"humidity\": 57.857142857142854, \"meantemp\": 17.285714285714285, \"target_lag_1\": 1015.6190476190476, \"target_lag_2\": 1015.2, \"target_lag_3\": 1017.4285714285714, \"wind_speed\": 6.1809523809523785}"
+    },
+    {
+      "row_index": 1449,
+      "actual_target": 1014.25,
+      "adaptive_prediction": 1016.7554071075124,
+      "feature_snapshot": "{\"humidity\": 74.7, \"meantemp\": 15.55, \"target_lag_1\": 1016.1428571428571, \"target_lag_2\": 1015.6190476190476, \"target_lag_3\": 1015.2, \"wind_speed\": 1.205}"
+    },
+    {
+      "row_index": 1450,
+      "actual_target": 1011.3181818181819,
+      "adaptive_prediction": 1015.350641025641,
+      "feature_snapshot": "{\"humidity\": 78.63636363636364, \"meantemp\": 17.318181818181817, \"target_lag_1\": 1014.25, \"target_lag_2\": 1016.1428571428571, \"target_lag_3\": 1015.6190476190476, \"wind_speed\": 5.236363636363636}"
+    },
+    {
+      "row_index": 1451,
+      "actual_target": 1014.35,
+      "adaptive_prediction": 1013.1636363636363,
+      "feature_snapshot": "{\"humidity\": 94.3, \"meantemp\": 14, \"target_lag_1\": 1011.3181818181819, \"target_lag_2\": 1014.25, \"target_lag_3\": 1016.1428571428571, \"wind_speed\": 9.084999999999999}"
+    },
+    {
+      "row_index": 1452,
+      "actual_target": 1016.952380952381,
+      "adaptive_prediction": 1015.6197767145136,
+      "feature_snapshot": "{\"humidity\": 74.85714285714286, \"meantemp\": 17.142857142857142, \"target_lag_1\": 1014.35, \"target_lag_2\": 1011.3181818181819, \"target_lag_3\": 1014.25, \"wind_speed\": 8.784210526315787}"
+    },
+    {
+      "row_index": 1453,
+      "actual_target": 1017.2,
+      "adaptive_prediction": 1017.0918546365915,
+      "feature_snapshot": "{\"humidity\": 67.55, \"meantemp\": 16.85, \"target_lag_1\": 1016.952380952381, \"target_lag_2\": 1014.35, \"target_lag_3\": 1011.3181818181819, \"wind_speed\": 8.335}"
+    },
+    {
+      "row_index": 1454,
+      "actual_target": 1015.5652173913044,
+      "adaptive_prediction": 1015.8625602175603,
+      "feature_snapshot": "{\"humidity\": 68.04347826086956, \"meantemp\": 17.217391304347824, \"target_lag_1\": 1017.2, \"target_lag_2\": 1016.952380952381, \"target_lag_3\": 1014.35, \"wind_speed\": 3.547826086956522}"
+    },
+    {
+      "row_index": 1455,
+      "actual_target": 1016.9047619047619,
+      "adaptive_prediction": 1014.2336363636364,
+      "feature_snapshot": "{\"humidity\": 87.85714285714286, \"meantemp\": 15.238095238095237, \"target_lag_1\": 1015.5652173913044, \"target_lag_2\": 1017.2, \"target_lag_3\": 1016.952380952381, \"wind_speed\": 6}"
+    },
+    {
+      "row_index": 1456,
+      "actual_target": 1017.9047619047619,
+      "adaptive_prediction": 1013.8145887445887,
+      "feature_snapshot": "{\"humidity\": 89.66666666666667, \"meantemp\": 14.095238095238095, \"target_lag_1\": 1016.9047619047619, \"target_lag_2\": 1015.5652173913044, \"target_lag_3\": 1017.2, \"wind_speed\": 6.266666666666667}"
+    },
+    {
+      "row_index": 1457,
+      "actual_target": 1016.1,
+      "adaptive_prediction": 1014.8955411255412,
+      "feature_snapshot": "{\"humidity\": 87, \"meantemp\": 15.052631578947368, \"target_lag_1\": 1017.9047619047619, \"target_lag_2\": 1016.9047619047619, \"target_lag_3\": 1015.5652173913044, \"wind_speed\": 7.325}"
+    },
+    {
+      "row_index": 1458,
+      "actual_target": 1016.0,
+      "adaptive_prediction": 1015.4619047619047,
+      "feature_snapshot": "{\"humidity\": 100, \"meantemp\": 10, \"target_lag_1\": 1016.1, \"target_lag_2\": 1017.9047619047619, \"target_lag_3\": 1016.9047619047619, \"wind_speed\": 0}"
+    }
+  ],
+  "interpretation": [
+    "Adaptive policy `hard_switch_lcb` finished on strategy `knn_regressor` after 0 switches.",
+    "It achieved `0.9805` against the best fixed baseline `knn_regressor` at `0.9805`.",
+    "Oracle upper bound on this stream is `0.9849`. Available oracle gain over best fixed is `0.0043`, and the current adaptive controller captures `0.0%` of it.",
+    "Adaptive and best fixed finished effectively tied on this stream.",
+    "No strategy changes were needed; the stream behaved close to one dominant regime.",
+    "The forecast target is the next step after the last fully observed row in the stream.",
+    "Next-step forecast from the final adaptive strategy is `1015.8619` based on the latest lagged context `['1017.9047619047619', '1016.1', '1016.0']`."
+  ],
+  "caveats": [
+    "The stream is replayed in the selected order column.",
+    "Automatic lag generation uses the previous `3` observed target values.",
+    "The quality score is a bounded normalized reward, not raw MAE or RMSE.",
+    "If future exogenous features are unknown, the next prediction reuses the latest available covariate snapshot."
+  ],
+  "artifact_root": "artifacts\\dataset_lab_jobs\\dailydelhiclimatetrain-20260429162602-861bded5\\analysis",
+  "replay_summary_json_path": "E:\\dipproj\\artifacts\\dataset_lab_jobs\\dailydelhiclimatetrain-20260429162602-861bded5\\analysis\\summary.json",
+  "decision_csv_path": "E:\\dipproj\\artifacts\\dataset_lab_jobs\\dailydelhiclimatetrain-20260429162602-861bded5\\analysis\\decisions.csv",
+  "report_md_path": "E:\\dipproj\\artifacts\\dataset_lab_jobs\\dailydelhiclimatetrain-20260429162602-861bded5\\analysis\\summary.md",
+  "score_plot_path": "artifacts\\dataset_lab_jobs\\dailydelhiclimatetrain-20260429162602-861bded5\\analysis\\dataset_lab_scores.png",
+  "portfolio_plot_path": "artifacts\\dataset_lab_jobs\\dailydelhiclimatetrain-20260429162602-861bded5\\analysis\\dataset_lab_portfolio.png",
+  "switch_plot_path": "artifacts\\dataset_lab_jobs\\dailydelhiclimatetrain-20260429162602-861bded5\\analysis\\dataset_lab_switches.png",
+  "dataset_lab_report_md_path": "artifacts\\dataset_lab_jobs\\dailydelhiclimatetrain-20260429162602-861bded5\\analysis\\dataset_lab_report.md"
+}
