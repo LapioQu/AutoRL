@@ -1,0 +1,41 @@
+schema_version: '1.0'
+experiment_name: gradual-drift-selector-adaptive_meta-baseline
+seed: 62
+mode: baseline
+scenario:
+  name: gradual_drift
+  episodes: 60
+  steps_per_episode: 20
+  reward_noise_std: 0.0
+  drift_episode: null
+  drift_start_episode: 20
+  drift_end_episode: 45
+  fallback_patience: null
+  tags:
+  - drift
+  - gradual
+  description: Reward regime shifts gradually over a wide interval.
+strategies:
+- name: adaptive_meta
+  parameters:
+    temperature: 0.9
+    evaluation_window: 24
+  enabled: true
+  compute_cost: 0.22
+  description: null
+meta_controller:
+  window_size: 8
+  min_samples: 5
+  delta: 0.01
+  lambda: 0.3
+  switch_cost: 0.01
+  utility_weights:
+    reward_mean: 1.0
+    reward_variance: 0.2
+    compute_cost: 0.15
+    switch_cost: 0.5
+artifacts_root: tmp_compare\gradual_drift\adaptive_meta
+tags:
+- phase1
+- gradual_drift
+notes: null

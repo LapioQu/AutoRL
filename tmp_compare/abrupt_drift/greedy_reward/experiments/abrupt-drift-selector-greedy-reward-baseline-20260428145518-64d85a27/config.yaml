@@ -1,0 +1,40 @@
+schema_version: '1.0'
+experiment_name: abrupt-drift-selector-greedy_reward-baseline
+seed: 52
+mode: baseline
+scenario:
+  name: abrupt_drift
+  episodes: 60
+  steps_per_episode: 20
+  reward_noise_std: 0.0
+  drift_episode: 30
+  drift_start_episode: null
+  drift_end_episode: null
+  fallback_patience: null
+  tags:
+  - drift
+  - abrupt
+  description: Reward regime changes sharply at one episode boundary.
+strategies:
+- name: greedy_reward
+  parameters:
+    epsilon: 0.05
+  enabled: true
+  compute_cost: 0.08
+  description: null
+meta_controller:
+  window_size: 8
+  min_samples: 5
+  delta: 0.01
+  lambda: 0.3
+  switch_cost: 0.01
+  utility_weights:
+    reward_mean: 1.0
+    reward_variance: 0.25
+    compute_cost: 0.15
+    switch_cost: 0.6
+artifacts_root: tmp_compare\abrupt_drift\greedy_reward
+tags:
+- phase1
+- abrupt_drift
+notes: null

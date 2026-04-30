@@ -1,0 +1,3 @@
+{"details": {"artifacts_path": "E:\\dipproj\\tmp_profiles\\abrupt\\fixed_mid\\experiments\\adaptive-meta-final-abrupt-fixed-mid-20260428145651-6fb50d30"}, "level": "INFO", "message": "Experiment artifact bundle initialized.", "timestamp": "2026-04-28T17:56:52.545598+03:00"}
+{"details": {"episodes": 80, "mode": "baseline", "scenario": "abrupt_drift", "steps_per_episode": 20}, "level": "INFO", "message": "Experiment run started.", "timestamp": "2026-04-28T17:56:52.737066+03:00"}
+{"details": {"error": "fixed_action_index must be between 0 and 0"}, "level": "ERROR", "message": "Experiment run failed.", "timestamp": "2026-04-28T17:56:52.904166+03:00"}

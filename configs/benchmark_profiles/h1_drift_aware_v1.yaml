@@ -1,0 +1,10 @@
+profile_name: h1_drift_aware_v1
+task_type: classification
+controller_policy: drift_aware_comparator
+candidate_models:
+  - river_logreg
+  - river_nb
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: Baseline H1 drift-aware comparator profile for benchmark replay.

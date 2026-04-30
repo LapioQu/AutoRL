@@ -1,0 +1,18 @@
+suite_name: suite_all
+artifacts_root: artifacts/experiment_suites/suite_all
+runs:
+  - label: stationary
+    config: examples/stationary.yaml
+    seeds: [41, 42, 43, 44, 45]
+  - label: abrupt_drift
+    config: examples/abrupt_drift.yaml
+    seeds: [41, 42, 43, 44, 45]
+  - label: gradual_drift
+    config: examples/gradual_drift.yaml
+    seeds: [41, 42, 43, 44, 45]
+  - label: noisy_reward
+    config: examples/noisy_reward.yaml
+    seeds: [41, 42, 43, 44, 45]
+  - label: fallback
+    config: examples/fallback.yaml
+    seeds: [41, 42, 43, 44, 45]

@@ -1,0 +1,10 @@
+profile_name: h2_refined_drift_stable
+task_type: classification
+controller_policy: hard_switch_lcb
+candidate_models:
+  - river_logreg
+  - river_nb
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: H2 refined profile optimized for drift-stable switching.

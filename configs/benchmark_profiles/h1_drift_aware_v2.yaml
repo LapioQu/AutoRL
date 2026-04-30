@@ -1,0 +1,10 @@
+profile_name: h1_drift_aware_v2
+task_type: classification
+controller_policy: hard_switch_lcb
+candidate_models:
+  - river_logreg
+  - river_nb
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: Refined H1 comparator profile with LCB gating over the candidate registry.

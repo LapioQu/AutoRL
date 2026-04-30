@@ -1,0 +1,10 @@
+profile_name: h2_search
+task_type: classification
+controller_policy: search_profile
+candidate_models:
+  - river_logreg
+  - river_nb
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: H2 exploratory search profile over the benchmark replay candidate registry.

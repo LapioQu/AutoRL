@@ -1,0 +1,10 @@
+profile_name: h2_tempered_correctness
+task_type: classification
+controller_policy: tempered_reward
+candidate_models:
+  - river_logreg
+  - river_nb
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: H2 tempered reward profile focused on correctness/stability compromise.

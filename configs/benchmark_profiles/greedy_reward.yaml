@@ -1,0 +1,10 @@
+profile_name: greedy_reward
+task_type: classification
+controller_policy: greedy_reward
+candidate_models:
+  - river_logreg
+  - river_nb
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: Explicit greedy comparator that follows the most recent block leader without LCB conservatism.

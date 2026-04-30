@@ -1,0 +1,13 @@
+profile_name: hard_switch_lcb
+task_type: classification
+controller_policy: hard_switch_lcb
+candidate_models:
+  - river_logreg
+  - river_nb
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: >
+  Explicit LCB-based comparator profile used in phase 10 baseline-comparison
+  experiments to contrast hard-switch LCB against adaptive_meta_final,
+  greedy_reward, drift-aware, and tempered profiles.

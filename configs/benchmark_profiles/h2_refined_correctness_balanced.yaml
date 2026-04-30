@@ -1,0 +1,10 @@
+profile_name: h2_refined_correctness_balanced
+task_type: classification
+controller_policy: recent_leader_meta
+candidate_models:
+  - river_logreg
+  - river_nb
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: H2 refined profile balancing correctness and switching stability.

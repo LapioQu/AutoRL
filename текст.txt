@@ -1,0 +1,224 @@
+Контекст:
+потрібно розробити локальну адаптивну інтелектуальну навчальну систему на основі навчання з підкріпленням для динамічного вибору оптимальних навчальних стратегій самонавчання. Система має відповідати технічному завданню з файлу `ТЗ_AutoRL_інтегрована_редакція_вимог.md`.
+
+Головне правило:
+не намагайся реалізувати всю систему одразу. Працюй ітераціями. У кожній ітерації виконуй тільки завершений вертикальний або інфраструктурний фрагмент, додавай тести, запускай перевірки, фіксуй результат і тільки після цього переходь до наступної ітерації.
+
+Перед початком:
+1. Відкрий і прочитай `ТЗ_AutoRL_інтегрована_редакція_вимог.md`.
+2. Перевір структуру репозиторію.
+3. Склади короткий план реалізації по фазах.
+4. Не пиши весь код одразу.
+5. Почни тільки з Фази 0.
+
+Обов’язкові правила розробки:
+- Після кожної фази запускай доступні тести або мінімальну smoke-перевірку.
+- Якщо тестів ще немає — створи їх у межах фази.
+- Не переходь до наступної фази без зелених перевірок.
+- Не вигадуй вимоги поза ТЗ.
+- Якщо вимога з ТЗ занадто велика — декомпозуй її на менші задачі.
+- Усі ключові рішення мають бути відображені в README або короткій технічній нотатці.
+- Система має мати не лише CLI/backend, а й повноцінний локальний веб-інтерфейс для створення експериментів, перегляду метрик, Stay/Switch-рішень, порівняння стратегій і експорту звітів.
+- Кожен експеримент має зберігати конфігурацію, seed, config_hash, метрики, рішення, артефакти, версії бібліотек і шлях до результатів.
+- Підсумкові наукові висновки мають базуватися тільки на фактично виконаних експериментах і збережених артефактах.
+
+Фази реалізації:
+
+Фаза 0. Аудит і каркас проєкту
+Мета: підготувати репозиторій до контрольованої розробки.
+Зробити:
+- прочитати ТЗ;
+- перевірити наявні файли;
+- створити або впорядкувати структуру проєкту;
+- додати `pyproject.toml` або `requirements.txt`;
+- додати базовий README;
+- створити пакети `src/autorl/...` і `tests/...`;
+- додати мінімальну команду перевірки імпорту.
+Перевірка:
+- `python -m pytest` проходить;
+- пакет імпортується без помилок.
+
+Фаза 1. Доменні сутності та конфігурації
+Мета: створити основу системи без запуску експериментів.
+Зробити:
+- реалізувати моделі Experiment, Config, LearningStrategy, EpisodeMetric, WindowMetric, Decision, Artifact;
+- реалізувати завантаження YAML/JSON-конфігурацій;
+- реалізувати валідацію конфігурацій;
+- реалізувати config_hash;
+- додати приклади конфігурацій для stationary, abrupt_drift, gradual_drift, noisy_reward, fallback, reproducibility.
+Перевірка:
+- unit-тести на валідацію конфігурації;
+- unit-тести на стабільність config_hash;
+- негативні тести для некоректних конфігурацій.
+
+Фаза 2. Контрольоване навчальне RL-середовище
+Мета: створити відтворюване середовище для експериментів.
+Зробити:
+- реалізувати `AdaptiveLearningEnv` або Gymnasium-подібне середовище;
+- підтримати сценарії stationary, abrupt_drift, gradual_drift, noisy_reward, fallback;
+- забезпечити seed-controlled behavior;
+- реалізувати базові reward/success/learning progress сигнали.
+Перевірка:
+- тести на відтворюваність середовища за seed;
+- тести на зміну режиму в abrupt_drift;
+- тести на поступову зміну в gradual_drift;
+- тести на noisy_reward.
+
+Фаза 3. Стратегії самонавчання і метрики
+Мета: реалізувати портфель навчальних стратегій і збір метрик.
+Зробити:
+- реалізувати LearningStrategy interface;
+- реалізувати Fixed, GreedyReward, DriftAware, LCBConservative, TemperedReward, AdaptiveMeta;
+- реалізувати MetricsCollector;
+- реалізувати обчислення reward_mean, variance, cumulative_reward, success_rate, switches, recovery_time, utility input metrics.
+Перевірка:
+- unit-тести для кожної стратегії;
+- тести на коректний збір метрик;
+- тести на rolling/window aggregation.
+
+Фаза 4. Evaluator і MetaController
+Мета: реалізувати центральну логіку Stay/Switch.
+Зробити:
+- реалізувати utility:
+  `U = w1 * reward_mean - w2 * reward_variance - w3 * compute_cost - w4 * switch_cost`;
+- реалізувати LCB:
+  `LCB = mean(U) - lambda * std(U)`;
+- реалізувати decision rule:
+  `Switch якщо LCB(candidate) - LCB(current) > delta + Cswitch`;
+- реалізувати fallback для insufficient_samples, missing_metrics, invalid_candidate, high_uncertainty, no_candidate_improvement, safe_stay_after_error;
+- логувати повну причину кожного рішення.
+Перевірка:
+- unit-тести для utility;
+- unit-тести для LCB;
+- тести Stay при недостатніх даних;
+- тести Switch при достатній перевазі;
+- тести Stay при високій невизначеності;
+- performance smoke-test: decision time має бути малим і контрольованим.
+
+Фаза 5. Сховище, журнали й артефакти
+Мета: забезпечити відтворюваність і трасованість.
+Зробити:
+- реалізувати SQLiteRepository або файлове сховище + SQLite;
+- таблиці/файли для experiments, configs, episode_metrics, window_metrics, decisions, artifacts, events/errors;
+- створення директорії експерименту;
+- копіювання config.yaml;
+- запис config_hash.txt;
+- запис versions.json;
+- запис metrics.csv, window_metrics.csv, decisions.csv, events.log;
+- PathGuard для запису лише в artifacts root.
+Перевірка:
+- integration-тести на створення артефактів;
+- тести на запис і читання metrics/decisions;
+- тести на збереження часткових логів при помилці.
+
+Фаза 6. Experiment Orchestrator і CLI
+Мета: отримати перший end-to-end запуск.
+Зробити:
+- реалізувати ExperimentOrchestrator;
+- реалізувати запуск одного експерименту з конфігурації;
+- реалізувати `autorl run --config ...`;
+- реалізувати `autorl list`;
+- реалізувати `autorl report --experiment-id ...`;
+- реалізувати `autorl rerun --experiment-id ...`;
+- забезпечити, що запуск створює метрики, рішення й артефакти.
+Перевірка:
+- e2e-тест stationary;
+- e2e-тест abrupt_drift;
+- reproducibility test для однакового seed;
+- CLI smoke-tests.
+
+Фаза 7. Звіти й графіки
+Мета: отримати матеріали для третього розділу.
+Зробити:
+- генерувати report.md або report.html;
+- генерувати reward_curve.png;
+- генерувати strategy_timeline.png;
+- генерувати utility_lcb.png;
+- генерувати summary таблицю;
+- додати експорт metrics.csv і decisions.csv.
+Перевірка:
+- integration-тест report generation;
+- перевірка, що всі файли існують;
+- перевірка, що report містить конфігурацію, seed, config_hash, результати, Stay/Switch-summary.
+
+Фаза 8. FastAPI backend
+Мета: надати програмний API для UI.
+Зробити:
+- реалізувати endpoint-и:
+  - `GET /health`
+  - `GET /scenarios`
+  - `GET /strategies`
+  - `POST /experiments`
+  - `GET /experiments`
+  - `GET /experiments/{id}`
+  - `POST /experiments/{id}/run`
+  - `GET /experiments/{id}/status`
+  - `GET /experiments/{id}/metrics`
+  - `GET /experiments/{id}/decisions`
+  - `GET /experiments/{id}/report`
+  - `POST /experiments/{id}/rerun`
+  - `GET /compare`
+- API не має містити доменної логіки, тільки викликати application services.
+Перевірка:
+- API tests через TestClient;
+- smoke-test `/health`;
+- tests для створення і читання експерименту.
+
+Фаза 9. Streamlit Web UI
+Мета: зробити систему практично корисною для користувача.
+Зробити:
+- сторінка огляду системи;
+- сторінка створення експерименту;
+- сторінка запуску/моніторингу;
+- дашборд метрик;
+- strategy timeline;
+- журнал Stay/Switch-рішень;
+- сторінка порівняння стратегій;
+- сторінка звітів і експорту;
+- блок відтворюваності: seed, config_hash, versions, artifact path.
+Перевірка:
+- UI smoke-перевірка запуску Streamlit;
+- перевірка, що UI читає реальні артефакти/дані;
+- жодних hardcoded fake results.
+
+Фаза 10. Експериментальні серії
+Мета: отримати практично-наукові результати для третього розділу.
+Зробити фактичні запуски:
+- E1 stationary control;
+- E2 abrupt drift;
+- E3 gradual drift;
+- E4 noisy reward;
+- E5 tempered reward shaping;
+- E6 drift-aware selector / H1 control;
+- E7 reproducibility;
+- E8 fallback insufficient data;
+- E9 baseline comparison.
+Для кожної серії зберегти:
+- config;
+- seed або список seed;
+- metrics;
+- decisions;
+- plots;
+- report;
+- artifact path.
+Перевірка:
+- усі запуски мають артефакти;
+- немає наукових висновків без фактичних запусків;
+- summary таблиці згенеровані.
+
+Фаза 11. Трасування вимог і фінальна перевірка
+Мета: довести відповідність системи дипломним вимогам.
+Зробити:
+- створити requirements_traceability.md або CSV:
+  `вимога → компонент → тест/експеримент → артефакт → статус`;
+- створити test_protocol.md або CSV;
+- оновити README з інструкцією запуску;
+- описати відомі обмеження;
+- перевірити, що система залишається адаптивною інтелектуальною навчальною системою, а не просто CLI/скриптом.
+Перевірка:
+- повний pytest;
+- smoke-run CLI;
+- smoke-run API;
+- smoke-run UI;
+- наявні report-и для експериментів;
+- наявна матриця трасування вимог.
