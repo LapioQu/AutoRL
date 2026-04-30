@@ -15,7 +15,7 @@
   "fixed_scores": {
     "river_logreg": 0.83203125,
     "river_nb": 0.8125,
-    "river_hoeffding_tree": 0.81640625,
+    "river_hoeffding_tree": 0.82421875,
     "windowed_rf": 0.90625,
     "windowed_histgb": 0.8046875
   },
@@ -31,7 +31,7 @@
   "fixed_accuracies": {
     "river_logreg": 0.83203125,
     "river_nb": 0.8125,
-    "river_hoeffding_tree": 0.81640625,
+    "river_hoeffding_tree": 0.82421875,
     "windowed_rf": 0.90625,
     "windowed_histgb": 0.8046875
   }

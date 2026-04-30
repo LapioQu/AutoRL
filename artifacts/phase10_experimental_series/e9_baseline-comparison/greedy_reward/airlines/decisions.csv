@@ -1,0 +1,3 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+127,0,river_logreg,river_nb,switch,True,recent_leader_warmup,,0.0,Switch after warmup because the recent block leader outperformed the initial incumbent: river_nb.
+255,1,river_nb,windowed_rf,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.769531 + 0.000000 < 0.785156.

@@ -15,7 +15,7 @@
 | Mode | Score |
 | --- | ---: |
 | adaptive | 0.832031 |
-| river_hoeffding_tree | 0.816406 |
+| river_hoeffding_tree | 0.859375 |
 | river_logreg | 0.832031 |
 | river_nb | 0.812500 |
 | windowed_histgb | 0.804688 |

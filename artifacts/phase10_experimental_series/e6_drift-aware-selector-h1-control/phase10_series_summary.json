@@ -1,0 +1,110 @@
+{
+  "series_id": "E6",
+  "title": "Drift-aware selector / H1 control",
+  "series_type": "benchmark_profile_suite",
+  "profile_paths": [
+    "E:\\dipproj\\configs\\benchmark_profiles\\h1_drift_aware_v2.yaml"
+  ],
+  "profile_names": [
+    "h1_drift_aware_v2"
+  ],
+  "dataset_names": [
+    "Airlines",
+    "Elec2",
+    "InsectsRecurring"
+  ],
+  "seed_protocol": "deterministic_temporal_replay_no_rng",
+  "seeds": [],
+  "max_samples": 256,
+  "root_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control",
+  "n": 3,
+  "delta_mean": -0.046875,
+  "delta_std": 0.02561499423555469,
+  "delta_ci95": 0.028986094681688897,
+  "effect_size_d": -1.829982843991256,
+  "paired_sign_test_p_value": 0.25,
+  "wins_vs_best_fixed": 0,
+  "suite_summary_json_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\suite_summary.json",
+  "suite_summary_md_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\suite_summary.md",
+  "primary_plot_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\phase10_delta_vs_best_fixed.png",
+  "switches_plot_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\phase10_switch_count.png",
+  "benchmark_protocol": {
+    "dataset_count": 3,
+    "profile_count": 1,
+    "requested_max_samples": 256,
+    "sample_count_min": 256,
+    "sample_count_max": 256,
+    "consistent_sample_count": true,
+    "interpretation_note": "Benchmark replay rows are deterministic temporal streams; inferential statistics are computed over dataset/profile result deltas and should be read as cautious phase-level evidence, not as a claim of universal superiority."
+  },
+  "policy_aggregates": [
+    {
+      "policy_name": "hard_switch_lcb",
+      "n": 3,
+      "delta_mean": -0.046875,
+      "delta_std": 0.02561499423555469,
+      "delta_ci95": 0.028986094681688897,
+      "wins_vs_best_fixed": 0,
+      "mean_switch_count": 0.0
+    }
+  ],
+  "results": [
+    {
+      "dataset_name": "Airlines",
+      "profile_name": "h1_drift_aware_v2",
+      "policy_name": "hard_switch_lcb",
+      "score_name": "accuracy",
+      "sample_count": 256,
+      "adaptive_score": 0.76171875,
+      "best_fixed_strategy": "river_nb",
+      "best_fixed_score": 0.78515625,
+      "delta_vs_best_fixed": -0.0234375,
+      "switch_count": 0,
+      "artifact_root_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\airlines",
+      "config_path": "E:\\dipproj\\configs\\benchmark_profiles\\h1_drift_aware_v2.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\airlines\\metrics.csv",
+      "plots_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\airlines\\score_profile.png",
+      "decision_csv_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\airlines\\decisions.csv",
+      "summary_json_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\airlines\\summary.json",
+      "report_md_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\airlines\\summary.md"
+    },
+    {
+      "dataset_name": "Elec2",
+      "profile_name": "h1_drift_aware_v2",
+      "policy_name": "hard_switch_lcb",
+      "score_name": "accuracy",
+      "sample_count": 256,
+      "adaptive_score": 0.83203125,
+      "best_fixed_strategy": "windowed_rf",
+      "best_fixed_score": 0.90625,
+      "delta_vs_best_fixed": -0.07421875,
+      "switch_count": 0,
+      "artifact_root_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\elec2",
+      "config_path": "E:\\dipproj\\configs\\benchmark_profiles\\h1_drift_aware_v2.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\elec2\\metrics.csv",
+      "plots_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\elec2\\score_profile.png",
+      "decision_csv_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\elec2\\decisions.csv",
+      "summary_json_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\elec2\\summary.json",
+      "report_md_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\elec2\\summary.md"
+    },
+    {
+      "dataset_name": "InsectsRecurring",
+      "profile_name": "h1_drift_aware_v2",
+      "policy_name": "hard_switch_lcb",
+      "score_name": "accuracy",
+      "sample_count": 256,
+      "adaptive_score": 0.77734375,
+      "best_fixed_strategy": "windowed_rf",
+      "best_fixed_score": 0.8203125,
+      "delta_vs_best_fixed": -0.04296875,
+      "switch_count": 0,
+      "artifact_root_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\insects_recurring",
+      "config_path": "E:\\dipproj\\configs\\benchmark_profiles\\h1_drift_aware_v2.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\insects_recurring\\metrics.csv",
+      "plots_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\insects_recurring\\score_profile.png",
+      "decision_csv_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\insects_recurring\\decisions.csv",
+      "summary_json_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\insects_recurring\\summary.json",
+      "report_md_path": "E:\\dipproj\\artifacts\\phase10_experimental_series\\e6_drift-aware-selector-h1-control\\h1_drift_aware_v2\\insects_recurring\\summary.md"
+    }
+  ]
+}

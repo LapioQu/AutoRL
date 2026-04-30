@@ -1,0 +1,3 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+127,0,river_logreg,river_nb,switch,True,fixed_share_warmup_leader,,0.01,Switch after warmup because the cumulative reward leader differs from the starting strategy: river_nb.
+127,0,river_nb,river_hoeffding_tree,switch,True,fixed_share_weight_advantage,0.06503846097699656,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2364 - 0.1714 = 0.0650 >= 0.0100.
