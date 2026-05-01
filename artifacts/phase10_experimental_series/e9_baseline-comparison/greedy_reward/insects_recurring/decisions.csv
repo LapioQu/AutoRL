@@ -13,10 +13,10 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 1535,11,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.716797 + 0.000000 < 0.750000.
 1663,12,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 1791,13,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.03125,0.0,Stay because the candidate fails the incumbent floor check: 0.715960 + 0.000000 < 0.742746.
-1919,14,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0625,0.0,Stay because the candidate fails the incumbent floor check: 0.489583 + 0.000000 < 0.734375.
+1919,14,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0625,0.0,Stay because the candidate fails the incumbent floor check: 0.477083 + 0.000000 < 0.734375.
 2047,15,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 2175,16,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
-2303,17,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+2303,17,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.519097 + 0.000000 < 0.738715.
 2431,18,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 2559,19,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.03125,0.0,Stay because the candidate fails the incumbent floor check: 0.711328 + 0.000000 < 0.736328.
 2687,20,river_logreg,river_nb,stay,False,recent_leader_incumbent_floor,0.03125,0.0,Stay because the candidate fails the incumbent floor check: 0.636161 + 0.000000 < 0.732515.
@@ -151,8 +151,8 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 19199,149,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 19327,150,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 19455,151,windowed_rf,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.046875,0.0,Stay because the candidate fails the incumbent floor check: 0.681229 + 0.000000 < 0.686626.
-19583,152,windowed_rf,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.046875,0.0,Stay because the candidate fails the incumbent floor check: 0.500460 + 0.000000 < 0.685662.
-19711,153,windowed_rf,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.046875,0.0,Stay because the candidate fails the incumbent floor check: 0.500913 + 0.000000 < 0.684608.
+19583,152,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+19711,153,windowed_rf,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.0390625,0.0,Stay because the candidate fails the incumbent floor check: 0.679332 + 0.000000 < 0.684608.
 19839,154,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 19967,155,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 20095,156,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
@@ -204,7 +204,7 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 25983,202,windowed_rf,river_logreg,stay,False,recent_leader_incumbent_floor,0.0234375,0.0,Stay because the candidate fails the incumbent floor check: 0.734914 + 0.000000 < 0.738493.
 26111,203,windowed_rf,river_logreg,stay,False,recent_leader_incumbent_floor,0.015625,0.0,Stay because the candidate fails the incumbent floor check: 0.736213 + 0.000000 < 0.739698.
 26239,204,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
-26367,205,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+26367,205,windowed_rf,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.568606 + 0.000000 < 0.742188.
 26495,206,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 26623,207,windowed_rf,river_logreg,stay,False,recent_leader_incumbent_floor,0.21875,0.0,Stay because the candidate fails the incumbent floor check: 0.740159 + 0.000000 < 0.742601.
 26751,208,windowed_rf,river_logreg,stay,False,recent_leader_incumbent_floor,0.296875,0.0,Stay because the candidate fails the incumbent floor check: 0.740094 + 0.000000 < 0.741103.
@@ -346,7 +346,7 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 44159,344,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 44287,345,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 44415,346,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
-44543,347,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.078125,0.0,Stay because the candidate fails the incumbent floor check: 0.592111 + 0.000000 < 0.756915.
+44543,347,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0546875,0.0,Stay because the candidate fails the incumbent floor check: 0.558526 + 0.000000 < 0.756915.
 44671,348,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 44799,349,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.0546875,0.0,Stay because the candidate fails the incumbent floor check: 0.752946 + 0.000000 < 0.756897.
 44927,350,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
@@ -374,7 +374,7 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 47743,372,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 47871,373,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.0390625,0.0,Stay because the candidate fails the incumbent floor check: 0.757374 + 0.000000 < 0.764497.
 47999,374,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.03125,0.0,Stay because the candidate fails the incumbent floor check: 0.760188 + 0.000000 < 0.764792.
-48127,375,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0234375,0.0,Stay because the candidate fails the incumbent floor check: 0.590301 + 0.000000 < 0.765126.
+48127,375,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 48255,376,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 48383,377,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.761450 + 0.000000 < 0.766204.
 48511,378,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.0234375,0.0,Stay because the candidate fails the incumbent floor check: 0.762059 + 0.000000 < 0.766738.
@@ -439,9 +439,9 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 56063,437,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.015625,0.0,Stay because the candidate fails the incumbent floor check: 0.773473 + 0.000000 < 0.782784.
 56191,438,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.0703125,0.0,Stay because the candidate fails the incumbent floor check: 0.776872 + 0.000000 < 0.782567.
 56319,439,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
-56447,440,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.109375,0.0,Stay because the candidate fails the incumbent floor check: 0.611767 + 0.000000 < 0.781994.
+56447,440,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.09375,0.0,Stay because the candidate fails the incumbent floor check: 0.773048 + 0.000000 < 0.781994.
 56575,441,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.03125,0.0,Stay because the candidate fails the incumbent floor check: 0.776266 + 0.000000 < 0.781798.
-56703,442,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.03125,0.0,Stay because the candidate fails the incumbent floor check: 0.612073 + 0.000000 < 0.781550.
+56703,442,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 56831,443,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.0703125,0.0,Stay because the candidate fails the incumbent floor check: 0.775936 + 0.000000 < 0.781320.
 56959,444,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 57087,445,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.0546875,0.0,Stay because the candidate fails the incumbent floor check: 0.771984 + 0.000000 < 0.780812.
@@ -460,7 +460,7 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 58751,458,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 58879,459,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 59007,460,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.0859375,0.0,Stay because the candidate fails the incumbent floor check: 0.770014 + 0.000000 < 0.778098.
-59135,461,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.015625,0.0,Stay because the candidate fails the incumbent floor check: 0.769903 + 0.000000 < 0.777936.
+59135,461,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0234375,0.0,Stay because the candidate fails the incumbent floor check: 0.553605 + 0.000000 < 0.777936.
 59263,462,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.0234375,0.0,Stay because the candidate fails the incumbent floor check: 0.773269 + 0.000000 < 0.777774.
 59391,463,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 59519,464,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
@@ -584,7 +584,7 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 74623,582,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 74751,583,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.03125,0.0,Stay because the candidate fails the incumbent floor check: 0.751391 + 0.000000 < 0.757465.
 74879,584,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
-75007,585,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+75007,585,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.537409 + 0.000000 < 0.758199.
 75135,586,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.752489 + 0.000000 < 0.758531.
 75263,587,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 75391,588,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.078125,0.0,Stay because the candidate fails the incumbent floor check: 0.753236 + 0.000000 < 0.759152.
@@ -594,9 +594,9 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 75903,592,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 76031,593,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
 76159,594,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.755580 + 0.000000 < 0.761410.
-76287,595,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
-76415,596,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
-76543,597,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.
+76287,595,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.544647 + 0.000000 < 0.761784.
+76415,596,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.545409 + 0.000000 < 0.762170.
+76543,597,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.546170 + 0.000000 < 0.762555.
 76671,598,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.03125,0.0,Stay because the candidate fails the incumbent floor check: 0.760225 + 0.000000 < 0.762899.
 76799,599,river_logreg,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.0078125,0.0,Stay because the candidate fails the incumbent floor check: 0.757409 + 0.000000 < 0.763281.
 76927,600,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.0,Stay because the current strategy remains the recent block leader.

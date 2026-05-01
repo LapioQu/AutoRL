@@ -7,10 +7,14 @@
 - seed_protocol: `deterministic_temporal_replay_no_rng`
 - seeds: `[]`
 - max_samples: `None`
-- delta_mean: `-0.000318`
-- delta_std: `0.003659`
-- delta_ci95: `0.004141`
-- effect_size_d: `-0.086773`
+- delta_mean: `-0.006355`
+- delta_std: `0.010455`
+- delta_ci95: `0.011831`
+- oracle_gain_mean: `0.097982`
+- oracle_gain_ci95: `0.055056`
+- oracle_capture_mean: `0.019250`
+- oracle_capture_ci95: `0.037731`
+- effect_size_d: `-0.607818`
 - paired_sign_test_p_value: `1.000000`
 - wins_vs_best_fixed: `1`
 - suite_summary_json_path: `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\suite_summary.json`
@@ -29,17 +33,17 @@
 
 ## Policy Aggregates
 
-| Policy | n | Delta Mean | Delta Std | Delta CI95 | Wins vs Best Fixed | Mean Switch Count |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| hard_switch_lcb | 3 | -0.000318 | 0.003659 | 0.004141 | 1 | 14.000000 |
+| Policy | n | Delta Mean | Delta Std | Delta CI95 | Oracle Gain Mean | Capture Mean | Capture CI95 | Wins vs Best Fixed | Mean Switch Count |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| hard_switch_lcb | 3 | -0.006355 | 0.010455 | 0.011831 | 0.097982 | 0.019250 | 0.037731 | 1 | 15.000000 |
 
 ## Benchmark Results
 
-| Dataset | Profile | Policy | Score | Samples | Adaptive | Best Fixed | Delta | Switches | Report |
-| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| Elec2 | h2_tempered_drift | hard_switch_lcb | accuracy | 45312 | 0.876390 | 0.876832 | -0.000441 | 2 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\h2_tempered_drift\elec2\summary.md` |
-| InsectsRecurring | h2_tempered_drift | hard_switch_lcb | accuracy | 79986 | 0.768597 | 0.772510 | -0.003913 | 36 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\h2_tempered_drift\insects_recurring\summary.md` |
-| WaterFlow | h2_tempered_drift_regression | hard_switch_lcb | normalized_reward | 1268 | 0.842475 | 0.839073 | 0.003402 | 4 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\h2_tempered_drift_regression\waterflow\summary.md` |
+| Dataset | Profile | Policy | Score | Samples | Adaptive | Best Fixed | Oracle | Delta | Capture | Switches | Report |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| Elec2 | h2_tempered_drift | hard_switch_lcb | accuracy | 45312 | 0.859441 | 0.876832 | 0.959393 | -0.017391 | 0.000000 | 4 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\h2_tempered_drift\elec2\summary.md` |
+| InsectsRecurring | h2_tempered_drift | hard_switch_lcb | accuracy | 79986 | 0.767434 | 0.772510 | 0.924987 | -0.005076 | 0.000000 | 37 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\h2_tempered_drift\insects_recurring\summary.md` |
+| WaterFlow | h2_tempered_drift_regression | hard_switch_lcb | normalized_reward | 1268 | 0.842475 | 0.839073 | 0.897982 | 0.003402 | 0.057751 | 4 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\h2_tempered_drift_regression\waterflow\summary.md` |
 
 ## Artifact Coverage
 

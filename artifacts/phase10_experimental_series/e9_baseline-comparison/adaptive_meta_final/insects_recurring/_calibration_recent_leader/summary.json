@@ -11,9 +11,12 @@
   "adaptive_score": 0.68505859375,
   "best_fixed_strategy": "river_logreg",
   "best_fixed_score": 0.73388671875,
+  "oracle_score": 0.8984375,
+  "oracle_gain": 0.16455078125,
+  "oracle_capture_ratio": 0.0,
   "delta_vs_best_fixed": -0.048828125,
   "fixed_scores": {
-    "river_hoeffding_tree": 0.50244140625,
+    "river_hoeffding_tree": 0.490234375,
     "river_logreg": 0.73388671875,
     "river_nb": 0.61279296875,
     "windowed_histgb": 0.68212890625,
@@ -29,7 +32,7 @@
   "adaptive_accuracy": 0.68505859375,
   "best_fixed_accuracy": 0.73388671875,
   "fixed_accuracies": {
-    "river_hoeffding_tree": 0.50244140625,
+    "river_hoeffding_tree": 0.490234375,
     "river_logreg": 0.73388671875,
     "river_nb": 0.61279296875,
     "windowed_histgb": 0.68212890625,

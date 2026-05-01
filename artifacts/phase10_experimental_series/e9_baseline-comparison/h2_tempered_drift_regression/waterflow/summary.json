@@ -11,6 +11,9 @@
   "adaptive_score": 0.8424754115888207,
   "best_fixed_strategy": "lin_lr_0_001",
   "best_fixed_score": 0.8390733967044703,
+  "oracle_score": 0.897981614604446,
+  "oracle_gain": 0.05890821789997569,
+  "oracle_capture_ratio": 0.05775110851472096,
   "delta_vs_best_fixed": 0.003402014884350324,
   "fixed_scores": {
     "pa_regressor": 0.7800655452615857,

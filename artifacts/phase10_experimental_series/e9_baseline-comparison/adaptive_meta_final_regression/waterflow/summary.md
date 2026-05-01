@@ -15,12 +15,16 @@
 | Mode | Score |
 | --- | ---: |
 | adaptive | 0.836279 |
+| oracle | 0.874010 |
 | lin_lr_0_0005 | 0.802089 |
 | lin_lr_0_001 | 0.803945 |
 | pa_regressor | 0.726507 |
 
 - best_fixed_strategy: `lin_lr_0_001`
 - best_fixed_score: `0.803945`
+- oracle_score: `0.874010`
+- oracle_gain: `0.070065`
+- oracle_capture_ratio: `0.461488`
 - adaptive_delta_vs_best_fixed: `0.032334`
 - block_delta_mean: `0.032352`
 - block_delta_ci95: `0.034086`

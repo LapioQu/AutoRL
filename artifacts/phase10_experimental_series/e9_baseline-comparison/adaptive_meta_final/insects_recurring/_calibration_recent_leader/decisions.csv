@@ -13,4 +13,4 @@ sample_index,evaluation_index,current_strategy,candidate_strategy,action,switche
 1663,12,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
 1791,13,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.715960 + 0.001000 < 0.742746.
 1919,14,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.04296875,0.002,Stay because the candidate fails the incumbent floor check: 0.713021 + 0.001000 < 0.734375.
-2047,15,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.015625,0.002,Stay because the candidate fails the incumbent floor check: 0.502441 + 0.001000 < 0.733887.
+2047,15,river_logreg,river_nb,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.612793 + 0.001000 < 0.733887.

@@ -1,12 +1,15 @@
 metric,value
 adaptive_score,0.7713724901857825
 best_fixed_score,0.7725101892831245
+oracle_score,0.924986872702723
+oracle_gain,0.1524766834195984
+oracle_capture_ratio,0.0
 delta_vs_best_fixed,-0.0011376990973420709
 switch_count,11
 block_delta_mean,-0.0011393229166666667
 block_delta_std,0.03075741261747754
 block_delta_ci95,0.0024133125721464057
-fixed_score::river_hoeffding_tree,0.6002175380691621
+fixed_score::river_hoeffding_tree,0.5586477633585878
 fixed_score::river_logreg,0.7725101892831245
 fixed_score::river_nb,0.48703523116545394
 fixed_score::windowed_histgb,0.7654339509414148

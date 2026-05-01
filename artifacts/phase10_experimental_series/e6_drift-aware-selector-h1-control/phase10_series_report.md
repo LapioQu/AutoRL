@@ -7,10 +7,14 @@
 - seed_protocol: `deterministic_temporal_replay_no_rng`
 - seeds: `[]`
 - max_samples: `None`
-- delta_mean: `-0.002128`
-- delta_std: `0.003674`
-- delta_ci95: `0.004157`
-- effect_size_d: `-0.579347`
+- delta_mean: `-0.006790`
+- delta_std: `0.009856`
+- delta_ci95: `0.011153`
+- oracle_gain_mean: `0.101701`
+- oracle_gain_ci95: `0.050260`
+- oracle_capture_mean: `0.009975`
+- oracle_capture_ci95: `0.019551`
+- effect_size_d: `-0.688908`
 - paired_sign_test_p_value: `1.000000`
 - wins_vs_best_fixed: `1`
 - suite_summary_json_path: `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\suite_summary.json`
@@ -29,17 +33,17 @@
 
 ## Policy Aggregates
 
-| Policy | n | Delta Mean | Delta Std | Delta CI95 | Wins vs Best Fixed | Mean Switch Count |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| hard_switch_lcb | 3 | -0.002128 | 0.003674 | 0.004157 | 1 | 14.000000 |
+| Policy | n | Delta Mean | Delta Std | Delta CI95 | Oracle Gain Mean | Capture Mean | Capture CI95 | Wins vs Best Fixed | Mean Switch Count |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| hard_switch_lcb | 3 | -0.006790 | 0.009856 | 0.011153 | 0.101701 | 0.009975 | 0.019551 | 1 | 15.000000 |
 
 ## Benchmark Results
 
-| Dataset | Profile | Policy | Score | Samples | Adaptive | Best Fixed | Delta | Switches | Report |
-| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| Elec2 | h1_drift_aware_v2 | hard_switch_lcb | accuracy | 45312 | 0.872263 | 0.876832 | -0.004568 | 2 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\h1_drift_aware_v2\elec2\summary.md` |
-| InsectsRecurring | h1_drift_aware_v2 | hard_switch_lcb | accuracy | 79986 | 0.768597 | 0.772510 | -0.003913 | 36 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\h1_drift_aware_v2\insects_recurring\summary.md` |
-| WaterFlow | h1_drift_aware_v2_regression | hard_switch_lcb | normalized_reward | 1268 | 0.806041 | 0.803945 | 0.002097 | 4 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\h1_drift_aware_v2_regression\waterflow\summary.md` |
+| Dataset | Profile | Policy | Score | Samples | Adaptive | Best Fixed | Oracle | Delta | Capture | Switches | Report |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| Elec2 | h1_drift_aware_v2 | hard_switch_lcb | accuracy | 45312 | 0.859441 | 0.876832 | 0.959393 | -0.017391 | 0.000000 | 4 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\h1_drift_aware_v2\elec2\summary.md` |
+| InsectsRecurring | h1_drift_aware_v2 | hard_switch_lcb | accuracy | 79986 | 0.767434 | 0.772510 | 0.924987 | -0.005076 | 0.000000 | 37 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\h1_drift_aware_v2\insects_recurring\summary.md` |
+| WaterFlow | h1_drift_aware_v2_regression | hard_switch_lcb | normalized_reward | 1268 | 0.806041 | 0.803945 | 0.874010 | 0.002097 | 0.029925 | 4 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\h1_drift_aware_v2_regression\waterflow\summary.md` |
 
 ## Artifact Coverage
 

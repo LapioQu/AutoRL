@@ -8,14 +8,15 @@
 - source_url: `https://sites.google.com/view/uspdsrepository`
 - start_strategy: `river_logreg`
 - final_strategy: `river_logreg`
-- switch_count: `367`
+- switch_count: `358`
 
 ## Score Summary
 
 | Mode | Score |
 | --- | ---: |
-| adaptive | 0.769585 |
-| river_hoeffding_tree | 0.600218 |
+| adaptive | 0.769197 |
+| oracle | 0.924987 |
+| river_hoeffding_tree | 0.558648 |
 | river_logreg | 0.772510 |
 | river_nb | 0.487035 |
 | windowed_histgb | 0.765434 |
@@ -23,9 +24,12 @@
 
 - best_fixed_strategy: `river_logreg`
 - best_fixed_score: `0.772510`
-- adaptive_delta_vs_best_fixed: `-0.002926`
-- block_delta_mean: `-0.002930`
-- block_delta_ci95: `0.003626`
+- oracle_score: `0.924987`
+- oracle_gain: `0.152477`
+- oracle_capture_ratio: `0.000000`
+- adaptive_delta_vs_best_fixed: `-0.003313`
+- block_delta_mean: `-0.003318`
+- block_delta_ci95: `0.003740`
 - block_count: `624`
 
 ## Decisions
@@ -33,24 +37,24 @@
 | Sample | Action | Current | Candidate | Margin | Threshold | Reason Code |
 | ---: | --- | --- | --- | ---: | ---: | --- |
 | 127 | switch | river_logreg | river_nb |  | 0.010000 | fixed_share_warmup_leader |
-| 127 | stay | river_nb | river_nb | 0.000000 | 0.010000 | fixed_share_same_leader |
+| 127 | stay | river_nb | river_hoeffding_tree | 0.002589 | 0.010000 | fixed_share_margin_too_small |
 | 255 | switch | river_nb | windowed_rf | 0.304536 | 0.010000 | fixed_share_weight_advantage |
 | 383 | stay | windowed_rf | windowed_rf | 0.000000 | 0.010000 | fixed_share_same_leader |
 | 511 | stay | windowed_rf | windowed_rf | 0.000000 | 0.010000 | fixed_share_same_leader |
-| 639 | switch | windowed_rf | river_logreg | 0.015945 | 0.010000 | fixed_share_weight_advantage |
+| 639 | switch | windowed_rf | river_logreg | 0.015946 | 0.010000 | fixed_share_weight_advantage |
 | 767 | switch | river_logreg | windowed_rf | 0.223982 | 0.010000 | fixed_share_weight_advantage |
 | 895 | stay | windowed_rf | windowed_rf | 0.000000 | 0.010000 | fixed_share_same_leader |
 | 1023 | switch | windowed_rf | river_logreg | 0.361916 | 0.010000 | fixed_share_weight_advantage |
 | 1151 | stay | river_logreg | river_logreg | 0.000000 | 0.010000 | fixed_share_same_leader |
-| 1279 | switch | river_logreg | windowed_histgb | 0.066855 | 0.010000 | fixed_share_weight_advantage |
-| 1407 | switch | windowed_histgb | windowed_rf | 0.036582 | 0.010000 | fixed_share_weight_advantage |
-| 1535 | switch | windowed_rf | windowed_histgb | 0.090050 | 0.010000 | fixed_share_weight_advantage |
-| 1663 | switch | windowed_histgb | river_logreg | 0.029092 | 0.010000 | fixed_share_weight_advantage |
-| 1791 | switch | river_logreg | windowed_rf | 0.029652 | 0.010000 | fixed_share_weight_advantage |
+| 1279 | switch | river_logreg | windowed_histgb | 0.071143 | 0.010000 | fixed_share_weight_advantage |
+| 1407 | switch | windowed_histgb | windowed_rf | 0.033767 | 0.010000 | fixed_share_weight_advantage |
+| 1535 | switch | windowed_rf | windowed_histgb | 0.090280 | 0.010000 | fixed_share_weight_advantage |
+| 1663 | switch | windowed_histgb | river_logreg | 0.028263 | 0.010000 | fixed_share_weight_advantage |
+| 1791 | switch | river_logreg | windowed_rf | 0.029634 | 0.010000 | fixed_share_weight_advantage |
 | 1919 | stay | windowed_rf | windowed_rf | 0.000000 | 0.010000 | fixed_share_same_leader |
-| 2047 | switch | windowed_rf | river_logreg | 0.114109 | 0.010000 | fixed_share_weight_advantage |
-| 2175 | stay | river_logreg | river_nb | 0.009012 | 0.010000 | fixed_share_margin_too_small |
-| 2303 | stay | river_logreg | river_logreg | 0.000000 | 0.010000 | fixed_share_same_leader |
+| 2047 | switch | windowed_rf | river_logreg | 0.105596 | 0.010000 | fixed_share_weight_advantage |
+| 2175 | switch | river_logreg | river_hoeffding_tree | 0.010851 | 0.010000 | fixed_share_weight_advantage |
+| 2303 | switch | river_hoeffding_tree | river_logreg | 0.019164 | 0.010000 | fixed_share_weight_advantage |
 | 2431 | stay | river_logreg | river_logreg | 0.000000 | 0.010000 | fixed_share_same_leader |
 
 ... truncated 605 additional decision rows in `decisions.csv`.

@@ -1,18 +1,18 @@
 sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
 127,0,river_logreg,river_nb,switch,True,fixed_share_warmup_leader,,0.01,Switch after warmup because the cumulative reward leader differs from the starting strategy: river_nb.
-127,0,river_nb,river_nb,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
-255,1,river_nb,windowed_rf,switch,True,fixed_share_weight_advantage,0.3045357476939109,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4033 - 0.0988 = 0.3045 >= 0.0100.
+127,0,river_nb,river_hoeffding_tree,stay,False,fixed_share_margin_too_small,0.0025889639210244786,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0026, threshold=0.0100."
+255,1,river_nb,windowed_rf,switch,True,fixed_share_weight_advantage,0.30453585582611037,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4033 - 0.0988 = 0.3045 >= 0.0100.
 383,2,windowed_rf,windowed_rf,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
 511,3,windowed_rf,windowed_rf,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
-639,4,windowed_rf,river_logreg,switch,True,fixed_share_weight_advantage,0.015945213778610107,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2421 - 0.2261 = 0.0159 >= 0.0100.
-767,5,river_logreg,windowed_rf,switch,True,fixed_share_weight_advantage,0.22398206453030822,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3468 - 0.1228 = 0.2240 >= 0.0100.
+639,4,windowed_rf,river_logreg,switch,True,fixed_share_weight_advantage,0.015946397361882497,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2421 - 0.2261 = 0.0159 >= 0.0100.
+767,5,river_logreg,windowed_rf,switch,True,fixed_share_weight_advantage,0.22398206443187002,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3468 - 0.1228 = 0.2240 >= 0.0100.
 895,6,windowed_rf,windowed_rf,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
 1023,7,windowed_rf,river_logreg,switch,True,fixed_share_weight_advantage,0.36191559140937235,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.4779 - 0.1160 = 0.3619 >= 0.0100.
 1151,8,river_logreg,river_logreg,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
-1279,9,river_logreg,windowed_histgb,switch,True,fixed_share_weight_advantage,0.06685513220358669,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2867 - 0.2198 = 0.0669 >= 0.0100.
-1407,10,windowed_histgb,windowed_rf,switch,True,fixed_share_weight_advantage,0.036581511851078274,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2724 - 0.2358 = 0.0366 >= 0.0100.
-1535,11,windowed_rf,windowed_histgb,switch,True,fixed_share_weight_advantage,0.09004959138999044,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3284 - 0.2384 = 0.0900 >= 0.0100.
-1663,12,windowed_histgb,river_logreg,switch,True,fixed_share_weight_advantage,0.02909179280790783,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2251 - 0.1960 = 0.0291 >= 0.0100.
-1791,13,river_logreg,windowed_rf,switch,True,fixed_share_weight_advantage,0.029651765901952565,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2311 - 0.2015 = 0.0297 >= 0.0100.
+1279,9,river_logreg,windowed_histgb,switch,True,fixed_share_weight_advantage,0.07114341697863924,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3004 - 0.2293 = 0.0711 >= 0.0100.
+1407,10,windowed_histgb,windowed_rf,switch,True,fixed_share_weight_advantage,0.03376686669706311,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2586 - 0.2248 = 0.0338 >= 0.0100.
+1535,11,windowed_rf,windowed_histgb,switch,True,fixed_share_weight_advantage,0.09028021289694826,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3284 - 0.2381 = 0.0903 >= 0.0100.
+1663,12,windowed_histgb,river_logreg,switch,True,fixed_share_weight_advantage,0.028263475954752815,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2267 - 0.1984 = 0.0283 >= 0.0100.
+1791,13,river_logreg,windowed_rf,switch,True,fixed_share_weight_advantage,0.029634089858214002,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2311 - 0.2015 = 0.0296 >= 0.0100.
 1919,14,windowed_rf,windowed_rf,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
-2047,15,windowed_rf,river_logreg,switch,True,fixed_share_weight_advantage,0.11410883465812238,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2819 - 0.1678 = 0.1141 >= 0.0100.
+2047,15,windowed_rf,river_logreg,switch,True,fixed_share_weight_advantage,0.10559609263664005,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2660 - 0.1604 = 0.1056 >= 0.0100.

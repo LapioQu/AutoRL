@@ -1,6 +1,9 @@
 metric,value
 adaptive_score,0.8362791296993688
 best_fixed_score,0.8039447799769271
+oracle_score,0.8740102107432262
+oracle_gain,0.07006543076629901
+oracle_capture_ratio,0.4614879173481689
 delta_vs_best_fixed,0.032334349722441647
 switch_count,10
 block_delta_mean,0.03235195740256152

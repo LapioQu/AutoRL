@@ -8,14 +8,15 @@
 - source_url: `https://sites.google.com/view/uspdsrepository`
 - start_strategy: `river_logreg`
 - final_strategy: `river_logreg`
-- switch_count: `36`
+- switch_count: `37`
 
 ## Score Summary
 
 | Mode | Score |
 | --- | ---: |
-| adaptive | 0.768597 |
-| river_hoeffding_tree | 0.600218 |
+| adaptive | 0.767434 |
+| oracle | 0.924987 |
+| river_hoeffding_tree | 0.558648 |
 | river_logreg | 0.772510 |
 | river_nb | 0.487035 |
 | windowed_histgb | 0.765434 |
@@ -23,9 +24,12 @@
 
 - best_fixed_strategy: `river_logreg`
 - best_fixed_score: `0.772510`
-- adaptive_delta_vs_best_fixed: `-0.003913`
-- block_delta_mean: `-0.003919`
-- block_delta_ci95: `0.004555`
+- oracle_score: `0.924987`
+- oracle_gain: `0.152477`
+- oracle_capture_ratio: `0.000000`
+- adaptive_delta_vs_best_fixed: `-0.005076`
+- block_delta_mean: `-0.005083`
+- block_delta_ci95: `0.004674`
 - block_count: `624`
 
 ## Decisions
@@ -48,8 +52,8 @@
 | 2175 | stay | windowed_rf | river_logreg | 0.007812 | 0.014000 | high_uncertainty |
 | 2303 | stay | windowed_rf | river_logreg | 0.045573 | 0.014000 | high_uncertainty |
 | 2431 | switch | windowed_rf | river_logreg | 0.058594 | 0.014000 | switch_advantage |
-| 2559 | stay | river_logreg | windowed_histgb | -0.023438 | 0.014000 | high_uncertainty |
-| 2687 | stay | river_logreg | windowed_rf | -0.003906 | 0.014000 | high_uncertainty |
+| 2559 | stay | river_logreg | river_hoeffding_tree | -0.018229 | 0.014000 | high_uncertainty |
+| 2687 | stay | river_logreg | river_hoeffding_tree | -0.001302 | 0.014000 | high_uncertainty |
 | 2815 | stay | river_logreg | windowed_rf | 0.009115 | 0.014000 | high_uncertainty |
 | 2943 | stay | river_logreg | windowed_rf | 0.006510 | 0.014000 | high_uncertainty |
 

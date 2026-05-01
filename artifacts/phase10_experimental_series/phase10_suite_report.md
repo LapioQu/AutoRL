@@ -25,15 +25,15 @@
 
 ## Benchmark-Series Summary
 
-| Series | Datasets | Profiles | n | Seed Protocol | Delta Mean | Delta Std | Delta CI95 | Effect Size d | Sign-Test p | Wins | Primary Plot |
-| --- | --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| E5 | `Elec2, InsectsRecurring, WaterFlow` | `h2_tempered_drift, h2_tempered_drift_regression` | 3 | `deterministic_temporal_replay_no_rng` | -0.000318 | 0.003659 | 0.004141 | -0.086773 | 1.000000 | 1 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\phase10_delta_vs_best_fixed.png` |
-| E6 | `Elec2, InsectsRecurring, WaterFlow` | `h1_drift_aware_v2, h1_drift_aware_v2_regression` | 3 | `deterministic_temporal_replay_no_rng` | -0.002128 | 0.003674 | 0.004157 | -0.579347 | 1.000000 | 1 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\phase10_delta_vs_best_fixed.png` |
-| E9 | `Elec2, InsectsRecurring, WaterFlow` | `adaptive_meta_final, adaptive_meta_final_regression, greedy_reward, greedy_reward_regression, h1_drift_aware_v2, h1_drift_aware_v2_regression, h2_tempered_drift, h2_tempered_drift_regression, hard_switch_lcb, hard_switch_lcb_regression` | 15 | `deterministic_temporal_replay_no_rng` | 0.000357 | 0.009271 | 0.004692 | 0.038533 | 0.118469 | 4 | `E:\dipproj\artifacts\phase10_experimental_series\e9_baseline-comparison\phase10_delta_vs_best_fixed.png` |
+| Series | Datasets | Profiles | n | Seed Protocol | Delta Mean | Delta Std | Delta CI95 | Oracle Gain Mean | Capture Mean | Effect Size d | Sign-Test p | Wins | Primary Plot |
+| --- | --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| E5 | `Elec2, InsectsRecurring, WaterFlow` | `h2_tempered_drift, h2_tempered_drift_regression` | 3 | `deterministic_temporal_replay_no_rng` | -0.006355 | 0.010455 | 0.011831 | 0.097982 | 0.019250 | -0.607818 | 1.000000 | 1 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\phase10_delta_vs_best_fixed.png` |
+| E6 | `Elec2, InsectsRecurring, WaterFlow` | `h1_drift_aware_v2, h1_drift_aware_v2_regression` | 3 | `deterministic_temporal_replay_no_rng` | -0.006790 | 0.009856 | 0.011153 | 0.101701 | 0.009975 | -0.688908 | 1.000000 | 1 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\phase10_delta_vs_best_fixed.png` |
+| E9 | `Elec2, InsectsRecurring, WaterFlow` | `adaptive_meta_final, adaptive_meta_final_regression, greedy_reward, greedy_reward_regression, h1_drift_aware_v2, h1_drift_aware_v2_regression, h2_tempered_drift, h2_tempered_drift_regression, hard_switch_lcb, hard_switch_lcb_regression` | 15 | `deterministic_temporal_replay_no_rng` | -0.002249 | 0.011917 | 0.006031 | 0.100957 | 0.038606 | -0.188746 | 0.118469 | 4 | `E:\dipproj\artifacts\phase10_experimental_series\e9_baseline-comparison\phase10_delta_vs_best_fixed.png` |
 
 ## Experimental Closure
 
 - all required `E1..E9` series are present in the artifact root;
 - each series has `summary`, `report`, `plots`, and nested run/replay artifacts;
-- benchmark series were regenerated under a fixed protocol with explicit `seed_protocol`, `n`, `CI95`, `effect_size_d`, and `paired_sign_test_p_value` fields;
-- benchmark series should be interpreted with their explicit protocol and statistical caution notes in each `phase10_series_summary.json`.
+- benchmark series were regenerated under a fixed protocol with explicit `seed_protocol`, `n`, `CI95`, `effect_size_d`, `paired_sign_test_p_value`, and oracle-capture fields;
+- benchmark series should be interpreted with their explicit protocol, best-fixed deltas, and oracle-gain / capture notes in each `phase10_series_summary.json`.

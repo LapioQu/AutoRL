@@ -15,7 +15,8 @@
 | Mode | Score |
 | --- | ---: |
 | adaptive | 0.685059 |
-| river_hoeffding_tree | 0.502441 |
+| oracle | 0.898438 |
+| river_hoeffding_tree | 0.490234 |
 | river_logreg | 0.733887 |
 | river_nb | 0.612793 |
 | windowed_histgb | 0.682129 |
@@ -23,6 +24,9 @@
 
 - best_fixed_strategy: `river_logreg`
 - best_fixed_score: `0.733887`
+- oracle_score: `0.898438`
+- oracle_gain: `0.164551`
+- oracle_capture_ratio: `0.000000`
 - adaptive_delta_vs_best_fixed: `-0.048828`
 - block_delta_mean: `-0.048828`
 - block_delta_ci95: `0.060308`
@@ -46,4 +50,4 @@
 | 1663 | stay | river_logreg | river_logreg | 0.000000 | 0.002000 | recent_leader_same |
 | 1791 | stay | river_logreg | windowed_rf | 0.011719 | 0.002000 | recent_leader_incumbent_floor |
 | 1919 | stay | river_logreg | windowed_rf | 0.042969 | 0.002000 | recent_leader_incumbent_floor |
-| 2047 | stay | river_logreg | river_hoeffding_tree | 0.015625 | 0.002000 | recent_leader_incumbent_floor |
+| 2047 | stay | river_logreg | river_nb | 0.011719 | 0.002000 | recent_leader_incumbent_floor |

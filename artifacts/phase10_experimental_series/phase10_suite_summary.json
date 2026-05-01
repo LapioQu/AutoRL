@@ -125,6 +125,8 @@
     "E9"
   ],
   "last_run_requested_series_ids": [
+    "E5",
+    "E6",
     "E9"
   ],
   "summary_scope": "accumulated_artifact_root"
