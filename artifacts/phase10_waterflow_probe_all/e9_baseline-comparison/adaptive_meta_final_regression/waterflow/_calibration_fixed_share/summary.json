@@ -1,0 +1,38 @@
+{
+  "dataset_name": "WaterFlow",
+  "score_name": "normalized_reward",
+  "policy_name": "fixed_share_portfolio",
+  "sample_count": 317,
+  "evaluation_interval": 64,
+  "window_size": 64,
+  "start_strategy": "river_linreg",
+  "final_strategy": "windowed_rf",
+  "switch_count": 2,
+  "adaptive_score": 0.6460403754208258,
+  "best_fixed_strategy": "windowed_rf",
+  "best_fixed_score": 0.801567042415498,
+  "delta_vs_best_fixed": -0.1555266669946722,
+  "fixed_scores": {
+    "river_hoeffding_tree": 0.6138624244034159,
+    "river_linreg": 0.5105854926779676,
+    "river_pa": 0.630478676296456,
+    "windowed_histgb": 0.6503934976594841,
+    "windowed_rf": 0.801567042415498
+  },
+  "block_delta_mean": -0.19258575561449637,
+  "block_delta_std": 0.28864714654808604,
+  "block_delta_ci95": 0.28287420361712434,
+  "block_count": 4,
+  "source_description": "Real pipeline water-flow stream replayed in temporal order.",
+  "source_url": "",
+  "decision_rows": 5,
+  "adaptive_accuracy": 0.6460403754208258,
+  "best_fixed_accuracy": 0.801567042415498,
+  "fixed_accuracies": {
+    "river_hoeffding_tree": 0.6138624244034159,
+    "river_linreg": 0.5105854926779676,
+    "river_pa": 0.630478676296456,
+    "windowed_histgb": 0.6503934976594841,
+    "windowed_rf": 0.801567042415498
+  }
+}

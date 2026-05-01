@@ -1,0 +1,352 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+511,3,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_warmup_same,0.0,0.015,Stay after warmup because the current strategy is already the recent leader.
+639,4,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+767,5,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+895,6,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+1023,7,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+1151,8,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+1279,9,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+1407,10,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+1535,11,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+1663,12,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+1791,13,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+1919,14,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+2047,15,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+2175,16,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+2303,17,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+2431,18,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+2559,19,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+2687,20,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+2815,21,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+2943,22,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+3071,23,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+3199,24,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+3327,25,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+3455,26,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+3583,27,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+3711,28,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+3839,29,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+3967,30,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+4095,31,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+4223,32,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+4351,33,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_incumbent_floor,0.0234375,0.015,Stay because the candidate fails the incumbent floor check: 0.947381 + 0.002000 < 0.951057.
+4479,34,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_incumbent_floor,0.0234375,0.015,Stay because the candidate fails the incumbent floor check: 0.947545 + 0.002000 < 0.950670.
+4607,35,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+4735,36,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+4863,37,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+4991,38,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+5119,39,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+5247,40,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+5375,41,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+5503,42,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+5631,43,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+5759,44,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+5887,45,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+6015,46,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+6143,47,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+6271,48,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+6399,49,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+6527,50,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+6655,51,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+6783,52,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+6911,53,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+7039,54,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+7167,55,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+7295,56,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+7423,57,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+7551,58,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+7679,59,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+7807,60,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+7935,61,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+8063,62,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+8191,63,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+8319,64,sgd_lr_1_0,sgd_lr_0_5,switch,True,recent_leader_advantage,0.015625,0.015,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.957031 - 0.941406 = 0.015625.
+8447,65,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 4 block(s) remaining.
+8575,66,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 3 block(s) remaining.
+8703,67,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+8831,68,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+8959,69,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+9087,70,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+9215,71,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+9343,72,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+9471,73,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+9599,74,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+9727,75,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+9855,76,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+9983,77,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+10111,78,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+10239,79,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+10367,80,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+10495,81,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+10623,82,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+10751,83,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+10879,84,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+11007,85,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+11135,86,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+11263,87,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+11391,88,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+11519,89,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+11647,90,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.0234375,0.015,Stay because the candidate fails the incumbent floor check: 0.911745 + 0.002000 < 0.942995.
+11775,91,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.05078125,0.015,Stay because the candidate fails the incumbent floor check: 0.912279 + 0.002000 < 0.942510.
+11903,92,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.02734375,0.015,Stay because the candidate fails the incumbent floor check: 0.912298 + 0.002000 < 0.942288.
+12031,93,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+12159,94,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.03515625,0.015,Stay because the candidate fails the incumbent floor check: 0.912089 + 0.002000 < 0.940707.
+12287,95,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.0390625,0.015,Stay because the candidate fails the incumbent floor check: 0.912598 + 0.002000 < 0.940837.
+12415,96,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.02734375,0.015,Stay because the candidate fails the incumbent floor check: 0.912532 + 0.002000 < 0.939997.
+12543,97,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+12671,98,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+12799,99,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+12927,100,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+13055,101,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+13183,102,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+13311,103,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+13439,104,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+13567,105,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+13695,106,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+13823,107,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+13951,108,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+14079,109,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+14207,110,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+14335,111,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+14463,112,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+14591,113,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+14719,114,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+14847,115,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+14975,116,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+15103,117,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+15231,118,sgd_lr_0_5,sgd_lr_1_0,switch,True,recent_leader_advantage,0.015625,0.015,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.925781 - 0.910156 = 0.015625.
+15359,119,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 4 block(s) remaining.
+15487,120,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 3 block(s) remaining.
+15615,121,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+15743,122,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+15871,123,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+15999,124,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+16127,125,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+16255,126,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+16383,127,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+16511,128,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+16639,129,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+16767,130,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+16895,131,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+17023,132,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+17151,133,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+17279,134,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+17407,135,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+17535,136,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+17663,137,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+17791,138,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+17919,139,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.0234375,0.015,Stay because the candidate fails the incumbent floor check: 0.910156 + 0.002000 < 0.937165.
+18047,140,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01953125,0.015,Stay because the candidate fails the incumbent floor check: 0.910184 + 0.002000 < 0.936891.
+18175,141,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+18303,142,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+18431,143,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+18559,144,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+18687,145,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+18815,146,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+18943,147,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+19071,148,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+19199,149,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+19327,150,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+19455,151,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+19583,152,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+19711,153,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+19839,154,sgd_lr_1_0,sgd_lr_0_5,switch,True,recent_leader_advantage,0.01953125,0.015,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.925781 - 0.906250 = 0.019531.
+19967,155,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 4 block(s) remaining.
+20095,156,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 3 block(s) remaining.
+20223,157,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+20351,158,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+20479,159,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01953125,0.015,Stay because the candidate fails the incumbent floor check: 0.911230 + 0.002000 < 0.933740.
+20607,160,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+20735,161,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+20863,162,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+20991,163,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+21119,164,sgd_lr_0_5,sgd_lr_1_0,switch,True,recent_leader_advantage,0.015625,0.015,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.925781 - 0.910156 = 0.015625.
+21247,165,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 4 block(s) remaining.
+21375,166,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 3 block(s) remaining.
+21503,167,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+21631,168,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+21759,169,sgd_lr_1_0,sgd_lr_0_5,switch,True,recent_leader_advantage,0.01953125,0.015,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.906250 - 0.886719 = 0.019531.
+21887,170,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 4 block(s) remaining.
+22015,171,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 3 block(s) remaining.
+22143,172,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+22271,173,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+22399,174,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+22527,175,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+22655,176,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+22783,177,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+22911,178,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+23039,179,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+23167,180,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+23295,181,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+23423,182,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+23551,183,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+23679,184,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+23807,185,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+23935,186,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.015625,0.015,Stay because the candidate fails the incumbent floor check: 0.906710 + 0.002000 < 0.928016.
+24063,187,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+24191,188,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+24319,189,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+24447,190,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+24575,191,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+24703,192,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+24831,193,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+24959,194,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+25087,195,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+25215,196,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+25343,197,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+25471,198,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+25599,199,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+25727,200,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+25855,201,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+25983,202,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+26111,203,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+26239,204,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+26367,205,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01953125,0.015,Stay because the candidate fails the incumbent floor check: 0.903899 + 0.002000 < 0.924947.
+26495,206,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+26623,207,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+26751,208,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+26879,209,sgd_lr_0_5,sgd_lr_1_0,switch,True,recent_leader_advantage,0.015625,0.015,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.902344 - 0.886719 = 0.015625.
+27007,210,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 4 block(s) remaining.
+27135,211,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 3 block(s) remaining.
+27263,212,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+27391,213,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+27519,214,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+27647,215,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+27775,216,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+27903,217,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+28031,218,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+28159,219,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+28287,220,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+28415,221,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+28543,222,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+28671,223,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+28799,224,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+28927,225,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+29055,226,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+29183,227,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+29311,228,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+29439,229,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+29567,230,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.015625,0.015,Stay because the candidate fails the incumbent floor check: 0.898235 + 0.002000 < 0.919677.
+29695,231,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+29823,232,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+29951,233,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+30079,234,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+30207,235,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+30335,236,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+30463,237,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+30591,238,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+30719,239,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.03515625,0.015,Stay because the candidate fails the incumbent floor check: 0.897266 + 0.002000 < 0.918132.
+30847,240,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.04296875,0.015,Stay because the candidate fails the incumbent floor check: 0.897433 + 0.002000 < 0.918115.
+30975,241,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+31103,242,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+31231,243,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+31359,244,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.01953125,0.015,Stay because the candidate fails the incumbent floor check: 0.896652 + 0.002000 < 0.916869.
+31487,245,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+31615,246,sgd_lr_1_0,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+31743,247,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+31871,248,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+31999,249,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+32127,250,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+32255,251,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+32383,252,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+32511,253,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+32639,254,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+32767,255,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+32895,256,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+33023,257,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+33151,258,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+33279,259,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+33407,260,sgd_lr_1_0,sgd_lr_0_5,stay,False,recent_leader_margin_too_small,0.0,0.015,Stay because the recent leader advantage is below the switching margin: 0.000000 < 0.015000.
+33535,261,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+33663,262,sgd_lr_1_0,sgd_lr_1_0,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+33791,263,sgd_lr_1_0,sgd_lr_0_5,switch,True,recent_leader_advantage,0.015625,0.015,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.886719 - 0.871094 = 0.015625.
+33919,264,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 4 block(s) remaining.
+34047,265,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 3 block(s) remaining.
+34175,266,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 2 block(s) remaining.
+34303,267,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_cooldown,0.0,0.015,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+34431,268,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+34559,269,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+34687,270,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+34815,271,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+34943,272,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+35071,273,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+35199,274,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+35327,275,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+35455,276,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+35583,277,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+35711,278,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+35839,279,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+35967,280,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+36095,281,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+36223,282,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+36351,283,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+36479,284,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+36607,285,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+36735,286,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+36863,287,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+36991,288,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+37119,289,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+37247,290,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+37375,291,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+37503,292,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+37631,293,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+37759,294,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+37887,295,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+38015,296,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+38143,297,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+38271,298,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+38399,299,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+38527,300,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+38655,301,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+38783,302,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+38911,303,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+39039,304,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+39167,305,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+39295,306,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+39423,307,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.015625,0.015,Stay because the candidate fails the incumbent floor check: 0.893238 + 0.002000 < 0.913783.
+39551,308,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+39679,309,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+39807,310,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+39935,311,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+40063,312,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+40191,313,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+40319,314,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+40447,315,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+40575,316,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+40703,317,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+40831,318,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+40959,319,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_incumbent_floor,0.015625,0.015,Stay because the candidate fails the incumbent floor check: 0.894434 + 0.002000 < 0.915063.
+41087,320,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+41215,321,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+41343,322,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+41471,323,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+41599,324,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+41727,325,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+41855,326,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+41983,327,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+42111,328,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+42239,329,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+42367,330,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.01171875,0.015,Stay because the recent leader advantage is below the switching margin: 0.011719 < 0.015000.
+42495,331,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+42623,332,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+42751,333,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+42879,334,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+43007,335,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+43135,336,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+43263,337,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+43391,338,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+43519,339,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+43647,340,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+43775,341,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+43903,342,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+44031,343,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+44159,344,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+44287,345,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+44415,346,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+44543,347,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+44671,348,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+44799,349,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+44927,350,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.
+45055,351,sgd_lr_0_5,sgd_lr_0_1,stay,False,recent_leader_margin_too_small,0.0078125,0.015,Stay because the recent leader advantage is below the switching margin: 0.007812 < 0.015000.
+45183,352,sgd_lr_0_5,sgd_lr_0_5,stay,False,recent_leader_same,0.0,0.015,Stay because the current strategy remains the recent block leader.
+45311,353,sgd_lr_0_5,sgd_lr_1_0,stay,False,recent_leader_margin_too_small,0.00390625,0.015,Stay because the recent leader advantage is below the switching margin: 0.003906 < 0.015000.

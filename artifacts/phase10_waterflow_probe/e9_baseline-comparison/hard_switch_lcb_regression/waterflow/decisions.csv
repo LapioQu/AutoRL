@@ -1,0 +1,18 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+191,1,river_linreg,windowed_rf,stay,False,high_uncertainty,0.4349519992168073,0.007,"Stay because utility uncertainty is too high: current_std=0.0926, candidate_std=0.0070, threshold=0.0070."
+255,2,river_linreg,windowed_rf,stay,False,high_uncertainty,0.2693952184557663,0.007,"Stay because utility uncertainty is too high: current_std=0.0589, candidate_std=0.0070, threshold=0.0070."
+319,3,river_linreg,windowed_rf,stay,False,high_uncertainty,0.1207209683532997,0.007,"Stay because utility uncertainty is too high: current_std=0.0557, candidate_std=0.0271, threshold=0.0070."
+383,4,river_linreg,windowed_rf,stay,False,high_uncertainty,-0.03721673635400691,0.007,"Stay because utility uncertainty is too high: current_std=0.0773, candidate_std=0.0021, threshold=0.0070."
+447,5,river_linreg,windowed_rf,stay,False,high_uncertainty,-0.11592181194291662,0.007,"Stay because utility uncertainty is too high: current_std=0.0367, candidate_std=0.0332, threshold=0.0070."
+511,6,river_linreg,windowed_rf,stay,False,high_uncertainty,-0.06503399475191018,0.007,"Stay because utility uncertainty is too high: current_std=0.0043, candidate_std=0.0588, threshold=0.0070."
+575,7,river_linreg,windowed_rf,stay,False,high_uncertainty,0.011190217328404861,0.007,"Stay because utility uncertainty is too high: current_std=0.0126, candidate_std=0.0092, threshold=0.0070."
+639,8,river_linreg,windowed_rf,switch,True,switch_advantage,0.031195811917175353,0.007,Switch because candidate LCB exceeds current LCB beyond the decision threshold: 0.9511 - 0.9199 = 0.0312 > 0.0070.
+703,9,windowed_rf,windowed_histgb,stay,False,no_candidate_improvement,-0.008267466649297006,0.007,"Stay because candidate improvement is not sufficient after LCB comparison: margin=-0.0083, threshold=0.0070."
+767,10,windowed_rf,windowed_histgb,stay,False,high_uncertainty,-0.002262508923076667,0.007,"Stay because utility uncertainty is too high: current_std=0.0009, candidate_std=0.0074, threshold=0.0070."
+831,11,windowed_rf,windowed_histgb,stay,False,no_candidate_improvement,0.004353826381745307,0.007,"Stay because candidate improvement is not sufficient after LCB comparison: margin=0.0044, threshold=0.0070."
+895,12,windowed_rf,windowed_histgb,stay,False,high_uncertainty,0.0010429666629248047,0.007,"Stay because utility uncertainty is too high: current_std=0.0479, candidate_std=0.0513, threshold=0.0070."
+959,13,windowed_rf,river_linreg,stay,False,high_uncertainty,-0.022895090940170282,0.007,"Stay because utility uncertainty is too high: current_std=0.1076, candidate_std=0.0813, threshold=0.0070."
+1023,14,windowed_rf,river_linreg,stay,False,high_uncertainty,0.08159358707341402,0.007,"Stay because utility uncertainty is too high: current_std=0.0180, candidate_std=0.0602, threshold=0.0070."
+1087,15,windowed_rf,river_linreg,stay,False,high_uncertainty,0.17668473634682647,0.007,"Stay because utility uncertainty is too high: current_std=0.0627, candidate_std=0.0796, threshold=0.0070."
+1151,16,windowed_rf,river_linreg,stay,False,high_uncertainty,0.13268273283525855,0.007,"Stay because utility uncertainty is too high: current_std=0.0678, candidate_std=0.0068, threshold=0.0070."
+1215,17,windowed_rf,river_linreg,stay,False,high_uncertainty,0.026629035779302423,0.007,"Stay because utility uncertainty is too high: current_std=0.0454, candidate_std=0.0003, threshold=0.0070."

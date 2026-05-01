@@ -27,9 +27,9 @@
 
 | Series | Datasets | Profiles | n | Seed Protocol | Delta Mean | Delta Std | Delta CI95 | Effect Size d | Sign-Test p | Wins | Primary Plot |
 | --- | --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| E5 | `Airlines, Elec2, InsectsRecurring` | `h2_tempered_drift` | 3 | `deterministic_temporal_replay_no_rng` | -0.046875 | 0.025615 | 0.028986 | -1.829983 | 0.250000 | 0 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\phase10_delta_vs_best_fixed.png` |
-| E6 | `Airlines, Elec2, InsectsRecurring` | `h1_drift_aware_v2` | 3 | `deterministic_temporal_replay_no_rng` | -0.046875 | 0.025615 | 0.028986 | -1.829983 | 0.250000 | 0 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\phase10_delta_vs_best_fixed.png` |
-| E9 | `Airlines, Elec2, InsectsRecurring` | `adaptive_meta_final, greedy_reward, h1_drift_aware_v2, h2_tempered_drift, hard_switch_lcb` | 15 | `deterministic_temporal_replay_no_rng` | -0.045573 | 0.020652 | 0.010452 | -2.206670 | 0.000061 | 0 | `E:\dipproj\artifacts\phase10_experimental_series\e9_baseline-comparison\phase10_delta_vs_best_fixed.png` |
+| E5 | `Elec2, InsectsRecurring, WaterFlow` | `h2_tempered_drift, h2_tempered_drift_regression` | 3 | `deterministic_temporal_replay_no_rng` | -0.000318 | 0.003659 | 0.004141 | -0.086773 | 1.000000 | 1 | `E:\dipproj\artifacts\phase10_experimental_series\e5_tempered-reward-shaping\phase10_delta_vs_best_fixed.png` |
+| E6 | `Elec2, InsectsRecurring, WaterFlow` | `h1_drift_aware_v2, h1_drift_aware_v2_regression` | 3 | `deterministic_temporal_replay_no_rng` | -0.002128 | 0.003674 | 0.004157 | -0.579347 | 1.000000 | 1 | `E:\dipproj\artifacts\phase10_experimental_series\e6_drift-aware-selector-h1-control\phase10_delta_vs_best_fixed.png` |
+| E9 | `Elec2, InsectsRecurring, WaterFlow` | `adaptive_meta_final, adaptive_meta_final_regression, greedy_reward, greedy_reward_regression, h1_drift_aware_v2, h1_drift_aware_v2_regression, h2_tempered_drift, h2_tempered_drift_regression, hard_switch_lcb, hard_switch_lcb_regression` | 15 | `deterministic_temporal_replay_no_rng` | 0.000357 | 0.009271 | 0.004692 | 0.038533 | 0.118469 | 4 | `E:\dipproj\artifacts\phase10_experimental_series\e9_baseline-comparison\phase10_delta_vs_best_fixed.png` |
 
 ## Experimental Closure
 

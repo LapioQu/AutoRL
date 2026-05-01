@@ -1,1 +1,14 @@
 sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+511,2,river_logreg,river_hoeffding_tree,stay,False,high_uncertainty,-0.03776041666666674,0.014,"Stay because utility uncertainty is too high: current_std=0.0319, candidate_std=0.0271, threshold=0.0140."
+639,3,river_logreg,river_hoeffding_tree,stay,False,high_uncertainty,-0.05598958333333337,0.014,"Stay because utility uncertainty is too high: current_std=0.0157, candidate_std=0.0273, threshold=0.0140."
+767,4,river_logreg,river_hoeffding_tree,stay,False,high_uncertainty,-0.0546875,0.014,"Stay because utility uncertainty is too high: current_std=0.0139, candidate_std=0.0230, threshold=0.0140."
+895,5,river_logreg,river_hoeffding_tree,stay,False,high_uncertainty,-0.04817708333333337,0.014,"Stay because utility uncertainty is too high: current_std=0.0103, candidate_std=0.0283, threshold=0.0140."
+1023,6,river_logreg,river_hoeffding_tree,stay,False,high_uncertainty,-0.03255208333333337,0.014,"Stay because utility uncertainty is too high: current_std=0.0080, candidate_std=0.0333, threshold=0.0140."
+1151,7,river_logreg,river_hoeffding_tree,stay,False,high_uncertainty,0.0026041666666667407,0.014,"Stay because utility uncertainty is too high: current_std=0.0164, candidate_std=0.0080, threshold=0.0140."
+1279,8,river_logreg,river_hoeffding_tree,stay,False,high_uncertainty,0.02734375,0.014,"Stay because utility uncertainty is too high: current_std=0.0139, candidate_std=0.0253, threshold=0.0140."
+1407,9,river_logreg,river_hoeffding_tree,stay,False,high_uncertainty,0.04166666666666674,0.014,"Stay because utility uncertainty is too high: current_std=0.0338, candidate_std=0.0351, threshold=0.0140."
+1535,10,river_logreg,river_hoeffding_tree,stay,False,high_uncertainty,0.04557291666666663,0.014,"Stay because utility uncertainty is too high: current_std=0.0249, candidate_std=0.0217, threshold=0.0140."
+1663,11,river_logreg,river_hoeffding_tree,switch,True,switch_advantage,0.03776041666666674,0.014,Switch because candidate LCB exceeds current LCB beyond the decision threshold: 0.9857 - 0.9479 = 0.0378 > 0.0140.
+1791,12,river_hoeffding_tree,windowed_rf,stay,False,high_uncertainty,-0.01041666666666663,0.014,"Stay because utility uncertainty is too high: current_std=0.0440, candidate_std=0.0513, threshold=0.0140."
+1919,13,river_hoeffding_tree,river_logreg,stay,False,high_uncertainty,-0.00911458333333337,0.014,"Stay because utility uncertainty is too high: current_std=0.0577, candidate_std=0.0480, threshold=0.0140."
+2047,14,river_hoeffding_tree,river_logreg,stay,False,high_uncertainty,0.0,0.014,"Stay because utility uncertainty is too high: current_std=0.0319, candidate_std=0.0344, threshold=0.0140."

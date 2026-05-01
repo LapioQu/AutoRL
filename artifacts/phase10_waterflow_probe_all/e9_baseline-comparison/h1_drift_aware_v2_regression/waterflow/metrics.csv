@@ -1,0 +1,13 @@
+metric,value
+adaptive_score,0.789125281509752
+best_fixed_score,0.8541918783025515
+delta_vs_best_fixed,-0.06506659679279947
+switch_count,1
+block_delta_mean,-0.06784904994512322
+block_delta_std,0.18946050574280174
+block_delta_ci95,0.08519183309036638
+fixed_score::river_linreg,0.8039447799769271
+fixed_score::river_pa,0.7265070301655543
+fixed_score::river_hoeffding_tree,0.7198010478267809
+fixed_score::windowed_rf,0.8541918783025515
+fixed_score::windowed_histgb,0.7777507631891694

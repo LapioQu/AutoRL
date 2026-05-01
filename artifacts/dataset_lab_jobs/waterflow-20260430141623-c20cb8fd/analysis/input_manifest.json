@@ -1,0 +1,17 @@
+{
+  "dataset_name": "WaterFlow",
+  "task_type": "regression",
+  "target_column": "water_flow_lps",
+  "source_row_count": 1268,
+  "source_rows_used": 1268,
+  "sample_count": 1265,
+  "feature_count": 3,
+  "input_sha256": "3f12d1f71455bef447f32c73d278777845f3aea94f490a7af592065f078825c5",
+  "raw_input_persisted": false,
+  "column_names": [
+    "target_lag_1",
+    "target_lag_2",
+    "target_lag_3",
+    "water_flow_lps"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "dataset_name": "Bikes",
+  "score_name": "normalized_reward",
+  "policy_name": "hard_switch_lcb",
+  "sample_count": 40000,
+  "evaluation_interval": 128,
+  "window_size": 256,
+  "start_strategy": "sgd_lr_0_0005",
+  "final_strategy": "sgd_lr_0_0001",
+  "switch_count": 1,
+  "adaptive_score": 0.6770737061241092,
+  "best_fixed_strategy": "sgd_lr_0_0001",
+  "best_fixed_score": 0.6762509033506491,
+  "delta_vs_best_fixed": 0.0008228027734601406,
+  "fixed_scores": {
+    "sgd_lr_0_0001": 0.6762509033506491,
+    "sgd_lr_0_0005": 0.5759380715258261,
+    "sgd_lr_0_001": 0.5749390096717517
+  },
+  "block_delta_mean": 0.0008241213676483818,
+  "block_delta_std": 0.00689837276591928,
+  "block_delta_ci95": 0.0007654651674702554,
+  "block_count": 312,
+  "source_description": "Real Toulouse bike-availability stream replayed in temporal order; evaluation uses the first 40,000 samples for a reproducible CPU-bound benchmark.",
+  "source_url": "https://maxhalford.github.io/files/datasets/toulouse_bikes.zip",
+  "decision_rows": 310,
+  "adaptive_accuracy": 0.6770737061241092,
+  "best_fixed_accuracy": 0.6762509033506491,
+  "fixed_accuracies": {
+    "sgd_lr_0_0001": 0.6762509033506491,
+    "sgd_lr_0_0005": 0.5759380715258261,
+    "sgd_lr_0_001": 0.5749390096717517
+  }
+}

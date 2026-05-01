@@ -1,3 +1,18 @@
 sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
-127,0,river_logreg,windowed_rf,switch,True,fixed_share_warmup_leader,,0.01,Switch after warmup because the cumulative reward leader differs from the starting strategy: windowed_rf.
-127,0,windowed_rf,windowed_histgb,switch,True,fixed_share_weight_advantage,0.02952933782441247,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2136 - 0.1841 = 0.0295 >= 0.0100.
+127,0,river_logreg,river_hoeffding_tree,switch,True,fixed_share_warmup_leader,,0.01,Switch after warmup because the cumulative reward leader differs from the starting strategy: river_hoeffding_tree.
+127,0,river_hoeffding_tree,river_nb,stay,False,fixed_share_margin_too_small,0.0,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0000, threshold=0.0100."
+255,1,river_hoeffding_tree,river_logreg,switch,True,fixed_share_weight_advantage,0.17973213996865037,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3346 - 0.1549 = 0.1797 >= 0.0100.
+383,2,river_logreg,river_logreg,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+511,3,river_logreg,river_nb,switch,True,fixed_share_weight_advantage,0.022033242548388482,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2159 - 0.1939 = 0.0220 >= 0.0100.
+639,4,river_nb,river_logreg,switch,True,fixed_share_weight_advantage,0.0785983638669274,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2618 - 0.1832 = 0.0786 >= 0.0100.
+767,5,river_logreg,windowed_rf,switch,True,fixed_share_weight_advantage,0.03976868947480297,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2339 - 0.1941 = 0.0398 >= 0.0100.
+895,6,windowed_rf,windowed_histgb,switch,True,fixed_share_weight_advantage,0.18644385398162366,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3019 - 0.1155 = 0.1864 >= 0.0100.
+1023,7,windowed_histgb,river_hoeffding_tree,switch,True,fixed_share_weight_advantage,0.11928548611181403,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2575 - 0.1382 = 0.1193 >= 0.0100.
+1151,8,river_hoeffding_tree,windowed_rf,stay,False,fixed_share_margin_too_small,0.005638175231676951,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0056, threshold=0.0100."
+1279,9,river_hoeffding_tree,windowed_histgb,stay,False,fixed_share_margin_too_small,0.004429829528697082,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0044, threshold=0.0100."
+1407,10,river_hoeffding_tree,windowed_histgb,stay,False,fixed_share_margin_too_small,0.0008420139713032349,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0008, threshold=0.0100."
+1535,11,river_hoeffding_tree,windowed_histgb,stay,False,fixed_share_margin_too_small,5.35667888379443e-08,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0000, threshold=0.0100."
+1663,12,river_hoeffding_tree,river_hoeffding_tree,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1791,13,river_hoeffding_tree,river_hoeffding_tree,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+1919,14,river_hoeffding_tree,river_nb,switch,True,fixed_share_weight_advantage,0.10973587783953065,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.2780 - 0.1683 = 0.1097 >= 0.0100.
+2047,15,river_nb,river_logreg,switch,True,fixed_share_weight_advantage,0.1894637151624113,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3497 - 0.1602 = 0.1895 >= 0.0100.

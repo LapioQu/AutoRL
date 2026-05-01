@@ -1,0 +1,6 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+63,0,river_linreg,river_hoeffding_tree,switch,True,fixed_share_warmup_leader,,0.01,Switch after warmup because the cumulative reward leader differs from the starting strategy: river_hoeffding_tree.
+63,0,river_hoeffding_tree,windowed_rf,stay,False,fixed_share_margin_too_small,0.0024588965050148515,0.01,"Stay because the recovered Fixed-Share candidate is still too close to the incumbent: margin=0.0025, threshold=0.0100."
+127,1,river_hoeffding_tree,windowed_rf,switch,True,fixed_share_weight_advantage,0.19346015792136612,0.01,Switch because Fixed-Share reallocated enough weight to the candidate expert: 0.3115 - 0.1180 = 0.1935 >= 0.0100.
+191,2,windowed_rf,windowed_rf,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.
+255,3,windowed_rf,windowed_rf,stay,False,fixed_share_same_leader,0.0,0.01,Stay because the current strategy remains the highest-weight Fixed-Share expert.

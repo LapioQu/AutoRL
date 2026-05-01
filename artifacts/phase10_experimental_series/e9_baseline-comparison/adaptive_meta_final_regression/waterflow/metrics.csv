@@ -1,0 +1,11 @@
+metric,value
+adaptive_score,0.8362791296993688
+best_fixed_score,0.8039447799769271
+delta_vs_best_fixed,0.032334349722441647
+switch_count,10
+block_delta_mean,0.03235195740256152
+block_delta_std,0.1254070741842844
+block_delta_ci95,0.03408603104244667
+fixed_score::lin_lr_0_0005,0.802088950574691
+fixed_score::lin_lr_0_001,0.8039447799769271
+fixed_score::pa_regressor,0.7265070301655543

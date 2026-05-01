@@ -1,0 +1,70 @@
+{
+  "series_id": "E9",
+  "title": "Baseline comparison",
+  "series_type": "benchmark_profile_suite",
+  "profile_paths": [
+    "E:\\dipproj\\configs\\benchmark_profiles\\hard_switch_lcb_regression.yaml"
+  ],
+  "profile_names": [
+    "hard_switch_lcb_regression"
+  ],
+  "dataset_names": [
+    "WaterFlow"
+  ],
+  "seed_protocol": "deterministic_temporal_replay_no_rng",
+  "seeds": [],
+  "max_samples": 1268,
+  "root_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison",
+  "n": 1,
+  "delta_mean": -0.06506659679279947,
+  "delta_std": 0.0,
+  "delta_ci95": 0.0,
+  "effect_size_d": null,
+  "paired_sign_test_p_value": 1.0,
+  "wins_vs_best_fixed": 0,
+  "suite_summary_json_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\suite_summary.json",
+  "suite_summary_md_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\suite_summary.md",
+  "primary_plot_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\phase10_delta_vs_best_fixed.png",
+  "switches_plot_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\phase10_switch_count.png",
+  "benchmark_protocol": {
+    "dataset_count": 1,
+    "profile_count": 1,
+    "requested_max_samples": 1268,
+    "sample_count_min": 1268,
+    "sample_count_max": 1268,
+    "consistent_sample_count": true,
+    "interpretation_note": "Benchmark replay rows are deterministic temporal streams; inferential statistics are computed over dataset/profile result deltas and should be read as cautious phase-level evidence, not as a claim of universal superiority."
+  },
+  "policy_aggregates": [
+    {
+      "policy_name": "hard_switch_lcb",
+      "n": 1,
+      "delta_mean": -0.06506659679279947,
+      "delta_std": 0.0,
+      "delta_ci95": 0.0,
+      "wins_vs_best_fixed": 0,
+      "mean_switch_count": 1.0
+    }
+  ],
+  "results": [
+    {
+      "dataset_name": "WaterFlow",
+      "profile_name": "hard_switch_lcb_regression",
+      "policy_name": "hard_switch_lcb",
+      "score_name": "normalized_reward",
+      "sample_count": 1268,
+      "adaptive_score": 0.789125281509752,
+      "best_fixed_strategy": "windowed_rf",
+      "best_fixed_score": 0.8541918783025515,
+      "delta_vs_best_fixed": -0.06506659679279947,
+      "switch_count": 1,
+      "artifact_root_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\hard_switch_lcb_regression\\waterflow",
+      "config_path": "E:\\dipproj\\configs\\benchmark_profiles\\hard_switch_lcb_regression.yaml",
+      "metrics_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\hard_switch_lcb_regression\\waterflow\\metrics.csv",
+      "plots_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\hard_switch_lcb_regression\\waterflow\\score_profile.png",
+      "decision_csv_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\hard_switch_lcb_regression\\waterflow\\decisions.csv",
+      "summary_json_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\hard_switch_lcb_regression\\waterflow\\summary.json",
+      "report_md_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe\\e9_baseline-comparison\\hard_switch_lcb_regression\\waterflow\\summary.md"
+    }
+  ]
+}

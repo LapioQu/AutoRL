@@ -1,1 +1,16 @@
 sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+255,1,river_logreg,river_nb,switch,True,recent_leader_warmup,,0.002,Switch after warmup because the recent block leader outperformed the initial incumbent: river_nb.
+383,2,river_nb,river_nb,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+511,3,river_nb,windowed_rf,switch,True,recent_leader_advantage,0.28515625,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.781250 - 0.496094 = 0.285156.
+639,4,windowed_rf,windowed_rf,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+767,5,windowed_rf,windowed_rf,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+895,6,windowed_rf,windowed_histgb,stay,False,recent_leader_incumbent_floor,0.00390625,0.002,Stay because the candidate fails the incumbent floor check: 0.766741 + 0.001000 < 0.797991.
+1023,7,windowed_rf,river_logreg,switch,True,recent_leader_advantage,0.15625,0.002,Switch because the recent leader exceeds the current strategy over the lookback horizon: 0.687500 - 0.531250 = 0.156250.
+1151,8,river_logreg,river_logreg,stay,False,recent_leader_cooldown,0.0,0.002,Stay because the controller is within the post-switch cooldown window: 1 block(s) remaining.
+1279,9,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1407,10,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1535,11,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1663,12,river_logreg,river_logreg,stay,False,recent_leader_same,0.0,0.002,Stay because the current strategy remains the recent block leader.
+1791,13,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.01171875,0.002,Stay because the candidate fails the incumbent floor check: 0.715960 + 0.001000 < 0.742746.
+1919,14,river_logreg,windowed_rf,stay,False,recent_leader_incumbent_floor,0.04296875,0.002,Stay because the candidate fails the incumbent floor check: 0.713021 + 0.001000 < 0.734375.
+2047,15,river_logreg,river_hoeffding_tree,stay,False,recent_leader_incumbent_floor,0.015625,0.002,Stay because the candidate fails the incumbent floor check: 0.502441 + 0.001000 < 0.733887.

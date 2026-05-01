@@ -1,0 +1,3 @@
+sample_index,evaluation_index,current_strategy,candidate_strategy,action,switched,reason_code,decision_margin,decision_threshold,reason
+191,1,knn_regressor,pa_regressor,stay,False,high_uncertainty,-0.37455942666778064,0.003,"Stay because utility uncertainty is too high: current_std=0.0032, candidate_std=0.1874, threshold=0.0030."
+255,2,knn_regressor,pa_regressor,stay,False,high_uncertainty,-0.10364178480865738,0.003,"Stay because utility uncertainty is too high: current_std=0.0103, candidate_std=0.0906, threshold=0.0030."

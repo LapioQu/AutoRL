@@ -1,0 +1,27 @@
+{
+  "phase": 10,
+  "title": "Experimental series",
+  "series": [
+    {
+      "series_id": "E9",
+      "title": "Baseline comparison",
+      "series_type": "benchmark_profile_suite",
+      "root_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe_all\\e9_baseline-comparison",
+      "summary_json_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe_all\\e9_baseline-comparison\\phase10_series_summary.json",
+      "report_md_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe_all\\e9_baseline-comparison\\phase10_series_report.md",
+      "primary_plot_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe_all\\e9_baseline-comparison\\phase10_delta_vs_best_fixed.png",
+      "switches_plot_path": "E:\\dipproj\\artifacts\\phase10_waterflow_probe_all\\e9_baseline-comparison\\phase10_switch_count.png",
+      "run_count": 5
+    }
+  ],
+  "realized_series_ids": [
+    "E9"
+  ],
+  "requested_series_ids": [
+    "E9"
+  ],
+  "last_run_requested_series_ids": [
+    "E9"
+  ],
+  "summary_scope": "accumulated_artifact_root"
+}
