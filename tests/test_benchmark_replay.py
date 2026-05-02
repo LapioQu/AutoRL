@@ -97,6 +97,10 @@ def test_benchmark_replay_switches_and_persists_summary(tmp_path: Path) -> None:
     summary = json.loads(Path(result.summary_json_path).read_text(encoding="utf-8"))
     assert summary["dataset_name"] == "toy_drift_trace"
     assert summary["score_name"] == "accuracy"
+    assert "oracle_score" in summary
+    assert "oracle_gain" in summary
+    assert "oracle_capture_ratio" in summary
+    assert summary["oracle_score"] >= summary["best_fixed_score"]
     assert summary["delta_vs_best_fixed"] >= 0.0
     assert summary["switch_count"] >= 1
 

@@ -21,6 +21,8 @@ from autorl.application.experiments import ExperimentOrchestrator
 _PROJECT_ROOT = Path(__file__).resolve().parents[3]
 _EXAMPLES_DIR = _PROJECT_ROOT / "configs" / "examples"
 _PROFILES_DIR = _PROJECT_ROOT / "configs" / "benchmark_profiles"
+_CLASSIFICATION_BENCHMARK_DATASETS = frozenset({"elec2", "airlines", "insects_recurring"})
+_REGRESSION_BENCHMARK_DATASETS = frozenset({"waterflow"})
 
 
 @dataclass(frozen=True, slots=True)
@@ -60,7 +62,7 @@ class Phase10ExperimentalSeriesRunner:
         self,
         *,
         seeds: Sequence[int] = (41, 42, 43, 44, 45),
-        benchmark_datasets: Sequence[str] = ("elec2", "bikes", "trump_approval", "waterflow", "insects_recurring"),
+        benchmark_datasets: Sequence[str] = ("elec2", "waterflow", "insects_recurring"),
         benchmark_max_samples: int | None = None,
         reproducibility_seed: int = 12345,
         reproducibility_repeats: int = 5,
@@ -115,8 +117,12 @@ class Phase10ExperimentalSeriesRunner:
                 self._run_profile_series(
                     series_id="E5",
                     title="Tempered reward shaping",
-                    profile_paths=self._filter_profile_paths((_PROFILES_DIR / "h2_tempered_drift.yaml",), requested_profiles),
-                    dataset_names=benchmark_datasets,
+                    profile_groups=self._build_profile_groups(
+                        classification_profile_paths=(_PROFILES_DIR / "h2_tempered_drift.yaml",),
+                        regression_profile_paths=(_PROFILES_DIR / "h2_tempered_drift_regression.yaml",),
+                        dataset_names=benchmark_datasets,
+                        requested_profiles=requested_profiles,
+                    ),
                     max_samples=benchmark_max_samples,
                 )
             )
@@ -125,8 +131,12 @@ class Phase10ExperimentalSeriesRunner:
                 self._run_profile_series(
                     series_id="E6",
                     title="Drift-aware selector / H1 control",
-                    profile_paths=self._filter_profile_paths((_PROFILES_DIR / "h1_drift_aware_v2.yaml",), requested_profiles),
-                    dataset_names=benchmark_datasets,
+                    profile_groups=self._build_profile_groups(
+                        classification_profile_paths=(_PROFILES_DIR / "h1_drift_aware_v2.yaml",),
+                        regression_profile_paths=(_PROFILES_DIR / "h1_drift_aware_v2_regression.yaml",),
+                        dataset_names=benchmark_datasets,
+                        requested_profiles=requested_profiles,
+                    ),
                     max_samples=benchmark_max_samples,
                 )
             )
@@ -154,17 +164,24 @@ class Phase10ExperimentalSeriesRunner:
                 self._run_profile_series(
                     series_id="E9",
                     title="Baseline comparison",
-                    profile_paths=self._filter_profile_paths(
-                        (
+                    profile_groups=self._build_profile_groups(
+                        classification_profile_paths=(
                             _PROFILES_DIR / "adaptive_meta_final.yaml",
                             _PROFILES_DIR / "greedy_reward.yaml",
                             _PROFILES_DIR / "h1_drift_aware_v2.yaml",
                             _PROFILES_DIR / "h2_tempered_drift.yaml",
                             _PROFILES_DIR / "hard_switch_lcb.yaml",
                         ),
-                        requested_profiles,
+                        regression_profile_paths=(
+                            _PROFILES_DIR / "adaptive_meta_final_regression.yaml",
+                            _PROFILES_DIR / "greedy_reward_regression.yaml",
+                            _PROFILES_DIR / "h1_drift_aware_v2_regression.yaml",
+                            _PROFILES_DIR / "h2_tempered_drift_regression.yaml",
+                            _PROFILES_DIR / "hard_switch_lcb_regression.yaml",
+                        ),
+                        dataset_names=benchmark_datasets,
+                        requested_profiles=requested_profiles,
                     ),
-                    dataset_names=benchmark_datasets,
                     max_samples=benchmark_max_samples,
                 )
             )
@@ -194,10 +211,62 @@ class Phase10ExperimentalSeriesRunner:
     def _filter_profile_paths(self, profile_paths: Sequence[Path], requested_profiles: set[str] | None) -> tuple[Path, ...]:
         if requested_profiles is None:
             return tuple(profile_paths)
-        selected = tuple(path for path in profile_paths if path.stem in requested_profiles)
+        selected = tuple(path for path in profile_paths if self._profile_matches_requested(path, requested_profiles))
         if not selected:
             raise ValueError("requested profile_names did not match any profiles in the selected phase 10 series")
         return selected
+
+    def _profile_matches_requested(self, profile_path: Path, requested_profiles: set[str]) -> bool:
+        stem = profile_path.stem
+        canonical = stem.removesuffix("_regression")
+        return stem in requested_profiles or canonical in requested_profiles
+
+    def _normalize_dataset_name(self, dataset_name: str) -> str:
+        return dataset_name.strip().lower()
+
+    def _select_supported_datasets(self, dataset_names: Sequence[str], *, supported: frozenset[str]) -> tuple[str, ...]:
+        return tuple(
+            dataset_name
+            for dataset_name in dataset_names
+            if self._normalize_dataset_name(dataset_name) in supported
+        )
+
+    def _build_profile_groups(
+        self,
+        *,
+        classification_profile_paths: Sequence[Path],
+        regression_profile_paths: Sequence[Path],
+        dataset_names: Sequence[str],
+        requested_profiles: set[str] | None,
+    ) -> tuple[dict[str, tuple[Path, ...] | tuple[str, ...]], ...]:
+        groups: list[dict[str, tuple[Path, ...] | tuple[str, ...]]] = []
+        classification_datasets = self._select_supported_datasets(
+            dataset_names,
+            supported=_CLASSIFICATION_BENCHMARK_DATASETS,
+        )
+        if classification_datasets:
+            profile_paths = self._filter_profile_paths(classification_profile_paths, requested_profiles)
+            groups.append(
+                {
+                    "profile_paths": profile_paths,
+                    "dataset_names": classification_datasets,
+                }
+            )
+        regression_datasets = self._select_supported_datasets(
+            dataset_names,
+            supported=_REGRESSION_BENCHMARK_DATASETS,
+        )
+        if regression_datasets:
+            profile_paths = self._filter_profile_paths(regression_profile_paths, requested_profiles)
+            groups.append(
+                {
+                    "profile_paths": profile_paths,
+                    "dataset_names": regression_datasets,
+                }
+            )
+        if not groups:
+            raise ValueError("benchmark_datasets did not include any phase 10 supported datasets")
+        return tuple(groups)
 
     def _run_controlled_series(
         self,
@@ -310,22 +379,28 @@ class Phase10ExperimentalSeriesRunner:
         *,
         series_id: str,
         title: str,
-        profile_paths: Sequence[Path],
-        dataset_names: Sequence[str],
+        profile_groups: Sequence[dict[str, tuple[Path, ...] | tuple[str, ...]]],
         max_samples: int | None,
     ) -> Phase10SeriesResult:
         root = self._root / f"{series_id.lower()}_{self._slugify(title)}"
-        self._benchmark_runner.run_profile_suite(
-            profile_paths=profile_paths,
-            dataset_names=dataset_names,
-            output_root=root,
-            max_samples=max_samples,
-        )
+        all_profile_paths: list[Path] = []
+        for group in profile_groups:
+            profile_paths = tuple(group["profile_paths"])
+            dataset_names = tuple(group["dataset_names"])
+            all_profile_paths.extend(Path(path) for path in profile_paths)
+            self._benchmark_runner.run_profile_suite(
+                profile_paths=profile_paths,
+                dataset_names=dataset_names,
+                output_root=root,
+                max_samples=max_samples,
+            )
         result_rows = self._collect_profile_result_rows(root)
         suite_summary_path = root / "suite_summary.json"
         suite_report_path = root / "suite_summary.md"
         self._rewrite_profile_suite_summary(root, result_rows, suite_summary_path, suite_report_path)
         deltas = [float(row["delta_vs_best_fixed"]) for row in result_rows]
+        oracle_gains = [float(row["oracle_gain"]) for row in result_rows]
+        capture_ratios = [float(row["oracle_capture_ratio"]) for row in result_rows]
         switches = [float(row["switch_count"]) for row in result_rows]
         primary_plot_path = root / "phase10_delta_vs_best_fixed.png"
         switches_plot_path = root / "phase10_switch_count.png"
@@ -348,7 +423,11 @@ class Phase10ExperimentalSeriesRunner:
             "series_id": series_id,
             "title": title,
             "series_type": "benchmark_profile_suite",
-            "profile_paths": sorted({str((_PROFILES_DIR / f"{row['profile_name']}.yaml").resolve()) for row in result_rows}) if result_rows else [str(path.resolve()) for path in profile_paths],
+            "profile_paths": (
+                sorted({str((_PROFILES_DIR / f"{row['profile_name']}.yaml").resolve()) for row in result_rows})
+                if result_rows
+                else [str(path.resolve()) for path in all_profile_paths]
+            ),
             "profile_names": sorted({str(row["profile_name"]) for row in result_rows}),
             "dataset_names": sorted({str(row["dataset_name"]) for row in result_rows}),
             "seed_protocol": "deterministic_temporal_replay_no_rng",
@@ -359,6 +438,12 @@ class Phase10ExperimentalSeriesRunner:
             "delta_mean": fmean(deltas) if deltas else 0.0,
             "delta_std": self._sample_std(deltas),
             "delta_ci95": self._ci95(deltas),
+            "oracle_gain_mean": fmean(oracle_gains) if oracle_gains else 0.0,
+            "oracle_gain_std": self._sample_std(oracle_gains),
+            "oracle_gain_ci95": self._ci95(oracle_gains),
+            "oracle_capture_mean": fmean(capture_ratios) if capture_ratios else 0.0,
+            "oracle_capture_std": self._sample_std(capture_ratios),
+            "oracle_capture_ci95": self._ci95(capture_ratios),
             "effect_size_d": self._effect_size_d(deltas),
             "paired_sign_test_p_value": self._paired_sign_test_p_value(deltas),
             "wins_vs_best_fixed": sum(1 for value in deltas if value > 0.0),
@@ -394,6 +479,8 @@ class Phase10ExperimentalSeriesRunner:
         for policy_name in sorted(grouped):
             policy_results = grouped[policy_name]
             deltas = [item.delta_vs_best_fixed for item in policy_results]
+            oracle_gains = [item.oracle_gain for item in policy_results]
+            capture_ratios = [item.oracle_capture_ratio for item in policy_results]
             rows.append(
                 {
                     "policy_name": policy_name,
@@ -401,6 +488,10 @@ class Phase10ExperimentalSeriesRunner:
                     "delta_mean": fmean(deltas) if deltas else 0.0,
                     "delta_std": self._sample_std(deltas),
                     "delta_ci95": self._ci95(deltas),
+                    "oracle_gain_mean": fmean(oracle_gains) if oracle_gains else 0.0,
+                    "oracle_capture_mean": fmean(capture_ratios) if capture_ratios else 0.0,
+                    "oracle_capture_std": self._sample_std(capture_ratios),
+                    "oracle_capture_ci95": self._ci95(capture_ratios),
                     "wins_vs_best_fixed": sum(1 for value in deltas if value > 0.0),
                     "mean_switch_count": fmean(item.switch_count for item in policy_results) if policy_results else 0.0,
                 }
@@ -415,6 +506,8 @@ class Phase10ExperimentalSeriesRunner:
         report_md_path: Path,
     ) -> None:
         deltas = [float(row["delta_vs_best_fixed"]) for row in rows]
+        oracle_gains = [float(row["oracle_gain"]) for row in rows]
+        capture_ratios = [float(row["oracle_capture_ratio"]) for row in rows]
         payload = {
             "profile_count": len({str(row["profile_name"]) for row in rows}),
             "dataset_count": len({str(row["dataset_name"]) for row in rows}),
@@ -424,6 +517,12 @@ class Phase10ExperimentalSeriesRunner:
             "delta_mean": fmean(deltas) if deltas else 0.0,
             "delta_std": self._sample_std(deltas),
             "delta_ci95": self._ci95(deltas),
+            "oracle_gain_mean": fmean(oracle_gains) if oracle_gains else 0.0,
+            "oracle_gain_std": self._sample_std(oracle_gains),
+            "oracle_gain_ci95": self._ci95(oracle_gains),
+            "oracle_capture_mean": fmean(capture_ratios) if capture_ratios else 0.0,
+            "oracle_capture_std": self._sample_std(capture_ratios),
+            "oracle_capture_ci95": self._ci95(capture_ratios),
             "effect_size_d": self._effect_size_d(deltas),
             "paired_sign_test_p_value": self._paired_sign_test_p_value(deltas),
             "results": [
@@ -436,6 +535,9 @@ class Phase10ExperimentalSeriesRunner:
                     "adaptive_score": row["adaptive_score"],
                     "best_fixed_strategy": row["best_fixed_strategy"],
                     "best_fixed_score": row["best_fixed_score"],
+                    "oracle_score": row["oracle_score"],
+                    "oracle_gain": row["oracle_gain"],
+                    "oracle_capture_ratio": row["oracle_capture_ratio"],
                     "delta_vs_best_fixed": row["delta_vs_best_fixed"],
                     "switch_count": row["switch_count"],
                     "artifact_root_path": row["artifact_root_path"],
@@ -456,6 +558,8 @@ class Phase10ExperimentalSeriesRunner:
 
     def _build_profile_suite_markdown(self, root: Path, rows: Sequence[dict[str, Any]]) -> str:
         deltas = [float(row["delta_vs_best_fixed"]) for row in rows]
+        oracle_gains = [float(row["oracle_gain"]) for row in rows]
+        capture_ratios = [float(row["oracle_capture_ratio"]) for row in rows]
         effect_size = self._effect_size_d(deltas)
         p_value = self._paired_sign_test_p_value(deltas)
         lines = [
@@ -469,19 +573,24 @@ class Phase10ExperimentalSeriesRunner:
             f"- delta_mean: `{(fmean(deltas) if deltas else 0.0):.6f}`",
             f"- delta_std: `{self._sample_std(deltas):.6f}`",
             f"- delta_ci95: `{self._ci95(deltas):.6f}`",
+            f"- oracle_gain_mean: `{(fmean(oracle_gains) if oracle_gains else 0.0):.6f}`",
+            f"- oracle_gain_ci95: `{self._ci95(oracle_gains):.6f}`",
+            f"- oracle_capture_mean: `{(fmean(capture_ratios) if capture_ratios else 0.0):.6f}`",
+            f"- oracle_capture_ci95: `{self._ci95(capture_ratios):.6f}`",
             f"- effect_size_d: `{'-' if effect_size is None else f'{effect_size:.6f}'}`",
             f"- paired_sign_test_p_value: `{'-' if p_value is None else f'{p_value:.6f}'}`",
             f"- wins_vs_best_fixed: `{sum(1 for row in rows if float(row['delta_vs_best_fixed']) > 0.0)}`",
             f"- non_losses_vs_best_fixed: `{sum(1 for row in rows if float(row['delta_vs_best_fixed']) >= 0.0)}`",
             "",
-            "| Dataset | Profile | Policy | Score | Samples | Adaptive | Best Fixed | Delta | Switches | Summary |",
-            "| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |",
+            "| Dataset | Profile | Policy | Score | Samples | Adaptive | Best Fixed | Oracle | Delta | Capture | Switches | Summary |",
+            "| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |",
         ]
         for row in rows:
             lines.append(
                 f"| {row['dataset_name']} | {row['profile_name']} | {row['policy_name']} | {row['score_name']} | "
                 f"{row['sample_count']} | {float(row['adaptive_score']):.6f} | {float(row['best_fixed_score']):.6f} | "
-                f"{float(row['delta_vs_best_fixed']):.6f} | {row['switch_count']} | `{row['summary_json_path']}` |"
+                f"{float(row['oracle_score']):.6f} | {float(row['delta_vs_best_fixed']):.6f} | {float(row['oracle_capture_ratio']):.6f} | "
+                f"{row['switch_count']} | `{row['summary_json_path']}` |"
             )
         return "\n".join(lines) + "\n"
 
@@ -493,6 +602,8 @@ class Phase10ExperimentalSeriesRunner:
         for policy_name in sorted(grouped):
             policy_rows = grouped[policy_name]
             deltas = [float(item["delta_vs_best_fixed"]) for item in policy_rows]
+            oracle_gains = [float(item["oracle_gain"]) for item in policy_rows]
+            capture_ratios = [float(item["oracle_capture_ratio"]) for item in policy_rows]
             aggregates.append(
                 {
                     "policy_name": policy_name,
@@ -500,6 +611,10 @@ class Phase10ExperimentalSeriesRunner:
                     "delta_mean": fmean(deltas) if deltas else 0.0,
                     "delta_std": self._sample_std(deltas),
                     "delta_ci95": self._ci95(deltas),
+                    "oracle_gain_mean": fmean(oracle_gains) if oracle_gains else 0.0,
+                    "oracle_capture_mean": fmean(capture_ratios) if capture_ratios else 0.0,
+                    "oracle_capture_std": self._sample_std(capture_ratios),
+                    "oracle_capture_ci95": self._ci95(capture_ratios),
                     "wins_vs_best_fixed": sum(1 for value in deltas if value > 0.0),
                     "mean_switch_count": fmean(float(item["switch_count"]) for item in policy_rows) if policy_rows else 0.0,
                 }
@@ -521,6 +636,9 @@ class Phase10ExperimentalSeriesRunner:
                     "adaptive_score": payload["adaptive_score"],
                     "best_fixed_strategy": payload["best_fixed_strategy"],
                     "best_fixed_score": payload["best_fixed_score"],
+                    "oracle_score": payload.get("oracle_score", payload["best_fixed_score"]),
+                    "oracle_gain": payload.get("oracle_gain", 0.0),
+                    "oracle_capture_ratio": payload.get("oracle_capture_ratio", 0.0),
                     "delta_vs_best_fixed": payload["delta_vs_best_fixed"],
                     "switch_count": payload["switch_count"],
                     "artifact_root_path": str(summary_path.parent),
@@ -544,6 +662,9 @@ class Phase10ExperimentalSeriesRunner:
             writer.writeheader()
             writer.writerow({"metric": "adaptive_score", "value": payload["adaptive_score"]})
             writer.writerow({"metric": "best_fixed_score", "value": payload["best_fixed_score"]})
+            writer.writerow({"metric": "oracle_score", "value": payload.get("oracle_score", payload["best_fixed_score"])})
+            writer.writerow({"metric": "oracle_gain", "value": payload.get("oracle_gain", 0.0)})
+            writer.writerow({"metric": "oracle_capture_ratio", "value": payload.get("oracle_capture_ratio", 0.0)})
             writer.writerow({"metric": "delta_vs_best_fixed", "value": payload["delta_vs_best_fixed"]})
             writer.writerow({"metric": "switch_count", "value": payload["switch_count"]})
             writer.writerow({"metric": "block_delta_mean", "value": payload["block_delta_mean"]})
@@ -558,6 +679,7 @@ class Phase10ExperimentalSeriesRunner:
                 profile_name=str(summary_path.parent.parent.name),
                 adaptive_score=float(payload["adaptive_score"]),
                 best_fixed_score=float(payload["best_fixed_score"]),
+                oracle_score=float(payload.get("oracle_score", payload["best_fixed_score"])),
                 fixed_scores={str(name): float(score) for name, score in fixed_scores.items()},
             )
         )
@@ -623,6 +745,10 @@ class Phase10ExperimentalSeriesRunner:
             f"- delta_mean: `{payload['delta_mean']:.6f}`",
             f"- delta_std: `{payload['delta_std']:.6f}`",
             f"- delta_ci95: `{payload['delta_ci95']:.6f}`",
+            f"- oracle_gain_mean: `{payload['oracle_gain_mean']:.6f}`",
+            f"- oracle_gain_ci95: `{payload['oracle_gain_ci95']:.6f}`",
+            f"- oracle_capture_mean: `{payload['oracle_capture_mean']:.6f}`",
+            f"- oracle_capture_ci95: `{payload['oracle_capture_ci95']:.6f}`",
             f"- effect_size_d: `{effect_size_text}`",
             f"- paired_sign_test_p_value: `{p_value_text}`",
             f"- wins_vs_best_fixed: `{payload['wins_vs_best_fixed']}`",
@@ -642,28 +768,29 @@ class Phase10ExperimentalSeriesRunner:
             "",
             "## Policy Aggregates",
             "",
-            "| Policy | n | Delta Mean | Delta Std | Delta CI95 | Wins vs Best Fixed | Mean Switch Count |",
-            "| --- | ---: | ---: | ---: | ---: | ---: | ---: |",
+            "| Policy | n | Delta Mean | Delta Std | Delta CI95 | Oracle Gain Mean | Capture Mean | Capture CI95 | Wins vs Best Fixed | Mean Switch Count |",
+            "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
         ]
         for row in payload["policy_aggregates"]:
             lines.append(
                 f"| {row['policy_name']} | {row['n']} | {row['delta_mean']:.6f} | {row['delta_std']:.6f} | "
-                f"{row['delta_ci95']:.6f} | {row['wins_vs_best_fixed']} | {row['mean_switch_count']:.6f} |"
+                f"{row['delta_ci95']:.6f} | {row['oracle_gain_mean']:.6f} | {row['oracle_capture_mean']:.6f} | "
+                f"{row['oracle_capture_ci95']:.6f} | {row['wins_vs_best_fixed']} | {row['mean_switch_count']:.6f} |"
             )
         lines.extend(
             [
                 "",
                 "## Benchmark Results",
                 "",
-                "| Dataset | Profile | Policy | Score | Samples | Adaptive | Best Fixed | Delta | Switches | Report |",
-                "| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |",
+                "| Dataset | Profile | Policy | Score | Samples | Adaptive | Best Fixed | Oracle | Delta | Capture | Switches | Report |",
+                "| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |",
             ]
         )
         for row in payload["results"]:
             lines.append(
                 f"| {row['dataset_name']} | {row['profile_name']} | {row['policy_name']} | {row['score_name']} | {row['sample_count']} | "
-                f"{row['adaptive_score']:.6f} | {row['best_fixed_score']:.6f} | {row['delta_vs_best_fixed']:.6f} | "
-                f"{row['switch_count']} | `{row['report_md_path']}` |"
+                f"{row['adaptive_score']:.6f} | {row['best_fixed_score']:.6f} | {row['oracle_score']:.6f} | "
+                f"{row['delta_vs_best_fixed']:.6f} | {row['oracle_capture_ratio']:.6f} | {row['switch_count']} | `{row['report_md_path']}` |"
             )
         lines.extend(
             [
@@ -723,8 +850,8 @@ class Phase10ExperimentalSeriesRunner:
                     "",
                     "## Benchmark-Series Summary",
                     "",
-                    "| Series | Datasets | Profiles | n | Seed Protocol | Delta Mean | Delta Std | Delta CI95 | Effect Size d | Sign-Test p | Wins | Primary Plot |",
-                    "| --- | --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |",
+                    "| Series | Datasets | Profiles | n | Seed Protocol | Delta Mean | Delta Std | Delta CI95 | Oracle Gain Mean | Capture Mean | Effect Size d | Sign-Test p | Wins | Primary Plot |",
+                    "| --- | --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |",
                 ]
             )
             for row in benchmark_rows:
@@ -733,7 +860,8 @@ class Phase10ExperimentalSeriesRunner:
                 lines.append(
                     f"| {row['series_id']} | `{', '.join(row['dataset_names'])}` | `{', '.join(row['profile_names'])}` | {row['n']} | "
                     f"`{row['seed_protocol']}` | {float(row['delta_mean']):.6f} | {float(row['delta_std']):.6f} | "
-                    f"{float(row['delta_ci95']):.6f} | {effect_size} | {p_value} | {row['wins_vs_best_fixed']} | "
+                    f"{float(row['delta_ci95']):.6f} | {float(row['oracle_gain_mean']):.6f} | {float(row['oracle_capture_mean']):.6f} | "
+                    f"{effect_size} | {p_value} | {row['wins_vs_best_fixed']} | "
                     f"`{row['primary_plot_path']}` |"
                 )
         lines.extend(
@@ -743,8 +871,8 @@ class Phase10ExperimentalSeriesRunner:
                 "",
                 "- all required `E1..E9` series are present in the artifact root;",
                 "- each series has `summary`, `report`, `plots`, and nested run/replay artifacts;",
-                "- benchmark series were regenerated under a fixed protocol with explicit `seed_protocol`, `n`, `CI95`, `effect_size_d`, and `paired_sign_test_p_value` fields;",
-                "- benchmark series should be interpreted with their explicit protocol and statistical caution notes in each `phase10_series_summary.json`.",
+                "- benchmark series were regenerated under a fixed protocol with explicit `seed_protocol`, `n`, `CI95`, `effect_size_d`, `paired_sign_test_p_value`, and oracle-capture fields;",
+                "- benchmark series should be interpreted with their explicit protocol, best-fixed deltas, and oracle-gain / capture notes in each `phase10_series_summary.json`.",
             ]
         )
         return "\n".join(lines) + "\n"
@@ -900,12 +1028,13 @@ class Phase10ExperimentalSeriesRunner:
         profile_name: str,
         adaptive_score: float,
         best_fixed_score: float,
+        oracle_score: float,
         fixed_scores: dict[str, float],
     ) -> bytes:
-        rows = [("adaptive", adaptive_score), ("best_fixed", best_fixed_score), *sorted(fixed_scores.items())]
+        rows = [("adaptive", adaptive_score), ("best_fixed", best_fixed_score), ("oracle", oracle_score), *sorted(fixed_scores.items())]
         labels = [label for label, _ in rows]
         values = [value for _, value in rows]
-        colors = ["#2563eb", "#16a34a", *["#94a3b8" for _ in range(max(0, len(rows) - 2))]]
+        colors = ["#2563eb", "#16a34a", "#ea580c", *["#94a3b8" for _ in range(max(0, len(rows) - 3))]]
         height = max(4.2, 0.5 * len(rows) + 1.4)
         figure, axis = plt.subplots(figsize=(9.0, height), dpi=140)
         figure.patch.set_facecolor("#ffffff")

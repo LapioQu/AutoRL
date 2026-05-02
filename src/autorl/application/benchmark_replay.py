@@ -97,6 +97,9 @@ class ReplayBenchmarkResult:
     decision_csv_path: str
     summary_json_path: str
     report_md_path: str
+    oracle_score: float = 0.0
+    oracle_gain: float = 0.0
+    oracle_capture_ratio: float = 0.0
 
     @property
     def adaptive_accuracy(self) -> float:
@@ -137,13 +140,15 @@ class BenchmarkProfile:
 class _WindowedSklearnClassifier:
     """Sliding-window wrapper for non-incremental sklearn classifiers."""
 
-    def __init__(self, estimator: object, *, window_size: int = 256) -> None:
+    def __init__(self, estimator: object, *, window_size: int = 256, refit_interval: int = 16) -> None:
         self._estimator = estimator
         self._window_size = window_size
+        self._refit_interval = max(1, refit_interval)
         self._vectorizer = DictVectorizer(sparse=False)
         self._features: list[dict[str, float]] = []
         self._targets: list[object] = []
         self._is_fitted = False
+        self._samples_since_refit = 0
 
     def predict_one(self, features: Mapping[str, float]) -> object | None:
         if not self._is_fitted:
@@ -154,26 +159,32 @@ class _WindowedSklearnClassifier:
     def learn_one(self, features: Mapping[str, float], target: object) -> None:
         self._features.append(dict(features))
         self._targets.append(target)
+        self._samples_since_refit += 1
         if len(self._features) > self._window_size:
             self._features.pop(0)
             self._targets.pop(0)
         if len(set(self._targets)) < 2:
             return
+        if self._is_fitted and self._samples_since_refit < self._refit_interval:
+            return
         matrix = self._vectorizer.fit_transform(self._features)
         self._estimator.fit(matrix, self._targets)
         self._is_fitted = True
+        self._samples_since_refit = 0
 
 
 class _WindowedSklearnRegressor:
     """Sliding-window wrapper for non-incremental sklearn regressors."""
 
-    def __init__(self, estimator: object, *, window_size: int = 256) -> None:
+    def __init__(self, estimator: object, *, window_size: int = 256, refit_interval: int = 16) -> None:
         self._estimator = estimator
         self._window_size = window_size
+        self._refit_interval = max(1, refit_interval)
         self._vectorizer = DictVectorizer(sparse=False)
         self._features: list[dict[str, float]] = []
         self._targets: list[float] = []
         self._is_fitted = False
+        self._samples_since_refit = 0
 
     def predict_one(self, features: Mapping[str, float]) -> float | None:
         if not self._is_fitted:
@@ -184,14 +195,18 @@ class _WindowedSklearnRegressor:
     def learn_one(self, features: Mapping[str, float], target: float) -> None:
         self._features.append(dict(features))
         self._targets.append(float(target))
+        self._samples_since_refit += 1
         if len(self._features) > self._window_size:
             self._features.pop(0)
             self._targets.pop(0)
         if len(self._targets) < 4:
             return
+        if self._is_fitted and self._samples_since_refit < self._refit_interval:
+            return
         matrix = self._vectorizer.fit_transform(self._features)
         self._estimator.fit(matrix, self._targets)
         self._is_fitted = True
+        self._samples_since_refit = 0
 
 
 def build_candidate_model_registry(task_type: str) -> tuple[ReplayStrategySpec, ...]:
@@ -487,6 +502,7 @@ class BenchmarkReplayRunner:
     ) -> None:
         self._controller = controller or MetaController()
         self._evaluator = evaluator or Evaluator()
+        self._profile_trace_cache: dict[tuple[str, str, tuple[str, ...], int | None], OutcomeTrace] = {}
 
     def run_prediction_trace(
         self,
@@ -1492,6 +1508,9 @@ class BenchmarkReplayRunner:
                     "adaptive_score": result.adaptive_score,
                     "best_fixed_strategy": result.best_fixed_strategy,
                     "best_fixed_score": result.best_fixed_score,
+                    "oracle_score": result.oracle_score,
+                    "oracle_gain": result.oracle_gain,
+                    "oracle_capture_ratio": result.oracle_capture_ratio,
                     "delta_vs_best_fixed": result.delta_vs_best_fixed,
                     "switch_count": result.switch_count,
                     "block_delta_mean": result.block_delta_mean,
@@ -1502,6 +1521,8 @@ class BenchmarkReplayRunner:
             ],
             "wins_vs_best_fixed": sum(1 for result in results if result.delta_vs_best_fixed > 0.0),
             "non_losses_vs_best_fixed": sum(1 for result in results if result.delta_vs_best_fixed >= 0.0),
+            "oracle_gain_mean": fmean(result.oracle_gain for result in results) if results else 0.0,
+            "oracle_capture_mean": fmean(result.oracle_capture_ratio for result in results) if results else 0.0,
         }
         summary_json_path.write_text(json.dumps(payload, ensure_ascii=True, indent=2), encoding="utf-8")
         report_md_path.write_text(self._build_suite_report(tuple(results)), encoding="utf-8")
@@ -1539,6 +1560,9 @@ class BenchmarkReplayRunner:
                     "adaptive_score": result.adaptive_score,
                     "best_fixed_strategy": result.best_fixed_strategy,
                     "best_fixed_score": result.best_fixed_score,
+                    "oracle_score": result.oracle_score,
+                    "oracle_gain": result.oracle_gain,
+                    "oracle_capture_ratio": result.oracle_capture_ratio,
                     "delta_vs_best_fixed": result.delta_vs_best_fixed,
                     "switch_count": result.switch_count,
                     "block_delta_mean": result.block_delta_mean,
@@ -1549,6 +1573,8 @@ class BenchmarkReplayRunner:
             ],
             "wins_vs_best_fixed": sum(1 for result in results if result.delta_vs_best_fixed > 0.0),
             "non_losses_vs_best_fixed": sum(1 for result in results if result.delta_vs_best_fixed >= 0.0),
+            "oracle_gain_mean": fmean(result.oracle_gain for result in results) if results else 0.0,
+            "oracle_capture_mean": fmean(result.oracle_capture_ratio for result in results) if results else 0.0,
         }
         summary_json_path.write_text(json.dumps(payload, ensure_ascii=True, indent=2), encoding="utf-8")
         report_md_path.write_text(self._build_suite_report(tuple(results)), encoding="utf-8")
@@ -1586,6 +1612,9 @@ class BenchmarkReplayRunner:
                     "adaptive_score": result.adaptive_score,
                     "best_fixed_strategy": result.best_fixed_strategy,
                     "best_fixed_score": result.best_fixed_score,
+                    "oracle_score": result.oracle_score,
+                    "oracle_gain": result.oracle_gain,
+                    "oracle_capture_ratio": result.oracle_capture_ratio,
                     "delta_vs_best_fixed": result.delta_vs_best_fixed,
                     "switch_count": result.switch_count,
                     "block_delta_mean": result.block_delta_mean,
@@ -1596,6 +1625,8 @@ class BenchmarkReplayRunner:
             ],
             "wins_vs_best_fixed": sum(1 for result in results if result.delta_vs_best_fixed > 0.0),
             "non_losses_vs_best_fixed": sum(1 for result in results if result.delta_vs_best_fixed >= 0.0),
+            "oracle_gain_mean": fmean(result.oracle_gain for result in results) if results else 0.0,
+            "oracle_capture_mean": fmean(result.oracle_capture_ratio for result in results) if results else 0.0,
         }
         summary_json_path.write_text(json.dumps(payload, ensure_ascii=True, indent=2), encoding="utf-8")
         report_md_path.write_text(self._build_suite_report(tuple(results)), encoding="utf-8")
@@ -1615,7 +1646,7 @@ class BenchmarkReplayRunner:
     ) -> ReplayBenchmarkResult:
         """Run one H1/H2 benchmark replay profile on one named dataset."""
         profile = self._load_benchmark_profile(profile_path)
-        trace = self._build_profile_trace(
+        trace = self._get_cached_profile_trace(
             dataset_name=dataset_name,
             task_type=profile.task_type,
             candidate_models=profile.candidate_models,
@@ -1647,12 +1678,20 @@ class BenchmarkReplayRunner:
             profile_root.mkdir(parents=True, exist_ok=True)
             for dataset_name in dataset_names:
                 dataset_root = profile_root / dataset_name
+                trace = self._get_cached_profile_trace(
+                    dataset_name=dataset_name,
+                    task_type=profile.task_type,
+                    candidate_models=profile.candidate_models,
+                    max_samples=max_samples,
+                )
                 results.append(
-                    self.run_profile_benchmark(
-                        profile_path=profile_path,
-                        dataset_name=dataset_name,
-                        output_root=dataset_root,
-                        max_samples=max_samples,
+                    replace(
+                        self._run_profile_policy(
+                            trace=trace,
+                            controller_policy=profile.controller_policy,
+                            output_root=dataset_root,
+                        ),
+                        policy_name=profile.controller_policy,
                     )
                 )
 
@@ -1670,6 +1709,9 @@ class BenchmarkReplayRunner:
                     "adaptive_score": result.adaptive_score,
                     "best_fixed_strategy": result.best_fixed_strategy,
                     "best_fixed_score": result.best_fixed_score,
+                    "oracle_score": result.oracle_score,
+                    "oracle_gain": result.oracle_gain,
+                    "oracle_capture_ratio": result.oracle_capture_ratio,
                     "delta_vs_best_fixed": result.delta_vs_best_fixed,
                     "switch_count": result.switch_count,
                     "block_delta_mean": result.block_delta_mean,
@@ -1680,6 +1722,8 @@ class BenchmarkReplayRunner:
             ],
             "wins_vs_best_fixed": sum(1 for result in results if result.delta_vs_best_fixed > 0.0),
             "non_losses_vs_best_fixed": sum(1 for result in results if result.delta_vs_best_fixed >= 0.0),
+            "oracle_gain_mean": fmean(result.oracle_gain for result in results) if results else 0.0,
+            "oracle_capture_mean": fmean(result.oracle_capture_ratio for result in results) if results else 0.0,
         }
         summary_json_path.write_text(json.dumps(payload, ensure_ascii=True, indent=2), encoding="utf-8")
         report_md_path.write_text(self._build_profile_suite_report(tuple(results)), encoding="utf-8")
@@ -1688,6 +1732,27 @@ class BenchmarkReplayRunner:
             summary_json_path=str(summary_json_path),
             report_md_path=str(report_md_path),
         )
+
+    def _get_cached_profile_trace(
+        self,
+        *,
+        dataset_name: str,
+        task_type: str,
+        candidate_models: tuple[str, ...],
+        max_samples: int | None,
+    ) -> OutcomeTrace:
+        cache_key = (dataset_name.strip().lower(), task_type.strip().lower(), candidate_models, max_samples)
+        cached = self._profile_trace_cache.get(cache_key)
+        if cached is not None:
+            return cached
+        trace = self._build_profile_trace(
+            dataset_name=dataset_name,
+            task_type=task_type,
+            candidate_models=candidate_models,
+            max_samples=max_samples,
+        )
+        self._profile_trace_cache[cache_key] = trace
+        return trace
 
     def _load_benchmark_profile(self, profile_path: str | Path) -> BenchmarkProfile:
         path = Path(profile_path)
@@ -1762,15 +1827,7 @@ class BenchmarkReplayRunner:
                     max_samples=max_samples,
                 )
             if normalized_dataset == "waterflow":
-                return build_river_regression_outcome_trace(
-                    dataset_name="WaterFlow",
-                    stream=datasets.WaterFlow(),
-                    strategies=strategy_specs,
-                    source_description="Real pipeline water-flow stream replayed in temporal order.",
-                    source_url=getattr(datasets.WaterFlow(), "url", ""),
-                    feature_transform=_default_feature_transform,
-                    max_samples=max_samples,
-                )
+                return self._build_system_waterflow_trace(max_samples=max_samples)
             if normalized_dataset == "trump_approval":
                 return build_river_regression_outcome_trace(
                     dataset_name="TrumpApproval",
@@ -1782,6 +1839,33 @@ class BenchmarkReplayRunner:
                     max_samples=max_samples,
                 )
         raise ValueError(f"unsupported profile benchmark dataset/task combination: {dataset_name!r} / {task_type!r}")
+
+    def _build_system_waterflow_trace(self, *, max_samples: int | None = None) -> OutcomeTrace:
+        candidate_trace = build_river_regression_outcome_trace(
+            dataset_name="WaterFlow",
+            stream=datasets.WaterFlow(),
+            strategies=(
+                ReplayStrategySpec("lin_lr_0_0005", 0.0005, "Stationary online linear regression with SGD learning_rate=0.0005"),
+                ReplayStrategySpec("lin_lr_0_001", 0.001, "Stationary online linear regression with SGD learning_rate=0.001"),
+                ReplayStrategySpec("lin_lr_0_002", 0.002, "Stationary online linear regression with SGD learning_rate=0.002"),
+                ReplayStrategySpec("pa_regressor", 0.0, "Stationary online passive-aggressive regression", model_kind="pa_regressor"),
+                ReplayStrategySpec("tree_regressor", 0.0, "Stationary online adaptive Hoeffding tree regression", model_kind="hoeffding_tree_regressor"),
+            ),
+            source_description=(
+                "Real pipeline water-flow stream replayed in temporal order; "
+                "evaluation includes anomalous low-flow segments and a pumping-induced peak."
+            ),
+            source_url=getattr(datasets.WaterFlow(), "url", ""),
+            feature_transform=_default_feature_transform,
+            max_samples=max_samples,
+        )
+        selected = self._select_balanced_portfolio(
+            trace=candidate_trace,
+            warmup_samples=240,
+            block_size=24,
+            max_strategies=3,
+        )
+        return _subset_outcome_trace(candidate_trace, selected)
 
     def _run_profile_policy(
         self,
@@ -1802,30 +1886,29 @@ class BenchmarkReplayRunner:
                 start_strategy=default_start_strategy,
             )
         if normalized in {"recent_leader_meta", "drift_aware_comparator", "greedy_reward"}:
-            lookback_blocks = 1 if normalized in {"drift_aware_comparator", "greedy_reward"} else 2
-            margin = 0.0 if normalized in {"drift_aware_comparator", "greedy_reward"} else 0.002
-            cooldown_blocks = 0 if normalized in {"drift_aware_comparator", "greedy_reward"} else 1
+            recent_kwargs = self._default_recent_leader_kwargs(trace, normalized)
             return self.run_outcome_trace_with_recent_leader(
                 trace=trace,
                 output_root=output_root,
                 evaluation_interval=self._default_profile_evaluation_interval(trace),
                 start_strategy=default_start_strategy,
-                lookback_blocks=lookback_blocks,
-                margin=margin,
-                warmup_blocks=1 if normalized == "greedy_reward" else 2,
-                cooldown_blocks=cooldown_blocks,
-                incumbent_floor=0.0 if normalized == "greedy_reward" else 0.001,
+                lookback_blocks=int(recent_kwargs["lookback_blocks"]),
+                margin=float(recent_kwargs["margin"]),
+                warmup_blocks=int(recent_kwargs["warmup_blocks"]),
+                cooldown_blocks=int(recent_kwargs["cooldown_blocks"]),
+                incumbent_floor=float(recent_kwargs["incumbent_floor"]),
             )
         if normalized == "fixed_share_portfolio":
+            fixed_share_kwargs = self._default_fixed_share_kwargs(trace)
             return self.run_outcome_trace_with_fixed_share(
                 trace=trace,
                 output_root=output_root,
                 evaluation_interval=self._default_profile_evaluation_interval(trace),
                 start_strategy=default_start_strategy,
-                eta=0.35,
-                share_alpha=0.08,
-                switch_threshold=0.01,
-                warmup_samples=max(64, self._default_profile_evaluation_interval(trace)),
+                eta=float(fixed_share_kwargs["eta"]),
+                share_alpha=float(fixed_share_kwargs["share_alpha"]),
+                switch_threshold=float(fixed_share_kwargs["switch_threshold"]),
+                warmup_samples=int(fixed_share_kwargs["warmup_samples"]),
             )
         if normalized == "tempered_reward":
             return self.run_outcome_trace(
@@ -1853,6 +1936,8 @@ class BenchmarkReplayRunner:
         sample_count = len(next(iter(trace.rewards_by_strategy.values()), ()))
         prefix_samples = max(128, min(sample_count // 4, 2048))
         prefix_trace = _subset_trace_by_length(trace, prefix_samples)
+        fixed_share_kwargs = self._default_fixed_share_kwargs(trace)
+        recent_kwargs = self._default_recent_leader_kwargs(trace, "recent_leader_meta")
         candidates = (
             self.run_outcome_trace(
                 trace=prefix_trace,
@@ -1866,21 +1951,21 @@ class BenchmarkReplayRunner:
                 output_root=Path(output_root) / "_calibration_recent_leader",
                 evaluation_interval=self._default_profile_evaluation_interval(trace),
                 start_strategy=start_strategy,
-                lookback_blocks=2,
-                margin=0.002,
-                warmup_blocks=2,
-                cooldown_blocks=1,
-                incumbent_floor=0.001,
+                lookback_blocks=int(recent_kwargs["lookback_blocks"]),
+                margin=float(recent_kwargs["margin"]),
+                warmup_blocks=int(recent_kwargs["warmup_blocks"]),
+                cooldown_blocks=int(recent_kwargs["cooldown_blocks"]),
+                incumbent_floor=float(recent_kwargs["incumbent_floor"]),
             ),
             self.run_outcome_trace_with_fixed_share(
                 trace=prefix_trace,
                 output_root=Path(output_root) / "_calibration_fixed_share",
                 evaluation_interval=self._default_profile_evaluation_interval(trace),
                 start_strategy=start_strategy,
-                eta=0.35,
-                share_alpha=0.08,
-                switch_threshold=0.01,
-                warmup_samples=max(64, self._default_profile_evaluation_interval(trace)),
+                eta=float(fixed_share_kwargs["eta"]),
+                share_alpha=float(fixed_share_kwargs["share_alpha"]),
+                switch_threshold=float(fixed_share_kwargs["switch_threshold"]),
+                warmup_samples=int(fixed_share_kwargs["warmup_samples"]),
             ),
         )
         selected = max(candidates, key=lambda item: (item.delta_vs_best_fixed, item.adaptive_score, -item.switch_count))
@@ -1890,10 +1975,10 @@ class BenchmarkReplayRunner:
                 output_root=output_root,
                 evaluation_interval=self._default_profile_evaluation_interval(trace),
                 start_strategy=start_strategy,
-                eta=0.35,
-                share_alpha=0.08,
-                switch_threshold=0.01,
-                warmup_samples=max(64, self._default_profile_evaluation_interval(trace)),
+                eta=float(fixed_share_kwargs["eta"]),
+                share_alpha=float(fixed_share_kwargs["share_alpha"]),
+                switch_threshold=float(fixed_share_kwargs["switch_threshold"]),
+                warmup_samples=int(fixed_share_kwargs["warmup_samples"]),
             )
         if selected.policy_name == "recent_leader_meta":
             return self.run_outcome_trace_with_recent_leader(
@@ -1901,11 +1986,11 @@ class BenchmarkReplayRunner:
                 output_root=output_root,
                 evaluation_interval=self._default_profile_evaluation_interval(trace),
                 start_strategy=start_strategy,
-                lookback_blocks=2,
-                margin=0.002,
-                warmup_blocks=2,
-                cooldown_blocks=1,
-                incumbent_floor=0.001,
+                lookback_blocks=int(recent_kwargs["lookback_blocks"]),
+                margin=float(recent_kwargs["margin"]),
+                warmup_blocks=int(recent_kwargs["warmup_blocks"]),
+                cooldown_blocks=int(recent_kwargs["cooldown_blocks"]),
+                incumbent_floor=float(recent_kwargs["incumbent_floor"]),
             )
         return self.run_outcome_trace(
             trace=trace,
@@ -1915,10 +2000,66 @@ class BenchmarkReplayRunner:
             start_strategy=start_strategy,
         )
 
+    def _default_recent_leader_kwargs(self, trace: OutcomeTrace, normalized_policy: str) -> dict[str, float | int]:
+        if trace.dataset_name == "WaterFlow":
+            if normalized_policy in {"drift_aware_comparator", "greedy_reward"}:
+                return {
+                    "lookback_blocks": 1,
+                    "margin": 0.0,
+                    "warmup_blocks": 1,
+                    "cooldown_blocks": 0,
+                    "incumbent_floor": 0.0,
+                }
+            return {
+                "lookback_blocks": 3,
+                "margin": 0.002,
+                "warmup_blocks": 2,
+                "cooldown_blocks": 1,
+                "incumbent_floor": 0.001,
+            }
+        return {
+            "lookback_blocks": 1 if normalized_policy in {"drift_aware_comparator", "greedy_reward"} else 2,
+            "margin": 0.0 if normalized_policy in {"drift_aware_comparator", "greedy_reward"} else 0.002,
+            "warmup_blocks": 1 if normalized_policy == "greedy_reward" else 2,
+            "cooldown_blocks": 0 if normalized_policy in {"drift_aware_comparator", "greedy_reward"} else 1,
+            "incumbent_floor": 0.0 if normalized_policy == "greedy_reward" else 0.001,
+        }
+
+    def _default_fixed_share_kwargs(self, trace: OutcomeTrace) -> dict[str, float | int]:
+        if trace.dataset_name == "WaterFlow":
+            return {
+                "eta": 0.45,
+                "share_alpha": 0.03,
+                "switch_threshold": 0.01,
+                "warmup_samples": 48,
+            }
+        return {
+            "eta": 0.35,
+            "share_alpha": 0.08,
+            "switch_threshold": 0.01,
+            "warmup_samples": max(64, self._default_profile_evaluation_interval(trace)),
+        }
+
     def _default_profile_evaluation_interval(self, trace: OutcomeTrace) -> int:
+        if trace.dataset_name == "WaterFlow":
+            return 24
         return 128 if trace.score_name == "accuracy" else 64
 
     def _default_profile_meta_config(self, trace: OutcomeTrace) -> MetaControllerConfig:
+        if trace.dataset_name == "WaterFlow":
+            return MetaControllerConfig(
+                window_size=48,
+                min_samples=2,
+                delta=0.001,
+                lambda_value=0.0,
+                switch_cost=0.002,
+                utility_weights={
+                    "reward_mean": 1.0,
+                    "reward_variance": 0.0,
+                    "compute_cost": 0.0,
+                    "switch_cost": 0.0,
+                },
+            )
         if trace.score_name == "accuracy":
             return MetaControllerConfig(
                 window_size=256,
@@ -2432,31 +2573,7 @@ class BenchmarkReplayRunner:
 
     def run_waterflow_benchmark(self, *, output_root: str | Path) -> ReplayBenchmarkResult:
         """Run replay validation on the real WaterFlow anomaly-robust forecasting stream."""
-        candidate_trace = build_river_regression_outcome_trace(
-            dataset_name="WaterFlow",
-            stream=datasets.WaterFlow(),
-            strategies=(
-                ReplayStrategySpec("lin_lr_0_0005", 0.0005, "Stationary online linear regression with SGD learning_rate=0.0005"),
-                ReplayStrategySpec("lin_lr_0_001", 0.001, "Stationary online linear regression with SGD learning_rate=0.001"),
-                ReplayStrategySpec("lin_lr_0_002", 0.002, "Stationary online linear regression with SGD learning_rate=0.002"),
-                ReplayStrategySpec("pa_regressor", 0.0, "Stationary online passive-aggressive regression", model_kind="pa_regressor"),
-                ReplayStrategySpec("tree_regressor", 0.0, "Stationary online adaptive Hoeffding tree regression", model_kind="hoeffding_tree_regressor"),
-            ),
-            source_description=(
-                "Real pipeline water-flow stream replayed in temporal order; "
-                "evaluation includes anomalous low-flow segments and a pumping-induced peak."
-            ),
-            source_url=getattr(datasets.WaterFlow(), "url", ""),
-            feature_transform=_default_feature_transform,
-            max_samples=None,
-        )
-        selected = self._select_balanced_portfolio(
-            trace=candidate_trace,
-            warmup_samples=240,
-            block_size=24,
-            max_strategies=3,
-        )
-        trace = _subset_outcome_trace(candidate_trace, selected)
+        trace = self._build_system_waterflow_trace()
         meta_config = MetaControllerConfig(
             window_size=48,
             min_samples=2,
@@ -2475,41 +2592,17 @@ class BenchmarkReplayRunner:
             output_root=output_root,
             meta_config=meta_config,
             evaluation_interval=24,
-            start_strategy=selected[0],
+            start_strategy=next(iter(trace.rewards_by_strategy)),
         )
 
     def run_waterflow_benchmark_with_hedge(self, *, output_root: str | Path) -> ReplayBenchmarkResult:
         """Run Hedge replay validation on the real WaterFlow stream."""
-        candidate_trace = build_river_regression_outcome_trace(
-            dataset_name="WaterFlow",
-            stream=datasets.WaterFlow(),
-            strategies=(
-                ReplayStrategySpec("lin_lr_0_0005", 0.0005, "Stationary online linear regression with SGD learning_rate=0.0005"),
-                ReplayStrategySpec("lin_lr_0_001", 0.001, "Stationary online linear regression with SGD learning_rate=0.001"),
-                ReplayStrategySpec("lin_lr_0_002", 0.002, "Stationary online linear regression with SGD learning_rate=0.002"),
-                ReplayStrategySpec("pa_regressor", 0.0, "Stationary online passive-aggressive regression", model_kind="pa_regressor"),
-                ReplayStrategySpec("tree_regressor", 0.0, "Stationary online adaptive Hoeffding tree regression", model_kind="hoeffding_tree_regressor"),
-            ),
-            source_description=(
-                "Real pipeline water-flow stream replayed in temporal order; "
-                "evaluation includes anomalous low-flow segments and a pumping-induced peak."
-            ),
-            source_url=getattr(datasets.WaterFlow(), "url", ""),
-            feature_transform=_default_feature_transform,
-            max_samples=None,
-        )
-        selected = self._select_balanced_portfolio(
-            trace=candidate_trace,
-            warmup_samples=240,
-            block_size=24,
-            max_strategies=3,
-        )
-        trace = _subset_outcome_trace(candidate_trace, selected)
+        trace = self._build_system_waterflow_trace()
         return self.run_outcome_trace_with_hedge(
             trace=trace,
             output_root=output_root,
             evaluation_interval=24,
-            start_strategy=selected[0],
+            start_strategy=next(iter(trace.rewards_by_strategy)),
             eta=0.45,
             switch_threshold=0.01,
             warmup_samples=48,
@@ -2517,36 +2610,12 @@ class BenchmarkReplayRunner:
 
     def run_waterflow_benchmark_with_recent_leader(self, *, output_root: str | Path) -> ReplayBenchmarkResult:
         """Run recent-leader replay validation on the real WaterFlow stream."""
-        candidate_trace = build_river_regression_outcome_trace(
-            dataset_name="WaterFlow",
-            stream=datasets.WaterFlow(),
-            strategies=(
-                ReplayStrategySpec("lin_lr_0_0005", 0.0005, "Stationary online linear regression with SGD learning_rate=0.0005"),
-                ReplayStrategySpec("lin_lr_0_001", 0.001, "Stationary online linear regression with SGD learning_rate=0.001"),
-                ReplayStrategySpec("lin_lr_0_002", 0.002, "Stationary online linear regression with SGD learning_rate=0.002"),
-                ReplayStrategySpec("pa_regressor", 0.0, "Stationary online passive-aggressive regression", model_kind="pa_regressor"),
-                ReplayStrategySpec("tree_regressor", 0.0, "Stationary online adaptive Hoeffding tree regression", model_kind="hoeffding_tree_regressor"),
-            ),
-            source_description=(
-                "Real pipeline water-flow stream replayed in temporal order; "
-                "evaluation includes anomalous low-flow segments and a pumping-induced peak."
-            ),
-            source_url=getattr(datasets.WaterFlow(), "url", ""),
-            feature_transform=_default_feature_transform,
-            max_samples=None,
-        )
-        selected = self._select_balanced_portfolio(
-            trace=candidate_trace,
-            warmup_samples=240,
-            block_size=24,
-            max_strategies=3,
-        )
-        trace = _subset_outcome_trace(candidate_trace, selected)
+        trace = self._build_system_waterflow_trace()
         return self.run_outcome_trace_with_recent_leader(
             trace=trace,
             output_root=output_root,
             evaluation_interval=24,
-            start_strategy=selected[0],
+            start_strategy=next(iter(trace.rewards_by_strategy)),
             lookback_blocks=3,
             margin=0.002,
             warmup_blocks=2,
@@ -2994,6 +3063,11 @@ class BenchmarkReplayRunner:
         decisions_path = root / "decisions.csv"
         summary_json_path = root / "summary.json"
         report_md_path = root / "summary.md"
+        oracle_score, oracle_gain, oracle_capture_ratio = self._oracle_statistics(
+            trace=trace,
+            adaptive_score=result.adaptive_score,
+            best_fixed_score=result.best_fixed_score,
+        )
 
         self._write_decisions_csv(decisions_path, decisions)
         summary_payload = {
@@ -3009,6 +3083,9 @@ class BenchmarkReplayRunner:
             "adaptive_score": result.adaptive_score,
             "best_fixed_strategy": result.best_fixed_strategy,
             "best_fixed_score": result.best_fixed_score,
+            "oracle_score": oracle_score,
+            "oracle_gain": oracle_gain,
+            "oracle_capture_ratio": oracle_capture_ratio,
             "delta_vs_best_fixed": result.delta_vs_best_fixed,
             "fixed_scores": result.fixed_scores,
             "block_delta_mean": result.block_delta_mean,
@@ -3022,13 +3099,7 @@ class BenchmarkReplayRunner:
             "best_fixed_accuracy": result.best_fixed_accuracy,
             "fixed_accuracies": result.fixed_accuracies,
         }
-        summary_json_path.write_text(json.dumps(summary_payload, ensure_ascii=True, indent=2), encoding="utf-8")
-        report_md_path.write_text(
-            self._build_report(result=result, trace=trace, decisions=decisions),
-            encoding="utf-8",
-        )
-
-        return ReplayBenchmarkResult(
+        persisted_result = ReplayBenchmarkResult(
             dataset_name=result.dataset_name,
             score_name=result.score_name,
             policy_name=result.policy_name,
@@ -3050,7 +3121,16 @@ class BenchmarkReplayRunner:
             decision_csv_path=str(decisions_path),
             summary_json_path=str(summary_json_path),
             report_md_path=str(report_md_path),
+            oracle_score=oracle_score,
+            oracle_gain=oracle_gain,
+            oracle_capture_ratio=oracle_capture_ratio,
         )
+        summary_json_path.write_text(json.dumps(summary_payload, ensure_ascii=True, indent=2), encoding="utf-8")
+        report_md_path.write_text(
+            self._build_report(result=persisted_result, trace=trace, decisions=decisions),
+            encoding="utf-8",
+        )
+        return persisted_result
 
     def _write_decisions_csv(self, path: Path, decisions: list[ReplayDecisionRecord]) -> None:
         with path.open("w", encoding="utf-8", newline="") as handle:
@@ -3097,6 +3177,7 @@ class BenchmarkReplayRunner:
             "| Mode | Score |",
             "| --- | ---: |",
             f"| adaptive | {result.adaptive_score:.6f} |",
+            f"| oracle | {result.oracle_score:.6f} |",
         ]
         for name, score in sorted(result.fixed_scores.items()):
             lines.append(f"| {name} | {score:.6f} |")
@@ -3105,6 +3186,9 @@ class BenchmarkReplayRunner:
                 "",
                 f"- best_fixed_strategy: `{result.best_fixed_strategy}`",
                 f"- best_fixed_score: `{result.best_fixed_score:.6f}`",
+                f"- oracle_score: `{result.oracle_score:.6f}`",
+                f"- oracle_gain: `{result.oracle_gain:.6f}`",
+                f"- oracle_capture_ratio: `{result.oracle_capture_ratio:.6f}`",
                 f"- adaptive_delta_vs_best_fixed: `{result.delta_vs_best_fixed:.6f}`",
                 f"- block_delta_mean: `{result.block_delta_mean:.6f}`",
                 f"- block_delta_ci95: `{result.block_delta_ci95:.6f}`",
@@ -3131,21 +3215,23 @@ class BenchmarkReplayRunner:
         lines = [
             "# Real-Stream Benchmark Suite",
             "",
-            "| Dataset | Policy | Score | Adaptive | Best Fixed | Delta | Switches | Block CI95 |",
-            "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: |",
+            "| Dataset | Policy | Score | Adaptive | Best Fixed | Oracle | Delta | Capture | Switches | Block CI95 |",
+            "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
         ]
         for result in results:
             lines.append(
                 f"| {result.dataset_name} | {result.policy_name} | {result.score_name} | {result.adaptive_score:.6f} | "
-                f"{result.best_fixed_score:.6f} | {result.delta_vs_best_fixed:.6f} | "
-                f"{result.switch_count} | {result.block_delta_ci95:.6f} |"
+                f"{result.best_fixed_score:.6f} | {result.oracle_score:.6f} | {result.delta_vs_best_fixed:.6f} | "
+                f"{result.oracle_capture_ratio:.6f} | {result.switch_count} | {result.block_delta_ci95:.6f} |"
             )
         lines.extend(
             [
                 "",
                 f"- wins_vs_best_fixed: `{sum(1 for result in results if result.delta_vs_best_fixed > 0.0)}`",
                 f"- non_losses_vs_best_fixed: `{sum(1 for result in results if result.delta_vs_best_fixed >= 0.0)}`",
-                "- interpretation note: benchmark profile suites compare controller families on replayed streams and should be read alongside sample counts, block CI95, and the fixed baseline.",
+                f"- oracle_gain_mean: `{fmean(result.oracle_gain for result in results):.6f}`",
+                f"- oracle_capture_mean: `{fmean(result.oracle_capture_ratio for result in results):.6f}`",
+                "- interpretation note: benchmark profile suites compare controller families on replayed streams and should be read alongside sample counts, block CI95, best-fixed deltas, and oracle-capture ratios.",
             ]
         )
         return "\n".join(lines) + "\n"
@@ -3154,23 +3240,45 @@ class BenchmarkReplayRunner:
         lines = [
             "# Benchmark Profile Suite",
             "",
-            "| Dataset | Profile | Score | Adaptive | Best Fixed | Delta | Switches | Block CI95 |",
-            "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: |",
+            "| Dataset | Profile | Score | Adaptive | Best Fixed | Oracle | Delta | Capture | Switches | Block CI95 |",
+            "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
         ]
         for result in results:
             lines.append(
                 f"| {result.dataset_name} | {result.policy_name} | {result.score_name} | {result.adaptive_score:.6f} | "
-                f"{result.best_fixed_score:.6f} | {result.delta_vs_best_fixed:.6f} | "
-                f"{result.switch_count} | {result.block_delta_ci95:.6f} |"
+                f"{result.best_fixed_score:.6f} | {result.oracle_score:.6f} | {result.delta_vs_best_fixed:.6f} | "
+                f"{result.oracle_capture_ratio:.6f} | {result.switch_count} | {result.block_delta_ci95:.6f} |"
             )
         lines.extend(
             [
                 "",
                 f"- wins_vs_best_fixed: `{sum(1 for result in results if result.delta_vs_best_fixed > 0.0)}`",
                 f"- non_losses_vs_best_fixed: `{sum(1 for result in results if result.delta_vs_best_fixed >= 0.0)}`",
+                f"- oracle_gain_mean: `{fmean(result.oracle_gain for result in results):.6f}`",
+                f"- oracle_capture_mean: `{fmean(result.oracle_capture_ratio for result in results):.6f}`",
             ]
         )
         return "\n".join(lines) + "\n"
+
+    def _oracle_statistics(
+        self,
+        *,
+        trace: OutcomeTrace,
+        adaptive_score: float,
+        best_fixed_score: float,
+    ) -> tuple[float, float, float]:
+        sample_count = len(next(iter(trace.rewards_by_strategy.values()), ()))
+        if sample_count <= 0:
+            return best_fixed_score, 0.0, 0.0
+        oracle_score = sum(
+            max(rewards[offset] for rewards in trace.rewards_by_strategy.values())
+            for offset in range(sample_count)
+        ) / sample_count
+        oracle_gain = oracle_score - best_fixed_score
+        delta_vs_best_fixed = adaptive_score - best_fixed_score
+        if oracle_gain <= 1e-12:
+            return oracle_score, oracle_gain, 0.0
+        return oracle_score, oracle_gain, max(0.0, delta_vs_best_fixed / oracle_gain)
 
 
 def _default_feature_transform(features: Mapping[str, object]) -> dict[str, float]:
@@ -3277,9 +3385,17 @@ def _build_binary_classifier_model(spec: ReplayStrategySpec):
     if model_kind == "knn_classifier":
         return preprocessing.StandardScaler() | neighbors.KNNClassifier()
     if model_kind == "windowed_rf_classifier":
-        return _WindowedSklearnClassifier(RandomForestClassifier(n_estimators=50, random_state=42), window_size=256)
+        return _WindowedSklearnClassifier(
+            RandomForestClassifier(n_estimators=20, random_state=42),
+            window_size=256,
+            refit_interval=64,
+        )
     if model_kind == "windowed_histgb_classifier":
-        return _WindowedSklearnClassifier(HistGradientBoostingClassifier(random_state=42), window_size=256)
+        return _WindowedSklearnClassifier(
+            HistGradientBoostingClassifier(random_state=42),
+            window_size=256,
+            refit_interval=128,
+        )
     raise ValueError(f"unsupported binary classifier model_kind: {model_kind!r}")
 
 
@@ -3298,9 +3414,17 @@ def _build_multiclass_classifier_model(spec: ReplayStrategySpec):
     if model_kind == "knn_classifier":
         return preprocessing.StandardScaler() | neighbors.KNNClassifier()
     if model_kind == "windowed_rf_classifier":
-        return _WindowedSklearnClassifier(RandomForestClassifier(n_estimators=50, random_state=42), window_size=256)
+        return _WindowedSklearnClassifier(
+            RandomForestClassifier(n_estimators=20, random_state=42),
+            window_size=256,
+            refit_interval=64,
+        )
     if model_kind == "windowed_histgb_classifier":
-        return _WindowedSklearnClassifier(HistGradientBoostingClassifier(random_state=42), window_size=256)
+        return _WindowedSklearnClassifier(
+            HistGradientBoostingClassifier(random_state=42),
+            window_size=256,
+            refit_interval=128,
+        )
     raise ValueError(f"unsupported multiclass classifier model_kind: {model_kind!r}")
 
 
@@ -3317,9 +3441,17 @@ def _build_regressor_model(spec: ReplayStrategySpec):
     if model_kind == "knn_regressor":
         return preprocessing.StandardScaler() | neighbors.KNNRegressor()
     if model_kind == "windowed_rf_regressor":
-        return _WindowedSklearnRegressor(RandomForestRegressor(n_estimators=50, random_state=42), window_size=256)
+        return _WindowedSklearnRegressor(
+            RandomForestRegressor(n_estimators=20, random_state=42),
+            window_size=256,
+            refit_interval=64,
+        )
     if model_kind == "windowed_histgb_regressor":
-        return _WindowedSklearnRegressor(HistGradientBoostingRegressor(random_state=42), window_size=256)
+        return _WindowedSklearnRegressor(
+            HistGradientBoostingRegressor(random_state=42),
+            window_size=256,
+            refit_interval=128,
+        )
     raise ValueError(f"unsupported regressor model_kind: {model_kind!r}")
 
 

@@ -129,6 +129,9 @@ def test_phase10_profile_summary_accumulates_chunked_results(tmp_path: Path) -> 
     assert "plots_path" in first_result
     assert "decision_csv_path" in first_result
     assert "report_md_path" in first_result
+    assert "oracle_score" in first_result
+    assert "oracle_gain" in first_result
+    assert "oracle_capture_ratio" in first_result
     assert Path(first_result["metrics_path"]).exists()
     assert Path(first_result["plots_path"]).exists()
 
@@ -137,8 +140,27 @@ def test_phase10_profile_summary_accumulates_chunked_results(tmp_path: Path) -> 
     assert suite_payload["profile_count"] == 2
     assert len(suite_payload["results"]) == 2
     assert "delta_ci95" in suite_payload
+    assert "oracle_gain_mean" in suite_payload
+    assert "oracle_capture_mean" in suite_payload
     assert "paired_sign_test_p_value" in suite_payload
 
     top_level_payload = json.loads(Path(result.summary_json_path).read_text(encoding="utf-8"))
     assert top_level_payload["requested_series_ids"] == top_level_payload["realized_series_ids"]
     assert top_level_payload["summary_scope"] == "accumulated_artifact_root"
+
+
+def test_phase10_e9_supports_mixed_classification_and_regression_benchmarks(tmp_path: Path) -> None:
+    runner = Phase10ExperimentalSeriesRunner(root=tmp_path / "phase10_mixed")
+
+    result = runner.run_phase10_suite(
+        series_ids=("E9",),
+        benchmark_datasets=("elec2", "waterflow"),
+        benchmark_max_samples=64,
+        profile_names=("hard_switch_lcb",),
+    )
+
+    e9_series = next(series for series in result.series if series.series_id == "E9")
+    payload = json.loads(Path(e9_series.summary_json_path).read_text(encoding="utf-8"))
+    assert sorted(payload["dataset_names"]) == ["Elec2", "WaterFlow"]
+    assert sorted(payload["profile_names"]) == ["hard_switch_lcb", "hard_switch_lcb_regression"]
+    assert {row["dataset_name"] for row in payload["results"]} == {"Elec2", "WaterFlow"}

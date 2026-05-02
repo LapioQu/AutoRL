@@ -1,0 +1,12 @@
+profile_name: greedy_reward_regression
+task_type: regression
+controller_policy: greedy_reward
+candidate_models:
+  - river_linreg
+  - river_pa
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: >
+  Explicit greedy comparator for regression streams that follows the most recent
+  block leader without LCB conservatism.

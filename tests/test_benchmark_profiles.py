@@ -15,28 +15,42 @@ BENCHMARK_PROFILE_DIR = Path(__file__).resolve().parents[1] / "configs" / "bench
 
 def test_benchmark_profile_files_exist_and_declare_candidate_models() -> None:
     expected_files = {
+        "adaptive_meta_final_regression.yaml",
         "greedy_reward.yaml",
+        "greedy_reward_regression.yaml",
         "h1_drift_aware_v1.yaml",
         "h1_drift_aware_v2.yaml",
+        "h1_drift_aware_v2_regression.yaml",
         "h2_search.yaml",
         "h2_refined_drift_stable.yaml",
         "h2_refined_correctness_balanced.yaml",
         "h2_tempered_drift.yaml",
+        "h2_tempered_drift_regression.yaml",
         "h2_tempered_correctness.yaml",
         "adaptive_meta_final.yaml",
+        "hard_switch_lcb_regression.yaml",
     }
     existing_files = {path.name for path in BENCHMARK_PROFILE_DIR.glob("*.yaml")}
     assert expected_files <= existing_files
 
     for path in BENCHMARK_PROFILE_DIR.glob("*.yaml"):
         payload = yaml.safe_load(path.read_text(encoding="utf-8"))
-        assert payload["candidate_models"] == [
-            "river_logreg",
-            "river_nb",
-            "river_hoeffding_tree",
-            "windowed_rf",
-            "windowed_histgb",
-        ]
+        if path.stem.endswith("_regression"):
+            assert payload["candidate_models"] == [
+                "river_linreg",
+                "river_pa",
+                "river_hoeffding_tree",
+                "windowed_rf",
+                "windowed_histgb",
+            ]
+        else:
+            assert payload["candidate_models"] == [
+                "river_logreg",
+                "river_nb",
+                "river_hoeffding_tree",
+                "windowed_rf",
+                "windowed_histgb",
+            ]
 
 
 def test_suite_all_manifest_exists() -> None:

@@ -1,0 +1,11 @@
+profile_name: h2_tempered_drift_regression
+task_type: regression
+controller_policy: tempered_reward
+candidate_models:
+  - river_linreg
+  - river_pa
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: >
+  Regression H2 tempered reward profile focused on drift-sensitive forecasting behavior.

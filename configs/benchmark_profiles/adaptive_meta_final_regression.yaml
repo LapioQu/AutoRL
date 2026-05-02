@@ -1,0 +1,12 @@
+profile_name: adaptive_meta_final_regression
+task_type: regression
+controller_policy: adaptive_meta_final
+candidate_models:
+  - river_linreg
+  - river_pa
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: >
+  Final benchmark replay profile aligned with the system-level adaptive meta
+  controller for regression streams.

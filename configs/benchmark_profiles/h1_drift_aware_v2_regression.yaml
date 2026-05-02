@@ -1,0 +1,12 @@
+profile_name: h1_drift_aware_v2_regression
+task_type: regression
+controller_policy: hard_switch_lcb
+candidate_models:
+  - river_linreg
+  - river_pa
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: >
+  Regression H1 comparator profile with LCB gating over the generic regression
+  candidate registry.

@@ -1,0 +1,12 @@
+profile_name: hard_switch_lcb_regression
+task_type: regression
+controller_policy: hard_switch_lcb
+candidate_models:
+  - river_linreg
+  - river_pa
+  - river_hoeffding_tree
+  - windowed_rf
+  - windowed_histgb
+notes: >
+  Regression counterpart of the explicit LCB-based comparator profile, used for
+  forecasting streams such as WaterFlow in phase 10 baseline-comparison experiments.

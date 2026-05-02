@@ -80,7 +80,7 @@ def build_parser() -> argparse.ArgumentParser:
     phase10_suite_parser = subparsers.add_parser("phase10-suite", help="Run the formal phase 10 experimental series E1..E9")
     phase10_suite_parser.add_argument("--artifacts-root", default="artifacts/phase10_experimental_series", help="Output root for phase 10 artifacts")
     phase10_suite_parser.add_argument("--seeds", nargs="+", type=int, default=[41, 42, 43, 44, 45], help="Seed list for controlled experimental series")
-    phase10_suite_parser.add_argument("--benchmark-datasets", nargs="+", default=["elec2", "bikes", "trump_approval", "waterflow", "insects_recurring"], help="Named benchmark datasets for profile-driven series")
+    phase10_suite_parser.add_argument("--benchmark-datasets", nargs="+", default=["elec2", "waterflow", "insects_recurring"], help="Named benchmark datasets for profile-driven series")
     phase10_suite_parser.add_argument("--benchmark-max-samples", type=int, default=None, help="Optional sample cap for benchmark replay series")
     phase10_suite_parser.add_argument("--series", nargs="+", default=None, help="Optional subset of phase 10 series ids, for example: E1 E2 E3")
     phase10_suite_parser.add_argument("--profile-names", nargs="+", default=None, help="Optional subset of benchmark profile stems for E5/E6/E9 chunked execution")
